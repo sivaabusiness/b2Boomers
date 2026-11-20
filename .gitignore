@@ -1,0 +1,10 @@
+# Identifiants Google Ads et secrets : ne jamais envoyer sur GitHub
+env.local.txt
+**/env.local.txt
+.env*
+# Fichiers techniques
+.vercel/
+**/.vercel/
+.dev-kv.json
+**/.dev-kv.json
+node_modules/
