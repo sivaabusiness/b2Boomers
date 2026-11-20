@@ -1,0 +1,16 @@
+LES PROMPTS DU SITE — à donner à ton IA (Claude ou ChatGPT)
+=============================================================
+
+Pourquoi des fichiers ? Copiés depuis le PDF, les balises <…> des prompts
+peuvent disparaître en route — et sans elles, le site ne marche pas.
+
+1. Ouvre le fichier dans le Bloc-notes (Mac : TextEdit).
+2. Remplis la partie MES VARIABLES, en haut du fichier — seulement elle :
+   les [crochets] plus bas, c'est l'IA qui les remplit. Enregistre.
+3. Glisse le fichier dans la conversation avec ton IA (avec tes fichiers
+   .html pour le prompt C) et écris : « Suis les instructions du
+   fichier joint. »
+
+Prompt_A_site_complet.txt      créer le site : l'accueil + le tunnel de devis
+Prompt_C_artisan_et_avis.txt   ajouter ton artisan : ses photos et ses avis Google
+                               — avec son accord écrit (guide, section 7)

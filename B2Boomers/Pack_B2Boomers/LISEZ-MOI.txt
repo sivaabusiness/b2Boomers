@@ -1,0 +1,13 @@
+TON PACK B2BOOMERS
+==================
+
+Dézippe tout ce dossier dans un endroit que tu retrouves (ex. Documents > B2Boomers),
+puis ouvre ce dossier dans Claude Code : tout le parcours travaille ici.
+
+site-captation/        ton site : le guide (PDF), les prompts à donner à l'IA, le moteur
+google-ads-locale/     le skill Google Ads (il crée et surveille ta campagne)
+mettre_a_jour.py       la mise à jour du skill en 1 double-clic (elle se fait aussi toute seule)
+env.exemple.txt        sert à l'étape « Branche ton compte Google Ads » (le guide t'explique)
+Guide_Cle_API_*.pdf    le guide de cette étape, Windows ou Mac
+
+Mets aussi dans ce dossier la fiche de lancement de ta zone (Atlas > ta zone > bouton en haut de la fiche).

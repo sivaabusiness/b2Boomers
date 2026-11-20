@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Demandes reçues</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0A0B; --surface:#131317; --field:#0E0E11; --line:#242430;
+  --text:#F4F3EF; --muted:#8B8B95; --accent:#28D67B; --accent-ink:#04140B; --err:#F87171;
+  --disp:'Space Grotesk',sans-serif; --ui:'Inter',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--ui);min-height:100vh;padding:22px 14px 60px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:18px}
+h1{font-family:var(--disp);font-size:22px;letter-spacing:-.01em}
+h1 small{color:var(--muted);font-size:14px;font-weight:600;margin-left:8px}
+.btn{font-family:var(--ui);font-weight:700;font-size:13.5px;color:var(--text);background:var(--surface);
+  border:1px solid var(--line);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;margin-bottom:12px}
+.card.st-envoyee{opacity:.75}
+.card.st-traitee{opacity:.5}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+.badge{font-size:12px;font-weight:700;color:var(--accent);border:1px solid rgba(40,214,123,.4);
+  border-radius:100px;padding:3px 11px;background:rgba(40,214,123,.07)}
+.date{color:var(--muted);font-size:12.5px;font-weight:600}
+.nom{font-family:var(--disp);font-size:17px;margin-bottom:2px}
+.loc{color:var(--muted);font-size:13.5px;font-weight:600;margin-bottom:8px}
+.desc{font-size:14px;line-height:1.55;color:#C9C9D2;background:var(--field);border:1px solid var(--line);
+  border-radius:10px;padding:10px 12px;margin:8px 0;white-space:pre-wrap}
+.contact{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+.contact a{display:inline-block;text-decoration:none;font-weight:700;font-size:13.5px;color:var(--text);
+  background:var(--field);border:1px solid var(--line);border-radius:9px;padding:8px 12px}
+.contact a.wa{color:var(--accent);border-color:rgba(40,214,123,.4)}
+.row{display:flex;gap:8px;align-items:center;margin-top:10px;flex-wrap:wrap}
+select{background:var(--field);border:1px solid var(--line);border-radius:9px;color:var(--text);
+  font-family:var(--ui);font-weight:600;font-size:13px;padding:8px 10px;cursor:pointer}
+.note{flex:1;min-width:180px;background:var(--field);border:1px solid var(--line);border-radius:9px;
+  color:var(--text);font-family:var(--ui);font-size:13px;padding:8px 10px}
+.note::placeholder{color:#55555e}
+.del{color:#7a7a84;background:none;border:0;font-size:12.5px;font-weight:600;cursor:pointer;padding:8px 4px}
+.del:hover{color:var(--err)}
+.empty{color:var(--muted);text-align:center;padding:60px 0;font-weight:600}
+#login{max-width:360px;margin:14vh auto 0;text-align:center}
+#login h1{margin-bottom:16px}
+#login input{width:100%;background:var(--field);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;color:var(--text);font-size:16px;margin-bottom:12px;text-align:center}
+#login input:focus{outline:none;border-color:var(--accent)}
+#login .btn{width:100%;background:var(--accent);color:var(--accent-ink);border:0;font-size:15px;padding:13px}
+#loginerr{color:var(--err);font-size:13.5px;font-weight:600;margin-top:10px;display:none}
+#appels{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:16px}
+#appels h2{font-family:var(--disp);font-size:16px;margin-bottom:4px}
+#appels h2 small{color:var(--muted);font-size:13px;font-weight:600;margin-left:6px}
+.apphint{color:var(--muted);font-size:13px;line-height:1.5;margin-bottom:8px}
+.app{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px}
+.app .date{min-width:118px;color:var(--text)}
+.app .apppage{color:#C9C9D2;flex:1;min-width:120px;word-break:break-all}
+.app .appmeta{color:var(--muted);font-size:12.5px;font-weight:600}
+.appplus{color:var(--muted);font-size:12.5px;font-weight:600;padding-top:8px;border-top:1px solid var(--line)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div id="login">
+  <h1>Demandes reçues</h1>
+  <input type="password" id="pw" placeholder="Mot de passe" autocomplete="current-password">
+  <button class="btn" id="go">Entrer</button>
+  <div id="loginerr">Mauvais mot de passe.</div>
+</div>
+
+<div class="wrap" id="app" hidden>
+  <header>
+    <h1>Demandes<small id="count"></small></h1>
+    <button class="btn" id="refresh">Actualiser</button>
+  </header>
+  <section id="appels" hidden>
+    <h2>📞 Clics sur ton numéro<small id="appcount"></small></h2>
+    <p class="apphint">Quelqu’un a appuyé sur ton numéro à cette heure-là (la notif part aussi sur ton Telegram). Au débrief, vérifie avec l’artisan qu’il a bien eu l’appel — et supprime tes clics de test.</p>
+    <div id="applist"></div>
+  </section>
+  <div id="list"></div>
+</div>
+
+<script>
+(function(){
+  var KEY = 'demandes_pw';
+  var login = document.getElementById('login');
+  var app = document.getElementById('app');
+  var list = document.getElementById('list');
+  var count = document.getElementById('count');
+  var loginerr = document.getElementById('loginerr');
+  var STATUTS = ['nouvelle', 'envoyée', 'traitée'];
+
+  function pw(){ try { return localStorage.getItem(KEY) || ''; } catch(e){ return ''; } }
+  function setPw(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
+
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function waNum(tel){ return tel.indexOf('+') === 0 ? tel.slice(1) : '33' + tel.replace(/^0/, ''); }
+  function fmtDate(iso){
+    var d = new Date(iso);
+    return d.toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit' }) + ' · ' +
+           d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+  }
+  function stClass(st){ return st === 'envoyée' ? 'st-envoyee' : (st === 'traitée' ? 'st-traitee' : ''); }
+
+  async function api(method, body){
+    var res = await fetch('/api/demandes', {
+      method: method,
+      headers: { 'Authorization': 'Bearer ' + pw(), 'Content-Type': 'application/json' },
+      body: body ? JSON.stringify(body) : undefined
+    });
+    if (res.status === 401) throw new Error('auth');
+    return res.json();
+  }
+
+  function render(items){
+    count.textContent = items.length ? items.length + ' au total' : '';
+    if (!items.length) { list.innerHTML = '<div class="empty">Aucune demande pour l’instant.<br>Elles apparaîtront ici dès que le formulaire du site sera rempli.</div>'; return; }
+    list.innerHTML = items.map(function(d){
+      var opts = STATUTS.map(function(s){
+        return '<option value="' + s + '"' + (d.statut === s ? ' selected' : '') + '>' + s.charAt(0).toUpperCase() + s.slice(1) + '</option>';
+      }).join('');
+      return '<div class="card ' + stClass(d.statut) + '" data-id="' + esc(d.id) + '">' +
+        '<div class="top"><span class="badge">' + esc(d.service || 'demande') + '</span>' +
+        '<span class="date">' + fmtDate(d.createdAt) + '</span></div>' +
+        '<div class="nom">' + esc(d.nom) + '</div>' +
+        '<div class="loc">' + esc([d.commune, d.adresse].filter(Boolean).join(' · ') || '—') + '</div>' +
+        (d.description ? '<div class="desc">' + esc(d.description) + '</div>' : '') +
+        '<div class="contact">' +
+          '<a href="tel:' + esc(d.tel) + '">📞 ' + esc(d.tel) + '</a>' +
+          '<a class="wa" href="https://wa.me/' + esc(waNum(d.tel)) + '" target="_blank" rel="noopener">WhatsApp</a>' +
+          (d.email ? '<a href="mailto:' + esc(d.email) + '">✉️ ' + esc(d.email) + '</a>' : '') +
+        '</div>' +
+        '<div class="row">' +
+          '<select class="statut">' + opts + '</select>' +
+          '<input class="note" placeholder="Note (envoyée à qui, contexte…)" value="' + esc(d.note || '') + '">' +
+          '<button class="del">Supprimer</button>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  // Les clics sur le numéro du site (api/appel.js) : les 30 derniers, le total et les 7 derniers jours.
+  function renderAppels(items){
+    var box = document.getElementById('appels');
+    box.hidden = !items.length;
+    if (!items.length) return;
+    var semaine = items.filter(function(a){ return Date.now() - Date.parse(a.createdAt) < 7 * 864e5; }).length;
+    document.getElementById('appcount').textContent = items.length + ' au total · ' + semaine + ' ces 7 derniers jours';
+    document.getElementById('applist').innerHTML = items.slice(0, 30).map(function(a){
+      return '<div class="app" data-appel="' + esc(a.id) + '"><span class="date">' + fmtDate(a.createdAt) + '</span>' +
+        '<span class="apppage">' + esc(a.page || '/') + '</span>' +
+        '<span class="appmeta">' + (a.appareil === 'mobile' ? '📱 mobile' : '💻 ordinateur') + (a.source ? ' · ' + esc(a.source) : '') + '</span>' +
+        '<button class="del">Supprimer</button></div>';
+    }).join('') + (items.length > 30 ? '<div class="appplus">… et ' + (items.length - 30) + ' plus anciens</div>' : '');
+  }
+
+  async function load(){
+    try {
+      var j = await api('GET');
+      if (!j.ok) throw new Error('load');
+      login.hidden = true; app.hidden = false;
+      renderAppels(j.appels || []);
+      render(j.demandes);
+    } catch(e) {
+      app.hidden = true; login.hidden = false;
+      if (pw()) loginerr.style.display = 'block';
+    }
+  }
+
+  document.getElementById('go').addEventListener('click', function(){
+    setPw(document.getElementById('pw').value); loginerr.style.display = 'none'; load();
+  });
+  document.getElementById('pw').addEventListener('keydown', function(e){
+    if (e.key === 'Enter') document.getElementById('go').click();
+  });
+  document.getElementById('refresh').addEventListener('click', load);
+
+  list.addEventListener('change', function(e){
+    var card = e.target.closest('.card'); if (!card) return;
+    var id = card.dataset.id;
+    if (e.target.classList.contains('statut')) {
+      api('PATCH', { id: id, statut: e.target.value }).then(load);
+    }
+  });
+  list.addEventListener('focusout', function(e){
+    if (!e.target.classList.contains('note')) return;
+    var card = e.target.closest('.card');
+    api('PATCH', { id: card.dataset.id, note: e.target.value });
+  });
+  list.addEventListener('click', function(e){
+    if (!e.target.classList.contains('del')) return;
+    var card = e.target.closest('.card');
+    if (!confirm('Supprimer définitivement cette demande ?')) return;
+    api('DELETE', { id: card.dataset.id }).then(load);
+  });
+
+  document.getElementById('applist').addEventListener('click', function(e){
+    if (!e.target.classList.contains('del')) return;
+    var ligne = e.target.closest('.app');
+    api('DELETE', { appel: ligne.dataset.appel }).then(load);
+  });
+
+  if (pw()) load();
+})();
+</script>
+</body>
+</html>

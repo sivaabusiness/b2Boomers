@@ -1,0 +1,445 @@
+Tu es un développeur web senior spécialisé en landing pages locales à haute
+conversion. Génère-moi un site statique complet de demande de devis pour un
+artisan local : une page d'accueil qui convainc, et un tunnel de devis court
+d'où l'on ne sort pas. Code de qualité production, en français.
+
+MES VARIABLES :
+- Métier : [MÉTIER — ex. élagage / abattage d'arbres]
+- Ville principale : [VILLE] · Zone : environ [RAYON] km autour
+  (communes : [LISTE DE 6-10 COMMUNES])
+- Nom du site (marque locale générique) : [NOM — ex. Élagage Poitou Services]
+- Services (4 ou 5 ; une page tunnel chacun) : [LISTE DES SERVICES]
+- Téléphone à afficher : [TON NUMÉRO — obligatoire ; plus tard, celui de l'artisan]
+- Crédit d'impôt 50 % : [OUI pour <services, ex. taille de haies, entretien> — seulement si
+  l'artisan est déclaré « services à la personne » / NON]
+- Message de saison : [ex. « Planning d'hiver ouvert : élagages de novembre à mars » / aucun]
+- Couleur principale : [ex. vert forêt #1B4332] · accent : [ex. #E9A23B]
+
+FICHIERS À GÉNÉRER (chacun complet et autonome, styles dans un <style> interne,
+aucune librairie, aucune ressource externe sauf Google Fonts) :
+1. index.html — l'accueil : il rassure et explique ; chaque bouton « devis »
+   mène au tunnel
+2. devis.html — l'entrée du tunnel : « Quels travaux ? »
+3. Une page tunnel par service : devis-[service].html (minuscules, tirets,
+   ex. devis-taille-de-haies.html)
+4. mentions-legales.html et confidentialite.html (modèles avec des champs
+   [À COMPLÉTER] pour l'éditeur du site)
+PAS de pages service séparées : le contenu de chaque service est sur
+l'accueil.
+
+Dans le <head> de CHAQUE page, ajoute exactement cette ligne (formulaires,
+suivi des appels et conversions Google Ads — n'y touche pas) :
+<script src="/api/suivi" defer></script>
+(en toutes lettres : une balise script, src="/api/suivi", avec l'attribut
+defer). Ce moteur est DÉJÀ dans mon dossier : tu n'as ni à l'écrire, ni à
+me le demander — il suffit de cette ligne et des blocs « LES FORMULAIRES ».
+
+LE TUNNEL — le principe du site. L'accueil fait le travail de confiance ;
+dès que le visiteur appuie sur un bouton « devis » ou sur un type de
+travaux, il entre dans le tunnel : des pages COURTES, sans menu ni lien vers
+ailleurs, d'où l'on ne sort que par « ← Retour » (vers l'accueil). Tous les
+« Devis gratuit » du site mènent à devis.html ; les gros boutons « Quels
+travaux ? » et le bouton de chaque service mènent directement à
+devis-[service].html.
+
+LE TÉLÉPHONE — une grosse part des demandes arrive par téléphone. Affiche le
+numéro partout, au MÊME format (ex. 06 12 34 56 78), toujours en lien
+cliquable <a href="tel:+33612345678">06 12 34 56 78</a> : dans le header,
+le hero, le bloc urgence, le CTA final et le footer. PAS dans la barre
+collante mobile : elle n'a qu'un bouton, « Devis gratuit ». Jamais en
+image, jamais sans lien tel: — c'est ce lien qui permet de compter les
+appels. MAIS AUCUN NUMÉRO DANS LE TUNNEL : celui qui y est
+entré ne doit plus avoir qu'une chose à faire, finir sa demande. Le numéro
+n'y revient qu'après l'envoi, dans le message de confirmation (« Vraiment
+pressé ? Appelez maintenant ») — c'est l'attribut data-tel du formulaire.
+
+confidentialite.html mentionne : ce site n'utilise aucun outil de mesure
+d'audience ; les clics sur le numéro sont comptés sans cookie (page, heure,
+type d'appareil), pour vérifier les appels reçus ; si les annonces Google
+Ads sont mesurées (formulaire envoyé, appels), une
+petite barre demande d'abord l'accord du visiteur, cookies conservés 13
+mois au plus, lien vers policies.google.com/privacy. Destinataires des
+données : l'éditeur du site et l'entreprise qui réalise les travaux dans
+la zone. N'ajoute AUCUN bandeau de cookies toi-même : le moteur affiche
+cette petite barre seulement si elle est nécessaire.
+
+LE DISCOURS — LE VISITEUR PARLE À UNE ENTREPRISE, PAS À UNE PLATEFORME.
+Le site parle à la 1re personne du pluriel (« on », « nous ») : « On vous
+rappelle », « nos interventions », « notre méthode ». La phrase du haut de
+l'accueil est, mot pour mot : « On vous rappelle — devis et déplacement
+gratuits sous 24 h. » Nulle part (titres, textes, boutons, FAQ, footer,
+balises title et meta) : « mise en relation », « artisan partenaire »,
+« réseau d'artisans », « un artisan local vous rappelle », « nous
+transmettons votre demande », « plateforme », « comparateur ». Seules les
+deux pages légales disent, sobrement, que les devis et les travaux sont
+assurés par une entreprise locale indépendante, assurée, à qui la demande
+est transmise (obligation légale : le visiteur doit savoir qui reçoit ses
+coordonnées).
+
+LE PREMIER ÉCRAN DE L'ACCUEIL SUR TÉLÉPHONE — le plus important : la grande
+majorité des visites viennent d'un téléphone. Sur un écran de 375 × 700 px,
+SANS faire défiler, on doit voir : la photo du haut, bien visible (environ
+180 px, pleine largeur), le H1 « [Service] à [VILLE] » posé sur le bas de la
+photo avec un dégradé vers le vert, la phrase « On vous rappelle — devis et
+déplacement gratuits sous 24 h. », UN GROS BOUTON « 📞 Appeler le [NUMÉRO] »
+(lien tel:, ≥ 56 px de haut), puis DIRECTEMENT la carte « Quels travaux ? »
+et ses gros boutons illustrés (une petite photo du service sur chacun). PAS
+de bouton « Devis gratuit » dans le hero : ces gros boutons SONT l'entrée du
+tunnel, et le premier appui est déjà le début de la demande. JUSTE SOUS la
+carte : les AVANT / APRÈS. Sur téléphone, les 3 puces de réassurance du hero
+sont masquées et le titre de la carte aussi (la question suffit). Pas de
+carrousel, pas de bandeau qui cache tout.
+
+L'ACCUEIL S'ADAPTE À LA RECHERCHE — chaque groupe d'annonces Google Ads
+envoie vers l'accueil avec ?travaux=[service] au bout de l'adresse (ex.
+/?travaux=dessouchage). Le moteur remplace alors le mot du titre, met la
+photo du gros bouton choisi en grand en haut de page, et place ce bouton en
+premier, surligné. Pour ça (bloc 1 des FORMULAIRES) : le mot du service du
+H1 dans <span data-titre-travaux>…</span> ; l'attribut data-photo-travaux
+sur l'élément qui porte la photo du haut EN FOND CSS (background-image) ;
+sur chaque gros bouton, la photo d'action du service, data-travaux = le nom
+de sa page tunnel sans « devis- » ni « .html », et data-nom = le mot à
+mettre dans le titre.
+
+SUR TÉLÉPHONE, PEU DE TEXTE — l'œil doit glisser de photo en bouton, sans
+mur de texte. Sur ordinateur, garde TOUT. Sur téléphone (max-width 820px) :
+- chaque section = son titre + 2 lignes au plus + une photo ou un visuel + un
+  bouton ; le reste porte la classe "pc", masquée sur téléphone par
+  @media(max-width:820px){.pc{display:none}} : la petite phrase du hero
+  (on garde « On vous rappelle — … »), 2e paragraphe et suivants de la
+  présentation, les cas des prestations (on garde photo, titre, intro,
+  bouton), le texte des engagements (on garde les titres, en grille 2 × 2),
+  le détail des étapes de la méthode (titres en grille 2 × 2), textes des
+  cartes « réglementation » (on garde les titres), 2e ligne des légendes
+  avant/après et la 4e paire, communes au-delà de 8, présentation et
+  colonnes du footer (on garde le nom, le numéro, les liens légaux) ;
+- les intros de section : 2 lignes au plus (line-clamp) ;
+- AVANT / APRÈS côte à côte même sur téléphone (2 colonnes, petits badges) :
+  la différence se voit d'un coup d'œil ;
+- les photos des prestations moins hautes sur téléphone (format 2:1) ;
+- objectif : l'accueil tient en 13 écrans de téléphone environ, une page
+  tunnel en 2.
+
+LE HEADER DE L'ACCUEIL : collant sur ordinateur, fond clair légèrement
+transparent, avec le nom du site (une petite pastille ronde de la couleur
+principale devant, avec une icône simple au trait), des ancres vers les
+sections (Avant / après · Prestations · Zone · FAQ), le numéro (petite ligne
+« Appelez-nous » au-dessus) et un bouton « Devis gratuit » (vers
+devis.html). Sur téléphone : NI collant NI bouton — juste le nom du site.
+LA BARRE COLLANTE DU BAS (téléphone seulement) : UN SEUL bouton, pleine
+largeur, « Devis gratuit → » (vers devis.html) — PAS de bouton d'appel à
+côté. Mets l'attribut data-barre sur le conteneur de cette barre et
+data-cacher-barre sur la carte « Quels travaux ? » du haut : le moteur
+cache la barre tant que cette carte est à l'écran, et la fait revenir dès
+qu'on descend.
+
+LE STYLE — PREMIUM, MAIS ARTISAN (pas startup). Le site doit avoir l'air
+de la meilleure entreprise du secteur : sobre, aéré, de grandes photos, une
+typographie soignée. Concret et local, jamais « template SaaS ».
+- Typographie Google Fonts : un titre avec du caractère (ex. Bricolage
+  Grotesque 700-800, interlettrage resserré : -0.02em à -0.035em) + un
+  texte très lisible (ex. Inter). H1 très grand sur ordinateur
+  (clamp(40px,5.6vw,68px)), titres de section clamp(30px,3.9vw,48px),
+  alignés à gauche, jamais en majuscules ; texte courant 16-17,5 px,
+  interligne 1,6.
+- Palette resserrée : fond papier clair (type #F5F1E8), un ton sable pour
+  alterner les sections (type #ECE5D5), la couleur principale, un vert
+  presque noir pour les sections sombres et le footer, et UN accent chaud
+  réservé aux boutons principaux et aux mots mis en avant.
+- De l'air : ≈ 100 px en haut et en bas de chaque section sur ordinateur
+  (≈ 46 px sur téléphone), conteneur ≈ 1180 px, une idée par section.
+- Les photos font le travail : en grand, plein cadre (le hero, une bande
+  photo pleine largeur, le fond du CTA final), coins arrondis 16-20 px,
+  ombres douces et larges sur photos et cartes — jamais de bordure épaisse.
+- Une hiérarchie identique dans chaque section : kicker (petite ligne
+  uppercase espacée, précédée d'un tiret de la couleur d'accent) → grand
+  titre → une phrase d'intro grise → le contenu.
+- Le rythme : alterner fond clair, fond sable et 3 sections sombres
+  (engagements, zone, CTA final) — l'œil sent les chapitres.
+- PAS de look corporate/startup : pas de dégradés violets, pas
+  d'illustrations 3D, pas d'emoji dans les titres, pas d'icônes génériques
+  à gogo (de petites icônes SVG au trait, dans un carré arrondi, seulement
+  pour les engagements et la réglementation). Des photos, du concret, du
+  vocabulaire de terrain.
+- Mobile d'abord : tout se fait au pouce, boutons ≥ 52 px, texte ≥ 16 px.
+
+STRUCTURE DE L'ACCUEIL — DENSE et COMPLET, au niveau des meilleurs sites
+d'artisans pro, dans l'ordre :
+1. Le header (ci-dessus). Message de saison fourni : une fine bande
+   au-dessus (une phrase vraie, jamais de compte à rebours).
+2. HERO plein cadre, photo de chantier en fond (data-photo-travaux,
+   assombrie par un dégradé du vert profond, ≈ 640 px de haut sur
+   ordinateur) : H1 « [Service] à [VILLE] et alentours », très grand, le mot
+   du service dans la couleur d'accent ; puis LA PHRASE DU HAUT, mot pour
+   mot : « On vous rappelle — devis et déplacement gratuits sous 24 h. » ;
+   une petite phrase (« Décrivez vos travaux en deux clics. Sans
+   engagement, et sans démarchage derrière. », masquée sur téléphone) ; le
+   bouton blanc « 📞 Appeler le [NUMÉRO] » ; 3 puces de réassurance sous un
+   filet fin (masquées sur téléphone) ; et la carte « Quels travaux ? »
+   (bloc 1 des FORMULAIRES) en carte blanche à droite sur ordinateur, juste
+   dessous sur téléphone.
+   Crédit d'impôt = OUI : un badge « 50 % de crédit d'impôt sur [services] »
+   sous les gros boutons et une question dans la FAQ (conditions : artisan
+   déclaré services à la personne, plafonds légaux) ; = NON : n'en parle
+   jamais
+3. AVANT / APRÈS — JUSTE SOUS LE HERO, avant tout le reste : c'est la
+   première preuve que voit le visiteur. Kicker « La preuve en images », un
+   titre, une paire par service (4 au plus) : deux photos carrées CÔTE À
+   CÔTE dans une carte blanche à coins arrondis, gros badges AVANT
+   (terracotta) / APRÈS (vert), légende = le service en gras + une
+   précision courte. 2 paires par ligne sur ordinateur ; sur téléphone, une
+   paire par ligne (les 2 photos toujours côte à côte), 3 paires au plus.
+   Dessous, un CTA de remontée vers devis.html.
+4. ENGAGEMENTS — section sombre (vert presque noir) : kicker, titre (ex.
+   « Vos arbres entre de bonnes mains »), 4 engagements en colonnes
+   séparées par des filets fins, chacun avec une petite icône SVG dans un
+   carré arrondi, un titre et une phrase : rappel sous 24 h · devis et
+   déplacement gratuits · assurés et équipés (grimpe, nacelle, broyeur,
+   rogneuse) · chantier rendu propre. Sur téléphone : 2 × 2, titres seuls.
+5. PRÉSENTATION « travail d'artisan » : la photo équipe en grand, une photo
+   de chantier plus petite qui la chevauche et une petite carte blanche
+   « Professionnels assurés » posée dessus ; à côté, 2-3 paragraphes
+   concrets (sécurisation du périmètre, essences traitées — chêne, tilleul,
+   érable, thuya… —, chantier nettoyé) + 6 garanties en 2 colonnes
+6. LES PRESTATIONS (fond sable) — c'est ici que vit le contenu de chaque
+   service : UNE GRANDE CARTE par service, 2 par ligne sur ordinateur : en
+   haut la photo d'action (16:10) avec, posés dessus en bas sur un dégradé
+   sombre, le H3 et une phrase d'intro ; dessous, 5 CAS CONCRETS en liste à
+   filets fins (avec le vrai vocabulaire du métier) et UN bouton
+   « Devis [service] → » vers devis-[service].html. Sur téléphone :
+   photo (2:1), titre, intro et bouton — les cas sont masqués.
+7. BANDE PHOTO pleine largeur (≈ 440 px, photo de chantier assombrie vers
+   le bas) : une phrase courte de métier en très gros, avec UN mot accentué
+   (ex. « Un chantier propre, c'est pas une option. »), et une petite ligne
+   de contexte dessous.
+8. RAPPEL EXPRESS : une bande pleine largeur, compacte, fond blanc : à
+   gauche « Pas le temps d'écrire ? » et « Laissez votre numéro : on vous
+   rappelle, gratuitement. », à droite le formulaire (bloc 3 des
+   FORMULAIRES) — prénom, téléphone et bouton sur UNE ligne sur ordinateur,
+   empilés sur téléphone
+9. BLOC URGENCE (fond terracotta clair) : branche menaçante / arbre fragilisé
+   → « Appelez-nous, ou commencez votre message par URGENT : on vous
+   rappelle en priorité », UN SEUL gros bouton « 📞 Appeler maintenant »
+   (lien tel:) et dessous un petit lien « ou décrire la situation par
+   écrit → » vers devis.html
+10. MÉTHODE EN 4 TEMPS : la photo du conseil client d'un côté, de l'autre 4
+    étapes numérotées en gros chiffres de la couleur d'accent (01, 02…),
+    séparées par des filets fins : vous décrivez → on vous rappelle sous
+    24 h → devis détaillé écrit avant travaux → travaux sécurisés +
+    nettoyage
+11. RÉGLEMENTATION « on vous guide » : 3 cartes blanches à ombre douce, une
+    petite icône chacune (distances de voisinage · autorisations et arbres
+    protégés · sécurité du chantier), puis un CTA de remontée
+12. ZONE D'INTERVENTION (fond vert) : ~16 communes réelles en liste à filets
+    (3 colonnes) + une carte « Votre commune n'y est pas ? » avec un bouton
+    vers devis.html (« à moins de X km, c'est dans la zone »)
+13. FAQ en 2 colonnes : à gauche le titre et un bouton « Être rappelé
+    gratuitement » vers devis.html, à droite 8 questions en accordéon à
+    filets fins (harcelé ? devis gratuit ? délais ? déchets ?
+    autorisations ? période ? accès difficile ? qui réalise les travaux ?)
+14. GRAND CTA FINAL sur la photo équipe assombrie : titre, gros bouton
+    « Recevoir mon devis gratuit » vers devis.html, puis « 📞 ou appelez le
+    [NUMÉRO] » en lien tel:
+15. Footer sombre, 4 colonnes : nom + une phrase + numéro, prestations
+    (liens vers les pages tunnel), zone, informations (devis, mentions
+    légales, confidentialité) ; tout en bas : « Travaux réalisés par des
+    professionnels assurés. Photos d'illustration. »
+
+RÈGLES DE DESIGN — LE PLUS IMPORTANT. Chaque section doit avoir SA PROPRE
+FORME : si deux sections se ressemblent (même « titre centré + grille de
+cartes »), c'est raté. Et partout, la même finition :
+- AVANT/APRÈS = deux photos CÔTE À CÔTE (même sur mobile) avec de GROS
+  badges AVANT / APRÈS et une légende sobre. PAS de slider ni
+  d'interaction : le visiteur type a 60 ans et un téléphone — tout doit se
+  comprendre en défilant avec le pouce.
+- Les boutons : UN style principal (fond accent, texte foncé, 56 px de
+  haut, coins 12 px), UN secondaire (vert plein, ou blanc sur fond
+  sombre) ; pas plus.
+- Des CTA DE REMONTÉE : après l'avant/après et après la réglementation, une
+  ligne centrée « [petite phrase] + bouton "Recevoir mon devis gratuit →" »
+  vers devis.html. Le visiteur ne doit JAMAIS être à plus d'un écran d'un
+  bouton devis.
+- Au moins 10 photos sur l'accueil, dont la PHOTO ÉQUIPE ; aucune section
+  longue sans photo ; chaque <img> avec width et height, et
+  img{height:auto} dans le CSS (sinon l'aspect-ratio ne s'applique pas).
+- Pas d'effet gadget : pas d'animation au défilement, pas de parallaxe,
+  pas de carrousel. Le premium vient de la typographie, de l'air et des
+  photos — pas des effets.
+
+LES PAGES TUNNEL (devis.html et devis-[service].html) — COURTES : 2 écrans
+de téléphone au plus. Même charte que l'accueil (couleurs, polices,
+boutons, coins arrondis, ombres douces). Chacune contient, dans l'ordre,
+et RIEN d'autre :
+1. Un en-tête fin vert foncé, sur UNE ligne même sur un petit téléphone :
+   « ← Retour » (lien vers index.html) à gauche, le nom du site au centre
+   (simple texte). AUCUN menu, AUCUN numéro.
+2. Une photo du service en bandeau (≈ 255 px de haut, en fond CSS, préchargée
+   dans le <head>), avec dessus, en bas : le H1 « [Service] à [VILLE] :
+   [bénéfice en 3-4 mots] » et la ligne « On vous rappelle — devis et
+   déplacement gratuits sous 24 h ». Sur devis.html : la photo équipe et
+   le H1 « Votre devis gratuit, en 1 minute ».
+3. La carte du formulaire, qui chevauche le bas de la photo (bloc 2 des
+   FORMULAIRES) : « Étape 1 sur 2 » et UNE question propre au service, en
+   gros boutons à icône ; puis « Étape 2 sur 2 · c'est presque fini » et les
+   coordonnées.
+4. UNE paire avant/après du service (aucune sur devis.html).
+5. Un pied de page minimal : « Travaux réalisés par des professionnels
+   assurés. Photos d'illustration. » et les liens Mentions légales ·
+   Confidentialité.
+Pas de numéro, pas de barre collante, pas de garanties, pas de FAQ, pas de
+footer riche.
+Dans le <head> : <meta name="robots" content="noindex"> (pages de
+formulaire, pas à référencer).
+La question de l'étape 1, propre à chaque service : 3 ou 4 réponses
+concrètes + toujours « Autre / je ne sais pas ». Exemples : élagage « Votre
+besoin ? » (branches sur le toit · arbre trop grand à réduire · taille
+d'entretien · bois mort, mise en sécurité) ; dessouchage « Combien de
+souches ? » (une · 2 à 5 · plus de 5) ; haies « Quelle longueur de haie ? »
+(moins de 10 m · 10 à 30 m · plus de 30 m).
+
+LES FORMULAIRES — CONTRAT STRICT, PENSÉ POUR UN PUBLIC ÂGÉ. Le moteur du
+site (la ligne /api/suivi) fait tout : les deux temps, l'envoi, le message
+de confirmation, l'adaptation de l'accueil. AUCUN script dans les pages.
+Reprends ces blocs TELS QUELS en remplaçant seulement les [CROCHETS] ;
+étiquettes visibles, champs ≥ 52 px de haut, texte ≥ 17 px, boutons ≥ 56 px.
+
+1) L'accueil — la carte « Quels travaux ? » du haut (des liens vers le
+tunnel) :
+
+<div class="form-card" id="devis-bloc" data-cacher-barre>
+  <h2>Recevez votre devis gratuit</h2>
+  <p class="question">Quels travaux ?</p>
+  <div class="choix">
+    <a class="tuile" href="devis-[service].html" data-travaux="[service]"
+      data-nom="[Service]"><img src="photos/[photo du service].webp" alt=""
+      width="46" height="46"><span>[Libellé du bouton]</span></a>
+    [… un bouton par service …]
+    <a class="tuile" href="devis.html">Autre / je ne sais pas</a>
+  </div>
+  <div class="confiance">
+    <div>Gratuit et sans engagement</div>
+    <div>Un seul appel, le nôtre — jamais de démarchage</div>
+    <div>Vos coordonnées ne sont jamais revendues</div>
+  </div>
+</div>
+
+et, dans le hero de l'accueil (la photo du haut en fond CSS) :
+<div class="hero" data-photo-travaux>
+<h1><span data-titre-travaux>[Service principal]</span> à [VILLE] : …</h1>
+
+2) Les pages tunnel — le formulaire de devis en 2 temps :
+
+<form id="devis" data-moteur="devis" data-tel="[+33612345678]" novalidate>
+  <div data-etape="1">
+    <p class="pas">Étape 1 sur 2</p>
+    <p class="question">[LA QUESTION DU SERVICE]</p>
+    <div class="choix">
+      <button type="button" data-service="[Service] — [réponse]"
+        data-ic="[icône]">[Réponse]</button>
+      [… 3 ou 4 réponses …]
+      <button type="button" data-service="[Service]" data-ic="?">Autre / je ne sais pas</button>
+    </div>
+  </div>
+  <div data-etape="2" hidden>
+    <p class="pas">Étape 2 sur 2 · c'est presque fini</p>
+    <p class="question">Votre demande : <b data-choisi></b> ·
+      <button type="button" data-retour>changer</button></p>
+    <input type="hidden" name="service">
+    <label for="f-nom">Votre nom</label>
+    <input id="f-nom" type="text" name="nom" autocomplete="name" required>
+    <label for="f-tel">Votre téléphone</label>
+    <input id="f-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
+      placeholder="06 12 34 56 78" required>
+    <label for="f-commune">Votre commune</label>
+    <input id="f-commune" type="text" name="commune" required>
+    <label for="f-desc">Un mot sur le chantier <small>(facultatif)</small></label>
+    <textarea id="f-desc" name="description"
+      placeholder="[un exemple propre au service — ex. souche d'environ 40 cm, accès par le jardin…]"></textarea>
+    <input type="text" name="site_web" tabindex="-1" autocomplete="off"
+      style="position:absolute;left:-6000px">
+    <button type="submit">Recevoir mon devis gratuit</button>
+  </div>
+  <div class="confiance">
+    <div>Gratuit et sans engagement</div>
+    <div>Un seul appel, le nôtre — jamais de démarchage</div>
+    <div>Vos coordonnées ne sont jamais revendues</div>
+  </div>
+</form>
+
+data-ic = une petite icône affichée devant la réponse, en CSS
+([data-ic]::before{content:attr(data-ic)}) : 🏠 🌳 ✂️ ⚠️ 🌲, ou ● / ●● / ●●●
+pour une quantité. Sur devis.html, l'étape 1 pose « Quels travaux ? » et
+propose, à la place des réponses, un lien par service vers sa page tunnel :
+<a href="devis-[service].html"><img src="photos/[photo].webp" alt="" width="46"
+height="46"><span>[Service]</span></a>, puis un seul bouton :
+<button type="button" data-service="Autre" data-ic="?">Autre / je ne sais pas</button>
+
+3) L'accueil — le rappel express (la bande « Pas le temps d'écrire ? ») :
+
+<form class="rappel-express" data-moteur="rappel" data-service="[MÉTIER]" novalidate>
+  <div class="champ"><label for="r-nom">Votre prénom</label>
+    <input id="r-nom" type="text" name="nom" autocomplete="given-name" required></div>
+  <div class="champ"><label for="r-tel">Votre téléphone</label>
+    <input id="r-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
+      placeholder="06 12 34 56 78" required></div>
+  <input type="text" name="site_web" tabindex="-1" autocomplete="off"
+    style="position:absolute;left:-6000px">
+  <button type="submit">Être rappelé →</button>
+</form>
+
+Après l'envoi, le moteur remplace le formulaire par « C'est bien envoyé…
+pensez à décrocher » et « Vraiment pressé ? 📞 Appelez maintenant » (le
+numéro vient de data-tel = mon numéro au format +33…, sans espaces, dans le
+tunnel ; du lien tel: de la page sur l'accueil) : prévois juste
+le style de .form-ok (fond vert très clair, texte vert foncé). Tu peux styler
+librement ces blocs (classes CSS ; .choix = une grille de gros boutons, 2 par
+ligne, en repeat(2,minmax(0,1fr)) pour que rien ne déborde ; sous 480 px de
+large, les boutons à photo deviennent des vignettes : la photo en bandeau,
+le libellé dessous ; .tuile.choisie = un contour de la couleur d'accent ;
+[data-retour] = un petit lien souligné), mais ne change NI les name des
+champs, NI les attributs data-…, et n'ajoute AUCUN script.
+
+LE COPYWRITING — PARLER À UN PUBLIC ÂGÉ, LE RASSURER PARTOUT :
+- Bouton « Recevoir mon devis gratuit » (recevoir, pas demander) ; bouton du
+  rappel : « Être rappelé → ».
+- Sous chaque formulaire, les 3 lignes de confiance ci-dessus, avec coches.
+- Dans la FAQ, TOUJOURS la question « Vais-je être harcelé de coups de
+  fil ? » avec la réponse : un seul appel, celui de la personne qui fera
+  le devis ; coordonnées jamais revendues ni partagées. Et « Qui réalise
+  les travaux ? » : des professionnels du métier, du secteur, assurés —
+  la même équipe vous rappelle, passe voir, fait le devis et les travaux.
+- Phrases courtes, mots simples, zéro jargon web (« quelques lignes
+  suffisent », « pensez à décrocher »). Jamais de compte à rebours, de
+  fausse urgence ni de pop-up.
+
+SEO LOCAL — l'accueil est la seule page à référencer : <title> « [Métier] à
+[VILLE] — Devis gratuit sous 24 h | [NOM] » (max 60 car.) · meta description
+orientée bénéfice + ville (max 155 car.) · lang="fr" · un seul H1 · balises
+sémantiques · chaque service nommé avec la ville dans son H3 ou son intro ·
+les communes citées naturellement (zone, footer, FAQ). Pages tunnel : un
+<title> propre (« [Service] à [VILLE] — Devis gratuit sous 24 h | [NOM] ») et
+le noindex.
+
+VITESSE — Google fait payer moins cher les pages rapides :
+- les photos sont en .webp (je les ai compressées) : référence-les avec
+  l'extension .webp ;
+- la photo du haut de chaque page est en fond CSS : annonce-la dans le
+  <head> par <link rel="preload" as="image" href="photos/….webp"
+  fetchpriority="high"> ; toutes les autres images en loading="lazy" (sauf
+  les petites photos des gros boutons du haut de l'accueil) ;
+- width et height (ou aspect-ratio en CSS) sur chaque image : rien ne saute
+  pendant le chargement ;
+- aucun script externe en dehors de /api/suivi (pas de Google Analytics,
+  pas d'outil de cartes de clics : rien qui impose un bandeau de cookies),
+  pas de vidéo, pas de carrousel, pas d'animation au défilement.
+
+INTERDICTIONS ABSOLUES : aucun avis client, note, compteur, année
+d'expérience ou certification inventés — uniquement la réassurance véridique
+listée (les vrais avis Google de l'entreprise qui fait les travaux seront
+ajoutés plus tard, avec son accord écrit). Aucun prix chiffré. Pas de
+framework, pas de CDN sauf Google Fonts. Les photos viennent du dossier photos/ :
+référence-les par leur nom de fichier exact.
+
+Génère maintenant les fichiers un par un, chacun dans un bloc de code précédé
+de son nom : index.html, puis devis.html, puis les pages tunnel, puis les
+deux pages légales.

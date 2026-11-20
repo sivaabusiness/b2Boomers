@@ -1,0 +1,65 @@
+Voici les infos de l'artisan qui réalise les travaux de mon site. Il m'a
+donné son accord écrit pour les afficher.
+
+MES VARIABLES :
+- Entreprise : [NOM DE L'ENTREPRISE], à [VILLE]
+- Sa note Google : [ex. 4,9]/5 sur [ex. 37] avis, relevée le [DATE DU JOUR]
+- Le lien de sa fiche Google : [le lien copié avec « Partager »]
+- Son logo : [photos/logo-artisan.webp ou "pas de logo"]
+- Ses photos : [LISTE DES FICHIERS dans photos/]
+- 3 points concrets et VRAIS : [ex. assuré, 15 ans de métier, nacelle et broyeur]
+- On passe sur son numéro : [NON, ou son numéro : ex. 06 12 34 56 78]
+- Les avis copiés ci-dessous sont tous à 5 étoiles : [OUI / NON]
+- Ses avis, copiés tels quels depuis sa fiche Google Maps :
+[COLLE ICI LE TEXTE COPIÉ]
+
+D'abord, fais le tri dans le texte collé. Pour chaque avis, garde : le
+prénom + l'initiale du nom de l'auteur (« Jean-Pierre Dupont » →
+« Jean-Pierre D. »), la date en mois + année (calculée depuis « il y a … »
+et la date du jour ; au-delà d'un an, l'année seule) et le texte MOT POUR
+MOT. Enlève tout le reste : « Local Guide », nombre d'avis et de photos de
+l'auteur, « Nouveau », « J'aime », « Partager », réponses du propriétaire.
+Garde les 6 avis les plus récents qui ont un texte. N'affiche des étoiles
+sur un avis que si sa note est connue (ou si tous sont à 5 étoiles).
+
+Puis ajoute tout ça sans rien changer d'autre :
+1. LA NOTE, JUSTE AU-DESSUS DU H1 — sur l'accueil, une petite pastille posée
+   sur la photo du haut : « ★★★★★ [NOTE]/5 · [NOMBRE] avis Google », en lien
+   vers la section avis de la page (#avis) ; sur chaque page tunnel, la même
+   pastille SANS lien (on ne sort pas du tunnel). Des étoiles fidèles à la
+   note arrondie (4,9 → ★★★★★ ; 4,4 → ★★★★☆). Note sous 4,5 : pas de
+   pastille, seulement la section avis.
+2. LA SECTION AVIS (id="avis"), sur l'accueil, juste après les prestations
+   (avant la bande photo) :
+   - à gauche (au-dessus sur téléphone) : un kicker, le titre « Ce que
+     disent ses clients », la note en très gros + ses étoiles, « [NOMBRE]
+     avis Google · au [DATE] », la phrase « Les avis Google de [NOM], à
+     [VILLE] — l'entreprise qui intervient chez vous », et le lien « Voir
+     tous ses avis sur Google → » vers sa fiche (nouvel onglet) ;
+   - à droite : une carte par avis, MOT POUR MOT — un rond avec l'initiale,
+     le prénom + l'initiale, la date, les étoiles de l'avis, le texte ; 3
+     colonnes sur ordinateur, les unes sous les autres sur téléphone (3 avis
+     au plus sur téléphone, les autres en classe "pc") ;
+   - dessous, en petit : « Sélection d'avis publiés sur Google par les
+     clients de [NOM]. Ils ne sont ni rédigés ni modifiés par nous ;
+     retrouvez-les tous sur sa fiche Google. »
+   Une forme propre à la section (fond blanc, filets fins) : elle ne doit
+   ressembler à aucune autre.
+3. Sur l'accueil, un bloc « L'entreprise qui intervient chez vous » dans
+   la section présentation, à côté de la photo équipe : son nom, sa ville,
+   son logo, les 3 points, et ses vraies photos légendées « Chantier
+   réalisé par [NOM] ».
+4. Les vraies photos remplacent les photos générées équivalentes, sur
+   l'accueil comme dans les pages tunnel. Dans le pied de page de chaque
+   page : « Travaux réalisés par [NOM], entreprise locale assurée », et
+   « Photos d'illustration » seulement s'il reste des photos générées.
+   Dans les pages légales, l'entreprise qui réalise les travaux devient
+   [NOM].
+5. Si j'ai donné son numéro plus haut : remplace le mien par le sien
+   partout (textes, liens tel:, data-tel des formulaires du tunnel). Sinon,
+   ignore ce point.
+N'écris nulle part côté visiteur « mise en relation », « artisan
+partenaire » ni « réseau » : le site continue de dire « on vous rappelle ».
+Ne modifie aucun avis, n'en invente aucun, n'ajoute aucune note ni aucun
+compteur que je ne t'ai pas donné, et ne touche ni aux formulaires ni à la
+ligne /api/suivi.
