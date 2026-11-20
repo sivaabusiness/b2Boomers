@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entretien de jardin en Artois — Devis gratuit sous 24 h | Allô Paysagiste Artois</title>
+<meta name="description" content="Entretien de jardin à Lens, Béthune, Arras : décrivez votre projet en 2 étapes, on vous rappelle sous 24 h. Devis et déplacement gratuits.">
+<meta name="robots" content="noindex">
+<script src="/api/suivi" defer></script>
+<link rel="preload" as="image" href="photos/action-entretien-jardin.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--creme:#F4EFE6;--sable:#E9E1D1;--sauge:#4A5D4F;--sauge-f:#2F3B33;--sauge-n:#222A24;--brique:#A04A30;--brique-f:#873B25;--brique-c:#F3E2D8;--texte:#2B2B2B;--gris:#5F5F58;--filet:#DDD5C5;--blanc:#fff;--ombre:0 18px 50px -18px rgba(34,42,36,.28);--r:18px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--creme);color:var(--texte);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 26px;border-radius:12px;background:var(--brique);color:#fff;font-weight:700;font-size:17px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:background .15s}
+.btn:hover{background:var(--brique-f)}
+.btn-2{background:var(--sauge)}.btn-2:hover{background:var(--sauge-f)}
+.btn-blanc{background:#fff;color:var(--sauge-n)}.btn-blanc:hover{background:var(--creme)}
+.confiance{display:grid;gap:6px;margin-top:16px;font-size:15px;color:var(--gris)}
+.confiance div{padding-left:26px;position:relative}
+.confiance div::before{content:"✓";position:absolute;left:0;top:0;color:var(--sauge);font-weight:800}
+.form-ok{background:#E6EEE7;color:var(--sauge-f);border-radius:14px;padding:22px;font-size:17px;line-height:1.55}
+.form-ok a{color:var(--brique);font-weight:700}
+.choix{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.choix a,.choix button{display:flex;align-items:center;gap:10px;min-height:60px;padding:8px 12px;border:1.5px solid var(--filet);border-radius:12px;background:#fff;color:var(--texte);font:600 16px/1.25 Inter,sans-serif;text-decoration:none;text-align:left;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.choix a:hover,.choix button:hover{border-color:var(--sauge);box-shadow:0 6px 18px -10px rgba(34,42,36,.4)}
+.choix img{width:46px;height:46px;border-radius:9px;object-fit:cover;flex:none}
+.choix .tuile.choisie{border-color:var(--brique);box-shadow:0 0 0 2px var(--brique)}
+[data-ic]::before{content:attr(data-ic);font-size:22px;flex:none;width:30px;text-align:center}
+.question{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;font-size:24px;letter-spacing:-.02em;margin:0 0 14px}
+@media(max-width:480px){
+ .choix a:has(img){flex-direction:column;align-items:stretch;padding:0;overflow:hidden;gap:0}
+ .choix a:has(img) img{width:100%;height:74px;border-radius:0}
+ .choix a:has(img) span{padding:9px 10px;font-size:15px}
+}
+.entete{background:var(--sauge-n);color:#fff}
+.entete .wrap{display:flex;align-items:center;min-height:52px;position:relative;font-size:15px;white-space:nowrap}
+.entete a{color:#fff;text-decoration:none;font-weight:600;position:relative;z-index:1}
+.entete .nom{position:absolute;left:0;right:0;text-align:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.01em}
+.bandeau{position:relative;height:255px;background:var(--sauge-f) center/cover no-repeat;color:#fff;display:flex;align-items:flex-end}
+.bandeau::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(34,42,36,.05) 20%,rgba(34,42,36,.9))}
+.bandeau .wrap{position:relative;width:100%;padding-bottom:62px}
+.bandeau h1{font-size:clamp(27px,4vw,44px);max-width:760px}
+.bandeau p{margin:8px 0 0;font-weight:600;color:rgba(255,255,255,.9)}
+main.t{max-width:720px;margin:-44px auto 0;padding:0 16px;position:relative}
+.carte-form{background:#fff;border-radius:20px;padding:26px;box-shadow:0 26px 60px -24px rgba(34,42,36,.4)}
+.pas{margin:0 0 6px;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brique)}
+.choix button:last-child:nth-child(odd),.choix > :last-child:nth-child(odd){grid-column:1/-1}
+label{display:block;font-weight:600;font-size:17px;margin:16px 0 6px}
+label small{font-weight:400;color:var(--gris)}
+input,textarea{width:100%;min-height:54px;border:1.5px solid var(--filet);border-radius:12px;padding:12px 14px;font:400 17px Inter,sans-serif;color:var(--texte);background:#fff}
+textarea{min-height:96px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--sauge);box-shadow:0 0 0 3px rgba(74,93,79,.18)}
+form button[type=submit]{width:100%;min-height:58px;margin-top:20px;border:0;border-radius:12px;background:var(--brique);color:#fff;font:700 18px Inter,sans-serif;cursor:pointer}
+form button[type=submit]:hover{background:var(--brique-f)}
+[data-retour]{background:none;border:0;padding:0;color:var(--sauge);text-decoration:underline;font:inherit;cursor:pointer}
+[data-etape="2"] .question{font-size:18px;font-family:Inter,sans-serif;font-weight:500;letter-spacing:0}
+.paire{background:#fff;border-radius:var(--r);padding:10px;box-shadow:var(--ombre);margin:26px 0 0}
+.paire .photos{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.paire .ph{position:relative}
+.paire img{aspect-ratio:1/1;object-fit:cover;border-radius:12px;width:100%;background:var(--sable)}
+.badge{position:absolute;top:8px;left:8px;padding:5px 10px;border-radius:8px;font-weight:800;font-size:13px;letter-spacing:.08em;color:#fff}
+.badge.av{background:#B5583A}.badge.ap{background:var(--sauge)}
+.paire figcaption{padding:10px 4px 2px;font-size:15px;color:var(--gris)}.paire figcaption b{color:var(--texte)}
+.mini{text-align:center;font-size:14px;color:var(--gris);padding:30px 16px 40px}
+.mini a{color:var(--gris)}
+@media(max-width:600px){.carte-form{padding:18px}.bandeau h1{font-size:26px}.entete .nom{font-size:14px}}
+</style>
+</head>
+<body>
+<header class="entete"><div class="wrap"><a href="index.html">← Retour</a><span class="nom">Allô Paysagiste Artois</span></div></header>
+<div class="bandeau" style="background-image:url('photos/action-entretien-jardin.webp')">
+  <div class="wrap">
+    <h1>Entretien de jardin en Artois : un jardin net toute l'année</h1>
+    <p>On vous rappelle — devis et déplacement gratuits sous 24 h</p>
+  </div>
+</div>
+<main class="t">
+<div class="carte-form">
+<form id="devis" data-moteur="devis" data-tel="+41779496504" novalidate>
+  <div data-etape="1">
+    <p class="pas">Étape 1 sur 2</p>
+    <p class="question">Quel entretien ?</p>
+    <div class="choix">
+      <button type="button" data-service="Entretien de jardin — Taille de haies" data-ic="✂️">Taille de haies</button>
+      <button type="button" data-service="Entretien de jardin — Tonte, entretien régulier" data-ic="🌿">Tonte, entretien régulier</button>
+      <button type="button" data-service="Entretien de jardin — Remise en état d'un jardin négligé" data-ic="🍂">Remise en état d'un jardin négligé</button>
+      <button type="button" data-service="Entretien de jardin — Débroussaillage, évacuation" data-ic="🗑️">Débroussaillage, évacuation</button>
+      <button type="button" data-service="Entretien de jardin" data-ic="?">Autre / je ne sais pas</button>
+    </div>
+  </div>
+  <div data-etape="2" hidden>
+    <p class="pas">Étape 2 sur 2 · c'est presque fini</p>
+    <p class="question">Votre demande : <b data-choisi></b> ·
+      <button type="button" data-retour>changer</button></p>
+    <input type="hidden" name="service">
+    <label for="f-nom">Votre nom</label>
+    <input id="f-nom" type="text" name="nom" autocomplete="name" required>
+    <label for="f-tel">Votre téléphone</label>
+    <input id="f-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
+      placeholder="06 12 34 56 78" required>
+    <label for="f-commune">Votre commune</label>
+    <input id="f-commune" type="text" name="commune" required>
+    <label for="f-desc">Un mot sur le chantier <small>(facultatif)</small></label>
+    <textarea id="f-desc" name="description"
+      placeholder="ex. haie de thuyas d'environ 20 m, 2 m de haut, à tailler avant l'hiver…"></textarea>
+    <input type="text" name="site_web" tabindex="-1" autocomplete="off"
+      style="position:absolute;left:-6000px">
+    <button type="submit">Recevoir mon devis gratuit</button>
+  </div>
+  <div class="confiance">
+    <div>Gratuit et sans engagement</div>
+    <div>Un seul appel, le nôtre — jamais de démarchage</div>
+    <div>Vos coordonnées ne sont jamais revendues</div>
+  </div>
+</form>
+</div>
+<figure class="paire">
+  <div class="photos">
+    <div class="ph"><img src="photos/avant-entretien-jardin.webp" alt="Avant : haie débordante et pelouse trop haute" width="600" height="600" loading="lazy"><span class="badge av">AVANT</span></div>
+    <div class="ph"><img src="photos/apres-entretien-jardin.webp" alt="Après : haie taillée au cordeau, pelouse tondue" width="600" height="600" loading="lazy"><span class="badge ap">APRÈS</span></div>
+  </div>
+  <figcaption><b>Entretien de jardin</b><span class="pc"> — haie taillée au cordeau, pelouse tondue.</span></figcaption>
+</figure>
+</main>
+<footer class="mini">Travaux réalisés par des professionnels assurés. Photos d'illustration.<br>
+<a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a></footer>
+</body>
+</html>
