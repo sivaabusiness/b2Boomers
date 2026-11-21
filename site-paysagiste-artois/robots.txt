@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /demandes
+Disallow: /api/
+
+Sitemap: https://allopaysagisteartois.fr/sitemap.xml

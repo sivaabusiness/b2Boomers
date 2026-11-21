@@ -7,6 +7,18 @@
 <meta name="description" content="Paysagiste à Lens, Béthune, Arras : aménagement, terrasse, entretien, clôture. On vous rappelle sous 24 h, devis et déplacement gratuits.">
 <script src="/api/suivi" defer></script>
 <link rel="preload" as="image" href="photos/action-amenagement-jardin.webp" fetchpriority="high">
+<link rel="canonical" href="https://allopaysagisteartois.fr/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Allô Paysagiste Artois">
+<meta property="og:title" content="Paysagiste Lens, Béthune, Arras | Allô Paysagiste Artois">
+<meta property="og:description" content="Paysagiste à Lens, Béthune, Arras : aménagement, terrasse, entretien, clôture. On vous rappelle sous 24 h, devis et déplacement gratuits.">
+<meta property="og:url" content="https://allopaysagisteartois.fr/">
+<meta property="og:image" content="https://allopaysagisteartois.fr/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "HomeAndConstructionBusiness", "@id": "https://allopaysagisteartois.fr/#entreprise", "name": "Allô Paysagiste Artois", "url": "https://allopaysagisteartois.fr/", "telephone": "+33756951325", "logo": "https://allopaysagisteartois.fr/photos/logo.webp", "image": "https://allopaysagisteartois.fr/og-image.jpg", "priceRange": "Devis gratuit", "areaServed": [{"@type": "City", "name": "Lens"}, {"@type": "City", "name": "Béthune"}, {"@type": "City", "name": "Arras"}, {"@type": "City", "name": "Liévin"}, {"@type": "City", "name": "Hénin-Beaumont"}, {"@type": "City", "name": "Bruay-la-Buissière"}, {"@type": "City", "name": "Carvin"}, {"@type": "City", "name": "Avion"}], "description": "Création, aménagement et entretien de jardins, terrasses, allées et clôtures à Lens, Béthune, Arras et alentours. Devis et déplacement gratuits."}, {"@type": "WebSite", "name": "Allô Paysagiste Artois", "url": "https://allopaysagisteartois.fr/"}]}</script>
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,7 +131,13 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .carte-s ul{list-style:none;margin:0;padding:10px 26px 0}
 .carte-s li{padding:12px 0 12px 22px;border-bottom:1px solid var(--filet);position:relative;font-size:16px}
 .carte-s li::before{content:"";position:absolute;left:2px;top:20px;width:7px;height:7px;border-radius:50%;background:var(--brique)}
-.carte-s .btn{margin:22px 26px 26px;align-self:flex-start}
+.carte-s .btn{margin:22px 26px 10px;align-self:flex-start}
+.lien-plus{margin:0 26px 24px;font-weight:600;font-size:15px;color:var(--sauge)}
+.detail{margin-top:44px;background:#fff;border-radius:var(--r);padding:26px 28px;box-shadow:var(--ombre)}
+.detail h3{font-size:22px;color:var(--sauge-n);letter-spacing:-.02em;margin-bottom:14px}
+.detail ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px 24px}
+.detail a{display:block;padding:10px 0;border-bottom:1px solid var(--filet);font-weight:600;text-decoration:none;color:var(--texte)}
+.detail a::after{content:' →';color:var(--brique)}
 /* BANDE PHOTO */
 .bande{position:relative;min-height:440px;display:flex;align-items:flex-end;background:var(--sauge-f) url("photos/materiel.webp") center/cover no-repeat;color:#fff}
 .bande::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(34,42,36,.1) 20%,rgba(34,42,36,.88))}
@@ -261,7 +279,10 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .eng{margin-top:18px}.eng div,.eng div:first-child{padding:14px}
  .presta{gap:14px;margin-top:18px}
  .carte-s .img .leg{padding:40px 16px 10px}
- .carte-s .btn{margin:12px 16px 14px;min-height:52px}
+ .carte-s .btn{margin:12px 16px 6px;min-height:52px}
+ .lien-plus{margin:0 16px 14px}
+ .detail{margin-top:20px;padding:18px}
+ .detail ul{grid-template-columns:1fr}
  .bande{min-height:220px}.bande .wrap{padding-bottom:26px}.bande p.gros{font-size:30px}
  .express{padding:26px 0}.express .wrap{gap:12px}.express .txt p{margin-top:2px}
  .rappel-express{gap:10px}
@@ -413,26 +434,31 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
     <div class="leg"><h3>Aménagement de jardin à Lens, Béthune et Arras</h3><p>Création complète ou nouveau coin de jardin : on dessine, on prépare le sol, on plante.</p></div></div>
   <ul class="pc"><li>Création de jardin complète : plan, terrassement, apport de terre, plantations</li><li>Massifs et haies : charmille, photinia, laurier, troène, hêtre</li><li>Engazonnement : semis ou gazon en rouleau, sol préparé et nivelé</li><li>Arrosage automatique enterré, programmé selon les saisons</li><li>Bassin, point d'eau et éclairage du jardin</li></ul>
   <a class="btn" href="devis-amenagement-jardin.html">Devis aménagement →</a>
+  <a class="lien-plus" href="creation-jardin.html">En savoir plus sur aménagement de jardin</a>
 </article>
 <article class="carte-s">
   <div class="img"><img src="photos/action-terrasse-allee.webp" alt="Terrasse et allées en cours, près de Lens" width="1600" height="1000" loading="lazy">
     <div class="leg"><h3>Terrasse et allées à Lens, Béthune et Arras</h3><p>Terrasse, allée, cour ou muret : des fondations sérieuses et des finitions nettes.</p></div></div>
   <ul class="pc"><li>Terrasse en bois ou en composite, sur plots ou lambourdes</li><li>Terrasse en dallage, carrelage extérieur ou pierre naturelle</li><li>Allée, cour, entrée de garage : pavés, enrobé, gravier stabilisé</li><li>Bordures, marches et raccords avec la maison</li><li>Murets, enrochement, soutènement de talus</li></ul>
   <a class="btn" href="devis-terrasse-allee.html">Devis terrasse →</a>
+  <a class="lien-plus" href="terrasses.html">En savoir plus sur terrasse et allées</a>
 </article>
 <article class="carte-s">
   <div class="img"><img src="photos/action-entretien-jardin.webp" alt="Entretien de jardin en cours, près de Lens" width="1600" height="1000" loading="lazy" style="object-position:center 8%">
     <div class="leg"><h3>Entretien de jardin à Lens, Béthune et Arras</h3><p>Taille, tonte, remise en état : ponctuel ou à l'année, votre jardin reste impeccable.</p></div></div>
   <ul class="pc"><li>Taille de haies et d'arbustes, déchets ramassés</li><li>Tonte et entretien régulier, à la saison ou à l'année</li><li>Remise en état d'un jardin laissé à l'abandon</li><li>Débroussaillage, désherbage des allées et massifs</li><li>Ramassage des feuilles et évacuation des déchets verts</li></ul>
   <a class="btn" href="devis-entretien-jardin.html">Devis entretien →</a>
+  <a class="lien-plus" href="entretien-jardin.html">En savoir plus sur entretien de jardin</a>
 </article>
 <article class="carte-s">
   <div class="img"><img src="photos/action-cloture-portail.webp" alt="Clôture et portail en cours, près de Lens" width="1600" height="1000" loading="lazy">
     <div class="leg"><h3>Clôture et portail à Lens, Béthune et Arras</h3><p>Panneaux, bois, brise-vue ou portail : une clôture droite, solide, bien ancrée.</p></div></div>
   <ul class="pc"><li>Clôture en panneaux rigides ou grillage, poteaux scellés</li><li>Clôture bois ou composite, brise-vue occultant</li><li>Portail et portillon, pose des piliers</li><li>Remplacement d'une clôture abîmée par le vent</li><li>Clôture doublée d'une haie, pour un jardin à l'abri des regards</li></ul>
   <a class="btn" href="devis-cloture-portail.html">Devis clôture →</a>
+  <a class="lien-plus" href="clotures-portails.html">En savoir plus sur clôture et portail</a>
 </article>
     </div>
+    <div class="detail"><h3>Toutes nos prestations en détail</h3><ul><li><a href="creation-jardin.html">Création de jardin</a></li><li><a href="terrasses.html">Terrasses</a></li><li><a href="entretien-jardin.html">Entretien de jardin</a></li><li><a href="allees-cours-pavage.html">Allées, cours et pavage</a></li><li><a href="gazon-engazonnement.html">Gazon et engazonnement</a></li><li><a href="murets-enrochement.html">Murets, enrochement et talus</a></li><li><a href="clotures-portails.html">Clôtures et portails</a></li><li><a href="plantations-massifs-haies.html">Plantations, massifs et haies</a></li><li><a href="arrosage-automatique-bassin.html">Arrosage automatique et bassins</a></li></ul></div>
   </div>
 </section>
 <section class="bande" aria-label="Notre façon de travailler">
@@ -501,7 +527,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   <div class="wrap">
     <p class="kicker">Zone d'intervention</p>
     <h2 class="t">Lens, Béthune, Arras et tout l'Artois</h2>
-    <p class="intro">On intervient dans le bassin de Lens, autour de Béthune et dans l'Arrageois.</p>
+    <p class="zone-txt">On intervient dans le bassin de Lens, autour de Béthune et dans l'Arrageois.</p>
     <div class="grille">
       <ul class="communes"><li>Lens</li><li>Béthune</li><li>Arras</li><li>Liévin</li><li>Hénin-Beaumont</li><li>Bruay-la-Buissière</li><li>Carvin</li><li>Avion</li><li class="pc">Bully-les-Mines</li><li class="pc">Harnes</li><li class="pc">Nœux-les-Mines</li><li class="pc">Lillers</li><li class="pc">Beuvry</li><li class="pc">Méricourt</li><li class="pc">Achicourt</li><li class="pc">Beaurains</li><li class="pc">Saint-Laurent-Blangy</li><li class="pc">Vimy</li></ul>
       <div class="encart">
@@ -549,7 +575,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
         <p class="pc">Création, aménagement et entretien de jardins à Lens, Béthune, Arras et alentours.</p>
         <p class="tel"><a href="tel:+33756951325">07 56 95 13 25</a></p>
       </div>
-      <div class="pc"><h4>Prestations</h4><ul><li><a href="devis-amenagement-jardin.html">Aménagement de jardin</a></li><li><a href="devis-terrasse-allee.html">Terrasse et allées</a></li><li><a href="devis-entretien-jardin.html">Entretien de jardin</a></li><li><a href="devis-cloture-portail.html">Clôture et portail</a></li></ul></div>
+      <div class="pc"><h4>Prestations</h4><ul><li><a href="creation-jardin.html">Création de jardin</a></li><li><a href="terrasses.html">Terrasses</a></li><li><a href="entretien-jardin.html">Entretien de jardin</a></li><li><a href="allees-cours-pavage.html">Allées, cours et pavage</a></li><li><a href="gazon-engazonnement.html">Gazon et engazonnement</a></li><li><a href="murets-enrochement.html">Murets, enrochement et talus</a></li><li><a href="clotures-portails.html">Clôtures et portails</a></li><li><a href="plantations-massifs-haies.html">Plantations, massifs et haies</a></li><li><a href="arrosage-automatique-bassin.html">Arrosage automatique et bassins</a></li></ul></div>
       <div class="pc"><h4>Zone</h4><ul><li>Lens, Liévin, Hénin-Beaumont</li><li>Béthune, Bruay-la-Buissière</li><li>Arras, Achicourt, Beaurains</li><li>Carvin, Avion, Lillers</li></ul></div>
       <div><h4 class="pc">Informations</h4><ul><li class="pc"><a href="devis.html">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
     </div>
