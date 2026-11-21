@@ -111,13 +111,13 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .presta{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px}
 .carte-s{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--ombre);display:flex;flex-direction:column}
 .carte-s .img{position:relative}
-.carte-s .img img{aspect-ratio:16/10;object-fit:cover;width:100%;background:var(--sauge)}
+.carte-s .img img{aspect-ratio:16/10;object-fit:cover;object-position:center 40%;width:100%;background:var(--sauge)}
 .carte-s .img .leg{position:absolute;inset:auto 0 0 0;padding:70px 26px 22px;background:linear-gradient(to top,rgba(34,42,36,.92),rgba(34,42,36,0));color:#fff}
 .carte-s h3{font-size:27px}
 .carte-s .leg p{margin:8px 0 0;color:rgba(255,255,255,.88);font-size:16px}
 .carte-s ul{list-style:none;margin:0;padding:10px 26px 0}
 .carte-s li{padding:12px 0 12px 22px;border-bottom:1px solid var(--filet);position:relative;font-size:16px}
-.carte-s li::before{content:"";position:absolute;left:0;top:21px;width:9px;height:2px;background:var(--brique)}
+.carte-s li::before{content:"";position:absolute;left:2px;top:20px;width:7px;height:7px;border-radius:50%;background:var(--brique)}
 .carte-s .btn{margin:22px 26px 26px;align-self:flex-start}
 /* BANDE PHOTO */
 .bande{position:relative;min-height:440px;display:flex;align-items:flex-end;background:var(--sauge-f) url("photos/materiel.webp") center/cover no-repeat;color:#fff}
@@ -275,6 +275,16 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .final{padding:44px 0}.final p{margin:10px 0 20px}
  footer.pied{padding:30px 0 96px}.bas{margin-top:24px}
  .pres{gap:18px}
+ .hero .wrap{padding-top:176px}
+ .hero::before{background:linear-gradient(to bottom,rgba(34,42,36,0) 0,rgba(34,42,36,0) 120px,rgba(34,42,36,.75) 205px,var(--sauge-f) 265px)}
+ .choix img{object-position:center 45%}
+ .carte-s .img img{object-position:center 40%}
+ .carte-s .img .leg{position:static;background:none;color:var(--texte);padding:14px 16px 0}
+ .carte-s h3{color:var(--sauge-n);font-size:21px}
+ .carte-s .leg p{color:var(--gris);margin-top:6px}
+ .pres .visu .grande{aspect-ratio:4/3;object-position:center 45%}
+ .methode .photo img{aspect-ratio:4/3;object-position:center 22%}
+ .paire img{object-position:center}
  .barre{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,230,.96);box-shadow:0 -6px 20px rgba(0,0,0,.1)}
  .barre .btn{width:100%}
 }
@@ -294,7 +304,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   <div class="wrap">
     <div>
       <h1><span data-titre-travaux>Paysagiste</span> à Lens, Béthune, Arras et alentours</h1>
-      <p class="phrase">On vous rappelle — devis et déplacement gratuits sous 24 h.</p>
+      <p class="phrase">On vous rappelle : devis et déplacement gratuits sous 24 h.</p>
       <p class="sous pc">Décrivez vos travaux en deux clics. Sans engagement, et sans démarchage derrière.</p>
       <a class="btn btn-blanc" href="tel:+33756951325">📞 Appeler le 07 56 95 13 25</a>
       <ul class="puces pc"><li>Professionnels assurés</li><li>Devis écrit avant travaux</li><li>Chantier rendu propre</li></ul>
@@ -311,7 +321,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   </div>
   <div class="confiance">
     <div>Gratuit et sans engagement</div>
-    <div>Un seul appel, le nôtre — jamais de démarchage</div>
+    <div>Un seul appel, le nôtre, jamais de démarchage</div>
     <div>Vos coordonnées ne sont jamais revendues</div>
   </div>
 </div>
@@ -328,28 +338,28 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
     <div class="ph"><img src="photos/avant-amenagement-jardin.webp" alt="Avant : terrain nu et boueux, aucune plantation" width="600" height="600" loading="lazy"><span class="badge av">AVANT</span></div>
     <div class="ph"><img src="photos/apres-amenagement-jardin.webp" alt="Après : jardin créé : pelouse, massifs, haie plantée" width="600" height="600" loading="lazy"><span class="badge ap">APRÈS</span></div>
   </div>
-  <figcaption><b>Aménagement de jardin</b><span class="pc"> — jardin créé : pelouse, massifs, haie plantée.</span></figcaption>
+  <figcaption><b>Aménagement de jardin</b><span class="pc"> : jardin créé : pelouse, massifs, haie plantée.</span></figcaption>
 </figure>
 <figure class="paire">
   <div class="photos">
     <div class="ph"><img src="photos/avant-terrasse-allee.webp" alt="Avant : coin de jardin en terre et herbe abîmée" width="600" height="600" loading="lazy"><span class="badge av">AVANT</span></div>
     <div class="ph"><img src="photos/apres-terrasse-allee.webp" alt="Après : terrasse en dalles posée, propre et de niveau" width="600" height="600" loading="lazy"><span class="badge ap">APRÈS</span></div>
   </div>
-  <figcaption><b>Terrasse et allées</b><span class="pc"> — terrasse en dalles posée, propre et de niveau.</span></figcaption>
+  <figcaption><b>Terrasse et allées</b><span class="pc"> : terrasse en dalles posée, propre et de niveau.</span></figcaption>
 </figure>
 <figure class="paire">
   <div class="photos">
     <div class="ph"><img src="photos/avant-entretien-jardin.webp" alt="Avant : haie débordante et pelouse trop haute" width="600" height="600" loading="lazy"><span class="badge av">AVANT</span></div>
     <div class="ph"><img src="photos/apres-entretien-jardin.webp" alt="Après : haie taillée au cordeau, pelouse tondue" width="600" height="600" loading="lazy"><span class="badge ap">APRÈS</span></div>
   </div>
-  <figcaption><b>Entretien de jardin</b><span class="pc"> — haie taillée au cordeau, pelouse tondue.</span></figcaption>
+  <figcaption><b>Entretien de jardin</b><span class="pc"> : haie taillée au cordeau, pelouse tondue.</span></figcaption>
 </figure>
 <figure class="paire pc">
   <div class="photos">
     <div class="ph"><img src="photos/avant-cloture-portail.webp" alt="Avant : vieux grillage affaissé et rouillé" width="600" height="600" loading="lazy"><span class="badge av">AVANT</span></div>
     <div class="ph"><img src="photos/apres-cloture-portail.webp" alt="Après : clôture neuve en panneaux, droite et propre" width="600" height="600" loading="lazy"><span class="badge ap">APRÈS</span></div>
   </div>
-  <figcaption><b>Clôture et portail</b><span class="pc"> — clôture neuve en panneaux, droite et propre.</span></figcaption>
+  <figcaption><b>Clôture et portail</b><span class="pc"> : clôture neuve en panneaux, droite et propre.</span></figcaption>
 </figure>
     </div>
     <div class="remonte"><span>Votre jardin pourrait être le prochain.</span><a class="btn" href="devis.html">Recevoir mon devis gratuit →</a></div>
