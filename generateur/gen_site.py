@@ -77,10 +77,10 @@ def tel(cls="", txt=None):
     c = f' class="{cls}"' if cls else ""
     return f'<a{c} href="tel:{TEL_LIEN}">{txt or TEL_AFF}</a>'
 
-FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-         '<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800'
-         '&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">')
+FONTS = ('<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>\n'
+         '<link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>')
+FONT_FACE = ("@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin.woff2) format('woff2')}"
+             "@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700 800;font-display:swap;src:url(/fonts/bricolage-grotesque-latin.woff2) format('woff2')}")
 
 LOGO = '<img class="logo" src="photos/logo.webp" alt="" width="44" height="44">'
 
@@ -98,7 +98,7 @@ ICONES = {
     "securite": '<path d="M12 2l9 18H3z"/><path d="M12 9v5M12 17v.5"/>',
 }
 
-CSS_BASE = """
+CSS_BASE = FONT_FACE + """
 :root{--creme:#F4EFE6;--sable:#E9E1D1;--sauge:#4A5D4F;--sauge-f:#2F3B33;--sauge-n:#222A24;--brique:#A04A30;--brique-f:#873B25;--brique-c:#F3E2D8;--texte:#2B2B2B;--gris:#5F5F58;--filet:#DDD5C5;--blanc:#fff;--ombre:0 18px 50px -18px rgba(34,42,36,.28);--r:18px}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--creme);color:var(--texte);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -1113,7 +1113,45 @@ urls = [BASE + "/"] + [f"{BASE}/{q['slug']}.html" for q in PAGES]
 with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + "".join(f"  <url><loc>{u}</loc><lastmod>2026-11-21</lastmod></url>\n" for u in urls) + "</urlset>\n")
+import re as _re
+_PH = os.path.join(OUT, "photos")
+def _variantes(nom):
+    v = [(f"photos/w/{nom}-{w}.webp", w) for w in (400, 800) if os.path.exists(os.path.join(_PH, "w", f"{nom}-{w}.webp"))]
+    return v
+def _sizes(w):
+    return {"46": "(max-width:480px) 45vw, 46px", "600": "(max-width:820px) 46vw, 290px", "800": "(max-width:820px) 92vw, 380px",
+            "1200": "(max-width:820px) 92vw, 470px"}.get(w, "(max-width:820px) 92vw, 580px")
+def _img(m):
+    tag = m.group(0)
+    if "srcset=" in tag: return tag
+    src = _re.search(r'src="photos/([a-z0-9-]+)\.webp"', tag)
+    if not src or src.group(1).startswith("logo"): return tag
+    nom = src.group(1); v = _variantes(nom)
+    if not v: return tag
+    from PIL import Image as _I
+    ow = _I.open(os.path.join(_PH, nom + ".webp")).width
+    ss = ", ".join(f"{u} {w}w" for u, w in v) + f", photos/{nom}.webp {ow}w"
+    w = _re.search(r'width="(\d+)"', tag); w = w.group(1) if w else ""
+    return tag[:-1] + f' srcset="{ss}" sizes="{_sizes(w)}">'
+def _fond(m):
+    nom = m.group(1); v = dict((w, u) for u, w in _variantes(nom))
+    mob = v.get(800) or f"photos/{nom}.webp"
+    return f"--bgm:url('{mob}');background-image:url('photos/{nom}.webp')"
+def _preload(m):
+    nom = m.group(1); v = dict((w, u) for u, w in _variantes(nom))
+    mob = v.get(800) or f"photos/{nom}.webp"
+    return (f'<link rel="preload" as="image" href="{mob}" media="(max-width:820px)" fetchpriority="high">\n'
+            f'<link rel="preload" as="image" href="photos/{nom}.webp" media="(min-width:821px)" fetchpriority="high">')
+FOND_MOBILE = ("<style>@media(max-width:820px){.bandeau,.sv-hero{background-image:var(--bgm)!important}"
+               ".hero{background-image:url('photos/w/action-amenagement-jardin-800.webp')}"
+               ".bande{background-image:url('photos/w/materiel-800.webp')}.final{background-image:url('photos/w/equipe-800.webp')}}</style>")
+def optim(h):
+    h = _re.sub(r"<img [^>]*>", _img, h)
+    h = _re.sub(r"background-image:url\('photos/([a-z0-9-]+)\.webp'\)", _fond, h)
+    h = _re.sub(r'<link rel="preload" as="image" href="photos/([a-z0-9-]+)\.webp" fetchpriority="high">', _preload, h)
+    return h.replace("</head>", FOND_MOBILE + "\n</head>", 1)
 for n, h in pages.items():
+    h = optim(h)
     h = "\n".join(l for l in h.split("\n") if l.strip() != "")  # retire les lignes vides
     with open(os.path.join(OUT, n), "w", encoding="utf-8") as f:
         f.write(h + "\n")
