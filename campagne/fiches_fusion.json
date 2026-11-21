@@ -1,0 +1,6277 @@
+{
+ "mots": {
+  "paysagiste": {
+   "service": "Création / aménagement paysager",
+   "vol": 947.0,
+   "haut": "0,84 € – 3,60 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "décorateur extérieur": {
+   "service": "Création / aménagement paysager",
+   "vol": 113.0,
+   "haut": "0,16 € – 0,81 €",
+   "ench": {
+    "lens": 0.81,
+    "bethune": 0.81,
+    "arras": 0.81
+   }
+  },
+  "aménagement jardin": {
+   "service": "Création / aménagement paysager",
+   "vol": 98.0,
+   "haut": "0,36 € – 1,66 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "entreprise paysagiste": {
+   "service": "Création / aménagement paysager",
+   "vol": 71.0,
+   "haut": "0,94 € – 2,37 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "amenagement exterieur": {
+   "service": "Création / aménagement paysager",
+   "vol": 68.0,
+   "haut": "0,45 € – 2,31 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "aménagement extérieur jardin": {
+   "service": "Création / aménagement paysager",
+   "vol": 29.3,
+   "haut": "0,43 € – 1,42 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "paysagiste suisse": {
+   "service": "Création / aménagement paysager",
+   "vol": 25.8,
+   "haut": "0,12 € – 0,67 €",
+   "ench": {
+    "lens": 0.67,
+    "bethune": 0.67,
+    "arras": 0.67
+   }
+  },
+  "amenagement jardin gravier decoratif": {
+   "service": "Création / aménagement paysager",
+   "vol": 23.300000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "jardin paysager": {
+   "service": "Création / aménagement paysager",
+   "vol": 19.1,
+   "haut": "0,54 € – 2,16 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "aménagement paysager": {
+   "service": "Création / aménagement paysager",
+   "vol": 18.7,
+   "haut": "0,86 € – 3,93 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "architecte paysagiste": {
+   "service": "Création / aménagement paysager",
+   "vol": 18.7,
+   "haut": "0,88 € – 3,47 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "amenagement jardin simple": {
+   "service": "Création / aménagement paysager",
+   "vol": 18.1,
+   "haut": "0,54 € – 0,63 €",
+   "ench": {
+    "lens": 0.63,
+    "bethune": 0.63,
+    "arras": 0.63
+   }
+  },
+  "service à la personne jardinage": {
+   "service": "Création / aménagement paysager",
+   "vol": 17.6,
+   "haut": "0,58 € – 2,36 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "daniel moquet paysagiste": {
+   "service": "Création / aménagement paysager",
+   "vol": 17.1,
+   "haut": "0,84 € – 5,05 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "aménagement extérieur devant maison": {
+   "service": "Création / aménagement paysager",
+   "vol": 17.1,
+   "haut": "0,79 € – 3,03 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "entreprise aménagement extérieur": {
+   "service": "Création / aménagement paysager",
+   "vol": 16.599999999999998,
+   "haut": "0,89 € – 1,76 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "amenagement devant maison": {
+   "service": "Création / aménagement paysager",
+   "vol": 16.0,
+   "haut": "0,43 € – 1,85 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "amenagement balcon": {
+   "service": "Création / aménagement paysager",
+   "vol": 13.5,
+   "haut": "0,07 € – 0,78 €",
+   "ench": {
+    "lens": 0.78,
+    "bethune": 0.78,
+    "arras": 0.78
+   }
+  },
+  "amenagement petit jardin": {
+   "service": "Création / aménagement paysager",
+   "vol": 13.0,
+   "haut": "0,24 € – 0,84 €",
+   "ench": {
+    "lens": 0.84,
+    "bethune": 0.84,
+    "arras": 0.84
+   }
+  },
+  "petit travaux de jardinage chez particulier": {
+   "service": "Création / aménagement paysager",
+   "vol": 13.0,
+   "haut": "0,43 € – 1,52 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "créer un petit jardin zen extérieur": {
+   "service": "Création / aménagement paysager",
+   "vol": 12.4,
+   "haut": "0,25 € – 0,71 €",
+   "ench": {
+    "lens": 0.71,
+    "bethune": 0.71,
+    "arras": 0.71
+   }
+  },
+  "espace vert paysagiste": {
+   "service": "Création / aménagement paysager",
+   "vol": 11.3,
+   "haut": "0,70 € – 2,17 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "paysagiste nord pas de calais": {
+   "service": "Création / aménagement paysager",
+   "vol": 11.3,
+   "haut": "0,34 € – 1,51 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "amenagement piscine hors sol": {
+   "service": "Création / aménagement paysager",
+   "vol": 10.9,
+   "haut": "0,28 € – 0,91 €",
+   "ench": {
+    "lens": 0.91,
+    "bethune": 0.91,
+    "arras": 0.91
+   }
+  },
+  "aménagement veranda": {
+   "service": "Création / aménagement paysager",
+   "vol": 10.9,
+   "haut": "0,32 € – 2,21 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "entreprise de jardinage": {
+   "service": "Création / aménagement paysager",
+   "vol": 9.8,
+   "haut": "0,55 € – 1,68 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "rosier paysager": {
+   "service": "Création / aménagement paysager",
+   "vol": 9.2,
+   "haut": "0,23 € – 0,44 €",
+   "ench": {
+    "lens": 0.44,
+    "bethune": 0.44,
+    "arras": 0.44
+   }
+  },
+  "aménagement extérieur maison": {
+   "service": "Création / aménagement paysager",
+   "vol": 9.1,
+   "haut": "0,49 € – 1,70 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "aménagement jardin en pente": {
+   "service": "Création / aménagement paysager",
+   "vol": 8.8,
+   "haut": "0,35 € – 0,74 €",
+   "ench": {
+    "lens": 0.74,
+    "bethune": 0.74,
+    "arras": 0.74
+   }
+  },
+  "amenager son jardin": {
+   "service": "Création / aménagement paysager",
+   "vol": 8.8,
+   "haut": "0,35 € – 1,15 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.15
+   }
+  },
+  "arroseur automatique pour jardin": {
+   "service": "Création / aménagement paysager",
+   "vol": 8.2,
+   "haut": "0,10 € – 0,52 €",
+   "ench": {
+    "lens": 0.52,
+    "bethune": 0.52,
+    "arras": 0.52
+   }
+  },
+  "maçon paysagiste": {
+   "service": "Création / aménagement paysager",
+   "vol": 7.7,
+   "haut": "0,69 € – 2,49 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "service a la personne jardin": {
+   "service": "Création / aménagement paysager",
+   "vol": 7.6,
+   "haut": "0,58 € – 2,05 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "amenagement piscine": {
+   "service": "Création / aménagement paysager",
+   "vol": 7.4,
+   "haut": "0,43 € – 1,63 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "gravier décoratif extérieur": {
+   "service": "Création / aménagement paysager",
+   "vol": 7.1,
+   "haut": "0,10 € – 0,82 €",
+   "ench": {
+    "lens": 0.82,
+    "bethune": 0.82,
+    "arras": 0.82
+   }
+  },
+  "concepteur paysagiste": {
+   "service": "Création / aménagement paysager",
+   "vol": 6.699999999999999,
+   "haut": "0,40 € – 1,51 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "amenagement terrain en pente": {
+   "service": "Création / aménagement paysager",
+   "vol": 6.699999999999999,
+   "haut": "0,35 € – 0,74 €",
+   "ench": {
+    "lens": 0.74,
+    "bethune": 0.74,
+    "arras": 0.74
+   }
+  },
+  "resine revetement sol exterieur": {
+   "service": "Création / aménagement paysager",
+   "vol": 6.699999999999999,
+   "haut": "0,38 € – 1,25 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.25
+   }
+  },
+  "prix paysagiste": {
+   "service": "Création / aménagement paysager",
+   "vol": 6.3,
+   "haut": "0,44 € – 1,06 €",
+   "ench": {
+    "lens": 1.06,
+    "bethune": 1.06,
+    "arras": 1.06
+   }
+  },
+  "amenagement exterieur piscine": {
+   "service": "Création / aménagement paysager",
+   "vol": 6.3,
+   "haut": "0,53 € – 1,82 €",
+   "ench": {
+    "lens": 1.13,
+    "bethune": 1.07,
+    "arras": 1.3
+   }
+  },
+  "terrasse exterieur": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 53.0,
+   "haut": "0,64 € – 1,77 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "amenagement terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 42.0,
+   "haut": "0,52 € – 2,57 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "decoration terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 42.0,
+   "haut": "0,13 € – 0,71 €",
+   "ench": {
+    "lens": 0.71,
+    "bethune": 0.71,
+    "arras": 0.71
+   }
+  },
+  "amenagement terrasse exterieur": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 34.7,
+   "haut": "0,36 € – 1,56 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "bois terrasse exterieur": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 29.3,
+   "haut": "0,06 € – 0,60 €",
+   "ench": {
+    "lens": 0.6,
+    "bethune": 0.6,
+    "arras": 0.6
+   }
+  },
+  "terrasse résine": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 23.7,
+   "haut": "0,79 € – 1,71 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "decoration terrasse exterieur": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 22.700000000000003,
+   "haut": "0,09 € – 1,05 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.05
+   }
+  },
+  "faire un dallage beton": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 22.2,
+   "haut": "0,03 € – 0,53 €",
+   "ench": {
+    "lens": 0.53,
+    "bethune": 0.53,
+    "arras": 0.53
+   }
+  },
+  "faire une terrasse en bois": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 16.599999999999998,
+   "haut": "0,05 € – 1,03 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.03
+   }
+  },
+  "terrasse suspendue bois": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 15.500000000000002,
+   "haut": "0,46 € – 1,03 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.03
+   }
+  },
+  "faire une terrasse pas cher sur pelouse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 15.100000000000001,
+   "haut": "0,48 € – 0,94 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.94,
+    "arras": 0.94
+   }
+  },
+  "pose terrasse sur plot": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 14.0,
+   "haut": "0,10 € – 1,41 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "faire une terrasse en bois sur terre": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 13.5,
+   "haut": "0,06 € – 1,03 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.03
+   }
+  },
+  "pose terrasse bois": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 11.3,
+   "haut": "0,05 € – 2,04 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "terrasse en béton prix": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 11.3,
+   "haut": "0,46 € – 1,04 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.04
+   }
+  },
+  "daniel moquet terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 10.3,
+   "haut": "0,29 € – 1,80 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "pose dalle sur plot": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 10.3,
+   "haut": "0,11 € – 1,53 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "bois structure terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 8.8,
+   "haut": "0,14 € – 0,91 €",
+   "ench": {
+    "lens": 0.91,
+    "bethune": 0.91,
+    "arras": 0.91
+   }
+  },
+  "pose terrasse bois sur plot": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 8.6,
+   "haut": "0,13 € – 2,10 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "pose terrasse bois sur terre": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 6.800000000000001,
+   "haut": "0,04 € – 1,40 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "terrasse en gravier stabilisé": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 6.6,
+   "haut": "0,49 € – 1,68 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "amenagement terrasse bois": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 6.3,
+   "haut": "0,47 € – 1,46 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "pose terrasse composite": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 5.9,
+   "haut": "0,08 € – 1,04 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.04
+   }
+  },
+  "aménagement terrasse devant maison": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 5.800000000000001,
+   "haut": "0,41 € – 1,10 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.1
+   }
+  },
+  "dallage sable": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 5.800000000000001,
+   "haut": "0,12 € – 1,39 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "aménagement terrasse jardin": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 5.3,
+   "haut": "0,50 € – 1,32 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "silvadec terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 5.2,
+   "haut": "0,37 € – 0,52 €",
+   "ench": {
+    "lens": 0.52,
+    "bethune": 0.52,
+    "arras": 0.52
+   }
+  },
+  "amenager une terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 4.7,
+   "haut": "0,43 € – 1,18 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.18
+   }
+  },
+  "amenagement terrasse piscine": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 4.7,
+   "haut": "0,54 € – 1,91 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "devis terrasse en bois": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 4.6,
+   "haut": "0,85 € – 3,54 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "terrasse pelouse synthétique": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 4.2,
+   "haut": "0,25 € – 1,38 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "terrasse bois autour piscine": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 4.2,
+   "haut": "0,48 € – 1,41 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "décoration jardin terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 3.9,
+   "haut": "0,15 € – 0,86 €",
+   "ench": {
+    "lens": 0.86,
+    "bethune": 0.86,
+    "arras": 0.86
+   }
+  },
+  "amenagement petite terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 3.9,
+   "haut": "0,07 € – 0,77 €",
+   "ench": {
+    "lens": 0.77,
+    "bethune": 0.77,
+    "arras": 0.77
+   }
+  },
+  "grad terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 3.8000000000000003,
+   "haut": "0,10 € – 0,96 €",
+   "ench": {
+    "lens": 0.96,
+    "bethune": 0.96,
+    "arras": 0.96
+   }
+  },
+  "fixation terrasse bois invisible": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 3.8000000000000003,
+   "haut": "0,25 € – 1,01 €",
+   "ench": {
+    "lens": 1.01,
+    "bethune": 1.01,
+    "arras": 1.01
+   }
+  },
+  "artisan terrasse": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 3.5999999999999996,
+   "haut": "1,41 € – 7,14 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "aménagement terrasse appartement": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 3.5999999999999996,
+   "haut": "0,37 € – 1,22 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.22
+   }
+  },
+  "dallage carrelage": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 3.5999999999999996,
+   "haut": "0,14 € – 1,18 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.18
+   }
+  },
+  "terrasse resine exterieur": {
+   "service": "Terrasse (bois, composite, dallage)",
+   "vol": 3.5,
+   "haut": "0,53 € – 1,69 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.03,
+    "arras": 1.23
+   }
+  },
+  "jardinier autour de moi": {
+   "service": "Entretien de jardin",
+   "vol": 96.0,
+   "haut": "0,66 € – 1,89 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardinier paysagiste": {
+   "service": "Entretien de jardin",
+   "vol": 54.0,
+   "haut": "0,67 € – 2,57 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entretien espace vert": {
+   "service": "Entretien de jardin",
+   "vol": 45.0,
+   "haut": "0,73 € – 2,00 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "parterre devant maison sans entretien": {
+   "service": "Entretien de jardin",
+   "vol": 45.0,
+   "haut": "0,26 € – 0,89 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entretien jardin": {
+   "service": "Entretien de jardin",
+   "vol": 31.9,
+   "haut": "0,71 € – 2,30 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardinier sap": {
+   "service": "Entretien de jardin",
+   "vol": 30.6,
+   "haut": "0,27 € – 2,32 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardinier professionnel": {
+   "service": "Entretien de jardin",
+   "vol": 18.7,
+   "haut": "0,71 € – 3,25 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardinier à domicile": {
+   "service": "Entretien de jardin",
+   "vol": 11.9,
+   "haut": "1,16 € – 2,41 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "o2 jardinier": {
+   "service": "Entretien de jardin",
+   "vol": 11.3,
+   "haut": "0,27 € – 1,60 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardinier entreprise": {
+   "service": "Entretien de jardin",
+   "vol": 10.3,
+   "haut": "0,71 € – 2,68 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "ciseaux de jardinier": {
+   "service": "Entretien de jardin",
+   "vol": 9.8,
+   "haut": "0,07 € – 0,30 €",
+   "ench": {
+    "lens": 0.3,
+    "bethune": 0.3,
+    "arras": 0.3
+   }
+  },
+  "jardinier le bon coin": {
+   "service": "Entretien de jardin",
+   "vol": 8.8,
+   "haut": "0,65 € – 2,05 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardinier cesu": {
+   "service": "Entretien de jardin",
+   "vol": 7.4,
+   "haut": "0,38 € – 1,47 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entreprise entretien espace vert": {
+   "service": "Entretien de jardin",
+   "vol": 7.1,
+   "haut": "0,91 € – 1,07 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entretien de jardin service à la personne": {
+   "service": "Entretien de jardin",
+   "vol": 6.1000000000000005,
+   "haut": "0,48 € – 1,45 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardin minéral sans entretien": {
+   "service": "Entretien de jardin",
+   "vol": 6.0,
+   "haut": "0,26 € – 0,87 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardinier à domicile tarif": {
+   "service": "Entretien de jardin",
+   "vol": 5.6,
+   "haut": "0,26 € – 0,59 €",
+   "ench": {
+    "lens": 0.59,
+    "bethune": 0.59,
+    "arras": 0.59
+   }
+  },
+  "tarif jardinier": {
+   "service": "Entretien de jardin",
+   "vol": 5.3,
+   "haut": "0,47 € – 0,85 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "prix jardinier": {
+   "service": "Entretien de jardin",
+   "vol": 5.3,
+   "haut": "0,33 € – 0,83 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "recherche jardinier pour particulier": {
+   "service": "Entretien de jardin",
+   "vol": 5.3,
+   "haut": "0,49 € – 1,93 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entreprise jardinier paysagiste": {
+   "service": "Entretien de jardin",
+   "vol": 5.2,
+   "haut": "0,67 € – 2,46 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "tarif jardinier cesu": {
+   "service": "Entretien de jardin",
+   "vol": 5.0,
+   "haut": "0,30 € – 1,15 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entretien de jardin particulier": {
+   "service": "Entretien de jardin",
+   "vol": 4.7,
+   "haut": "0,49 € – 1,82 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "devis jardinier": {
+   "service": "Entretien de jardin",
+   "vol": 4.6,
+   "haut": "0,65 € – 4,01 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "prix tonte au m2": {
+   "service": "Entretien de jardin",
+   "vol": 4.5,
+   "haut": "0,06 € – 1,05 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entreprise entretien jardin": {
+   "service": "Entretien de jardin",
+   "vol": 4.4,
+   "haut": "0,65 € – 2,28 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardin méditerranéen sans entretien": {
+   "service": "Entretien de jardin",
+   "vol": 4.2,
+   "haut": "0,25 € – 0,74 €",
+   "ench": {
+    "lens": 0.74,
+    "bethune": 0.74,
+    "arras": 0.74
+   }
+  },
+  "prix jardinier heure": {
+   "service": "Entretien de jardin",
+   "vol": 4.2,
+   "haut": "0,28 € – 0,97 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "bambou en pot entretien": {
+   "service": "Entretien de jardin",
+   "vol": 3.9,
+   "haut": "0,01 € – 0,02 €",
+   "ench": {
+    "lens": 0.02,
+    "bethune": 0.02,
+    "arras": 0.02
+   }
+  },
+  "recherche jardinier": {
+   "service": "Entretien de jardin",
+   "vol": 3.5999999999999996,
+   "haut": "0,64 € – 2,27 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "tarif jardinier heure": {
+   "service": "Entretien de jardin",
+   "vol": 3.5,
+   "haut": "0,51 € – 0,60 €",
+   "ench": {
+    "lens": 0.6,
+    "bethune": 0.6,
+    "arras": 0.6
+   }
+  },
+  "coopérative jardinier professionnel": {
+   "service": "Entretien de jardin",
+   "vol": 3.1999999999999997,
+   "haut": "0,65 € – 2,08 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entretien jardin tarif": {
+   "service": "Entretien de jardin",
+   "vol": 3.1,
+   "haut": "0,60 € – 1,28 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "tarif entretien jardin à l année": {
+   "service": "Entretien de jardin",
+   "vol": 3.1,
+   "haut": "0,39 € – 1,40 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "jardinier pas cher": {
+   "service": "Entretien de jardin",
+   "vol": 3.1,
+   "haut": "0,48 € – 2,03 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entretien espace vert particulier": {
+   "service": "Entretien de jardin",
+   "vol": 2.9000000000000004,
+   "haut": "0,63 € – 2,11 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "entretien extérieur": {
+   "service": "Entretien de jardin",
+   "vol": 2.9000000000000004,
+   "haut": "0,94 € – 3,18 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "tarif horaire jardinier à domicile": {
+   "service": "Entretien de jardin",
+   "vol": 2.9000000000000004,
+   "haut": "0,35 € – 1,22 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "prix entretien jardin": {
+   "service": "Entretien de jardin",
+   "vol": 2.9000000000000004,
+   "haut": "0,37 € – 1,22 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "trouver un jardinier pas cher": {
+   "service": "Entretien de jardin",
+   "vol": 2.9000000000000004,
+   "haut": "0,39 € – 1,35 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "tonte pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 84.0,
+   "haut": "0,85 € – 1,70 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "pelouse en rouleau": {
+   "service": "Gazon / pelouse",
+   "vol": 78.0,
+   "haut": "0,28 € – 1,04 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "gazon regarnissage": {
+   "service": "Gazon / pelouse",
+   "vol": 36.0,
+   "haut": "0,09 € – 0,37 €",
+   "ench": {
+    "lens": 0.37,
+    "bethune": 0.37,
+    "arras": 0.37
+   }
+  },
+  "gazon de garnissage": {
+   "service": "Gazon / pelouse",
+   "vol": 33.4,
+   "haut": "0,07 € – 0,31 €",
+   "ench": {
+    "lens": 0.31,
+    "bethune": 0.31,
+    "arras": 0.31
+   }
+  },
+  "regarnir le gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 25.8,
+   "haut": "0,01 € – 0,22 €",
+   "ench": {
+    "lens": 0.22,
+    "bethune": 0.22,
+    "arras": 0.22
+   }
+  },
+  "engazonnement": {
+   "service": "Gazon / pelouse",
+   "vol": 15.500000000000002,
+   "haut": "0,41 € – 2,33 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "traitement pelouse mauvaise herbe": {
+   "service": "Gazon / pelouse",
+   "vol": 11.3,
+   "haut": "0,10 € – 0,41 €",
+   "ench": {
+    "lens": 0.41,
+    "bethune": 0.41,
+    "arras": 0.41
+   }
+  },
+  "gazon regarnissage sans préparation": {
+   "service": "Gazon / pelouse",
+   "vol": 11.3,
+   "haut": "0,10 € – 0,32 €",
+   "ench": {
+    "lens": 0.32,
+    "bethune": 0.32,
+    "arras": 0.32
+   }
+  },
+  "regarnissage pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 10.3,
+   "haut": "0,03 € – 0,19 €",
+   "ench": {
+    "lens": 0.19,
+    "bethune": 0.19,
+    "arras": 0.19
+   }
+  },
+  "tarif tonte pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 5.3,
+   "haut": "0,04 € – 1,04 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "tonte pelouse prix m2": {
+   "service": "Gazon / pelouse",
+   "vol": 4.7,
+   "haut": "0,36 € – 1,07 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "gazon en plaque": {
+   "service": "Gazon / pelouse",
+   "vol": 4.7,
+   "haut": "0,33 € – 0,91 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.91
+   }
+  },
+  "entretien gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 4.5,
+   "haut": "0,03 € – 1,48 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "entretien pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 4.5,
+   "haut": "0,04 € – 1,51 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "tonte gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 4.2,
+   "haut": "0,61 € – 2,20 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "entretien gazon synthétique": {
+   "service": "Gazon / pelouse",
+   "vol": 4.2,
+   "haut": "0,02 € – 0,25 €",
+   "ench": {
+    "lens": 0.25,
+    "bethune": 0.25,
+    "arras": 0.25
+   }
+  },
+  "prix pour tondre une pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 3.8000000000000003,
+   "haut": "0,16 € – 1,08 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "prix tonte pelouse 500m2": {
+   "service": "Gazon / pelouse",
+   "vol": 3.1999999999999997,
+   "haut": "0,40 € – 1,22 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "prix m2 gazon paysagiste": {
+   "service": "Gazon / pelouse",
+   "vol": 3.1999999999999997,
+   "haut": "0,40 € – 1,08 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "tonte de pelouse prix": {
+   "service": "Gazon / pelouse",
+   "vol": 3.1,
+   "haut": "0,05 € – 1,13 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "gazon en placage": {
+   "service": "Gazon / pelouse",
+   "vol": 2.8,
+   "haut": "0,31 € – 0,79 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.76,
+    "arras": 0.79
+   }
+  },
+  "premiere tonte gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 2.7,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "créer un massif dans une pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 2.5999999999999996,
+   "haut": "0,29 € – 0,76 €",
+   "ench": {
+    "lens": 0.76,
+    "bethune": 0.76,
+    "arras": 0.76
+   }
+  },
+  "pose gazon en rouleau": {
+   "service": "Gazon / pelouse",
+   "vol": 2.5999999999999996,
+   "haut": "0,49 € – 2,04 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "gazon fleuri sans tonte": {
+   "service": "Gazon / pelouse",
+   "vol": 2.4000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "entreprise tonte de pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 2.2,
+   "haut": "0,64 € – 1,90 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "poseur de gazon en rouleau": {
+   "service": "Gazon / pelouse",
+   "vol": 2.1,
+   "haut": "0,42 € – 1,90 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "arroseur automatique gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 2.1,
+   "haut": "0,04 € – 0,48 €",
+   "ench": {
+    "lens": 0.48,
+    "bethune": 0.48,
+    "arras": 0.48
+   }
+  },
+  "pelouse synthétique sur mesure": {
+   "service": "Gazon / pelouse",
+   "vol": 2.1,
+   "haut": "0,55 € – 1,88 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "gazon sans arrosage": {
+   "service": "Gazon / pelouse",
+   "vol": 2.1,
+   "haut": "0,06 € – 0,39 €",
+   "ench": {
+    "lens": 0.39,
+    "bethune": 0.39,
+    "arras": 0.39
+   }
+  },
+  "tarif tonte pelouse particulier": {
+   "service": "Gazon / pelouse",
+   "vol": 2.1,
+   "haut": "0,07 € – 1,85 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "prix de rouleau de gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 1.9,
+   "haut": "0,30 € – 0,79 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.76,
+    "arras": 0.79
+   }
+  },
+  "traitement pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 1.7999999999999998,
+   "haut": "0,19 € – 1,04 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "prix engazonnement au m2": {
+   "service": "Gazon / pelouse",
+   "vol": 1.7999999999999998,
+   "haut": "0,38 € – 1,26 €",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "système arrosage automatique pelouse": {
+   "service": "Gazon / pelouse",
+   "vol": 1.7999999999999998,
+   "haut": "0,03 € – 0,25 €",
+   "ench": {
+    "lens": 0.25,
+    "bethune": 0.25,
+    "arras": 0.25
+   }
+  },
+  "entretien pelouse synthétique": {
+   "service": "Gazon / pelouse",
+   "vol": 1.7999999999999998,
+   "haut": "0,04 € – 0,25 €",
+   "ench": {
+    "lens": 0.25,
+    "bethune": 0.25,
+    "arras": 0.25
+   }
+  },
+  "du gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 1.7999999999999998,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "meilleur gazon de regarnissage": {
+   "service": "Gazon / pelouse",
+   "vol": 1.7,
+   "haut": "0,12 € – 0,29 €",
+   "ench": {
+    "lens": 0.29,
+    "bethune": 0.29,
+    "arras": 0.29
+   }
+  },
+  "1ere tonte gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 1.7,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.83,
+    "bethune": 0.76,
+    "arras": 0.97
+   }
+  },
+  "terreau regarnissage gazon": {
+   "service": "Gazon / pelouse",
+   "vol": 1.6,
+   "haut": "0,14 € – 0,79 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.76,
+    "arras": 0.79
+   }
+  },
+  "mur de soutènement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 88.0,
+   "haut": "0,78 € – 2,55 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "murette pvc": {
+   "service": "Enrochement / murets / talus",
+   "vol": 46.0,
+   "haut": "0,05 € – 0,23 €",
+   "ench": {
+    "lens": 0.23,
+    "bethune": 0.23,
+    "arras": 0.23
+   }
+  },
+  "enrochement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 28.299999999999997,
+   "haut": "0,32 € – 1,00 €",
+   "ench": {
+    "lens": 1.0,
+    "bethune": 1.0,
+    "arras": 1.0
+   }
+  },
+  "soutènement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 19.1,
+   "haut": "0,78 € – 3,51 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "mur de soutenement beton": {
+   "service": "Enrochement / murets / talus",
+   "vol": 18.1,
+   "haut": "0,22 € – 2,06 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "mur de soutènement en parpaing": {
+   "service": "Enrochement / murets / talus",
+   "vol": 11.3,
+   "haut": "0,26 € – 1,75 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "muret jardin": {
+   "service": "Enrochement / murets / talus",
+   "vol": 10.3,
+   "haut": "0,40 € – 0,85 €",
+   "ench": {
+    "lens": 0.85,
+    "bethune": 0.85,
+    "arras": 0.85
+   }
+  },
+  "mur de soutènement en bois": {
+   "service": "Enrochement / murets / talus",
+   "vol": 10.3,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "enrochement talus": {
+   "service": "Enrochement / murets / talus",
+   "vol": 10.3,
+   "haut": "0,38 € – 1,58 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "enrochement paysager": {
+   "service": "Enrochement / murets / talus",
+   "vol": 8.7,
+   "haut": "0,42 € – 1,22 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.22
+   }
+  },
+  "jardin muret pierre": {
+   "service": "Enrochement / murets / talus",
+   "vol": 6.3,
+   "haut": "0,19 € – 1,05 €",
+   "ench": {
+    "lens": 1.05,
+    "bethune": 1.0,
+    "arras": 1.05
+   }
+  },
+  "muret floral de soutènement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 6.0,
+   "haut": "0,39 € – 1,19 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.19
+   }
+  },
+  "talus aménagement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 6.0,
+   "haut": "0,31 € – 0,65 €",
+   "ench": {
+    "lens": 0.65,
+    "bethune": 0.65,
+    "arras": 0.65
+   }
+  },
+  "bloc pour talus": {
+   "service": "Enrochement / murets / talus",
+   "vol": 5.6,
+   "haut": "0,38 € – 1,76 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "muret jardin pas cher": {
+   "service": "Enrochement / murets / talus",
+   "vol": 5.4,
+   "haut": "0,04 € – 0,43 €",
+   "ench": {
+    "lens": 0.43,
+    "bethune": 0.43,
+    "arras": 0.43
+   }
+  },
+  "aménagement talus moderne": {
+   "service": "Enrochement / murets / talus",
+   "vol": 5.0,
+   "haut": "0,39 € – 0,88 €",
+   "ench": {
+    "lens": 0.88,
+    "bethune": 0.88,
+    "arras": 0.88
+   }
+  },
+  "bloc béton soutènement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 4.800000000000001,
+   "haut": "0,19 € – 1,15 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.15
+   }
+  },
+  "mur de soutènement prix": {
+   "service": "Enrochement / murets / talus",
+   "vol": 4.800000000000001,
+   "haut": "0,49 € – 1,57 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "mur de soutènement en pierre": {
+   "service": "Enrochement / murets / talus",
+   "vol": 4.6,
+   "haut": "0,47 € – 1,74 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "bloc talus prix": {
+   "service": "Enrochement / murets / talus",
+   "vol": 4.3,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "soutènement bois": {
+   "service": "Enrochement / murets / talus",
+   "vol": 4.2,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "bloc de soutènement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 4.2,
+   "haut": "0,26 € – 1,74 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "bloc pour mur de soutènement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 4.0,
+   "haut": "0,19 € – 1,15 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.15
+   }
+  },
+  "prix enrochement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 3.9,
+   "haut": "0,39 € – 0,74 €",
+   "ench": {
+    "lens": 0.74,
+    "bethune": 0.74,
+    "arras": 0.74
+   }
+  },
+  "enrochement de soutènement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 3.9,
+   "haut": "0,43 € – 1,73 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "aménagement talus sans entretien": {
+   "service": "Enrochement / murets / talus",
+   "vol": 3.8000000000000003,
+   "haut": "0,37 € – 0,79 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "enrochement talus prix": {
+   "service": "Enrochement / murets / talus",
+   "vol": 3.5,
+   "haut": "0,43 € – 0,74 €",
+   "ench": {
+    "lens": 0.74,
+    "bethune": 0.74,
+    "arras": 0.74
+   }
+  },
+  "mur de soutenement jardin": {
+   "service": "Enrochement / murets / talus",
+   "vol": 3.1999999999999997,
+   "haut": "0,39 € – 0,88 €",
+   "ench": {
+    "lens": 0.88,
+    "bethune": 0.88,
+    "arras": 0.88
+   }
+  },
+  "enrochement talus pente": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.9000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "bloc talus végétalisable": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.9000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "prix enrochement m2": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.9000000000000004,
+   "haut": "0,40 € – 1,32 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "mur de soutènement pas cher": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.9000000000000004,
+   "haut": "0,27 € – 1,16 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.16
+   }
+  },
+  "brique muret": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.5999999999999996,
+   "haut": "0,06 € – 0,36 €",
+   "ench": {
+    "lens": 0.36,
+    "bethune": 0.36,
+    "arras": 0.36
+   }
+  },
+  "enrochement mur": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.4000000000000004,
+   "haut": "0,52 € – 0,77 €",
+   "ench": {
+    "lens": 0.77,
+    "bethune": 0.77,
+    "arras": 0.77
+   }
+  },
+  "muret en bambou": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.4000000000000004,
+   "haut": "0,35 € – 1,86 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "pierre de soutènement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.4000000000000004,
+   "haut": "0,36 € – 0,92 €",
+   "ench": {
+    "lens": 0.92,
+    "bethune": 0.92,
+    "arras": 0.92
+   }
+  },
+  "muret jardin moderne": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.4000000000000004,
+   "haut": "0,34 € – 0,57 €",
+   "ench": {
+    "lens": 0.57,
+    "bethune": 0.57,
+    "arras": 0.57
+   }
+  },
+  "enrochement decoratif": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.2,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.27
+   }
+  },
+  "bloc beton mur soutenement": {
+   "service": "Enrochement / murets / talus",
+   "vol": 2.1,
+   "haut": "0,19 € – 0,79 €",
+   "ench": {
+    "lens": 0.79,
+    "bethune": 0.79,
+    "arras": 0.79
+   }
+  },
+  "muret separation jardin": {
+   "service": "Enrochement / murets / talus",
+   "vol": 1.9,
+   "haut": "0,37 € – 1,26 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.0,
+    "arras": 1.26
+   }
+  },
+  "allée de jardin": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 42.0,
+   "haut": "0,73 € – 2,54 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "béton désactivé prix m2": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 36.0,
+   "haut": "0,34 € – 1,49 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "gravier pour allée voiture": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 17.1,
+   "haut": "0,12 € – 1,10 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.1
+   }
+  },
+  "courtin paysagiste": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 17.1,
+   "haut": "0,61 € – 1,97 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée carrossable pas cher": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 16.0,
+   "haut": "0,33 € – 1,19 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.19
+   }
+  },
+  "allée en gravier": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 15.100000000000001,
+   "haut": "0,19 € – 1,40 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "cailloux pour allée": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 14.5,
+   "haut": "0,06 € – 1,28 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée carrossable": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 14.0,
+   "haut": "0,57 € – 2,04 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée de jardin facile à faire": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 14.0,
+   "haut": "0,26 € – 0,87 €",
+   "ench": {
+    "lens": 0.87,
+    "bethune": 0.87,
+    "arras": 0.87
+   }
+  },
+  "pose de pavé pour passage voiture": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 13.5,
+   "haut": "0,50 € – 1,98 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "gravier pour allée pas cher": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 10.3,
+   "haut": "0,06 € – 0,68 €",
+   "ench": {
+    "lens": 0.68,
+    "bethune": 0.68,
+    "arras": 0.68
+   }
+  },
+  "allée de jardin pas cher": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 9.8,
+   "haut": "0,37 € – 1,38 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "cour exterieur": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 7.7,
+   "haut": "0,54 € – 3,76 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée de jardin originale": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 6.9,
+   "haut": "0,46 € – 1,00 €",
+   "ench": {
+    "lens": 1.0,
+    "bethune": 1.0,
+    "arras": 1.0
+   }
+  },
+  "aménagement allée entrée maison": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 6.0,
+   "haut": "0,39 € – 1,14 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.14
+   }
+  },
+  "allée de jardin moderne": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 5.4,
+   "haut": "0,34 € – 0,82 €",
+   "ench": {
+    "lens": 0.82,
+    "bethune": 0.82,
+    "arras": 0.82
+   }
+  },
+  "allee en pas japonais": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 5.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "gravier pour allée carrossable": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 5.3,
+   "haut": "0,25 € – 1,42 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "aménagement cour extérieur": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 5.0,
+   "haut": "0,51 € – 2,11 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée carrossable passage voiture sur gazon": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 5.0,
+   "haut": "0,32 € – 1,48 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "gravier stabilisé carrossable": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 5.0,
+   "haut": "0,36 € – 1,21 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.21
+   }
+  },
+  "allée en beton": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 4.7,
+   "haut": "0,44 € – 2,23 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée de garage moderne": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 4.5,
+   "haut": "0,40 € – 0,89 €",
+   "ench": {
+    "lens": 0.89,
+    "bethune": 0.89,
+    "arras": 0.89
+   }
+  },
+  "allée pas japonais et gravier": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 4.5,
+   "haut": "0,32 € – 0,73 €",
+   "ench": {
+    "lens": 0.73,
+    "bethune": 0.73,
+    "arras": 0.73
+   }
+  },
+  "allee de maison": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 4.5,
+   "haut": "0,52 € – 2,84 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allee gravillonnée": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 4.3,
+   "haut": "0,21 € – 1,51 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "gravier pour cour": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 4.2,
+   "haut": "0,16 € – 0,90 €",
+   "ench": {
+    "lens": 0.9,
+    "bethune": 0.9,
+    "arras": 0.9
+   }
+  },
+  "amenagement cour": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 4.0,
+   "haut": "0,45 € – 2,27 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "pierre pour allée": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 4.0,
+   "haut": "0,40 € – 1,23 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.23
+   }
+  },
+  "allée de jardin sans entretien": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.8000000000000003,
+   "haut": "0,32 € – 1,03 €",
+   "ench": {
+    "lens": 1.03,
+    "bethune": 1.01,
+    "arras": 1.03
+   }
+  },
+  "allée carrossable drainante": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.5999999999999996,
+   "haut": "0,41 € – 1,51 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "gravier cour extérieure": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.5999999999999996,
+   "haut": "0,17 € – 1,17 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.17
+   }
+  },
+  "allée carrossable gravier sans stabilisateur": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.5,
+   "haut": "0,33 € – 1,22 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.22
+   }
+  },
+  "allée de jardin en gravier": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.5,
+   "haut": "0,41 € – 2,38 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allee fleuri": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.1999999999999997,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allee de garage pas chere": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.1999999999999997,
+   "haut": "0,43 € – 1,96 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée voiture": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.1,
+   "haut": "0,52 € – 1,58 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée goudron prix au m2": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 3.1,
+   "haut": "0,33 € – 1,41 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée et terrasse": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 2.9000000000000004,
+   "haut": "0,44 € – 2,50 €",
+   "ench": {
+    "lens": 1.09,
+    "bethune": 1.01,
+    "arras": 1.26
+   }
+  },
+  "allée maison pas cher": {
+   "service": "Allée / cour / pavage / enrobé",
+   "vol": 2.9000000000000004,
+   "haut": "0,68 € – 0,90 €",
+   "ench": {
+    "lens": 0.9,
+    "bethune": 0.9,
+    "arras": 0.9
+   }
+  },
+  "pose grillage rigide": {
+   "service": "Clôture / portail",
+   "vol": 24.299999999999997,
+   "haut": "0,15 € – 1,45 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose grillage souple": {
+   "service": "Clôture / portail",
+   "vol": 20.6,
+   "haut": "0,03 € – 0,32 €",
+   "ench": {
+    "lens": 0.32,
+    "bethune": 0.32,
+    "arras": 0.32
+   }
+  },
+  "pose cloture rigide": {
+   "service": "Clôture / portail",
+   "vol": 20.099999999999998,
+   "haut": "0,58 € – 2,48 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose cloture": {
+   "service": "Clôture / portail",
+   "vol": 16.0,
+   "haut": "2,02 € – 5,06 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose cloture beton": {
+   "service": "Clôture / portail",
+   "vol": 16.0,
+   "haut": "0,68 € – 1,58 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "clotures souples": {
+   "service": "Clôture / portail",
+   "vol": 9.8,
+   "haut": "0,30 € – 1,47 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose portail coulissant": {
+   "service": "Clôture / portail",
+   "vol": 7.7,
+   "haut": "1,19 € – 2,58 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installation portail coulissant": {
+   "service": "Clôture / portail",
+   "vol": 7.4,
+   "haut": "0,05 € – 3,63 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose grillage": {
+   "service": "Clôture / portail",
+   "vol": 7.1,
+   "haut": "0,04 € – 1,74 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installateur portail": {
+   "service": "Clôture / portail",
+   "vol": 6.699999999999999,
+   "haut": "1,31 € – 3,05 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "prix portail coulissant motorisé 4m avec pose": {
+   "service": "Clôture / portail",
+   "vol": 6.6,
+   "haut": "0,51 € – 1,44 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose portail": {
+   "service": "Clôture / portail",
+   "vol": 6.0,
+   "haut": "0,45 € – 3,95 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose portail battant": {
+   "service": "Clôture / portail",
+   "vol": 5.0,
+   "haut": "1,01 € – 3,88 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "tarif pose clôture rigide avec soubassement béton": {
+   "service": "Clôture / portail",
+   "vol": 4.800000000000001,
+   "haut": "0,30 € – 0,85 €",
+   "ench": {
+    "lens": 0.85,
+    "bethune": 0.85,
+    "arras": 0.85
+   }
+  },
+  "prix portail alu avec pose": {
+   "service": "Clôture / portail",
+   "vol": 4.6,
+   "haut": "0,49 € – 1,56 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installation grillage rigide": {
+   "service": "Clôture / portail",
+   "vol": 4.3,
+   "haut": "0,13 € – 1,41 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "prix pose cloture rigide": {
+   "service": "Clôture / portail",
+   "vol": 4.0,
+   "haut": "0,39 € – 1,42 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installateur motorisation portail": {
+   "service": "Clôture / portail",
+   "vol": 3.9,
+   "haut": "0,72 € – 2,92 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "prix main d oeuvre pose cloture rigide": {
+   "service": "Clôture / portail",
+   "vol": 3.8000000000000003,
+   "haut": "0,41 € – 1,35 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose grillage rigide avec soubassement": {
+   "service": "Clôture / portail",
+   "vol": 3.8000000000000003,
+   "haut": "0,23 € – 0,94 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 0.94
+   }
+  },
+  "installation cloture": {
+   "service": "Clôture / portail",
+   "vol": 3.8000000000000003,
+   "haut": "0,77 € – 2,72 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "poseur de cloture": {
+   "service": "Clôture / portail",
+   "vol": 3.8000000000000003,
+   "haut": "1,02 € – 2,15 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installation portail battant": {
+   "service": "Clôture / portail",
+   "vol": 3.5999999999999996,
+   "haut": "0,84 € – 3,38 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "prix pose grillage rigide": {
+   "service": "Clôture / portail",
+   "vol": 3.5,
+   "haut": "0,33 € – 1,34 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installation grillage souple": {
+   "service": "Clôture / portail",
+   "vol": 3.5,
+   "haut": "0,03 € – 0,26 €",
+   "ench": {
+    "lens": 0.26,
+    "bethune": 0.26,
+    "arras": 0.26
+   }
+  },
+  "pose cloture grillage": {
+   "service": "Clôture / portail",
+   "vol": 3.5,
+   "haut": "0,29 € – 2,24 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "prix pose motorisation portail 2 battants": {
+   "service": "Clôture / portail",
+   "vol": 3.1,
+   "haut": "0,47 € – 1,55 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installateur portail coulissant motorisé": {
+   "service": "Clôture / portail",
+   "vol": 2.9000000000000004,
+   "haut": "0,92 € – 3,41 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installateur motorisation portail battant": {
+   "service": "Clôture / portail",
+   "vol": 2.8,
+   "haut": "0,62 € – 2,33 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "entreprise pose portail et clôture": {
+   "service": "Clôture / portail",
+   "vol": 2.7,
+   "haut": "0,83 € – 4,80 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installation moteur portail coulissant": {
+   "service": "Clôture / portail",
+   "vol": 2.7,
+   "haut": "0,75 € – 3,34 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "poseur de portail": {
+   "service": "Clôture / portail",
+   "vol": 2.5999999999999996,
+   "haut": "1,00 € – 3,71 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "tarif pose clôture rigide": {
+   "service": "Clôture / portail",
+   "vol": 2.5999999999999996,
+   "haut": "0,35 € – 1,28 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installation motorisation portail 2 battants": {
+   "service": "Clôture / portail",
+   "vol": 2.5999999999999996,
+   "haut": "0,65 € – 2,35 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "tarif pose grillage rigide avec soubassement": {
+   "service": "Clôture / portail",
+   "vol": 2.5999999999999996,
+   "haut": "0,23 € – 0,84 €",
+   "ench": {
+    "lens": 0.84,
+    "bethune": 0.84,
+    "arras": 0.84
+   }
+  },
+  "pose cloture grillage rigide": {
+   "service": "Clôture / portail",
+   "vol": 2.5999999999999996,
+   "haut": "0,38 € – 1,19 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "installateur brise vue": {
+   "service": "Clôture / portail",
+   "vol": 2.5999999999999996,
+   "haut": "0,60 € – 1,99 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "brise vue pose": {
+   "service": "Clôture / portail",
+   "vol": 2.5999999999999996,
+   "haut": "0,68 € – 2,05 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose de cloture jardin": {
+   "service": "Clôture / portail",
+   "vol": 2.4000000000000004,
+   "haut": "0,79 € – 1,78 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "pose cloture bois": {
+   "service": "Clôture / portail",
+   "vol": 2.4000000000000004,
+   "haut": "0,49 € – 2,15 €",
+   "ench": {
+    "lens": 0.94,
+    "bethune": 0.89,
+    "arras": 1.09
+   }
+  },
+  "haies champêtres": {
+   "service": "Plantations / massifs / haies",
+   "vol": 23.300000000000004,
+   "haut": "0,08 € – 3,09 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "arbustes persistant pour haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 20.6,
+   "haut": "0,03 € – 0,32 €",
+   "ench": {
+    "lens": 0.32,
+    "bethune": 0.32,
+    "arras": 0.32
+   }
+  },
+  "arbre haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 20.6,
+   "haut": "0,15 € – 0,50 €",
+   "ench": {
+    "lens": 0.5,
+    "bethune": 0.5,
+    "arras": 0.5
+   }
+  },
+  "haie vegetale": {
+   "service": "Plantations / massifs / haies",
+   "vol": 13.5,
+   "haut": "0,19 € – 0,88 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "plante haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 9.8,
+   "haut": "0,26 € – 0,93 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "haies bocageres": {
+   "service": "Plantations / massifs / haies",
+   "vol": 9.8,
+   "haut": "1,33 € – 7,08 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "tarif taille de haie 3 faces": {
+   "service": "Plantations / massifs / haies",
+   "vol": 8.2,
+   "haut": "0,35 € – 1,52 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "plantes et arbustes": {
+   "service": "Plantations / massifs / haies",
+   "vol": 6.0,
+   "haut": "0,09 € – 0,61 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "entreprise taille haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 3.9,
+   "haut": "0,61 € – 1,48 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "plantation jardin": {
+   "service": "Plantations / massifs / haies",
+   "vol": 3.8000000000000003,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "creer un massif mediterraneen": {
+   "service": "Plantations / massifs / haies",
+   "vol": 3.5999999999999996,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "haie de cyprès de leyland": {
+   "service": "Plantations / massifs / haies",
+   "vol": 3.5,
+   "haut": "0,26 € – 0,90 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "sauge plantation": {
+   "service": "Plantations / massifs / haies",
+   "vol": 3.5,
+   "haut": "0,01 € – 0,04 €",
+   "ench": {
+    "lens": 0.04,
+    "bethune": 0.04,
+    "arras": 0.04
+   }
+  },
+  "entretien haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 3.1,
+   "haut": "0,83 € – 2,85 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "plantation glycine": {
+   "service": "Plantations / massifs / haies",
+   "vol": 3.1,
+   "haut": "0,01 € – 0,02 €",
+   "ench": {
+    "lens": 0.02,
+    "bethune": 0.02,
+    "arras": 0.02
+   }
+  },
+  "creer un massif de bulbes": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.9000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "plantation photinia": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.9000000000000004,
+   "haut": "0,01 € – 0,10 €",
+   "ench": {
+    "lens": 0.1,
+    "bethune": 0.1,
+    "arras": 0.1
+   }
+  },
+  "arbuste feuillage rouge persistant": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.8,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "plantation haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.5999999999999996,
+   "haut": "0,09 € – 1,25 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "blocs vegetalisable": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.4000000000000004,
+   "haut": "0,85 € – 1,19 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "elagage haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.2,
+   "haut": "0,74 € – 2,24 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "entretien taille haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.1,
+   "haut": "0,02 € – 0,81 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.81
+   }
+  },
+  "taille de haie service à la personne": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.1,
+   "haut": "0,28 € – 1,07 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "creer des massifs": {
+   "service": "Plantations / massifs / haies",
+   "vol": 2.1,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "tarif horaire jardinier taille haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.9,
+   "haut": "0,34 € – 1,44 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "creer massif de fleurs": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.7,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "arbre haie croissance rapide": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.5,
+   "haut": "0,02 € – 0,18 €",
+   "ench": {
+    "lens": 0.18,
+    "bethune": 0.18,
+    "arras": 0.18
+   }
+  },
+  "creer un massif de fleur vivace": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "haie de saule tressé": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "creation de massif": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.3,
+   "haut": "0,79 € – 2,57 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "devis pour tailler une haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.3,
+   "haut": "0,71 € – 3,07 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "arbustes fruitiers pour haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.1,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "créer un massif de rosiers": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.1,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "plantation charmille": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.1,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "jardinier taille haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.0,
+   "haut": "0,73 € – 3,37 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "photinia red robin plantation": {
+   "service": "Plantations / massifs / haies",
+   "vol": 1.0,
+   "haut": "0,01 € – 0,14 €",
+   "ench": {
+    "lens": 0.14,
+    "bethune": 0.14,
+    "arras": 0.14
+   }
+  },
+  "créer un massif surélevé": {
+   "service": "Plantations / massifs / haies",
+   "vol": 0.8,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "plantation laurier palme": {
+   "service": "Plantations / massifs / haies",
+   "vol": 0.8,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "tarif elagage haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 0.8,
+   "haut": "0,41 € – 1,46 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "tarif arrachage de haie": {
+   "service": "Plantations / massifs / haies",
+   "vol": 0.8,
+   "haut": "0,58 € – 1,60 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.69,
+    "arras": 0.88
+   }
+  },
+  "système d arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 9.2,
+   "haut": "0,05 € – 0,14 €",
+   "ench": {
+    "lens": 0.14,
+    "bethune": 0.14,
+    "arras": 0.14
+   }
+  },
+  "arrosage du palmier": {
+   "service": "Arrosage automatique",
+   "vol": 4.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "goutte à goutte installation": {
+   "service": "Arrosage automatique",
+   "vol": 3.3000000000000003,
+   "haut": "0,03 € – 0,37 €",
+   "ench": {
+    "lens": 0.37,
+    "bethune": 0.37,
+    "arras": 0.37
+   }
+  },
+  "arrosage automatique installation": {
+   "service": "Arrosage automatique",
+   "vol": 2.9000000000000004,
+   "haut": "0,03 € – 1,01 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "prix arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 2.1,
+   "haut": "0,09 € – 0,56 €",
+   "ench": {
+    "lens": 0.56,
+    "bethune": 0.56,
+    "arras": 0.56
+   }
+  },
+  "jardin sans arrosage": {
+   "service": "Arrosage automatique",
+   "vol": 1.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "entreprise arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 1.3,
+   "haut": "0,46 € – 1,85 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "installation arrosage goutte à goutte": {
+   "service": "Arrosage automatique",
+   "vol": 1.3,
+   "haut": "0,03 € – 0,50 €",
+   "ench": {
+    "lens": 0.5,
+    "bethune": 0.5,
+    "arras": 0.5
+   }
+  },
+  "installateur arrosage automatique jardin": {
+   "service": "Arrosage automatique",
+   "vol": 1.1,
+   "haut": "0,15 € – 2,26 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "arrosage et paysage": {
+   "service": "Arrosage automatique",
+   "vol": 0.8,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "systeme arrosage automatique jardin": {
+   "service": "Arrosage automatique",
+   "vol": 0.8,
+   "haut": "0,08 € – 0,33 €",
+   "ench": {
+    "lens": 0.33,
+    "bethune": 0.33,
+    "arras": 0.33
+   }
+  },
+  "faire arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.8,
+   "haut": "0,02 € – 0,14 €",
+   "ench": {
+    "lens": 0.14,
+    "bethune": 0.14,
+    "arras": 0.14
+   }
+  },
+  "vivaces sans arrosage": {
+   "service": "Arrosage automatique",
+   "vol": 0.8,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "systeme arrosage enterré": {
+   "service": "Arrosage automatique",
+   "vol": 0.7,
+   "haut": "0,03 € – 0,44 €",
+   "ench": {
+    "lens": 0.44,
+    "bethune": 0.44,
+    "arras": 0.44
+   }
+  },
+  "plan d arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.7,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "prix enrouleur tuyau arrosage": {
+   "service": "Arrosage automatique",
+   "vol": 0.7,
+   "haut": "0,07 € – 0,22 €",
+   "ench": {
+    "lens": 0.22,
+    "bethune": 0.22,
+    "arras": 0.22
+   }
+  },
+  "arrosage bambou fargesia": {
+   "service": "Arrosage automatique",
+   "vol": 0.6000000000000001,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "système arrosage automatique enterré": {
+   "service": "Arrosage automatique",
+   "vol": 0.6000000000000001,
+   "haut": "0,03 € – 0,44 €",
+   "ench": {
+    "lens": 0.44,
+    "bethune": 0.44,
+    "arras": 0.44
+   }
+  },
+  "installation electrovanne arrosage": {
+   "service": "Arrosage automatique",
+   "vol": 0.6000000000000001,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "branchement arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.6000000000000001,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "installation arrosage enterré": {
+   "service": "Arrosage automatique",
+   "vol": 0.6000000000000001,
+   "haut": "0,03 € – 0,70 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "pose arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.6000000000000001,
+   "haut": "0,04 € – 1,14 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "creer arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.5,
+   "haut": "0,03 € – 0,14 €",
+   "ench": {
+    "lens": 0.14,
+    "bethune": 0.14,
+    "arras": 0.14
+   }
+  },
+  "installation arrosage automatique goutte à goutte": {
+   "service": "Arrosage automatique",
+   "vol": 0.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "installation goutte à goutte jardin": {
+   "service": "Arrosage automatique",
+   "vol": 0.5,
+   "haut": "0,01 € – 0,49 €",
+   "ench": {
+    "lens": 0.49,
+    "bethune": 0.49,
+    "arras": 0.49
+   }
+  },
+  "arrosage automatique enterré prix": {
+   "service": "Arrosage automatique",
+   "vol": 0.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "installateur d arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.5,
+   "haut": "0,65 € – 2,54 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "installation arrosage automatique enterré": {
+   "service": "Arrosage automatique",
+   "vol": 0.5,
+   "haut": "0,03 € – 0,38 €",
+   "ench": {
+    "lens": 0.38,
+    "bethune": 0.38,
+    "arras": 0.38
+   }
+  },
+  "installation arrosage automatique rain bird": {
+   "service": "Arrosage automatique",
+   "vol": 0.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "montage arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "prix arrosage automatique 1000m2": {
+   "service": "Arrosage automatique",
+   "vol": 0.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "arrosage intégré installation": {
+   "service": "Arrosage automatique",
+   "vol": 0.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "entreprise installation arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.4,
+   "haut": "0,62 € – 2,28 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "arrosage en hiver": {
+   "service": "Arrosage automatique",
+   "vol": 0.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "cout d un arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "arrosage sedum": {
+   "service": "Arrosage automatique",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "installation arrosage automatique avec pompe": {
+   "service": "Arrosage automatique",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "installation systeme arrosage automatique": {
+   "service": "Arrosage automatique",
+   "vol": 0.30000000000000004,
+   "haut": "0,58 € – 2,23 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "installation goutte à goutte professionnel": {
+   "service": "Arrosage automatique",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "plan arrosage automatique jardin": {
+   "service": "Arrosage automatique",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "amenagement d un bassin exterieur": {
+   "service": "Bassin / point d'eau",
+   "vol": 2.5999999999999996,
+   "haut": "0,23 € – 0,74 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer une mare dans son jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 2.5999999999999996,
+   "haut": "0,02 € – 1,15 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "amenagement autour d un bassin préformé": {
+   "service": "Bassin / point d'eau",
+   "vol": 2.1,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "aménager un bassin préformé": {
+   "service": "Bassin / point d'eau",
+   "vol": 1.7999999999999998,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer bassin jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 1.7,
+   "haut": "0,03 € – 0,74 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "bassin paysager": {
+   "service": "Bassin / point d'eau",
+   "vol": 1.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "bassin nettoyage": {
+   "service": "Bassin / point d'eau",
+   "vol": 1.4,
+   "haut": "0,14 € – 0,76 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer une mare naturelle": {
+   "service": "Bassin / point d'eau",
+   "vol": 1.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "amenagement d un bassin de jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 1.1,
+   "haut": "0,12 € – 0,61 €",
+   "ench": {
+    "lens": 0.61,
+    "bethune": 0.61,
+    "arras": 0.61
+   }
+  },
+  "créer bassin": {
+   "service": "Bassin / point d'eau",
+   "vol": 1.1,
+   "haut": "0,20 € – 1,40 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "entreprise entretien bassin de jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 1.1,
+   "haut": "0,54 € – 1,65 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer un bassin avec cascade": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.8,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "création bassin jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.8,
+   "haut": "0,29 € – 0,65 €",
+   "ench": {
+    "lens": 0.65,
+    "bethune": 0.65,
+    "arras": 0.65
+   }
+  },
+  "paysagiste bassin aquatique": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.7,
+   "haut": "0,45 € – 1,72 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer une mare naturelle dans son jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.7,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "creation bassin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.6000000000000001,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "aménager un bassin de jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "creation bassin poisson": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.5,
+   "haut": "0,20 € – 0,81 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "creation bassin poisson exterieur": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer une petite mare dans son jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "creation filtre bassin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.5,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "creation cascade bassin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "création de bassin extérieur": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.4,
+   "haut": "0,39 € – 0,87 €",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer un bassin a poisson": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.4,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer un bassin extérieur": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.30000000000000004,
+   "haut": "0,03 € – 0,28 €",
+   "ench": {
+    "lens": 0.28,
+    "bethune": 0.28,
+    "arras": 0.28
+   }
+  },
+  "créer un petit bassin dans son jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "creation bassin carpe koi": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer un petit bassin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "creation d une mare de jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer un mini bassin de jardin": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  },
+  "créer un bassin d ornement": {
+   "service": "Bassin / point d'eau",
+   "vol": 0.30000000000000004,
+   "haut": "pas d’enchère publiée",
+   "ench": {
+    "lens": 0.72,
+    "bethune": 0.72,
+    "arras": 0.72
+   }
+  }
+ },
+ "negatifs": {
+  "jardinieres": "produit",
+  "lampes exterieur solaire": "produit",
+  "gazon en rouleau": "produit",
+  "lame terrasse composite": "produit",
+  "eclairage extérieur": "produit",
+  "tondre le dimanche": "bricolage",
+  "jardinieres bois": "produit",
+  "lumiere exterieur solaire": "produit",
+  "lambourdes terrasse": "produit",
+  "jardinieres sur pied": "produit",
+  "dalle terrasse sur plot": "produit",
+  "eclairage exterieur solaire": "produit",
+  "terrasse composite": "produit",
+  "jardinieres hautes": "produit",
+  "plot terrasse bois": "produit",
+  "dallage sur plot": "produit",
+  "jardinieres exterieur": "produit",
+  "plot beton": "produit",
+  "lame composite": "produit",
+  "terrasse en bois exotique": "produit",
+  "rouleau gazon naturel": "bricolage",
+  "éclairage extérieur terrasse": "produit",
+  "pot fleur extérieur": "produit",
+  "luminaire solaire extérieur": "produit",
+  "eclairage extérieur led": "produit",
+  "piliers pour portail": "produit",
+  "cloture sur muret": "produit",
+  "pavé carrossable": "produit",
+  "éclairage extérieur solaire puissant": "produit",
+  "plot terrasse reglable": "produit",
+  "applique solaire exterieur": "produit",
+  "lambourdes composite": "produit",
+  "plot beton terrasse bois": "produit",
+  "applique murale exterieur solaire": "produit",
+  "cloture extérieur": "produit",
+  "allée en pavé": "produit",
+  "calathéa entretien": "curiosité",
+  "jardinieres plastiques": "produit",
+  "plot jouplast": "produit",
+  "plots béton pour poteaux": "produit",
+  "entretien ficus": "curiosité",
+  "pachira entretien": "curiosité",
+  "bois composite": "produit",
+  "luminaire extérieur terrasse": "produit",
+  "poteau grillage souple": "produit",
+  "place cloture": "produit",
+  "jardinieres pour terrasse": "produit",
+  "lambourde terrasse bois": "produit",
+  "jardinieres pas cheres": "produit",
+  "eclairage jardin": "produit",
+  "arrosage bonsai": "curiosité",
+  "plots beton terrasse": "produit",
+  "clôture aluminium sur muret": "produit",
+  "planche composite": "produit",
+  "plot autonivelant": "produit",
+  "pavé cour": "produit",
+  "dalle carrossable": "produit",
+  "lumiere exterieur jardin": "produit",
+  "clôture pvc sur muret": "produit",
+  "pelouse en rouleau naturel": "bricolage",
+  "arrosage des lauriers roses": "curiosité",
+  "terrasse bois composite": "produit",
+  "lampe exterieur terrasse": "produit",
+  "luminaire terrasse": "produit",
+  "terrasse composite sur plot": "produit",
+  "lame pvc terrasse": "produit",
+  "lumière extérieur terrasse": "produit",
+  "portail avidsen": "produit",
+  "arrosage kalanchoe": "curiosité",
+  "dalle allée jardin": "produit",
+  "dalle beton pas cher": "hors service",
+  "dalle terrasse sur sable": "produit",
+  "cloture rigide avec soubassement": "produit",
+  "plante brise vue jardiniere": "produit",
+  "terrasse en gazon synthétique": "produit",
+  "lampes exterieures jardin": "produit",
+  "eclairage jardin solaire": "produit",
+  "luminaire jardin": "produit",
+  "luminaire jardin solaire": "produit",
+  "éclairage extérieur jardin": "produit"
+ },
+ "communes": {
+  "62498": [
+   "Lens",
+   "lens"
+  ],
+  "62427": [
+   "Hénin-Beaumont",
+   "lens"
+  ],
+  "62215": [
+   "Carvin",
+   "lens"
+  ],
+  "62065": [
+   "Avion",
+   "lens"
+  ],
+  "62413": [
+   "Harnes",
+   "lens"
+  ],
+  "62570": [
+   "Méricourt",
+   "lens"
+  ],
+  "62637": [
+   "Oignies",
+   "lens"
+  ],
+  "62250": [
+   "Courrières",
+   "lens"
+  ],
+  "62587": [
+   "Montigny-en-Gohelle",
+   "lens"
+  ],
+  "62771": [
+   "Sallaumines",
+   "lens"
+  ],
+  "62895": [
+   "Wingles",
+   "lens"
+  ],
+  "62724": [
+   "Rouvroy",
+   "lens"
+  ],
+  "62842": [
+   "Vendin-le-Vieil",
+   "lens"
+  ],
+  "62907": [
+   "Libercourt",
+   "lens"
+  ],
+  "62133": [
+   "Billy-Montigny",
+   "lens"
+  ],
+  "62249": [
+   "Courcelles-lès-Lens",
+   "lens"
+  ],
+  "62497": [
+   "Leforest",
+   "lens"
+  ],
+  "62628": [
+   "Noyelles-sous-Lens",
+   "lens"
+  ],
+  "62528": [
+   "Loos-en-Gohelle",
+   "lens"
+  ],
+  "62274": [
+   "Dourges",
+   "lens"
+  ],
+  "62351": [
+   "Fouquières-lès-Lens",
+   "lens"
+  ],
+  "62624": [
+   "Noyelles-Godault",
+   "lens"
+  ],
+  "62276": [
+   "Douvrin",
+   "lens"
+  ],
+  "62173": [
+   "Brebières",
+   "lens"
+  ],
+  "62523": [
+   "Loison-sous-Lens",
+   "lens"
+  ],
+  "62132": [
+   "Billy-Berclau",
+   "lens"
+  ],
+  "62321": [
+   "Évin-Malmaison",
+   "lens"
+  ],
+  "62033": [
+   "Annay",
+   "lens"
+  ],
+  "62401": [
+   "Haisnes",
+   "lens"
+  ],
+  "62573": [
+   "Meurchin",
+   "lens"
+  ],
+  "62464": [
+   "Hulluch",
+   "lens"
+  ],
+  "62666": [
+   "Pont-à-Vendin",
+   "lens"
+  ],
+  "62277": [
+   "Drocourt",
+   "lens"
+  ],
+  "62291": [
+   "Éleu-dit-Leauwette",
+   "lens"
+  ],
+  "62240": [
+   "Corbehem",
+   "lens"
+  ],
+  "62311": [
+   "Estevelles",
+   "lens"
+  ],
+  "62383": [
+   "Gouy-sous-Bellonne",
+   "lens"
+  ],
+  "62476": [
+   "Izel-lès-Équerchin",
+   "lens"
+  ],
+  "62148": [
+   "Bois-Bernard",
+   "lens"
+  ],
+  "62680": [
+   "Quiéry-la-Motte",
+   "lens"
+  ],
+  "62003": [
+   "Acheville",
+   "lens"
+  ],
+  "62107": [
+   "Bénifontaine",
+   "lens"
+  ],
+  "62119": [
+   "Béthune",
+   "bethune"
+  ],
+  "62178": [
+   "Bruay-la-Buissière",
+   "bethune"
+  ],
+  "62186": [
+   "Bully-les-Mines",
+   "bethune"
+  ],
+  "62617": [
+   "Nœux-les-Mines",
+   "bethune"
+  ],
+  "62516": [
+   "Lillers",
+   "bethune"
+  ],
+  "62048": [
+   "Auchel",
+   "bethune"
+  ],
+  "62126": [
+   "Beuvry",
+   "bethune"
+  ],
+  "62473": [
+   "Isbergues",
+   "bethune"
+  ],
+  "62563": [
+   "Mazingarbe",
+   "bethune"
+  ],
+  "62083": [
+   "Barlin",
+   "bethune"
+  ],
+  "62457": [
+   "Houdain",
+   "bethune"
+  ],
+  "62270": [
+   "Divion",
+   "bethune"
+  ],
+  "62386": [
+   "Grenay",
+   "bethune"
+  ],
+  "62443": [
+   "Hersin-Coupigny",
+   "bethune"
+  ],
+  "62737": [
+   "Sains-en-Gohelle",
+   "bethune"
+  ],
+  "62035": [
+   "Annezin",
+   "bethune"
+  ],
+  "62555": [
+   "Marles-les-Mines",
+   "bethune"
+  ],
+  "62194": [
+   "Calonne-Ricouart",
+   "bethune"
+  ],
+  "62400": [
+   "Haillicourt",
+   "bethune"
+  ],
+  "62491": [
+   "Laventie",
+   "bethune"
+  ],
+  "62502": [
+   "Lestrem",
+   "bethune"
+  ],
+  "62846": [
+   "Vermelles",
+   "bethune"
+  ],
+  "62767": [
+   "Saint-Pol-sur-Ternoise",
+   "bethune"
+  ],
+  "62051": [
+   "Auchy-les-Mines",
+   "bethune"
+  ],
+  "62736": [
+   "Sailly-sur-la-Lys",
+   "bethune"
+  ],
+  "62019": [
+   "Aix-Noulette",
+   "bethune"
+  ],
+  "62863": [
+   "Violaines",
+   "bethune"
+  ],
+  "62489": [
+   "Lapugnoy",
+   "bethune"
+  ],
+  "62848": [
+   "Verquin",
+   "bethune"
+  ],
+  "62770": [
+   "Saint-Venant",
+   "bethune"
+  ],
+  "62338": [
+   "Fleurbaix",
+   "bethune"
+  ],
+  "62480": [
+   "Labourse",
+   "bethune"
+  ],
+  "62188": [
+   "Burbure",
+   "bethune"
+  ],
+  "62023": [
+   "Allouagne",
+   "bethune"
+  ],
+  "62224": [
+   "Chocques",
+   "bethune"
+  ],
+  "62706": [
+   "Richebourg",
+   "bethune"
+  ],
+  "62217": [
+   "Cauchy-à-la-Tour",
+   "bethune"
+  ],
+  "62252": [
+   "La Couture",
+   "bethune"
+  ],
+  "62376": [
+   "Gonnehem",
+   "bethune"
+  ],
+  "62735": [
+   "Sailly-Labourse",
+   "bethune"
+  ],
+  "62454": [
+   "Hinges",
+   "bethune"
+  ],
+  "62170": [
+   "Bouvigny-Boyeffles",
+   "bethune"
+  ],
+  "62841": [
+   "Vendin-lès-Béthune",
+   "bethune"
+  ],
+  "62520": [
+   "Locon",
+   "bethune"
+  ],
+  "62626": [
+   "Noyelles-lès-Vermelles",
+   "bethune"
+  ],
+  "62034": [
+   "Annequin",
+   "bethune"
+  ],
+  "62847": [
+   "Verquigneul",
+   "bethune"
+  ],
+  "62262": [
+   "Cuinchy",
+   "bethune"
+  ],
+  "62197": [
+   "Camblain-Châtelain",
+   "bethune"
+  ],
+  "62310": [
+   "Essars",
+   "bethune"
+  ],
+  "62540": [
+   "Maisnil-lès-Ruitz",
+   "bethune"
+  ],
+  "62529": [
+   "Lorgies",
+   "bethune"
+  ],
+  "62479": [
+   "Labeuvrière",
+   "bethune"
+  ],
+  "62349": [
+   "Fouquereuil",
+   "bethune"
+  ],
+  "62195": [
+   "Calonne-sur-la-Lys",
+   "bethune"
+  ],
+  "62652": [
+   "Pernes",
+   "bethune"
+  ],
+  "62727": [
+   "Ruitz",
+   "bethune"
+  ],
+  "62606": [
+   "Neuve-Chapelle",
+   "bethune"
+  ],
+  "62391": [
+   "Guarbecque",
+   "bethune"
+  ],
+  "62620": [
+   "Norrent-Fontes",
+   "bethune"
+  ],
+  "62713": [
+   "Robecq",
+   "bethune"
+  ],
+  "62584": [
+   "Mont-Bernanchon",
+   "bethune"
+  ],
+  "62200": [
+   "Cambrin",
+   "bethune"
+  ],
+  "62532": [
+   "Lozinghem",
+   "bethune"
+  ],
+  "62190": [
+   "Busnes",
+   "bethune"
+  ],
+  "62330": [
+   "Festubert",
+   "bethune"
+  ],
+  "62793": [
+   "Servins",
+   "bethune"
+  ],
+  "62836": [
+   "Vaudricourt",
+   "bethune"
+  ],
+  "62350": [
+   "Fouquières-lès-Béthune",
+   "bethune"
+  ],
+  "62693": [
+   "Rebreuve-Ranchicourt",
+   "bethune"
+  ],
+  "62486": [
+   "Lambres-lez-Aire",
+   "bethune"
+  ],
+  "62373": [
+   "Givenchy-lès-la-Bassée",
+   "bethune"
+  ],
+  "62407": [
+   "Ham-en-Artois",
+   "bethune"
+  ],
+  "62377": [
+   "Gosnay",
+   "bethune"
+  ],
+  "62851": [
+   "Vieille-Chapelle",
+   "bethune"
+  ],
+  "62232": [
+   "La Comté",
+   "bethune"
+  ],
+  "62340": [
+   "Floringhem",
+   "bethune"
+  ],
+  "62328": [
+   "Ferfay",
+   "bethune"
+  ],
+  "62750": [
+   "Saint-Hilaire-Cottes",
+   "bethune"
+  ],
+  "62445": [
+   "Hesdigneul-lès-Béthune",
+   "bethune"
+  ],
+  "62763": [
+   "Saint-Michel-sur-Ternoise",
+   "bethune"
+  ],
+  "62356": [
+   "Fresnicourt-le-Dolmen",
+   "bethune"
+  ],
+  "62367": [
+   "Gauchin-Verloingt",
+   "bethune"
+  ],
+  "62456": [
+   "Houchin",
+   "bethune"
+  ],
+  "62642": [
+   "Ourton",
+   "bethune"
+  ],
+  "62138": [
+   "Blangy-sur-Ternoise",
+   "bethune"
+  ],
+  "62269": [
+   "Diéval",
+   "bethune"
+  ],
+  "62036": [
+   "Anvin",
+   "bethune"
+  ],
+  "62028": [
+   "Ames",
+   "bethune"
+  ],
+  "62536": [
+   "Magnicourt-en-Comte",
+   "bethune"
+  ],
+  "62278": [
+   "Drouvin-le-Marais",
+   "bethune"
+  ],
+  "62747": [
+   "Saint-Floris",
+   "bethune"
+  ],
+  "62327": [
+   "Febvin-Palfart",
+   "bethune"
+  ],
+  "62166": [
+   "Bours",
+   "bethune"
+  ],
+  "62162": [
+   "Bourecq",
+   "bethune"
+  ],
+  "62512": [
+   "Ligny-lès-Aire",
+   "bethune"
+  ],
+  "62049": [
+   "Auchy-au-Bois",
+   "bethune"
+  ],
+  "62835": [
+   "Valhuon",
+   "bethune"
+  ],
+  "62717": [
+   "Roëllecourt",
+   "bethune"
+  ],
+  "62442": [
+   "Hernicourt",
+   "bethune"
+  ],
+  "62580": [
+   "Monchy-Breton",
+   "bethune"
+  ],
+  "62286": [
+   "Ecquedecques",
+   "bethune"
+  ],
+  "62335": [
+   "Fillièvres",
+   "bethune"
+  ],
+  "62451": [
+   "Heuchin",
+   "bethune"
+  ],
+  "62813": [
+   "La Thieuloye",
+   "bethune"
+  ],
+  "62029": [
+   "Amettes",
+   "bethune"
+  ],
+  "62701": [
+   "Rely",
+   "bethune"
+  ],
+  "62120": [
+   "Beugin",
+   "bethune"
+  ],
+  "62564": [
+   "Mazinghem",
+   "bethune"
+  ],
+  "62071": [
+   "Bailleul-lès-Pernes",
+   "bethune"
+  ],
+  "62500": [
+   "Lespesses",
+   "bethune"
+  ],
+  "62632": [
+   "Oblinghem",
+   "bethune"
+  ],
+  "62856": [
+   "Villers-Brûlin",
+   "bethune"
+  ],
+  "62380": [
+   "Gouy-Servins",
+   "bethune"
+  ],
+  "62601": [
+   "Nédonchel",
+   "bethune"
+  ],
+  "62077": [
+   "Bajus",
+   "bethune"
+  ],
+  "62314": [
+   "Estrée-Cauchy",
+   "bethune"
+  ],
+  "62333": [
+   "Fiefs",
+   "bethune"
+  ],
+  "62686": [
+   "Ramecourt",
+   "bethune"
+  ],
+  "62508": [
+   "Lières",
+   "bethune"
+  ],
+  "62260": [
+   "Croix-en-Ternois",
+   "bethune"
+  ],
+  "62218": [
+   "Caucourt",
+   "bethune"
+  ],
+  "62655": [
+   "Pierremont",
+   "bethune"
+  ],
+  "62732": [
+   "Sachin",
+   "bethune"
+  ],
+  "62258": [
+   "Croisette",
+   "bethune"
+  ],
+  "62669": [
+   "Pressy",
+   "bethune"
+  ],
+  "62366": [
+   "Gauchin-Légal",
+   "bethune"
+  ],
+  "62180": [
+   "Brias",
+   "bethune"
+  ],
+  "62740": [
+   "Sains-lès-Pernes",
+   "bethune"
+  ],
+  "62831": [
+   "Troisvaux",
+   "bethune"
+  ],
+  "62797": [
+   "Siracourt",
+   "bethune"
+  ],
+  "62581": [
+   "Monchy-Cayeux",
+   "bethune"
+  ],
+  "62553": [
+   "Marest",
+   "bethune"
+  ],
+  "62539": [
+   "Maisnil",
+   "bethune"
+  ],
+  "62805": [
+   "Tangry",
+   "bethune"
+  ],
+  "62070": [
+   "Bailleul-aux-Cornailles",
+   "bethune"
+  ],
+  "62808": [
+   "Teneur",
+   "bethune"
+  ],
+  "62633": [
+   "Œuf-en-Ternois",
+   "bethune"
+  ],
+  "62221": [
+   "Chelers",
+   "bethune"
+  ],
+  "62885": [
+   "Westrehem",
+   "bethune"
+  ],
+  "62362": [
+   "Frévillers",
+   "bethune"
+  ],
+  "62299": [
+   "Eps",
+   "bethune"
+  ],
+  "62514": [
+   "Ligny-Saint-Flochel",
+   "bethune"
+  ],
+  "62337": [
+   "Flers",
+   "bethune"
+  ],
+  "62641": [
+   "Ostreville",
+   "bethune"
+  ],
+  "62668": [
+   "Prédefin",
+   "bethune"
+  ],
+  "62303": [
+   "Érin",
+   "bethune"
+  ],
+  "62517": [
+   "Linghem",
+   "bethune"
+  ],
+  "62468": [
+   "Humières",
+   "bethune"
+  ],
+  "62450": [
+   "Hestrus",
+   "bethune"
+  ],
+  "62416": [
+   "Hautecloque",
+   "bethune"
+  ],
+  "62109": [
+   "Bergueneuse",
+   "bethune"
+  ],
+  "62441": [
+   "Hermin",
+   "bethune"
+  ],
+  "62883": [
+   "Wavrans-sur-Ternoise",
+   "bethune"
+  ],
+  "62058": [
+   "Aumerval",
+   "bethune"
+  ],
+  "62890": [
+   "Willeman",
+   "bethune"
+  ],
+  "62467": [
+   "Humerœuille",
+   "bethune"
+  ],
+  "62282": [
+   "Éclimeux",
+   "bethune"
+  ],
+  "62518": [
+   "Linzeux",
+   "bethune"
+  ],
+  "62558": [
+   "Marquay",
+   "bethune"
+  ],
+  "62114": [
+   "Bermicourt",
+   "bethune"
+  ],
+  "62436": [
+   "Herlin-le-Sec",
+   "bethune"
+  ],
+  "62142": [
+   "Blingel",
+   "bethune"
+  ],
+  "62256": [
+   "Crépy",
+   "bethune"
+  ],
+  "62600": [
+   "Nédon",
+   "bethune"
+  ],
+  "62118": [
+   "Béthonsart",
+   "bethune"
+  ],
+  "62818": [
+   "Tilly-Capelle",
+   "bethune"
+  ],
+  "62462": [
+   "Huclier",
+   "bethune"
+  ],
+  "62348": [
+   "Foufflin-Ricametz",
+   "bethune"
+  ],
+  "62171": [
+   "Boyaval",
+   "bethune"
+  ],
+  "62047": [
+   "Aubrometz",
+   "bethune"
+  ],
+  "62101": [
+   "Beauvois",
+   "bethune"
+  ],
+  "62283": [
+   "Écoivres",
+   "bethune"
+  ],
+  "62352": [
+   "Framecourt",
+   "bethune"
+  ],
+  "62339": [
+   "Fleury",
+   "bethune"
+  ],
+  "62435": [
+   "Herlincourt",
+   "bethune"
+  ],
+  "62344": [
+   "Fontaine-lès-Hermans",
+   "bethune"
+  ],
+  "62342": [
+   "Fontaine-lès-Boulans",
+   "bethune"
+  ],
+  "62137": [
+   "Blangerval-Blangermont",
+   "bethune"
+  ],
+  "62470": [
+   "Incourt",
+   "bethune"
+  ],
+  "62238": [
+   "Conteville-en-Ternois",
+   "bethune"
+  ],
+  "62433": [
+   "Héricourt",
+   "bethune"
+  ],
+  "62301": [
+   "Équirre",
+   "bethune"
+  ],
+  "62625": [
+   "Noyelles-lès-Humières",
+   "bethune"
+  ],
+  "62720": [
+   "Rombly",
+   "bethune"
+  ],
+  "62605": [
+   "Neulette",
+   "bethune"
+  ],
+  "62396": [
+   "Guinecourt",
+   "bethune"
+  ],
+  "62041": [
+   "Arras",
+   "arras"
+  ],
+  "62510": [
+   "Liévin",
+   "arras"
+  ],
+  "62004": [
+   "Achicourt",
+   "arras"
+  ],
+  "62753": [
+   "Saint-Laurent-Blangy",
+   "arras"
+  ],
+  "62263": [
+   "Dainville",
+   "arras"
+  ],
+  "62099": [
+   "Beaurains",
+   "arras"
+  ],
+  "62865": [
+   "Vitry-en-Artois",
+   "arras"
+  ],
+  "62032": [
+   "Angres",
+   "arras"
+  ],
+  "62128": [
+   "Biache-Saint-Vaast",
+   "arras"
+  ],
+  "62764": [
+   "Saint-Nicolas",
+   "arras"
+  ],
+  "62861": [
+   "Vimy",
+   "arras"
+  ],
+  "62080": [
+   "Bapaume",
+   "arras"
+  ],
+  "62744": [
+   "Sainte-Catherine",
+   "arras"
+  ],
+  "62361": [
+   "Frévent",
+   "arras"
+  ],
+  "62037": [
+   "Anzin-Saint-Aubin",
+   "arras"
+  ],
+  "62801": [
+   "Souchez",
+   "arras"
+  ],
+  "62557": [
+   "Marœuil",
+   "arras"
+  ],
+  "62371": [
+   "Givenchy-en-Gohelle",
+   "arras"
+  ],
+  "62001": [
+   "Ablain-Saint-Nazaire",
+   "arras"
+  ],
+  "62259": [
+   "Croisilles",
+   "arras"
+  ],
+  "62013": [
+   "Agny",
+   "arras"
+  ],
+  "62063": [
+   "Avesnes-le-Comte",
+   "arras"
+  ],
+  "62284": [
+   "Écourt-Saint-Quentin",
+   "arras"
+  ],
+  "62609": [
+   "Neuville-Saint-Vaast",
+   "arras"
+  ],
+  "62817": [
+   "Tilloy-lès-Mofflaines",
+   "arras"
+  ],
+  "62181": [
+   "Bucquoy",
+   "arras"
+  ],
+  "62045": [
+   "Aubigny-en-Artois",
+   "arras"
+  ],
+  "62073": [
+   "Bailleul-Sir-Berthoult",
+   "arras"
+  ],
+  "62279": [
+   "Duisans",
+   "arras"
+  ],
+  "62718": [
+   "Rœux",
+   "arras"
+  ],
+  "62810": [
+   "Thélus",
+   "arras"
+  ],
+  "62323": [
+   "Fampoux",
+   "arras"
+  ],
+  "62638": [
+   "Oisy-le-Verger",
+   "arras"
+  ],
+  "62164": [
+   "Bourlon",
+   "arras"
+  ],
+  "62712": [
+   "Rivière",
+   "arras"
+  ],
+  "62839": [
+   "Vaulx-Vraucourt",
+   "arras"
+  ],
+  "62440": [
+   "Hermies",
+   "arras"
+  ],
+  "62869": [
+   "Wailly",
+   "arras"
+  ],
+  "62559": [
+   "Marquion",
+   "arras"
+  ],
+  "62042": [
+   "Athies",
+   "arras"
+  ],
+  "62589": [
+   "Mont-Saint-Éloi",
+   "arras"
+  ],
+  "62097": [
+   "Beaumetz-lès-Loges",
+   "arras"
+  ],
+  "62331": [
+   "Feuchy",
+   "arras"
+  ],
+  "62005": [
+   "Achiet-le-Grand",
+   "arras"
+  ],
+  "62039": [
+   "Arleux-en-Gohelle",
+   "arras"
+  ],
+  "62785": [
+   "Savy-Berlette",
+   "arras"
+  ],
+  "62117": [
+   "Bertincourt",
+   "arras"
+  ],
+  "62825": [
+   "Tortequesne",
+   "arras"
+  ],
+  "62627": [
+   "Noyelles-sous-Bellonne",
+   "arras"
+  ],
+  "62213": [
+   "Carency",
+   "arras"
+  ],
+  "62820": [
+   "Tincques",
+   "arras"
+  ],
+  "62714": [
+   "Roclincourt",
+   "arras"
+  ],
+  "62007": [
+   "Acq",
+   "arras"
+  ],
+  "62650": [
+   "Pelves",
+   "arras"
+  ],
+  "62369": [
+   "Gavrelle",
+   "arras"
+  ],
+  "62649": [
+   "Pas-en-Artois",
+   "arras"
+  ],
+  "62784": [
+   "Saulty",
+   "arras"
+  ],
+  "62874": [
+   "Wanquetin",
+   "arras"
+  ],
+  "62477": [
+   "Izel-lès-Hameau",
+   "arras"
+  ],
+  "62568": [
+   "Mercatel",
+   "arras"
+  ],
+  "62728": [
+   "Rumaucourt",
+   "arras"
+  ],
+  "62199": [
+   "Camblain-l'Abbé",
+   "arras"
+  ],
+  "62582": [
+   "Monchy-le-Preux",
+   "arras"
+  ],
+  "62399": [
+   "Habarcq",
+   "arras"
+  ],
+  "62672": [
+   "Puisieux",
+   "arras"
+  ],
+  "62130": [
+   "Bienvillers-au-Bois",
+   "arras"
+  ],
+  "62734": [
+   "Sailly-en-Ostrevent",
+   "arras"
+  ],
+  "62892": [
+   "Willerval",
+   "arras"
+  ],
+  "62154": [
+   "Bonnières",
+   "arras"
+  ],
+  "62384": [
+   "Graincourt-lès-Havrincourt",
+   "arras"
+  ],
+  "62864": [
+   "Vis-en-Artois",
+   "arras"
+  ],
+  "62673": [
+   "Quéant",
+   "arras"
+  ],
+  "62324": [
+   "Farbus",
+   "arras"
+  ],
+  "62873": [
+   "Wancourt",
+   "arras"
+  ],
+  "62011": [
+   "Agnez-lès-Duisans",
+   "arras"
+  ],
+  "62572": [
+   "Metz-en-Couture",
+   "arras"
+  ],
+  "62854": [
+   "Villers-au-Bois",
+   "arras"
+  ],
+  "62355": [
+   "Fresnes-lès-Montauban",
+   "arras"
+  ],
+  "62583": [
+   "Mondicourt",
+   "arras"
+  ],
+  "62158": [
+   "Boubers-sur-Canche",
+   "arras"
+  ],
+  "62469": [
+   "Inchy-en-Artois",
+   "arras"
+  ],
+  "62612": [
+   "Neuvireuil",
+   "arras"
+  ],
+  "62796": [
+   "Simencourt",
+   "arras"
+  ],
+  "62646": [
+   "Palluel",
+   "arras"
+  ],
+  "62112": [
+   "Berles-au-Bois",
+   "arras"
+  ],
+  "62579": [
+   "Monchy-au-Bois",
+   "arras"
+  ],
+  "62438": [
+   "Hermaville",
+   "arras"
+  ],
+  "62096": [
+   "Beaumetz-lès-Cambrai",
+   "arras"
+  ],
+  "62428": [
+   "Hénin-sur-Cojeul",
+   "arras"
+  ],
+  "62422": [
+   "Hébuterne",
+   "arras"
+  ],
+  "62754": [
+   "Saint-Léger",
+   "arras"
+  ],
+  "62151": [
+   "Boisleux-au-Mont",
+   "arras"
+  ],
+  "62515": [
+   "Ligny-Thilloy",
+   "arras"
+  ],
+  "62332": [
+   "Ficheux",
+   "arras"
+  ],
+  "62298": [
+   "Épinoy",
+   "arras"
+  ],
+  "62115": [
+   "Berneville",
+   "arras"
+  ],
+  "62285": [
+   "Écoust-Saint-Mein",
+   "arras"
+  ],
+  "62113": [
+   "Berles-Monchel",
+   "arras"
+  ],
+  "62611": [
+   "Neuville-Vitasse",
+   "arras"
+  ],
+  "62248": [
+   "Courcelles-le-Comte",
+   "arras"
+  ],
+  "62144": [
+   "Boiry-Becquerelle",
+   "arras"
+  ],
+  "62317": [
+   "Étaing",
+   "arras"
+  ],
+  "62631": [
+   "Nuncq-Hautecôte",
+   "arras"
+  ],
+  "62415": [
+   "Haute-Avesnes",
+   "arras"
+  ],
+  "62651": [
+   "Penin",
+   "arras"
+  ],
+  "62405": [
+   "Hamblain-les-Prés",
+   "arras"
+  ],
+  "62660": [
+   "Plouvain",
+   "arras"
+  ],
+  "62145": [
+   "Boiry-Notre-Dame",
+   "arras"
+  ],
+  "62586": [
+   "Montenescourt",
+   "arras"
+  ],
+  "62781": [
+   "Sauchy-Lestrée",
+   "arras"
+  ],
+  "62081": [
+   "Baralle",
+   "arras"
+  ],
+  "62909": [
+   "Ytres",
+   "arras"
+  ],
+  "62829": [
+   "Le Transloy",
+   "arras"
+  ],
+  "62192": [
+   "Cagnicourt",
+   "arras"
+  ],
+  "62639": [
+   "Oppy",
+   "arras"
+  ],
+  "62086": [
+   "Bavincourt",
+   "arras"
+  ],
+  "62782": [
+   "Saudemont",
+   "arras"
+  ],
+  "62392": [
+   "Guémappe",
+   "arras"
+  ],
+  "62689": [
+   "Ransart",
+   "arras"
+  ],
+  "62092": [
+   "Beaufort-Blavincourt",
+   "arras"
+  ],
+  "62341": [
+   "Foncquevillers",
+   "arras"
+  ],
+  "62363": [
+   "Frévin-Capelle",
+   "arras"
+  ],
+  "62306": [
+   "Ervillers",
+   "arras"
+  ],
+  "62703": [
+   "Rémy",
+   "arras"
+  ],
+  "62780": [
+   "Sauchy-Cauchy",
+   "arras"
+  ],
+  "62147": [
+   "Boiry-Sainte-Rictrude",
+   "arras"
+  ],
+  "62385": [
+   "Grand-Rullecourt",
+   "arras"
+  ],
+  "62878": [
+   "Warlus",
+   "arras"
+  ],
+  "62800": [
+   "Souastre",
+   "arras"
+  ],
+  "62290": [
+   "Écurie",
+   "arras"
+  ],
+  "62172": [
+   "Boyelles",
+   "arras"
+  ],
+  "62804": [
+   "Sus-Saint-Léger",
+   "arras"
+  ],
+  "62881": [
+   "Beauvoir-Wavans",
+   "arras"
+  ],
+  "62387": [
+   "Grévillers",
+   "arras"
+  ],
+  "62198": [
+   "Cambligneul",
+   "arras"
+  ],
+  "62122": [
+   "Beugny",
+   "arras"
+  ],
+  "62421": [
+   "Havrincourt",
+   "arras"
+  ],
+  "62490": [
+   "Lattre-Saint-Quentin",
+   "arras"
+  ],
+  "62640": [
+   "Orville",
+   "arras"
+  ],
+  "62068": [
+   "Ayette",
+   "arras"
+  ],
+  "62320": [
+   "Étrun",
+   "arras"
+  ],
+  "62379": [
+   "Gouy-en-Artois",
+   "arras"
+  ],
+  "62006": [
+   "Achiet-le-Petit",
+   "arras"
+  ],
+  "62697": [
+   "Récourt",
+   "arras"
+  ],
+  "62739": [
+   "Sains-lès-Marquion",
+   "arras"
+  ],
+  "62484": [
+   "Lagnicourt-Marcel",
+   "arras"
+  ],
+  "62082": [
+   "Barastre",
+   "arras"
+  ],
+  "62418": [
+   "Hauteville",
+   "arras"
+  ],
+  "62663": [
+   "Pommera",
+   "arras"
+  ],
+  "62671": [
+   "Pronville-en-Artois",
+   "arras"
+  ],
+  "62135": [
+   "Blairville",
+   "arras"
+  ],
+  "62507": [
+   "Liencourt",
+   "arras"
+  ],
+  "62280": [
+   "Dury",
+   "arras"
+  ],
+  "62594": [
+   "Mory",
+   "arras"
+  ],
+  "62030": [
+   "Amplier",
+   "arras"
+  ],
+  "62061": [
+   "Averdoingt",
+   "arras"
+  ],
+  "62223": [
+   "Chérisy",
+   "arras"
+  ],
+  "62597": [
+   "Moyenneville",
+   "arras"
+  ],
+  "62424": [
+   "Hendecourt-lès-Cagnicourt",
+   "arras"
+  ],
+  "62009": [
+   "Adinfer",
+   "arras"
+  ],
+  "62131": [
+   "Bihucourt",
+   "arras"
+  ],
+  "62272": [
+   "Douchy-lès-Ayette",
+   "arras"
+  ],
+  "62731": [
+   "Ruyaulcourt",
+   "arras"
+  ],
+  "62733": [
+   "Sailly-au-Bois",
+   "arras"
+  ],
+  "62184": [
+   "Buissy",
+   "arras"
+  ],
+  "62111": [
+   "Berlencourt-le-Cauroy",
+   "arras"
+  ],
+  "62343": [
+   "Fontaine-lès-Croisilles",
+   "arras"
+  ],
+  "62715": [
+   "Rocquigny",
+   "arras"
+  ],
+  "62406": [
+   "Hamelincourt",
+   "arras"
+  ],
+  "62630": [
+   "Noyelle-Vion",
+   "arras"
+  ],
+  "62012": [
+   "Agnières",
+   "arras"
+  ],
+  "62146": [
+   "Boiry-Saint-Martin",
+   "arras"
+  ],
+  "62859": [
+   "Villers-l'Hôpital",
+   "arras"
+  ],
+  "62152": [
+   "Boisleux-Saint-Marc",
+   "arras"
+  ],
+  "62695": [
+   "Rebreuviette",
+   "arras"
+  ],
+  "62709": [
+   "Riencourt-lès-Cagnicourt",
+   "arras"
+  ],
+  "62319": [
+   "Éterpigny",
+   "arras"
+  ],
+  "62459": [
+   "Houvin-Houvigneul",
+   "arras"
+  ],
+  "62855": [
+   "Villers-au-Flos",
+   "arras"
+  ],
+  "62664": [
+   "Pommier",
+   "arras"
+  ],
+  "62858": [
+   "Villers-lès-Cagnicourt",
+   "arras"
+  ],
+  "62093": [
+   "Beaulencourt",
+   "arras"
+  ],
+  "62163": [
+   "Bouret-sur-Canche",
+   "arras"
+  ],
+  "62353": [
+   "Frémicourt",
+   "arras"
+  ],
+  "62475": [
+   "Ivergny",
+   "arras"
+  ],
+  "62074": [
+   "Bailleulval",
+   "arras"
+  ],
+  "62182": [
+   "Buire-au-Bois",
+   "arras"
+  ],
+  "62358": [
+   "Fresnoy-en-Gohelle",
+   "arras"
+  ],
+  "62493": [
+   "Lebucquière",
+   "arras"
+  ],
+  "62326": [
+   "Favreuil",
+   "arras"
+  ],
+  "62574": [
+   "Mingoval",
+   "arras"
+  ],
+  "62185": [
+   "Bullecourt",
+   "arras"
+  ],
+  "62316": [
+   "Estrée-Wamin",
+   "arras"
+  ],
+  "62211": [
+   "Capelle-Fermont",
+   "arras"
+  ],
+  "62234": [
+   "Conchy-sur-Canche",
+   "arras"
+  ],
+  "62465": [
+   "Humbercamps",
+   "arras"
+  ],
+  "62879": [
+   "Warluzel",
+   "arras"
+  ],
+  "62761": [
+   "Saint-Martin-sur-Cojeul",
+   "arras"
+  ],
+  "62368": [
+   "Gaudiempré",
+   "arras"
+  ],
+  "62816": [
+   "Tilloy-lès-Hermaville",
+   "arras"
+  ],
+  "62072": [
+   "Bailleulmont",
+   "arras"
+  ],
+  "62106": [
+   "Bellonne",
+   "arras"
+  ],
+  "62346": [
+   "Fortel-en-Artois",
+   "arras"
+  ],
+  "62027": [
+   "Ambrines",
+   "arras"
+  ],
+  "62216": [
+   "La Cauchie",
+   "arras"
+  ],
+  "62591": [
+   "Morchies",
+   "arras"
+  ],
+  "62002": [
+   "Ablainzevelle",
+   "arras"
+  ],
+  "62414": [
+   "Haucourt",
+   "arras"
+  ],
+  "62409": [
+   "Hannescamps",
+   "arras"
+  ],
+  "62542": [
+   "Maizières",
+   "arras"
+  ],
+  "62798": [
+   "Sombrin",
+   "arras"
+  ],
+  "62830": [
+   "Trescault",
+   "arras"
+  ],
+  "62404": [
+   "Halloy",
+   "arras"
+  ],
+  "62084": [
+   "Barly",
+   "arras"
+  ],
+  "62776": [
+   "Sapignies",
+   "arras"
+  ],
+  "62802": [
+   "Le Souich",
+   "arras"
+  ],
+  "62378": [
+   "Gouves",
+   "arras"
+  ],
+  "62410": [
+   "Haplincourt",
+   "arras"
+  ],
+  "62694": [
+   "Rebreuve-sur-Canche",
+   "arras"
+  ],
+  "62513": [
+   "Ligny-sur-Canche",
+   "arras"
+  ],
+  "62426": [
+   "Héninel",
+   "arras"
+  ],
+  "62616": [
+   "Nœux-lès-Auxi",
+   "arras"
+  ],
+  "62544": [
+   "Manin",
+   "arras"
+  ],
+  "62779": [
+   "Sarton",
+   "arras"
+  ],
+  "62121": [
+   "Beugnâtre",
+   "arras"
+  ],
+  "62877": [
+   "Warlincourt-lès-Pas",
+   "arras"
+  ],
+  "62064": [
+   "Avesnes-lès-Bapaume",
+   "arras"
+  ],
+  "62561": [
+   "Martinpuich",
+   "arras"
+  ],
+  "62187": [
+   "Buneville",
+   "arras"
+  ],
+  "62608": [
+   "Neuville-Bourjonval",
+   "arras"
+  ],
+  "62372": [
+   "Givenchy-le-Noble",
+   "arras"
+  ],
+  "62629": [
+   "Noyellette",
+   "arras"
+  ],
+  "62777": [
+   "Le Sars",
+   "arras"
+  ],
+  "62374": [
+   "Gomiécourt",
+   "arras"
+  ],
+  "62430": [
+   "Hénu",
+   "arras"
+  ],
+  "62425": [
+   "Hendecourt-lès-Ransart",
+   "arras"
+  ],
+  "62511": [
+   "Lignereuil",
+   "arras"
+  ],
+  "62860": [
+   "Villers-Sir-Simon",
+   "arras"
+  ],
+  "62434": [
+   "La Herlière",
+   "arras"
+  ],
+  "62576": [
+   "Moncheaux-lès-Frévent",
+   "arras"
+  ],
+  "62189": [
+   "Bus",
+   "arras"
+  ],
+  "62876": [
+   "Warlencourt-Eaucourt",
+   "arras"
+  ],
+  "62619": [
+   "Noreuil",
+   "arras"
+  ],
+  "62840": [
+   "Vélu",
+   "arras"
+  ],
+  "62085": [
+   "Basseux",
+   "arras"
+  ],
+  "62381": [
+   "Gouy-en-Ternois",
+   "arras"
+  ],
+  "62857": [
+   "Villers-Châtel",
+   "arras"
+  ],
+  "62809": [
+   "Ternas",
+   "arras"
+  ],
+  "62741": [
+   "Saint-Amand",
+   "arras"
+  ],
+  "62347": [
+   "Fosseux",
+   "arras"
+  ],
+  "62795": [
+   "Sibiville",
+   "arras"
+  ],
+  "62103": [
+   "Béhagnies",
+   "arras"
+  ],
+  "62243": [
+   "Coullemont",
+   "arras"
+  ],
+  "62322": [
+   "Famechon",
+   "arras"
+  ],
+  "62537": [
+   "Magnicourt-sur-Canche",
+   "arras"
+  ],
+  "62578": [
+   "Monchiet",
+   "arras"
+  ],
+  "62091": [
+   "Beaudricourt",
+   "arras"
+  ],
+  "62814": [
+   "Thièvres",
+   "arras"
+  ],
+  "62266": [
+   "Denier",
+   "arras"
+  ],
+  "62129": [
+   "Biefvillers-lès-Bapaume",
+   "arras"
+  ],
+  "62593": [
+   "Morval",
+   "arras"
+  ],
+  "62375": [
+   "Gommecourt",
+   "arras"
+  ],
+  "62079": [
+   "Bancourt",
+   "arras"
+  ],
+  "62722": [
+   "Rougefay",
+   "arras"
+  ],
+  "62778": [
+   "Sars-le-Bois",
+   "arras"
+  ],
+  "62242": [
+   "Couin",
+   "arras"
+  ],
+  "62253": [
+   "Couturelle",
+   "arras"
+  ],
+  "62577": [
+   "Monchel-sur-Canche",
+   "arras"
+  ],
+  "62833": [
+   "Vacquerie-le-Boucq",
+   "arras"
+  ],
+  "62208": [
+   "Canettemont",
+   "arras"
+  ],
+  "62590": [
+   "Monts-en-Ternois",
+   "arras"
+  ],
+  "62607": [
+   "Neuville-au-Cornet",
+   "arras"
+  ],
+  "62791": [
+   "Séricourt",
+   "arras"
+  ],
+  "62143": [
+   "Boffles",
+   "arras"
+  ],
+  "62494": [
+   "Léchelle",
+   "arras"
+  ],
+  "62708": [
+   "Riencourt-lès-Bapaume",
+   "arras"
+  ],
+  "62389": [
+   "Grincourt-lès-Pas",
+   "arras"
+  ]
+ },
+ "ajust": [
+  [
+   "Douvrin",
+   "+15",
+   "12 % de nouveaux arrivants, grandes maisons (4,9 pièces)",
+   "lens"
+  ],
+  [
+   "Corbehem",
+   "+15",
+   "grandes maisons (5,1 pièces), 1 % de résidences secondaires",
+   "lens"
+  ],
+  [
+   "Quiéry-la-Motte",
+   "+20",
+   "revenus élevés (26,5 k€ médian), 2 % de résidences secondaires",
+   "lens"
+  ],
+  [
+   "Bois-Bernard",
+   "+20",
+   "1 % de résidences secondaires, revenus élevés (23,9 k€ médian)",
+   "lens"
+  ],
+  [
+   "Gouy-sous-Bellonne",
+   "+15",
+   "grandes maisons (5,3 pièces), 1 % de résidences secondaires",
+   "lens"
+  ],
+  [
+   "Izel-lès-Équerchin",
+   "+15",
+   "grandes maisons (5,3 pièces), 1 % de résidences secondaires",
+   "lens"
+  ],
+  [
+   "Fleurbaix",
+   "+20",
+   "revenus élevés (30,3 k€ médian)",
+   "bethune"
+  ],
+  [
+   "Vaudricourt",
+   "+25",
+   "revenus élevés (29,7 k€ médian), 11 % de nouveaux arrivants",
+   "bethune"
+  ],
+  [
+   "Lorgies",
+   "+15",
+   "revenus élevés (28,3 k€ médian)",
+   "bethune"
+  ],
+  [
+   "Vieille-Chapelle",
+   "+15",
+   "revenus élevés (26,8 k€ médian)",
+   "bethune"
+  ],
+  [
+   "Hesdigneul-lès-Béthune",
+   "+15",
+   "12 % de nouveaux arrivants, revenus élevés (23,9 k€ médian)",
+   "bethune"
+  ],
+  [
+   "Duisans",
+   "+15",
+   "revenus élevés (28,9 k€ médian), 9 % de nouveaux arrivants",
+   "arras"
+  ],
+  [
+   "Carency",
+   "+20",
+   "grandes maisons (5,7 pièces)",
+   "arras"
+  ],
+  [
+   "Tortequesne",
+   "+15",
+   "14 % de résidences secondaires",
+   "arras"
+  ]
+ ],
+ "plan": {
+  "lens": {
+   "Création / aménagement paysager": 1.13,
+   "Terrasse (bois, composite, dallage)": 1.03,
+   "Entretien de jardin": 0.79,
+   "Allée / cour / pavage / enrobé": 1.09,
+   "Gazon / pelouse": 0.83,
+   "Enrochement / murets / talus": 1.09,
+   "Clôture / portail": 0.94,
+   "Plantations / massifs / haies": 0.72,
+   "Arrosage automatique": 0.61,
+   "Bassin / point d'eau": 0.72
+  },
+  "bethune": {
+   "Création / aménagement paysager": 1.07,
+   "Terrasse (bois, composite, dallage)": 1.03,
+   "Entretien de jardin": 0.79,
+   "Allée / cour / pavage / enrobé": 1.01,
+   "Gazon / pelouse": 0.76,
+   "Enrochement / murets / talus": 1.0,
+   "Clôture / portail": 0.89,
+   "Plantations / massifs / haies": 0.69,
+   "Arrosage automatique": 0.61,
+   "Bassin / point d'eau": 0.72
+  },
+  "arras": {
+   "Création / aménagement paysager": 1.3,
+   "Terrasse (bois, composite, dallage)": 1.23,
+   "Entretien de jardin": 0.79,
+   "Allée / cour / pavage / enrobé": 1.26,
+   "Gazon / pelouse": 0.97,
+   "Enrochement / murets / talus": 1.27,
+   "Clôture / portail": 1.09,
+   "Plantations / massifs / haies": 0.88,
+   "Arrosage automatique": 0.61,
+   "Bassin / point d'eau": 0.72
+  }
+ },
+ "quartiers": [
+  [
+   "lens",
+   "- Lens – Lens Est 4 : **+25 %** — 24 % de nouveaux arrivants, 3 % de résidences secondaires — centre : 50.42761, 2.83509"
+  ],
+  [
+   "lens",
+   "- Lens – Lens Est 5 : **+25 %** — 20 % de nouveaux arrivants, 2 % de résidences secondaires — centre : 50.42972, 2.82733"
+  ],
+  [
+   "lens",
+   "- Hénin-Beaumont – Quartier de Beaumont : **+20 %** — revenus élevés (22,4 k€ médian), 1 % de résidences secondaires — centre : 50.39319, 2.9657"
+  ],
+  [
+   "lens",
+   "- Hénin-Beaumont – Champ de l'Abbaye : **+20 %** — grandes maisons (5 pièces), 1 % de résidences secondaires — centre : 50.44273, 2.96218"
+  ],
+  [
+   "lens",
+   "- Oignies – Perdsemence : **+20 %** — grandes maisons (5 pièces), 14 % de nouveaux arrivants — centre : 50.46386, 3.00275"
+  ],
+  [
+   "lens",
+   "- Dourges – Ouest : **+15 %** — revenus élevés (21,3 k€ médian) — centre : 50.44013, 2.98418"
+  ],
+  [
+   "lens",
+   "- Douvrin – Sud : **+15 %** — revenus élevés (20,9 k€ médian), 12 % de nouveaux arrivants — centre : 50.50853, 2.81951"
+  ],
+  [
+   "lens",
+   "- Lens – Lens Nord-Est 6 : **+15 %** — 15 % de nouveaux arrivants, 1 % de résidences secondaires — centre : 50.44128, 2.82494"
+  ],
+  [
+   "lens",
+   "- Noyelles-Godault – Nord : **+20 %** — grandes maisons (5 pièces), 12 % de nouveaux arrivants — centre : 50.42663, 3.0038"
+  ],
+  [
+   "lens",
+   "- Méricourt – Quartier Ouest : **+15 %** — grandes maisons (5 pièces) — centre : 50.40093, 2.85985"
+  ],
+  [
+   "lens",
+   "- À exclure ou −30 % :"
+  ],
+  [
+   "lens",
+   "- Lens – Lens Nord-Est 4 (8 % de maisons, revenu médian 13,1 k€) — centre : 50.44556, 2.83567"
+  ],
+  [
+   "bethune",
+   "- Béthune – Rue de Lille-Faubourg d'Arras : **+25 %** — 24 % de nouveaux arrivants, 4 % de résidences secondaires — centre : 50.51948, 2.65189"
+  ],
+  [
+   "bethune",
+   "- Béthune – Centre Ville : **+25 %** — 21 % de nouveaux arrivants, grandes maisons (5,5 pièces) — centre : 50.53197, 2.63776"
+  ],
+  [
+   "bethune",
+   "- Béthune – Catorive Mont Sorel Rabat Espace Industriel Fleming : **+15 %** — 16 % de nouveaux arrivants, 1 % de résidences secondaires — centre : 50.54095, 2.63864"
+  ],
+  [
+   "bethune",
+   "- Béthune – Beau Marais-Gare d'Eau-Espace Lafayette : **+15 %** — 16 % de nouveaux arrivants, revenus élevés (21 k€ médian) — centre : 50.53364, 2.6552"
+  ],
+  [
+   "bethune",
+   "- Houdain – Sud : **+15 %** — revenus élevés (22,6 k€ médian) — centre : 50.45251, 2.53112"
+  ],
+  [
+   "bethune",
+   "- Annezin – Nord : **+15 %** — revenus élevés (21,6 k€ médian) — centre : 50.5472, 2.62989"
+  ],
+  [
+   "bethune",
+   "- Béthune – Pierrette Jardin Public : **+15 %** — revenus élevés (22,6 k€ médian), 14 % de nouveaux arrivants — centre : 50.52554, 2.62591"
+  ],
+  [
+   "bethune",
+   "- Barlin – Cité du 7 : **+15 %** — 15 % de nouveaux arrivants, revenus élevés (20,2 k€ médian) — centre : 50.46177, 2.61354"
+  ],
+  [
+   "bethune",
+   "- Bruay-la-Buissière – Quartier Labuissière Centre : **+15 %** — revenus élevés (21,2 k€ médian), 2 % de résidences secondaires — centre : 50.4844, 2.5663"
+  ],
+  [
+   "bethune",
+   "- Beuvry – Quinzy-ZAC-Ballon : **+15 %** — 14 % de nouveaux arrivants, 1 % de résidences secondaires — centre : 50.5153, 2.67488"
+  ],
+  [
+   "arras",
+   "- Arras – Hyper Centre : **+25 %** — 26 % de nouveaux arrivants, 3 % de résidences secondaires — centre : 50.29039, 2.77555"
+  ],
+  [
+   "arras",
+   "- Arras – Quartier Universitaire : **+20 %** — 3 % de résidences secondaires, 22 % de nouveaux arrivants — centre : 50.27918, 2.79368"
+  ],
+  [
+   "arras",
+   "- Arras – Saint-Sauveur : **+20 %** — 24 % de nouveaux arrivants, 2 % de résidences secondaires — centre : 50.28688, 2.79774"
+  ],
+  [
+   "arras",
+   "- Arras – Vauban : **+20 %** — grandes maisons (6,8 pièces), 17 % de nouveaux arrivants — centre : 50.28507, 2.77213"
+  ],
+  [
+   "arras",
+   "- Arras – Ronville : **+15 %** — 2 % de résidences secondaires, revenus élevés (24,3 k€ médian) — centre : 50.28391, 2.78475"
+  ],
+  [
+   "arras",
+   "- Achicourt – Vieil Achicourt : **+15 %** — revenus élevés (23,5 k€ médian) — centre : 50.27211, 2.74872"
+  ],
+  [
+   "arras",
+   "- Arras – Méaulens Saint-Géry : **+15 %** — 3 % de résidences secondaires, 17 % de nouveaux arrivants — centre : 50.29624, 2.77615"
+  ],
+  [
+   "arras",
+   "- Arras – Préfecture : **+15 %** — 24 % de nouveaux arrivants — centre : 50.29371, 2.76448"
+  ],
+  [
+   "arras",
+   "- Arras – Faubourg d'Amiens : **+15 %** — 16 % de nouveaux arrivants, revenus élevés (22,4 k€ médian) — centre : 50.28554, 2.75586"
+  ]
+ ],
+ "centre": {
+  "lens": "Lens : 59 % de maisons → **à garder**. Ville pavillonnaire (59 % de maisons) : garde-la, elle pèse 9 % du potentiel.",
+  "bethune": "Béthune : 50 % de maisons → **à garder**. Ville pavillonnaire (50 % de maisons) : garde-la, elle pèse 5 % du potentiel.",
+  "arras": "Arras : 33 % de maisons → **enchère −20 à −40 %**. Ville mixte (33 % de maisons) : garde-la avec une enchère plus basse (−20 %) ; la périphérie porte l'essentiel."
+ }
+}
