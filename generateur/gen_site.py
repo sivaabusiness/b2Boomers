@@ -77,8 +77,7 @@ def tel(cls="", txt=None):
     c = f' class="{cls}"' if cls else ""
     return f'<a{c} href="tel:{TEL_LIEN}">{txt or TEL_AFF}</a>'
 
-FONTS = ('<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>\n'
-         '<link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>')
+FONTS = ''
 FONT_FACE = ("@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin.woff2) format('woff2')}"
              "@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700 800;font-display:swap;src:url(/fonts/bricolage-grotesque-latin.woff2) format('woff2')}")
 
@@ -1138,7 +1137,8 @@ def _img(m):
     ow = _I.open(os.path.join(_PH, nom + ".webp")).width
     ss = ", ".join(f"{u} {w}w" for u, w in v) + f", photos/{nom}.webp {ow}w"
     w = _re.search(r'width="(\d+)"', tag); w = w.group(1) if w else ""
-    return tag[:-1] + f' srcset="{ss}" sizes="{_sizes(w)}">'
+    prio = ' fetchpriority="low"' if w == "46" else ""
+    return tag[:-1] + f' srcset="{ss}" sizes="{_sizes(w)}"{prio}>'
 def _fond(m):
     nom = m.group(1); v = dict((w, u) for u, w in _variantes(nom))
     mob = v.get(600) or v.get(800) or f"photos/{nom}.webp"
