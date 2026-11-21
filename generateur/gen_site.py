@@ -442,6 +442,7 @@ def head(title, desc, preload, noindex=False, css="", canon=None, ld=None):
 <script src="/api/suivi" defer></script>
 {f'<link rel="preload" as="image" href="{preload}" fetchpriority="high">' if preload else ''}
 {f'<link rel="canonical" href="{canon}">' if canon else ''}
+{'<meta name="google-site-verification" content="P5RxZg88_1tas69ONUdvt3Xgm-PLqyDkRmdZM7QwzhM">' if canon == BASE + "/" else ''}
 {OG(title, desc, canon) if canon else ''}
 {('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>') if ld else ''}
 <link rel="icon" type="image/png" href="/favicon.png">
