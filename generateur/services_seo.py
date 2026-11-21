@@ -137,7 +137,7 @@ dict(
   h1="Gazon et engazonnement à Lens, Béthune et Arras",
   title="Gazon et pelouse à Lens, Béthune, Arras | Devis gratuit",
   desc="Création ou rénovation de pelouse à Lens, Béthune, Arras : semis ou gazon en rouleau, sol préparé et nivelé. Rappel sous 24 h, devis gratuit.",
-  photo="apres-amenagement-jardin",
+  photo="gazon-rouleau",
   accroche="Semis ou gazon en rouleau : une pelouse dense et régulière, sur un sol bien préparé.",
   intro=[
     "Une belle pelouse dépend surtout du travail du sol. On retire les cailloux et les mauvaises herbes, on décompacte, on apporte de la terre végétale si besoin, puis on nivelle soigneusement pour éviter les creux où l'eau stagne.",
@@ -145,9 +145,9 @@ dict(
     "On peut aussi rénover une pelouse fatiguée : scarification, regarnissage des zones clairsemées et conseils d'arrosage et de tonte pour qu'elle reste belle.",
   ],
   variantes=[
+    ("gazon-rouleau", "Gazon en rouleau", "Déroulé bande par bande sur un sol nivelé : la pelouse est verte le jour même."),
     ("apres-amenagement-jardin", "Pelouse neuve", "Un gazon dense posé sur un sol nivelé, au pied d'une maison neuve."),
     ("apres-entretien-jardin", "Pelouse entretenue", "Une tonte régulière et un sol bien préparé : la pelouse reste dense."),
-    ("avant-amenagement-jardin", "Avant engazonnement", "Un terrain nu et tassé : on le prépare avant de semer ou de dérouler."),
   ],
   inclus=["Visite et devis gratuits", "Désherbage et retrait des cailloux", "Décompactage et apport de terre végétale",
           "Nivellement soigné", "Semis ou pose de gazon en rouleau", "Conseils d'arrosage et de première tonte"],
@@ -211,7 +211,7 @@ dict(
   variantes=[
     ("apres-cloture-portail", "Clôture occultante", "Panneaux rigides avec lames : intimité totale et entretien quasi nul."),
     ("action-cloture-portail", "Pose des panneaux", "Poteaux alignés et scellés, panneaux fixés droit, à deux pour plus de précision."),
-    ("avant-cloture-portail", "Remplacement d'un vieux grillage", "On démonte l'ancienne clôture et on évacue tout avant la pose."),
+    ("portail", "Portail coulissant et piliers", "Un portail aluminium entre deux piliers en briques, assorti aux panneaux de la clôture."),
   ],
   inclus=["Visite et devis gratuits", "Démontage et évacuation de l'ancienne clôture", "Poteaux alignés et scellés",
           "Pose des panneaux, grillage ou lames", "Portail, portillon et piliers", "Nettoyage du chantier"],
@@ -233,7 +233,7 @@ dict(
   h1="Plantations, massifs et haies à Lens, Béthune et Arras",
   title="Plantations et haies à Lens, Béthune, Arras | Devis gratuit",
   desc="Plantation de haies, massifs et arbustes à Lens, Béthune, Arras : végétaux adaptés au Nord, sol préparé, paillage. Rappel sous 24 h, devis gratuit.",
-  photo="action-amenagement-jardin",
+  photo="haie-plantation",
   accroche="Haie, massifs, arbustes : des végétaux adaptés à votre sol, plantés pour durer.",
   intro=[
     "Une haie bien choisie vous protège des regards, du vent et du bruit. Un massif bien composé fleurit une bonne partie de l'année. Encore faut-il choisir des végétaux qui aiment les sols du Pas-de-Calais, souvent lourds et humides l'hiver.",
@@ -241,9 +241,9 @@ dict(
     "On prépare le sol, on plante à la bonne distance, on paille pour limiter les mauvaises herbes et garder l'humidité, et on vous explique les premiers arrosages.",
   ],
   variantes=[
+    ("haie-plantation", "Plantation d'une haie mélangée", "Jeunes plants à racines nues plantés en ligne le long de la clôture, puis paillés."),
     ("action-amenagement-jardin", "Plantation d'un massif", "Arbustes plantés dans une terre préparée, puis paillés pour démarrer dans de bonnes conditions."),
     ("apres-amenagement-jardin", "Haie et massif paillé", "Une jeune haie le long du grillage et un massif bordé : le jardin prend forme."),
-    ("conseil-client", "Le bon végétal au bon endroit", "On regarde l'exposition et le sol avec vous avant de choisir les plantes."),
   ],
   inclus=["Visite, conseil et devis gratuits", "Choix des végétaux adaptés au sol et à l'exposition", "Préparation du sol et amendement",
           "Plantation à la bonne distance", "Paillage des massifs et de la haie", "Conseils d'arrosage et d'entretien"],
@@ -265,7 +265,7 @@ dict(
   h1="Arrosage automatique et bassins à Lens, Béthune et Arras",
   title="Arrosage automatique à Lens, Béthune, Arras | Devis gratuit",
   desc="Arrosage automatique enterré et bassin d'ornement à Lens, Béthune, Arras : installation, programmation, conseils. Rappel sous 24 h, devis gratuit.",
-  photo="apres-amenagement-jardin",
+  photo="arrosage-tuyere",
   accroche="Un arrosage qui se fait tout seul, juste ce qu'il faut, et un point d'eau pour animer le jardin.",
   intro=[
     "Un arrosage automatique enterré, c'est la pelouse et les massifs arrosés au bon moment, sans tuyau à dérouler et sans y penser pendant les vacances. Les tuyaux sont enterrés, les arroseurs escamotables disparaissent dans le gazon.",
@@ -273,9 +273,9 @@ dict(
     "Envie d'un point d'eau ? On aménage aussi des bassins d'ornement : petit bassin préformé ou bassin sur mesure, avec plantes aquatiques et bordures soignées.",
   ],
   variantes=[
-    ("apres-amenagement-jardin", "Pelouse et massifs arrosés", "Un réseau enterré invisible qui garde la pelouse verte même en été."),
+    ("arrosage-tuyere", "Arroseurs escamotables", "Ils sortent du gazon pour arroser au petit matin, puis disparaissent : rien ne dépasse."),
+    ("bassin-jardin", "Bassin d'ornement", "Bordure en pierre, nénuphars et plantes de berge : un point d'eau vivant au milieu du jardin."),
     ("conseil-client", "Un réseau pensé pour votre jardin", "On repère les zones à arroser et on adapte les arroseurs et le goutte-à-goutte."),
-    ("action-amenagement-jardin", "Pose avec les plantations", "Le meilleur moment pour installer l'arrosage : pendant la création du jardin."),
   ],
   inclus=["Visite et devis gratuits", "Plan du réseau par zones", "Tranchées et pose des tuyaux enterrés",
           "Arroseurs escamotables et goutte-à-goutte", "Programmateur réglé selon les saisons", "Bassin d'ornement sur demande"],
