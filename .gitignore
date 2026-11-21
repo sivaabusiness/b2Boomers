@@ -8,3 +8,7 @@ env.local.txt
 .dev-kv.json
 **/.dev-kv.json
 node_modules/
+
+# Caches Python
+__pycache__/
+*.pyc
