@@ -105,7 +105,7 @@ dict(
   h1="Allées, cours et pavage à Lens, Béthune et Arras",
   title="Allée et cour pavée à Lens, Béthune, Arras | Devis gratuit",
   desc="Allée, cour, entrée de garage à Lens, Béthune, Arras : pavés, enrobé, gravier stabilisé, bordures. On vous rappelle sous 24 h, devis gratuit.",
-  photo="chantier-propre",
+  photo="allee-pavee",
   accroche="Entrée de garage, allée de jardin ou cour : un revêtement propre, solide et qui évacue l'eau.",
   intro=[
     "Une allée ou une entrée de garage doit supporter le passage, parfois celui d'une voiture, et rester propre par tous les temps. Le secret, c'est la fondation : on décaisse, on pose une couche de matériaux compactés adaptée à l'usage, puis le revêtement.",
@@ -113,9 +113,9 @@ dict(
     "On pense à l'eau de pluie dès le départ : une pente bien réglée, des joints ou des revêtements drainants, et votre cour ne se transforme plus en flaque à chaque averse.",
   ],
   variantes=[
-    ("chantier-propre", "Allée de jardin", "Une allée nette qui relie la maison au fond du jardin, balayée et prête à servir."),
+    ("allee-pavee", "Entrée de garage pavée", "Pavés posés en chevrons, bordures droites : une entrée qui supporte la voiture et reste nette."),
+    ("allee-pose-paves", "Pose des pavés", "Chaque pavé est posé et calé au maillet sur un lit de sable bien réglé."),
     ("materiel", "Décaissement et fondation", "La partie invisible qui évite les ornières et les pavés qui bougent."),
-    ("apres-terrasse-allee", "Dalles et bordures", "Des bordures droites et des raccords soignés pour une finition propre."),
   ],
   inclus=["Visite et devis gratuits", "Décaissement et évacuation des terres", "Fondation compactée adaptée au passage",
           "Pavés, enrobé, gravier stabilisé ou dalles", "Bordures, seuils et raccords", "Gestion de l'écoulement de l'eau"],
@@ -169,7 +169,7 @@ dict(
   h1="Murets, enrochement et talus à Lens, Béthune et Arras",
   title="Murets et enrochement à Lens, Béthune, Arras | Devis gratuit",
   desc="Murets, enrochement, soutènement de talus à Lens, Béthune, Arras : terrain stabilisé et esthétique. On vous rappelle sous 24 h, devis gratuit.",
-  photo="materiel",
+  photo="muret-soutenement",
   accroche="Un terrain en pente qui glisse ? Murets, enrochement et soutènement pour le stabiliser durablement.",
   intro=[
     "Un talus qui s'éboule, une différence de niveau dans le jardin, une terre qui glisse sur la terrasse à chaque pluie : un muret ou un enrochement règle le problème tout en structurant le jardin.",
@@ -177,9 +177,9 @@ dict(
     "Un talus peut aussi devenir un atout : terrasses étagées, massifs en escalier, plantations couvre-sol qui retiennent la terre.",
   ],
   variantes=[
+    ("muret-soutenement", "Muret de soutènement en blocs", "Un muret droit avec sa couvertine, qui retient le massif et structure le jardin."),
+    ("enrochement-talus", "Talus en enrochement", "De gros blocs posés en gradins et plantés : un grand talus stabilisé pour de bon."),
     ("materiel", "Terrassement préparatoire", "On prépare l'assise et la fondation avant de monter le muret ou de poser les blocs."),
-    ("action-terrasse-allee", "Raccords soignés", "Un muret bien raccordé à la terrasse ou à l'allée, de niveau."),
-    ("apres-amenagement-jardin", "Talus planté", "Après le soutènement, on plante pour retenir la terre et habiller le talus."),
   ],
   inclus=["Visite et devis gratuits", "Étude du terrain et de l'écoulement de l'eau", "Terrassement et fondation",
           "Muret, blocs, pierres ou enrochement", "Drainage à l'arrière de l'ouvrage", "Plantations de finition si souhaité"],
