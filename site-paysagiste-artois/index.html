@@ -6,7 +6,7 @@
 <title>Paysagiste Lens, Béthune, Arras | Allô Paysagiste Artois</title>
 <meta name="description" content="Paysagiste à Lens, Béthune, Arras : aménagement, terrasse, entretien, clôture. On vous rappelle sous 24 h, devis et déplacement gratuits.">
 <script src="/api/suivi" defer></script>
-<link rel="preload" as="image" href="photos/w/action-amenagement-jardin-800.webp" media="(max-width:820px)" fetchpriority="high">
+<link rel="preload" as="image" href="photos/w/action-amenagement-jardin-600.webp" media="(max-width:820px)" fetchpriority="high">
 <link rel="preload" as="image" href="photos/action-amenagement-jardin.webp" media="(min-width:821px)" fetchpriority="high">
 <link rel="canonical" href="https://allopaysagisteartois.fr/">
 <meta name="google-site-verification" content="P5RxZg88_1tas69ONUdvt3Xgm-PLqyDkRmdZM7QwzhM">
@@ -140,7 +140,10 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .detail a{display:block;padding:10px 0;border-bottom:1px solid var(--filet);font-weight:600;text-decoration:none;color:var(--texte)}
 .detail a::after{content:' →';color:var(--brique)}
 /* BANDE PHOTO */
-.bande{position:relative;min-height:440px;display:flex;align-items:flex-end;background:var(--sauge-f) url("photos/materiel.webp") center/cover no-repeat;color:#fff}
+.bande{position:relative;min-height:440px;display:flex;align-items:flex-end;background:var(--sauge-f);color:#fff;overflow:hidden}
+.fond{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bande::before,.final::before{z-index:1}
+.bande .wrap,.final .wrap{z-index:2}
 .bande::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(34,42,36,.1) 20%,rgba(34,42,36,.88))}
 .bande .wrap{position:relative;padding-bottom:64px;width:100%}
 .bande p.gros{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.035em;line-height:1.02;font-size:clamp(36px,5.4vw,70px);margin:0;max-width:900px}
@@ -198,7 +201,7 @@ summary::after{content:"+";position:absolute;right:4px;top:14px;font-size:28px;f
 details[open] summary::after{content:"–"}
 details p{margin:0 0 20px;color:var(--gris)}
 /* CTA FINAL */
-.final{position:relative;background:var(--sauge-f) url("photos/equipe.webp") center/cover no-repeat;color:#fff;text-align:center;padding:130px 0}
+.final{position:relative;background:var(--sauge-f);color:#fff;text-align:center;padding:130px 0;overflow:hidden}
 .final::before{content:"";position:absolute;inset:0;background:rgba(34,42,36,.74)}
 .final .wrap{position:relative}
 .final h2{font-size:clamp(34px,4.6vw,58px);max-width:820px;margin:0 auto}
@@ -312,7 +315,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .barre .btn{width:100%}
 }
 </style>
-<style>@media(max-width:820px){.bandeau,.sv-hero{background-image:var(--bgm)!important}.hero{background-image:url('photos/w/action-amenagement-jardin-800.webp')}.bande{background-image:url('photos/w/materiel-800.webp')}.final{background-image:url('photos/w/equipe-800.webp')}}</style>
+<style>@media(max-width:820px){.bandeau,.sv-hero{background-image:var(--bgm)!important}.hero{background-image:url('photos/w/action-amenagement-jardin-600.webp')}}</style>
 </head>
 <body>
 <header class="top">
@@ -337,10 +340,10 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   <h2>Recevez votre devis gratuit</h2>
   <p class="question">Quels travaux ?</p>
   <div class="choix">
-    <a class="tuile" href="devis-amenagement-jardin.html" data-travaux="amenagement-jardin" data-nom="Aménagement de jardin"><img src="photos/action-amenagement-jardin.webp" alt="" width="46" height="46" srcset="photos/w/action-amenagement-jardin-400.webp 400w, photos/w/action-amenagement-jardin-800.webp 800w, photos/action-amenagement-jardin.webp 1000w" sizes="(max-width:480px) 45vw, 46px"><span>Aménagement, plantations</span></a>
-    <a class="tuile" href="devis-terrasse-allee.html" data-travaux="terrasse-allee" data-nom="Terrasse et allées"><img src="photos/action-terrasse-allee.webp" alt="" width="46" height="46" srcset="photos/w/action-terrasse-allee-400.webp 400w, photos/w/action-terrasse-allee-800.webp 800w, photos/action-terrasse-allee.webp 1160w" sizes="(max-width:480px) 45vw, 46px"><span>Terrasse, allée, muret</span></a>
-    <a class="tuile" href="devis-entretien-jardin.html" data-travaux="entretien-jardin" data-nom="Entretien de jardin"><img src="photos/action-entretien-jardin.webp" alt="" width="46" height="46" style="object-position:center 8%" srcset="photos/w/action-entretien-jardin-400.webp 400w, photos/w/action-entretien-jardin-800.webp 800w, photos/action-entretien-jardin.webp 1050w" sizes="(max-width:480px) 45vw, 46px"><span>Entretien, taille de haies</span></a>
-    <a class="tuile" href="devis-cloture-portail.html" data-travaux="cloture-portail" data-nom="Clôture et portail"><img src="photos/action-cloture-portail.webp" alt="" width="46" height="46" srcset="photos/w/action-cloture-portail-400.webp 400w, photos/w/action-cloture-portail-800.webp 800w, photos/action-cloture-portail.webp 1184w" sizes="(max-width:480px) 45vw, 46px"><span>Clôture, portail</span></a>
+    <a class="tuile" href="devis-amenagement-jardin.html" data-travaux="amenagement-jardin" data-nom="Aménagement de jardin"><img src="photos/action-amenagement-jardin.webp" alt="" width="46" height="46" srcset="photos/w/action-amenagement-jardin-200.webp 200w, photos/w/action-amenagement-jardin-400.webp 400w, photos/w/action-amenagement-jardin-600.webp 600w, photos/w/action-amenagement-jardin-800.webp 800w, photos/action-amenagement-jardin.webp 1000w" sizes="(max-width:480px) 40vw, 46px"><span>Aménagement, plantations</span></a>
+    <a class="tuile" href="devis-terrasse-allee.html" data-travaux="terrasse-allee" data-nom="Terrasse et allées"><img src="photos/action-terrasse-allee.webp" alt="" width="46" height="46" srcset="photos/w/action-terrasse-allee-200.webp 200w, photos/w/action-terrasse-allee-400.webp 400w, photos/w/action-terrasse-allee-600.webp 600w, photos/w/action-terrasse-allee-800.webp 800w, photos/action-terrasse-allee.webp 1160w" sizes="(max-width:480px) 40vw, 46px"><span>Terrasse, allée, muret</span></a>
+    <a class="tuile" href="devis-entretien-jardin.html" data-travaux="entretien-jardin" data-nom="Entretien de jardin"><img src="photos/action-entretien-jardin.webp" alt="" width="46" height="46" style="object-position:center 8%" srcset="photos/w/action-entretien-jardin-200.webp 200w, photos/w/action-entretien-jardin-400.webp 400w, photos/w/action-entretien-jardin-600.webp 600w, photos/w/action-entretien-jardin-800.webp 800w, photos/action-entretien-jardin.webp 1050w" sizes="(max-width:480px) 40vw, 46px"><span>Entretien, taille de haies</span></a>
+    <a class="tuile" href="devis-cloture-portail.html" data-travaux="cloture-portail" data-nom="Clôture et portail"><img src="photos/action-cloture-portail.webp" alt="" width="46" height="46" srcset="photos/w/action-cloture-portail-200.webp 200w, photos/w/action-cloture-portail-400.webp 400w, photos/w/action-cloture-portail-600.webp 600w, photos/w/action-cloture-portail-800.webp 800w, photos/action-cloture-portail.webp 1184w" sizes="(max-width:480px) 40vw, 46px"><span>Clôture, portail</span></a>
     <a class="tuile" href="devis.html">Autre / je ne sais pas</a>
   </div>
   <div class="confiance">
@@ -359,29 +362,29 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
     <div class="aa">
 <figure class="paire">
   <div class="photos">
-    <div class="ph"><img src="photos/avant-amenagement-jardin.webp" alt="Avant : terrain nu et boueux, aucune plantation" width="600" height="600" loading="lazy" srcset="photos/w/avant-amenagement-jardin-400.webp 400w, photos/w/avant-amenagement-jardin-800.webp 800w, photos/avant-amenagement-jardin.webp 870w" sizes="(max-width:820px) 46vw, 290px"><span class="badge av">AVANT</span></div>
-    <div class="ph"><img src="photos/apres-amenagement-jardin.webp" alt="Après : jardin créé : pelouse, massifs, haie plantée" width="600" height="600" loading="lazy" srcset="photos/w/apres-amenagement-jardin-400.webp 400w, photos/w/apres-amenagement-jardin-800.webp 800w, photos/apres-amenagement-jardin.webp 870w" sizes="(max-width:820px) 46vw, 290px"><span class="badge ap">APRÈS</span></div>
+    <div class="ph"><img src="photos/avant-amenagement-jardin.webp" alt="Avant : terrain nu et boueux, aucune plantation" width="600" height="600" loading="lazy" srcset="photos/w/avant-amenagement-jardin-200.webp 200w, photos/w/avant-amenagement-jardin-400.webp 400w, photos/w/avant-amenagement-jardin-600.webp 600w, photos/w/avant-amenagement-jardin-800.webp 800w, photos/avant-amenagement-jardin.webp 870w" sizes="(max-width:820px) 46vw, 290px"><span class="badge av">AVANT</span></div>
+    <div class="ph"><img src="photos/apres-amenagement-jardin.webp" alt="Après : jardin créé : pelouse, massifs, haie plantée" width="600" height="600" loading="lazy" srcset="photos/w/apres-amenagement-jardin-200.webp 200w, photos/w/apres-amenagement-jardin-400.webp 400w, photos/w/apres-amenagement-jardin-600.webp 600w, photos/w/apres-amenagement-jardin-800.webp 800w, photos/apres-amenagement-jardin.webp 870w" sizes="(max-width:820px) 46vw, 290px"><span class="badge ap">APRÈS</span></div>
   </div>
   <figcaption><b>Aménagement de jardin</b><span class="pc"> : jardin créé : pelouse, massifs, haie plantée.</span></figcaption>
 </figure>
 <figure class="paire">
   <div class="photos">
-    <div class="ph"><img src="photos/avant-terrasse-allee.webp" alt="Avant : coin de jardin en terre et herbe abîmée" width="600" height="600" loading="lazy" srcset="photos/w/avant-terrasse-allee-400.webp 400w, photos/w/avant-terrasse-allee-800.webp 800w, photos/avant-terrasse-allee.webp 1000w" sizes="(max-width:820px) 46vw, 290px"><span class="badge av">AVANT</span></div>
-    <div class="ph"><img src="photos/apres-terrasse-allee.webp" alt="Après : terrasse en dalles posée, propre et de niveau" width="600" height="600" loading="lazy" srcset="photos/w/apres-terrasse-allee-400.webp 400w, photos/w/apres-terrasse-allee-800.webp 800w, photos/apres-terrasse-allee.webp 1000w" sizes="(max-width:820px) 46vw, 290px"><span class="badge ap">APRÈS</span></div>
+    <div class="ph"><img src="photos/avant-terrasse-allee.webp" alt="Avant : coin de jardin en terre et herbe abîmée" width="600" height="600" loading="lazy" srcset="photos/w/avant-terrasse-allee-200.webp 200w, photos/w/avant-terrasse-allee-400.webp 400w, photos/w/avant-terrasse-allee-600.webp 600w, photos/w/avant-terrasse-allee-800.webp 800w, photos/avant-terrasse-allee.webp 1000w" sizes="(max-width:820px) 46vw, 290px"><span class="badge av">AVANT</span></div>
+    <div class="ph"><img src="photos/apres-terrasse-allee.webp" alt="Après : terrasse en dalles posée, propre et de niveau" width="600" height="600" loading="lazy" srcset="photos/w/apres-terrasse-allee-200.webp 200w, photos/w/apres-terrasse-allee-400.webp 400w, photos/w/apres-terrasse-allee-600.webp 600w, photos/w/apres-terrasse-allee-800.webp 800w, photos/apres-terrasse-allee.webp 1000w" sizes="(max-width:820px) 46vw, 290px"><span class="badge ap">APRÈS</span></div>
   </div>
   <figcaption><b>Terrasse et allées</b><span class="pc"> : terrasse en dalles posée, propre et de niveau.</span></figcaption>
 </figure>
 <figure class="paire">
   <div class="photos">
-    <div class="ph"><img src="photos/avant-entretien-jardin.webp" alt="Avant : haie débordante et pelouse trop haute" width="600" height="600" loading="lazy" srcset="photos/w/avant-entretien-jardin-400.webp 400w, photos/w/avant-entretien-jardin-800.webp 800w, photos/avant-entretien-jardin.webp 950w" sizes="(max-width:820px) 46vw, 290px"><span class="badge av">AVANT</span></div>
-    <div class="ph"><img src="photos/apres-entretien-jardin.webp" alt="Après : haie taillée au cordeau, pelouse tondue" width="600" height="600" loading="lazy" srcset="photos/w/apres-entretien-jardin-400.webp 400w, photos/w/apres-entretien-jardin-800.webp 800w, photos/apres-entretien-jardin.webp 1030w" sizes="(max-width:820px) 46vw, 290px"><span class="badge ap">APRÈS</span></div>
+    <div class="ph"><img src="photos/avant-entretien-jardin.webp" alt="Avant : haie débordante et pelouse trop haute" width="600" height="600" loading="lazy" srcset="photos/w/avant-entretien-jardin-200.webp 200w, photos/w/avant-entretien-jardin-400.webp 400w, photos/w/avant-entretien-jardin-600.webp 600w, photos/w/avant-entretien-jardin-800.webp 800w, photos/avant-entretien-jardin.webp 950w" sizes="(max-width:820px) 46vw, 290px"><span class="badge av">AVANT</span></div>
+    <div class="ph"><img src="photos/apres-entretien-jardin.webp" alt="Après : haie taillée au cordeau, pelouse tondue" width="600" height="600" loading="lazy" srcset="photos/w/apres-entretien-jardin-200.webp 200w, photos/w/apres-entretien-jardin-400.webp 400w, photos/w/apres-entretien-jardin-600.webp 600w, photos/w/apres-entretien-jardin-800.webp 800w, photos/apres-entretien-jardin.webp 1030w" sizes="(max-width:820px) 46vw, 290px"><span class="badge ap">APRÈS</span></div>
   </div>
   <figcaption><b>Entretien de jardin</b><span class="pc"> : haie taillée au cordeau, pelouse tondue.</span></figcaption>
 </figure>
 <figure class="paire pc">
   <div class="photos">
-    <div class="ph"><img src="photos/avant-cloture-portail.webp" alt="Avant : vieux grillage affaissé et rouillé" width="600" height="600" loading="lazy" srcset="photos/w/avant-cloture-portail-400.webp 400w, photos/w/avant-cloture-portail-800.webp 800w, photos/avant-cloture-portail.webp 1000w" sizes="(max-width:820px) 46vw, 290px"><span class="badge av">AVANT</span></div>
-    <div class="ph"><img src="photos/apres-cloture-portail.webp" alt="Après : clôture neuve en panneaux, droite et propre" width="600" height="600" loading="lazy" srcset="photos/w/apres-cloture-portail-400.webp 400w, photos/w/apres-cloture-portail-800.webp 800w, photos/apres-cloture-portail.webp 1100w" sizes="(max-width:820px) 46vw, 290px"><span class="badge ap">APRÈS</span></div>
+    <div class="ph"><img src="photos/avant-cloture-portail.webp" alt="Avant : vieux grillage affaissé et rouillé" width="600" height="600" loading="lazy" srcset="photos/w/avant-cloture-portail-200.webp 200w, photos/w/avant-cloture-portail-400.webp 400w, photos/w/avant-cloture-portail-600.webp 600w, photos/w/avant-cloture-portail-800.webp 800w, photos/avant-cloture-portail.webp 1000w" sizes="(max-width:820px) 46vw, 290px"><span class="badge av">AVANT</span></div>
+    <div class="ph"><img src="photos/apres-cloture-portail.webp" alt="Après : clôture neuve en panneaux, droite et propre" width="600" height="600" loading="lazy" srcset="photos/w/apres-cloture-portail-200.webp 200w, photos/w/apres-cloture-portail-400.webp 400w, photos/w/apres-cloture-portail-600.webp 600w, photos/w/apres-cloture-portail-800.webp 800w, photos/apres-cloture-portail.webp 1100w" sizes="(max-width:820px) 46vw, 290px"><span class="badge ap">APRÈS</span></div>
   </div>
   <figcaption><b>Clôture et portail</b><span class="pc"> : clôture neuve en panneaux, droite et propre.</span></figcaption>
 </figure>
@@ -404,8 +407,8 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
 <section class="s">
   <div class="wrap pres">
     <div class="visu">
-      <img class="grande" src="photos/equipe.webp" alt="L'équipe de paysagistes devant son camion" width="1600" height="1200" loading="lazy" srcset="photos/w/equipe-400.webp 400w, photos/w/equipe-800.webp 800w, photos/equipe.webp 1184w" sizes="(max-width:820px) 92vw, 580px">
-      <img class="petite pc" src="photos/chantier-propre.webp" alt="Chantier de jardin nettoyé en fin de journée" width="800" height="600" loading="lazy" srcset="photos/w/chantier-propre-400.webp 400w, photos/w/chantier-propre-800.webp 800w, photos/chantier-propre.webp 1040w" sizes="(max-width:820px) 92vw, 380px">
+      <img class="grande" src="photos/equipe.webp" alt="L'équipe de paysagistes devant son camion" width="1600" height="1200" loading="lazy" srcset="photos/w/equipe-200.webp 200w, photos/w/equipe-400.webp 400w, photos/w/equipe-600.webp 600w, photos/w/equipe-800.webp 800w, photos/equipe.webp 1184w" sizes="(max-width:820px) 92vw, 580px">
+      <img class="petite pc" src="photos/chantier-propre.webp" alt="Chantier de jardin nettoyé en fin de journée" width="800" height="600" loading="lazy" srcset="photos/w/chantier-propre-200.webp 200w, photos/w/chantier-propre-400.webp 400w, photos/w/chantier-propre-600.webp 600w, photos/w/chantier-propre-800.webp 800w, photos/chantier-propre.webp 1040w" sizes="(max-width:820px) 92vw, 380px">
       <div class="carte">Professionnels assurés</div>
     </div>
     <div>
@@ -432,28 +435,28 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
     <p class="intro">Quatre métiers, une seule équipe : vous n'avez qu'un interlocuteur du premier appel à la fin du chantier.</p>
     <div class="presta">
 <article class="carte-s">
-  <div class="img"><img src="photos/action-amenagement-jardin.webp" alt="Aménagement de jardin en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-amenagement-jardin-400.webp 400w, photos/w/action-amenagement-jardin-800.webp 800w, photos/action-amenagement-jardin.webp 1000w" sizes="(max-width:820px) 92vw, 580px">
+  <div class="img"><img src="photos/action-amenagement-jardin.webp" alt="Aménagement de jardin en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-amenagement-jardin-200.webp 200w, photos/w/action-amenagement-jardin-400.webp 400w, photos/w/action-amenagement-jardin-600.webp 600w, photos/w/action-amenagement-jardin-800.webp 800w, photos/action-amenagement-jardin.webp 1000w" sizes="(max-width:820px) 92vw, 580px">
     <div class="leg"><h3>Aménagement de jardin à Lens, Béthune et Arras</h3><p>Création complète ou nouveau coin de jardin : on dessine, on prépare le sol, on plante.</p></div></div>
   <ul class="pc"><li>Création de jardin complète : plan, terrassement, apport de terre, plantations</li><li>Massifs et haies : charmille, photinia, laurier, troène, hêtre</li><li>Engazonnement : semis ou gazon en rouleau, sol préparé et nivelé</li><li>Arrosage automatique enterré, programmé selon les saisons</li><li>Bassin, point d'eau et éclairage du jardin</li></ul>
   <a class="btn" href="devis-amenagement-jardin.html">Devis aménagement →</a>
   <a class="lien-plus" href="creation-jardin.html">En savoir plus sur aménagement de jardin</a>
 </article>
 <article class="carte-s">
-  <div class="img"><img src="photos/action-terrasse-allee.webp" alt="Terrasse et allées en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-terrasse-allee-400.webp 400w, photos/w/action-terrasse-allee-800.webp 800w, photos/action-terrasse-allee.webp 1160w" sizes="(max-width:820px) 92vw, 580px">
+  <div class="img"><img src="photos/action-terrasse-allee.webp" alt="Terrasse et allées en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-terrasse-allee-200.webp 200w, photos/w/action-terrasse-allee-400.webp 400w, photos/w/action-terrasse-allee-600.webp 600w, photos/w/action-terrasse-allee-800.webp 800w, photos/action-terrasse-allee.webp 1160w" sizes="(max-width:820px) 92vw, 580px">
     <div class="leg"><h3>Terrasse et allées à Lens, Béthune et Arras</h3><p>Terrasse, allée, cour ou muret : des fondations sérieuses et des finitions nettes.</p></div></div>
   <ul class="pc"><li>Terrasse en bois ou en composite, sur plots ou lambourdes</li><li>Terrasse en dallage, carrelage extérieur ou pierre naturelle</li><li>Allée, cour, entrée de garage : pavés, enrobé, gravier stabilisé</li><li>Bordures, marches et raccords avec la maison</li><li>Murets, enrochement, soutènement de talus</li></ul>
   <a class="btn" href="devis-terrasse-allee.html">Devis terrasse →</a>
   <a class="lien-plus" href="terrasses.html">En savoir plus sur terrasse et allées</a>
 </article>
 <article class="carte-s">
-  <div class="img"><img src="photos/action-entretien-jardin.webp" alt="Entretien de jardin en cours, près de Lens" width="1600" height="1000" loading="lazy" style="object-position:center 8%" srcset="photos/w/action-entretien-jardin-400.webp 400w, photos/w/action-entretien-jardin-800.webp 800w, photos/action-entretien-jardin.webp 1050w" sizes="(max-width:820px) 92vw, 580px">
+  <div class="img"><img src="photos/action-entretien-jardin.webp" alt="Entretien de jardin en cours, près de Lens" width="1600" height="1000" loading="lazy" style="object-position:center 8%" srcset="photos/w/action-entretien-jardin-200.webp 200w, photos/w/action-entretien-jardin-400.webp 400w, photos/w/action-entretien-jardin-600.webp 600w, photos/w/action-entretien-jardin-800.webp 800w, photos/action-entretien-jardin.webp 1050w" sizes="(max-width:820px) 92vw, 580px">
     <div class="leg"><h3>Entretien de jardin à Lens, Béthune et Arras</h3><p>Taille, tonte, remise en état : ponctuel ou à l'année, votre jardin reste impeccable.</p></div></div>
   <ul class="pc"><li>Taille de haies et d'arbustes, déchets ramassés</li><li>Tonte et entretien régulier, à la saison ou à l'année</li><li>Remise en état d'un jardin laissé à l'abandon</li><li>Débroussaillage, désherbage des allées et massifs</li><li>Ramassage des feuilles et évacuation des déchets verts</li></ul>
   <a class="btn" href="devis-entretien-jardin.html">Devis entretien →</a>
   <a class="lien-plus" href="entretien-jardin.html">En savoir plus sur entretien de jardin</a>
 </article>
 <article class="carte-s">
-  <div class="img"><img src="photos/action-cloture-portail.webp" alt="Clôture et portail en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-cloture-portail-400.webp 400w, photos/w/action-cloture-portail-800.webp 800w, photos/action-cloture-portail.webp 1184w" sizes="(max-width:820px) 92vw, 580px">
+  <div class="img"><img src="photos/action-cloture-portail.webp" alt="Clôture et portail en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-cloture-portail-200.webp 200w, photos/w/action-cloture-portail-400.webp 400w, photos/w/action-cloture-portail-600.webp 600w, photos/w/action-cloture-portail-800.webp 800w, photos/action-cloture-portail.webp 1184w" sizes="(max-width:820px) 92vw, 580px">
     <div class="leg"><h3>Clôture et portail à Lens, Béthune et Arras</h3><p>Panneaux, bois, brise-vue ou portail : une clôture droite, solide, bien ancrée.</p></div></div>
   <ul class="pc"><li>Clôture en panneaux rigides ou grillage, poteaux scellés</li><li>Clôture bois ou composite, brise-vue occultant</li><li>Portail et portillon, pose des piliers</li><li>Remplacement d'une clôture abîmée par le vent</li><li>Clôture doublée d'une haie, pour un jardin à l'abri des regards</li></ul>
   <a class="btn" href="devis-cloture-portail.html">Devis clôture →</a>
@@ -464,6 +467,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   </div>
 </section>
 <section class="bande" aria-label="Notre façon de travailler">
+  <img class="fond" src="photos/materiel.webp" alt="" width="1600" height="1000" loading="lazy" srcset="photos/w/materiel-200.webp 200w, photos/w/materiel-400.webp 400w, photos/w/materiel-600.webp 600w, photos/w/materiel-800.webp 800w, photos/materiel.webp 1050w" sizes="(max-width:820px) 92vw, 580px">
   <div class="wrap">
     <p class="gros">Un jardin bien fait, ça se voit <em>des années</em> après.</p>
     <p class="ctx">Fondations, drainage, finitions : on ne bâcle aucune étape, même celles qu'on ne voit plus.</p>
@@ -498,7 +502,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
 </section>
 <section class="s">
   <div class="wrap methode">
-    <div class="photo"><img src="photos/conseil-client.webp" alt="Le paysagiste conseille un propriétaire dans son jardin" width="1200" height="1500" loading="lazy" srcset="photos/w/conseil-client-400.webp 400w, photos/conseil-client.webp 800w" sizes="(max-width:820px) 92vw, 470px"></div>
+    <div class="photo"><img src="photos/conseil-client.webp" alt="Le paysagiste conseille un propriétaire dans son jardin" width="1200" height="1500" loading="lazy" srcset="photos/w/conseil-client-200.webp 200w, photos/w/conseil-client-400.webp 400w, photos/w/conseil-client-600.webp 600w, photos/conseil-client.webp 800w" sizes="(max-width:820px) 92vw, 470px"></div>
     <div>
       <p class="kicker">Notre méthode</p>
       <h2 class="t">Quatre étapes, sans surprise</h2>
@@ -561,6 +565,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   </div>
 </section>
 <section class="final">
+  <img class="fond" src="photos/equipe.webp" alt="" width="1600" height="1000" loading="lazy" srcset="photos/w/equipe-200.webp 200w, photos/w/equipe-400.webp 400w, photos/w/equipe-600.webp 600w, photos/w/equipe-800.webp 800w, photos/equipe.webp 1184w" sizes="(max-width:820px) 92vw, 580px">
   <div class="wrap">
     <h2>Votre projet de jardin commence par un appel</h2>
     <p>Devis et déplacement gratuits, sans engagement.</p>

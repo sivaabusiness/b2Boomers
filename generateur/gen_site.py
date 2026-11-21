@@ -216,7 +216,10 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .detail a{display:block;padding:10px 0;border-bottom:1px solid var(--filet);font-weight:600;text-decoration:none;color:var(--texte)}
 .detail a::after{content:' →';color:var(--brique)}
 /* BANDE PHOTO */
-.bande{position:relative;min-height:440px;display:flex;align-items:flex-end;background:var(--sauge-f) url("photos/materiel.webp") center/cover no-repeat;color:#fff}
+.bande{position:relative;min-height:440px;display:flex;align-items:flex-end;background:var(--sauge-f);color:#fff;overflow:hidden}
+.fond{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bande::before,.final::before{z-index:1}
+.bande .wrap,.final .wrap{z-index:2}
 .bande::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(34,42,36,.1) 20%,rgba(34,42,36,.88))}
 .bande .wrap{position:relative;padding-bottom:64px;width:100%}
 .bande p.gros{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.035em;line-height:1.02;font-size:clamp(36px,5.4vw,70px);margin:0;max-width:900px}
@@ -274,7 +277,7 @@ summary::after{content:"+";position:absolute;right:4px;top:14px;font-size:28px;f
 details[open] summary::after{content:"–"}
 details p{margin:0 0 20px;color:var(--gris)}
 /* CTA FINAL */
-.final{position:relative;background:var(--sauge-f) url("photos/equipe.webp") center/cover no-repeat;color:#fff;text-align:center;padding:130px 0}
+.final{position:relative;background:var(--sauge-f);color:#fff;text-align:center;padding:130px 0;overflow:hidden}
 .final::before{content:"";position:absolute;inset:0;background:rgba(34,42,36,.74)}
 .final .wrap{position:relative}
 .final h2{font-size:clamp(34px,4.6vw,58px);max-width:820px;margin:0 auto}
@@ -617,6 +620,7 @@ def accueil():
 </section>
 
 <section class="bande" aria-label="Notre façon de travailler">
+  <img class="fond" src="photos/materiel.webp" alt="" width="1600" height="1000" loading="lazy">
   <div class="wrap">
     <p class="gros">Un jardin bien fait, ça se voit <em>des années</em> après.</p>
     <p class="ctx">Fondations, drainage, finitions : on ne bâcle aucune étape, même celles qu'on ne voit plus.</p>
@@ -714,6 +718,7 @@ def accueil():
 </section>
 
 <section class="final">
+  <img class="fond" src="photos/equipe.webp" alt="" width="1600" height="1000" loading="lazy">
   <div class="wrap">
     <h2>Votre projet de jardin commence par un appel</h2>
     <p>Devis et déplacement gratuits, sans engagement.</p>
@@ -1087,6 +1092,7 @@ def page_service(q):
 </section>
 
 <section class="final">
+  <img class="fond" src="photos/equipe.webp" alt="" width="1600" height="1000" loading="lazy">
   <div class="wrap">
     <h2>Parlons de votre projet</h2>
     <p>Devis et déplacement gratuits, sans engagement.</p>
@@ -1116,10 +1122,10 @@ with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
 import re as _re
 _PH = os.path.join(OUT, "photos")
 def _variantes(nom):
-    v = [(f"photos/w/{nom}-{w}.webp", w) for w in (400, 800) if os.path.exists(os.path.join(_PH, "w", f"{nom}-{w}.webp"))]
+    v = [(f"photos/w/{nom}-{w}.webp", w) for w in (200, 400, 600, 800) if os.path.exists(os.path.join(_PH, "w", f"{nom}-{w}.webp"))]
     return v
 def _sizes(w):
-    return {"46": "(max-width:480px) 45vw, 46px", "600": "(max-width:820px) 46vw, 290px", "800": "(max-width:820px) 92vw, 380px",
+    return {"46": "(max-width:480px) 40vw, 46px", "600": "(max-width:820px) 46vw, 290px", "800": "(max-width:820px) 92vw, 380px",
             "1200": "(max-width:820px) 92vw, 470px"}.get(w, "(max-width:820px) 92vw, 580px")
 def _img(m):
     tag = m.group(0)
@@ -1135,16 +1141,16 @@ def _img(m):
     return tag[:-1] + f' srcset="{ss}" sizes="{_sizes(w)}">'
 def _fond(m):
     nom = m.group(1); v = dict((w, u) for u, w in _variantes(nom))
-    mob = v.get(800) or f"photos/{nom}.webp"
+    mob = v.get(600) or v.get(800) or f"photos/{nom}.webp"
     return f"--bgm:url('{mob}');background-image:url('photos/{nom}.webp')"
 def _preload(m):
     nom = m.group(1); v = dict((w, u) for u, w in _variantes(nom))
-    mob = v.get(800) or f"photos/{nom}.webp"
+    mob = v.get(600) or v.get(800) or f"photos/{nom}.webp"
     return (f'<link rel="preload" as="image" href="{mob}" media="(max-width:820px)" fetchpriority="high">\n'
             f'<link rel="preload" as="image" href="photos/{nom}.webp" media="(min-width:821px)" fetchpriority="high">')
 FOND_MOBILE = ("<style>@media(max-width:820px){.bandeau,.sv-hero{background-image:var(--bgm)!important}"
-               ".hero{background-image:url('photos/w/action-amenagement-jardin-800.webp')}"
-               ".bande{background-image:url('photos/w/materiel-800.webp')}.final{background-image:url('photos/w/equipe-800.webp')}}</style>")
+               ".hero{background-image:url('photos/w/action-amenagement-jardin-600.webp')}"
+               "}</style>")
 def optim(h):
     h = _re.sub(r"<img [^>]*>", _img, h)
     h = _re.sub(r"background-image:url\('photos/([a-z0-9-]+)\.webp'\)", _fond, h)
