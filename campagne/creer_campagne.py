@@ -6,6 +6,7 @@
 
 Options :
     python3 campagne/creer_campagne.py --communes -> seulement la recherche des communes
+    --sans-manquantes  accepte de laisser de côté les communes impossibles à viser sans déborder
     --sans-images   retire les images et le logo (compte trop récent pour les images)
     --env CHEMIN    autre fichier env.local.txt
 
@@ -318,6 +319,8 @@ def main():
     m.add_argument("--apply", action="store_true")
     m.add_argument("--communes", action="store_true", help="seulement la recherche des communes (rien n'est envoyé)")
     ap.add_argument("--sans-images", action="store_true")
+    ap.add_argument("--sans-manquantes", action="store_true",
+                    help="accepte de ne pas cibler les communes que Google ne permet pas de viser sans déborder")
     ap.add_argument("--env", default=os.path.join(PACK, "env.local.txt"))
     a = ap.parse_args()
 
@@ -366,7 +369,7 @@ def main():
         print("   NON TROUVÉES (elles ne seraient pas ciblées) :")
         for v in manquantes:
             print(f"     - {v}")
-        if not a.dry:
+        if a.communes or (a.apply and not a.sans_manquantes):
             sys.exit("STOP : des communes ne sont pas trouvées. Montre ce message à Claude. Rien n'est créé.")
 
     if a.communes:
@@ -379,6 +382,8 @@ def main():
     print(f"Campagne        : {NOM_CAMPAGNE} — EN PAUSE — Réseau de Recherche seul — CPC manuel")
     print(f"Budget          : {BUDGET_EUR} €/jour")
     print(f"Zone            : {zone['lieux']} lieux ciblés (présence) pour {len(geos)} communes, pas de rayon")
+    if manquantes:
+        print(f"   NON ciblées  : {len(manquantes)} communes (voir la liste plus haut)")
     for nom, pct in zone["ajustes"]:
         print(f"   ajustement   : {nom} {pct:+d} %")
     for nom in zone["non_ajustes"]:
