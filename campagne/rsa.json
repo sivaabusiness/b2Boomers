@@ -550,11 +550,11 @@
    ],
    "titres": [
     {
-     "texte": "Paysagiste {LOCATION(City):Lens}",
+     "texte": "Paysagiste {LOCATION(City):Artois}",
      "epingle": true
     },
     {
-     "texte": "Aménagement Jardin {LOCATION(City):Lens}",
+     "texte": "Aménagement Jardin {LOCATION(City):Artois}",
      "epingle": true
     },
     "Création De Jardin",
@@ -607,11 +607,11 @@
    ],
    "titres": [
     {
-     "texte": "Terrasse {LOCATION(City):Lens}",
+     "texte": "Terrasse {LOCATION(City):Artois}",
      "epingle": true
     },
     {
-     "texte": "Allée & Muret {LOCATION(City):Lens}",
+     "texte": "Allée & Muret {LOCATION(City):Artois}",
      "epingle": true
     },
     "Pose De Pavés & Enrobé",
@@ -669,11 +669,11 @@
    ],
    "titres": [
     {
-     "texte": "Jardinier {LOCATION(City):Lens}",
+     "texte": "Jardinier {LOCATION(City):Artois}",
      "epingle": true
     },
     {
-     "texte": "Entretien Jardin {LOCATION(City):Lens}",
+     "texte": "Entretien Jardin {LOCATION(City):Artois}",
      "epingle": true
     },
     "Taille De Haies",
@@ -719,11 +719,11 @@
    ],
    "titres": [
     {
-     "texte": "Clôture {LOCATION(City):Lens}",
+     "texte": "Clôture {LOCATION(City):Artois}",
      "epingle": true
     },
     {
-     "texte": "Pose De Portail {LOCATION(City):Lens}",
+     "texte": "Pose De Portail {LOCATION(City):Artois}",
      "epingle": true
     },
     "Grillage Rigide Ou Souple",

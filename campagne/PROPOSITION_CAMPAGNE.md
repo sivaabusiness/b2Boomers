@@ -21,8 +21,8 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=amenagement-jardin` 
 
 | # | Titre | Caractères |
 |---|---|---|
-| 1 | Paysagiste {LOCATION(City):Lens} 📌 position 1 | 15 |
-| 2 | Aménagement Jardin {LOCATION(City):Lens} 📌 position 1 | 23 |
+| 1 | Paysagiste {LOCATION(City):Artois} 📌 position 1 | 17 |
+| 2 | Aménagement Jardin {LOCATION(City):Artois} 📌 position 1 | 25 |
 | 3 | Création De Jardin | 18 |
 | 4 | Pose De Gazon En Rouleau | 24 |
 | 5 | Plantation De Haies | 19 |
@@ -87,8 +87,8 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=terrasse-allee` · 2
 
 | # | Titre | Caractères |
 |---|---|---|
-| 1 | Terrasse {LOCATION(City):Lens} 📌 position 1 | 13 |
-| 2 | Allée & Muret {LOCATION(City):Lens} 📌 position 1 | 18 |
+| 1 | Terrasse {LOCATION(City):Artois} 📌 position 1 | 15 |
+| 2 | Allée & Muret {LOCATION(City):Artois} 📌 position 1 | 20 |
 | 3 | Pose De Pavés & Enrobé | 22 |
 | 4 | Mur De Soutènement | 18 |
 | 5 | Enrochement De Talus | 20 |
@@ -140,8 +140,8 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=entretien-jardin` ·
 
 | # | Titre | Caractères |
 |---|---|---|
-| 1 | Jardinier {LOCATION(City):Lens} 📌 position 1 | 14 |
-| 2 | Entretien Jardin {LOCATION(City):Lens} 📌 position 1 | 21 |
+| 1 | Jardinier {LOCATION(City):Artois} 📌 position 1 | 16 |
+| 2 | Entretien Jardin {LOCATION(City):Artois} 📌 position 1 | 23 |
 | 3 | Taille De Haies | 15 |
 | 4 | Tonte De Pelouse | 16 |
 | 5 | Jardin Remis À Neuf | 19 |
@@ -198,8 +198,8 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=cloture-portail` · 
 
 | # | Titre | Caractères |
 |---|---|---|
-| 1 | Clôture {LOCATION(City):Lens} 📌 position 1 | 12 |
-| 2 | Pose De Portail {LOCATION(City):Lens} 📌 position 1 | 20 |
+| 1 | Clôture {LOCATION(City):Artois} 📌 position 1 | 14 |
+| 2 | Pose De Portail {LOCATION(City):Artois} 📌 position 1 | 22 |
 | 3 | Grillage Rigide Ou Souple | 25 |
 | 4 | Portail Coulissant | 18 |
 | 5 | Brise-Vue Occultant | 19 |
