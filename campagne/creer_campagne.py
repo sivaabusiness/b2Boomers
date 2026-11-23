@@ -5,6 +5,7 @@
     python3 campagne/creer_campagne.py --apply   -> création réelle (EN PAUSE) — lancé par l'utilisateur
 
 Options :
+    python3 campagne/creer_campagne.py --communes -> seulement la recherche des communes
     --sans-images   retire les images et le logo (compte trop récent pour les images)
     --env CHEMIN    autre fichier env.local.txt
 
@@ -82,23 +83,27 @@ def lire_compte(client, cid):
             [r["conversionAction"] for r in convs], (cust[0]["customer"].get("callReportingSetting", {}) if cust else {}))
 
 
-def geos_pas_de_calais(client, cid):
+def geos_region(client, cid):
+    """Toutes les villes et codes postaux Google des Hauts-de-France (+ départements)."""
     rows = client.search(cid, (
         "SELECT geo_target_constant.resource_name, geo_target_constant.name, "
         "geo_target_constant.canonical_name, geo_target_constant.target_type, "
-        "geo_target_constant.status, geo_target_constant.country_code FROM geo_target_constant "
+        "geo_target_constant.parent_geo_target, geo_target_constant.status, "
+        "geo_target_constant.country_code FROM geo_target_constant "
         "WHERE geo_target_constant.country_code = 'FR' "
-        "AND geo_target_constant.canonical_name LIKE '%,Pas-de-Calais,%' "
-        "AND geo_target_constant.target_type IN ('City', 'Postal Code') "
+        "AND geo_target_constant.canonical_name LIKE '%Hauts-de-France%' "
+        "AND geo_target_constant.target_type IN ('City', 'Postal Code', 'Department') "
         "AND geo_target_constant.status = 'ENABLED'"))
-    villes, postaux = {}, {}
+    villes, postaux, depts = {}, {}, {}
     for r in rows:
         g = r["geoTargetConstant"]
         if g["targetType"] == "City":
             villes.setdefault(plat(g["name"]), []).append(g)
-        else:
+        elif g["targetType"] == "Postal Code":
             postaux[g["name"]] = g
-    return villes, postaux
+        else:
+            depts[g["resourceName"]] = g["name"]
+    return villes, postaux, depts
 
 
 def code_postal_sur(insee, a_cibler):
@@ -116,23 +121,43 @@ def code_postal_sur(insee, a_cibler):
         return None, f"recherche du code postal impossible ({e.__class__.__name__})"
 
 
-def resoudre_communes(client, cid, communes):
-    villes, postaux = geos_pas_de_calais(client, cid)
+def resoudre_communes(client, cid, communes, bavard=False):
+    villes, postaux, depts = geos_region(client, cid)
+    pdc = {rn for rn, nom in depts.items() if plat(nom) == "pas de calais"}
+    print(f"   Google connaît en Hauts-de-France : {sum(len(v) for v in villes.values())} villes, "
+          f"{len(postaux)} codes postaux, {len(depts)} départements")
+    if not villes:
+        sys.exit("STOP : Google ne renvoie aucune ville des Hauts-de-France. Montre ce message à Claude.")
+    if bavard:
+        for test in ("lens", "arras", "bethune", "flers"):
+            for g in villes.get(test, []):
+                print(f"   exemple : {g['name']} | {g['canonicalName']} | parent "
+                      f"{depts.get(g.get('parentGeoTarget'), g.get('parentGeoTarget'))}")
     a_cibler = set(communes)
-    res, manquantes, via_cp = {}, [], []
+    res, manquantes, via_cp, homonymes = {}, [], [], 0
     for insee, (nom, _zone) in communes.items():
         cands = villes.get(plat(nom), [])
-        if len(cands) == 1:
-            res[insee] = cands[0]["resourceName"]
+        # le parent départemental, quand Google le donne, départage les homonymes
+        dans_pdc = [g for g in cands if g.get("parentGeoTarget") in pdc]
+        hors_pdc = [g for g in cands if g.get("parentGeoTarget") in depts and g.get("parentGeoTarget") not in pdc]
+        sans_dept = [g for g in cands if g.get("parentGeoTarget") not in depts]
+        if len(dans_pdc) == 1:
+            res[insee] = dans_pdc[0]["resourceName"]
             continue
-        raison = "plusieurs lieux Google du même nom" if cands else "inconnue de Google comme ville"
+        if not dans_pdc and len(sans_dept) == 1 and len(cands) == 1:
+            res[insee] = sans_dept[0]["resourceName"]   # nom unique dans toute la région
+            continue
+        if len(cands) > 1:
+            homonymes += 1
+        raison = ("plusieurs lieux Google du même nom" if len(cands) > 1 else
+                  "Google n'a que l'homonyme d'un autre département" if hors_pdc else
+                  "inconnue de Google comme ville")
         cp, pourquoi = code_postal_sur(insee, a_cibler)
         if cp and cp in postaux:
             res[insee] = postaux[cp]["resourceName"]
             via_cp.append(f"{nom} ({insee}) -> code postal {cp}")
         else:
             manquantes.append(f"{nom} ({insee}) : {raison} ; {pourquoi or 'code postal absent chez Google'}")
-    # deux communes sur le même lieu (même code postal) : un seul critère
     return res, manquantes, via_cp
 
 
@@ -278,6 +303,7 @@ def main():
     m = ap.add_mutually_exclusive_group(required=True)
     m.add_argument("--dry", action="store_true")
     m.add_argument("--apply", action="store_true")
+    m.add_argument("--communes", action="store_true", help="seulement la recherche des communes (rien n'est envoyé)")
     ap.add_argument("--sans-images", action="store_true")
     ap.add_argument("--env", default=os.path.join(PACK, "env.local.txt"))
     a = ap.parse_args()
@@ -318,8 +344,8 @@ def main():
         print(f"   Appels depuis l'annonce reliés au compte : {'oui' if deja else 'NON'}")
         appel_conf = {"besoin": not deja, "resource": annonce["resourceName"], "nom": annonce["name"]}
 
-    print("2) Recherche des 506 communes chez Google (code INSEE + Pas-de-Calais)…")
-    geos, manquantes, via_cp = resoudre_communes(client, cid, fiches["communes"])
+    print("2) Recherche des 506 communes chez Google (Pas-de-Calais, code INSEE)…")
+    geos, manquantes, via_cp = resoudre_communes(client, cid, fiches["communes"], bavard=a.communes)
     print(f"   Trouvées : {len(geos)} / {len(fiches['communes'])}")
     for v in via_cp:
         print(f"   via code postal : {v}")
@@ -327,9 +353,12 @@ def main():
         print("   NON TROUVÉES (elles ne seraient pas ciblées) :")
         for v in manquantes:
             print(f"     - {v}")
-        if a.apply:
+        if not a.dry:
             sys.exit("STOP : des communes ne sont pas trouvées. Montre ce message à Claude. Rien n'est créé.")
 
+    if a.communes:
+        print("\nOK : toutes les communes sont trouvées. (Mode --communes : rien n'est envoyé.)")
+        return
     ops, groupes, zone, imgs, modif = construire(cid, kws, negs, rsa, fiches, geos, convs,
                                                  appel_conf, not a.sans_images)
 
