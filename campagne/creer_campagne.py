@@ -106,58 +106,69 @@ def geos_region(client, cid):
     return villes, postaux, depts
 
 
-def code_postal_sur(insee, a_cibler):
-    """Code postal de la commune, seulement s'il ne couvre QUE des communes du secteur."""
-    try:
-        with urllib.request.urlopen(f"https://geo.api.gouv.fr/communes/{insee}?fields=codesPostaux", timeout=20) as r:
-            cps = json.load(r).get("codesPostaux", [])
-        for cp in cps:
-            with urllib.request.urlopen(f"https://geo.api.gouv.fr/communes?codePostal={cp}&fields=code", timeout=20) as r:
-                codes = {c["code"] for c in json.load(r)}
-            if codes and codes <= a_cibler:
-                return cp, None
-        return None, f"code(s) postal(aux) {', '.join(cps) or '?'} partagé(s) avec des communes hors secteur"
-    except Exception as e:  # hors ligne
-        return None, f"recherche du code postal impossible ({e.__class__.__name__})"
+DEPTS_REGION = ["62", "59", "80", "02", "60"]   # Pas-de-Calais + autres départements des Hauts-de-France
+
+
+def communes_officielles():
+    """Liste officielle (geo.api.gouv.fr) : nom, INSEE, codes postaux de toute la région."""
+    out = {}
+    for d in DEPTS_REGION:
+        url = f"https://geo.api.gouv.fr/departements/{d}/communes?fields=nom,code,codesPostaux"
+        try:
+            with urllib.request.urlopen(url, timeout=60) as r:
+                out[d] = json.load(r)
+        except Exception as e:
+            sys.exit(f"STOP : liste officielle des communes injoignable ({e.__class__.__name__}). "
+                     "Vérifie ta connexion internet et relance.")
+    return out
 
 
 def resoudre_communes(client, cid, communes, bavard=False):
     villes, postaux, depts = geos_region(client, cid)
-    pdc = {rn for rn, nom in depts.items() if plat(nom) == "pas de calais"}
     print(f"   Google connaît en Hauts-de-France : {sum(len(v) for v in villes.values())} villes, "
           f"{len(postaux)} codes postaux, {len(depts)} départements")
     if not villes:
         sys.exit("STOP : Google ne renvoie aucune ville des Hauts-de-France. Montre ce message à Claude.")
-    if bavard:
-        for test in ("lens", "arras", "bethune", "flers"):
-            for g in villes.get(test, []):
-                print(f"   exemple : {g['name']} | {g['canonicalName']} | parent "
-                      f"{depts.get(g.get('parentGeoTarget'), g.get('parentGeoTarget'))}")
+    off = communes_officielles()
+    noms_region = {}                     # nom simplifié -> nb de communes de ce nom dans la région
+    cp_communes, cp_de, nom_de = {}, {}, {}
+    for d, lst in off.items():
+        for x in lst:
+            noms_region[plat(x["nom"])] = noms_region.get(plat(x["nom"]), 0) + 1
+            nom_de[x["code"]] = x["nom"]
+            for cp in x.get("codesPostaux", []):
+                cp_communes.setdefault(cp, set()).add(x["code"])
+            if d == "62":
+                cp_de[x["code"]] = x.get("codesPostaux", [])
     a_cibler = set(communes)
-    res, manquantes, via_cp, homonymes = {}, [], [], 0
+    res, manquantes, via_cp = {}, [], []
+    stats = {"ville": 0, "cp": 0}
     for insee, (nom, _zone) in communes.items():
         cands = villes.get(plat(nom), [])
-        # le parent départemental, quand Google le donne, départage les homonymes
-        dans_pdc = [g for g in cands if g.get("parentGeoTarget") in pdc]
-        hors_pdc = [g for g in cands if g.get("parentGeoTarget") in depts and g.get("parentGeoTarget") not in pdc]
-        sans_dept = [g for g in cands if g.get("parentGeoTarget") not in depts]
-        if len(dans_pdc) == 1:
-            res[insee] = dans_pdc[0]["resourceName"]
+        unique = noms_region.get(plat(nom), 0) == 1   # aucun homonyme dans la région
+        if len(cands) == 1 and unique:
+            res[insee] = cands[0]["resourceName"]
+            stats["ville"] += 1
             continue
-        if not dans_pdc and len(sans_dept) == 1 and len(cands) == 1:
-            res[insee] = sans_dept[0]["resourceName"]   # nom unique dans toute la région
+        raison = ("homonyme ailleurs dans la région" if cands and not unique else
+                  "plusieurs lieux Google du même nom" if len(cands) > 1 else "pas une ville chez Google")
+        cps = cp_de.get(insee, [])
+        ok_cp = [cp for cp in cps if cp in postaux and cp_communes.get(cp, set()) <= a_cibler]
+        if ok_cp:
+            res[insee] = postaux[ok_cp[0]]["resourceName"]
+            stats["cp"] += 1
+            via_cp.append(f"{nom} ({insee}) -> code postal {ok_cp[0]}")
             continue
-        if len(cands) > 1:
-            homonymes += 1
-        raison = ("plusieurs lieux Google du même nom" if len(cands) > 1 else
-                  "Google n'a que l'homonyme d'un autre département" if hors_pdc else
-                  "inconnue de Google comme ville")
-        cp, pourquoi = code_postal_sur(insee, a_cibler)
-        if cp and cp in postaux:
-            res[insee] = postaux[cp]["resourceName"]
-            via_cp.append(f"{nom} ({insee}) -> code postal {cp}")
-        else:
-            manquantes.append(f"{nom} ({insee}) : {raison} ; {pourquoi or 'code postal absent chez Google'}")
+        detail = []
+        for cp in cps:
+            if cp not in postaux:
+                detail.append(f"{cp} inconnu de Google")
+            else:
+                hors = sorted(nom_de.get(i, i) for i in cp_communes.get(cp, set()) - a_cibler)
+                detail.append(f"{cp} déborde sur {len(hors)} commune(s) hors zone : {', '.join(hors[:6])}"
+                              + ("…" if len(hors) > 6 else ""))
+        manquantes.append(f"{nom} ({insee}) : {raison} ; " + ("; ".join(detail) or "pas de code postal"))
+    print(f"   Par ville : {stats['ville']} · par code postal (100 % dans ta zone) : {stats['cp']}")
     return res, manquantes, via_cp
 
 
@@ -187,14 +198,16 @@ def construire(cid, kws, negs, rsa, fiches, geos, convs, appel_conf, images):
     par_lieu = {}
     for insee, res in geos.items():
         par_lieu.setdefault(res, []).append(insee)
-    zone = {"lieux": 0, "ajustes": []}
+    zone = {"lieux": 0, "ajustes": [], "non_ajustes": []}
     for res, insees in par_lieu.items():
         crit = {"campaign": camp, "location": {"geoTargetConstant": res}}
-        pcts = [ajust[i] for i in insees if i in ajust]
-        if pcts:
-            pct = pcts[0]
+        pcts = {ajust.get(i, 0) for i in insees}
+        if len(pcts) == 1 and pcts != {0}:
+            pct = pcts.pop()
             crit["bidModifier"] = round(1 + pct / 100, 2)
             zone["ajustes"].append((", ".join(fiches["communes"][i][0] for i in insees), pct))
+        elif len(pcts) > 1:
+            zone["non_ajustes"].append(", ".join(fiches["communes"][i][0] for i in insees if i in ajust))
         ops.append({"campaignCriterionOperation": {"create": crit}})
         zone["lieux"] += 1
 
@@ -368,6 +381,8 @@ def main():
     print(f"Zone            : {zone['lieux']} lieux ciblés (présence) pour {len(geos)} communes, pas de rayon")
     for nom, pct in zone["ajustes"]:
         print(f"   ajustement   : {nom} {pct:+d} %")
+    for nom in zone["non_ajustes"]:
+        print(f"   PAS d'ajustement pour {nom} : son code postal couvre aussi des communes sans ajustement")
     print(f"Mots exclus     : {len(negs)} dans la liste « {NOM_LISTE_NEG} »")
     for g, d in groupes.items():
         print(f"Groupe « {g} » : {d['n']} mots-clés ({d['exact']} exact) — enchères {d['min']:.2f} à "
