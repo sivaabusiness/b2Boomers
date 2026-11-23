@@ -568,7 +568,7 @@
     "Entreprise Assurée",
     "Prix Clair Avant Travaux",
     "Contactez-Nous",
-    "{=IF(device=mobile,Appelez-Nous Maintenant):Remplissez Le Formulaire}",
+    "Remplissez Le Formulaire",
     "Partout En Artois"
    ],
    "descriptions": [
@@ -626,7 +626,7 @@
     "Chantier Rendu Propre",
     "Obtenez Un Prix Aujourd'hui",
     "Contactez-Nous",
-    "{=IF(device=mobile,Appelez-Nous Maintenant):Remplissez Le Formulaire}"
+    "Remplissez Le Formulaire"
    ],
    "descriptions": [
     "Terrasse, allée, cour, muret : fondation solide et finitions nettes. Devis gratuit 24 h.",
@@ -688,7 +688,7 @@
     "Entreprise Assurée",
     "Prix Clair Avant Travaux",
     "Contactez-Nous",
-    "{=IF(device=mobile,Appelez-Nous Maintenant):Remplissez Le Formulaire}"
+    "Remplissez Le Formulaire"
    ],
    "descriptions": [
     "Taille de haies, tonte, remise en état : ponctuel ou à l'année. Devis gratuit sous 24 h.",
@@ -738,7 +738,7 @@
     "Entreprise Assurée",
     "Prix Clair Avant Travaux",
     "Contactez-Nous",
-    "{=IF(device=mobile,Appelez-Nous Maintenant):Remplissez Le Formulaire}"
+    "Remplissez Le Formulaire"
    ],
    "descriptions": [
     "Clôture rigide, grillage, brise-vue, portail : poteaux alignés et scellés. Devis 24 h.",

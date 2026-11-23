@@ -34,7 +34,7 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=amenagement-jardin` 
 | 11 | Entreprise Assurée | 18 |
 | 12 | Prix Clair Avant Travaux | 24 |
 | 13 | Contactez-Nous | 14 |
-| 14 | {=IF(device=mobile,Appelez-Nous Maintenant):Remplissez Le Formulaire} | 24 |
+| 14 | Remplissez Le Formulaire | 24 |
 | 15 | Partout En Artois | 17 |
 
 | Description | Caractères |
@@ -101,7 +101,7 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=terrasse-allee` · 2
 | 12 | Chantier Rendu Propre | 21 |
 | 13 | Obtenez Un Prix Aujourd'hui | 27 |
 | 14 | Contactez-Nous | 14 |
-| 15 | {=IF(device=mobile,Appelez-Nous Maintenant):Remplissez Le Formulaire} | 24 |
+| 15 | Remplissez Le Formulaire | 24 |
 
 | Description | Caractères |
 |---|---|
@@ -154,7 +154,7 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=entretien-jardin` ·
 | 12 | Entreprise Assurée | 18 |
 | 13 | Prix Clair Avant Travaux | 24 |
 | 14 | Contactez-Nous | 14 |
-| 15 | {=IF(device=mobile,Appelez-Nous Maintenant):Remplissez Le Formulaire} | 24 |
+| 15 | Remplissez Le Formulaire | 24 |
 
 | Description | Caractères |
 |---|---|
@@ -212,7 +212,7 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=cloture-portail` · 
 | 12 | Entreprise Assurée | 18 |
 | 13 | Prix Clair Avant Travaux | 24 |
 | 14 | Contactez-Nous | 14 |
-| 15 | {=IF(device=mobile,Appelez-Nous Maintenant):Remplissez Le Formulaire} | 24 |
+| 15 | Remplissez Le Formulaire | 24 |
 
 | Description | Caractères |
 |---|---|
