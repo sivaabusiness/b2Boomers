@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Création de la campagne « Paysagiste Artois » — UNE transaction Google Ads.
 
-    python campagne/creer_campagne.py --dry     -> vérification par Google, RIEN n'est créé
-    python campagne/creer_campagne.py --apply   -> création réelle (EN PAUSE) — lancé par l'utilisateur
+    python3 campagne/creer_campagne.py --dry     -> vérification par Google, RIEN n'est créé
+    python3 campagne/creer_campagne.py --apply   -> création réelle (EN PAUSE) — lancé par l'utilisateur
 
 Options :
     --sans-images   retire les images et le logo (compte trop récent pour les images)
@@ -250,6 +250,9 @@ def construire(cid, kws, negs, rsa, fiches, geos, convs, appel_conf, images):
             if f == "logo.png":
                 lier(rn, "BUSINESS_LOGO")
                 imgs.append((f, "campagne (logo)"))
+            elif f.startswith("equipe"):
+                lier(rn, "AD_IMAGE")
+                imgs.append((f, "campagne (équipe)"))
             else:
                 slug = next(s for s in slug_groupe if s in f)
                 lier(rn, "AD_IMAGE", slug_groupe[slug])

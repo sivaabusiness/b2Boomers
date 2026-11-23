@@ -9,6 +9,7 @@ SERVICES = ["amenagement-jardin", "terrasse-allee", "entretien-jardin", "cloture
 # (fichier source, format, ancrage vertical 0=haut 0.5=centre 1=bas)
 PLAN = {s: [(f"action-{s}", "paysage", 0.5), (f"apres-{s}", "paysage", 0.5), (f"apres-{s}", "carre", 0.5)]
         for s in SERVICES}
+PLAN["equipe"] = [("equipe", "paysage", 0.5), ("equipe", "carre", 0.5)]   # niveau campagne
 
 def recadre(im, ratio, ancre):
     w, h = im.size
