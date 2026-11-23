@@ -84,11 +84,11 @@
 "Large"
 ],
 [
-"idee",
+"idée",
 "Large"
 ],
 [
-"idée",
+"idee",
 "Large"
 ],
 [
@@ -248,11 +248,11 @@
 "Large"
 ],
 [
-"véranda",
+"veranda",
 "Large"
 ],
 [
-"veranda",
+"véranda",
 "Large"
 ],
 [
@@ -272,11 +272,11 @@
 "Large"
 ],
 [
-"résine",
+"resine",
 "Large"
 ],
 [
-"resine",
+"résine",
 "Large"
 ],
 [
@@ -292,11 +292,11 @@
 "Large"
 ],
 [
-"jardiniere",
+"jardinière",
 "Large"
 ],
 [
-"jardinière",
+"jardiniere",
 "Large"
 ],
 [
@@ -380,6 +380,22 @@
 "Large"
 ],
 [
+"beton desactive",
+"Expression"
+],
+[
+"béton désactivé",
+"Expression"
+],
+[
+"beton cire",
+"Expression"
+],
+[
+"béton ciré",
+"Expression"
+],
+[
 "que faire",
 "Expression"
 ],
@@ -448,11 +464,11 @@
 "Exact"
 ],
 [
-"calathea entretien",
+"calathéa entretien",
 "Exact"
 ],
 [
-"calathéa entretien",
+"calathea entretien",
 "Exact"
 ],
 [
@@ -472,11 +488,11 @@
 "Exact"
 ],
 [
-"clôture aluminium sur muret",
+"cloture aluminium sur muret",
 "Exact"
 ],
 [
-"cloture aluminium sur muret",
+"clôture aluminium sur muret",
 "Exact"
 ],
 [
@@ -520,19 +536,19 @@
 "Exact"
 ],
 [
-"eclairage exterieur",
-"Exact"
-],
-[
 "eclairage extérieur",
 "Exact"
 ],
 [
-"eclairage exterieur led",
+"eclairage exterieur",
 "Exact"
 ],
 [
 "eclairage extérieur led",
+"Exact"
+],
+[
+"eclairage exterieur led",
 "Exact"
 ],
 [
@@ -644,11 +660,11 @@
 "Exact"
 ],
 [
-"luminaire solaire extérieur",
+"luminaire solaire exterieur",
 "Exact"
 ],
 [
-"luminaire solaire exterieur",
+"luminaire solaire extérieur",
 "Exact"
 ],
 [
@@ -676,11 +692,11 @@
 "Exact"
 ],
 [
-"pave cour",
+"pavé cour",
 "Exact"
 ],
 [
-"pavé cour",
+"pave cour",
 "Exact"
 ],
 [
@@ -732,11 +748,11 @@
 "Exact"
 ],
 [
-"plots beton pour poteaux",
+"plots béton pour poteaux",
 "Exact"
 ],
 [
-"plots béton pour poteaux",
+"plots beton pour poteaux",
 "Exact"
 ],
 [
@@ -744,11 +760,11 @@
 "Exact"
 ],
 [
-"pot fleur exterieur",
+"pot fleur extérieur",
 "Exact"
 ],
 [
-"pot fleur extérieur",
+"pot fleur exterieur",
 "Exact"
 ],
 [
@@ -776,11 +792,11 @@
 "Exact"
 ],
 [
-"terrasse en gazon synthétique",
+"terrasse en gazon synthetique",
 "Exact"
 ],
 [
-"terrasse en gazon synthetique",
+"terrasse en gazon synthétique",
 "Exact"
 ],
 [
@@ -788,19 +804,19 @@
 "Exact"
 ],
 [
-"eclairage exterieur jardin",
-"Exact"
-],
-[
 "éclairage extérieur jardin",
 "Exact"
 ],
 [
-"eclairage exterieur solaire puissant",
+"eclairage exterieur jardin",
 "Exact"
 ],
 [
 "éclairage extérieur solaire puissant",
+"Exact"
+],
+[
+"eclairage exterieur solaire puissant",
 "Exact"
 ],
 [

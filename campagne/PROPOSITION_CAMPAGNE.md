@@ -1,26 +1,28 @@
-# Proposition de campagne Google Ads — Allô Paysagiste Artois
+# Campagne Google Ads — Allô Paysagiste Artois
 
-_Rien n'est créé. À relire avant toute création._
+_Version validée par l'utilisateur (23/11/2026). Création en PAUSE ; il l'active lui-même._
 
 ## Réglages
 | Réglage | Valeur |
 |---|---|
-| Campagne | Paysagiste Artois (Lens, Béthune, Arras) |
-| Type | Réseau de Recherche seul (pas de Display, pas de partenaires) |
-| Statut à la création | **En pause** (tu actives toi-même) |
-| Enchères | CPC manuel, une enchère par mot-clé |
-| Zone | 506 communes (42 Lens + 187 Béthune + 277 Arras), option « Présence : personnes situées dans la zone », pas de rayon |
-| Ajustements | Arras ville −20 % · 14 communes +15 à +25 % (fiches) |
-| Budget | à décider avec toi (voir plus bas) |
-| Conversions | Formulaire envoyé · Appels depuis le site · Appels depuis l'annonce (déjà créées) |
+| Campagne | Paysagiste Artois (Lens, Béthune, Arras) — 1 campagne, choix de l'utilisateur (secteurs voisins) |
+| Type | Réseau de Recherche seul (ni Display, ni partenaires) |
+| Statut à la création | En pause |
+| Enchères | CPC manuel, une enchère par mot-clé (moyenne des 3 fiches) |
+| Budget | 15 €/jour au départ (à confirmer ; palier suivant après 2 semaines) |
+| Zone | 506 communes (42 Lens + 187 Béthune + 277 Arras), « Présence : personnes situées dans la zone », pas de rayon |
+| Ajustements | Arras −20 % · 14 communes +15 à +25 % (fiches) |
+| Conversions | Formulaire envoyé · Appels depuis le site · Appels depuis l'annonce |
+| Composants | Appel 07 56 95 13 25 · liens annexes vers les 4 pages devis · accroches (Devis gratuit 24 h, Déplacement gratuit, Devis écrit, Chantier propre) |
+| Retirés (hors positionnement du site) | béton désactivé prix m2 · allée en beton · terrasse en béton prix |
 
 ## Groupe « Aménagement & création »
 Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=amenagement-jardin` · 35 mots-clés
 
 | # | Titre | Caractères |
 |---|---|---|
-| 1 | Paysagiste {LOCATION(City):Lens} 📌 épinglé position 1 | 15 |
-| 2 | Aménagement Jardin {LOCATION(City):Lens} 📌 épinglé position 1 | 23 |
+| 1 | Paysagiste {LOCATION(City):Lens} 📌 position 1 | 15 |
+| 2 | Aménagement Jardin {LOCATION(City):Lens} 📌 position 1 | 23 |
 | 3 | Création De Jardin | 18 |
 | 4 | Pose De Gazon En Rouleau | 24 |
 | 5 | Plantation De Haies | 19 |
@@ -41,8 +43,6 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=amenagement-jardin` 
 | Remplissez le formulaire en 2 minutes pour obtenir votre prix. On vous rappelle sous 24 h. | 90 |
 | Entreprise assurée partout en Artois. Devis écrit et détaillé avant le moindre travail. | 87 |
 | Appelez-nous ou laissez votre demande : devis et déplacement gratuits, sans engagement. | 87 |
-
-Mots-clés :
 
 | Mot-clé | Correspondance | Recherches/mois (3 zones) | Enchère |
 |---|---|---|---|
@@ -83,12 +83,12 @@ Mots-clés :
 | amenagement d un bassin exterieur | Expression | 2.6 | 0.72 € |
 
 ## Groupe « Terrasse, allées & murets »
-Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=terrasse-allee` · 25 mots-clés
+Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=terrasse-allee` · 22 mots-clés
 
 | # | Titre | Caractères |
 |---|---|---|
-| 1 | Terrasse {LOCATION(City):Lens} 📌 épinglé position 1 | 13 |
-| 2 | Allée & Muret {LOCATION(City):Lens} 📌 épinglé position 1 | 18 |
+| 1 | Terrasse {LOCATION(City):Lens} 📌 position 1 | 13 |
+| 2 | Allée & Muret {LOCATION(City):Lens} 📌 position 1 | 18 |
 | 3 | Pose De Pavés & Enrobé | 22 |
 | 4 | Mur De Soutènement | 18 |
 | 5 | Enrochement De Talus | 20 |
@@ -110,8 +110,6 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=terrasse-allee` · 2
 | Entreprise assurée partout en Artois. Devis écrit avant travaux, chantier rendu propre. | 87 |
 | Appelez-nous ou laissez votre demande : devis et déplacement gratuits, sans engagement. | 87 |
 
-Mots-clés :
-
 | Mot-clé | Correspondance | Recherches/mois (3 zones) | Enchère |
 |---|---|---|---|
 | amenagement terrasse | Expression | 42.0 | 1.10 € |
@@ -124,15 +122,12 @@ Mots-clés :
 | pose dalle sur plot | Expression | 10.3 | 1.10 € |
 | devis terrasse en bois | Expression | 4.6 | 1.10 € |
 | artisan terrasse | Expression | 3.6 | 1.10 € |
-| terrasse en béton prix | Expression | 11.3 | 1.03 € |
 | allée carrossable | Expression | 14.0 | 1.12 € |
 | allée de jardin | Expression | 42.0 | 1.12 € |
 | pose de pavé pour passage voiture | Expression | 13.5 | 1.12 € |
 | aménagement allée entrée maison | Expression | 6.0 | 1.08 € |
 | aménagement cour extérieur | Expression | 5.0 | 1.12 € |
 | amenagement cour | Expression | 4.0 | 1.12 € |
-| allée en beton | Expression | 4.7 | 1.12 € |
-| béton désactivé prix m2 | Expression | 36.0 | 1.12 € |
 | allée goudron prix au m2 | Expression | 3.1 | 1.12 € |
 | mur de soutènement | Expression | 88.0 | 1.12 € |
 | enrochement | Expression | 28.3 | 1.00 € |
@@ -145,8 +140,8 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=entretien-jardin` ·
 
 | # | Titre | Caractères |
 |---|---|---|
-| 1 | Jardinier {LOCATION(City):Lens} 📌 épinglé position 1 | 14 |
-| 2 | Entretien Jardin {LOCATION(City):Lens} 📌 épinglé position 1 | 21 |
+| 1 | Jardinier {LOCATION(City):Lens} 📌 position 1 | 14 |
+| 2 | Entretien Jardin {LOCATION(City):Lens} 📌 position 1 | 21 |
 | 3 | Taille De Haies | 15 |
 | 4 | Tonte De Pelouse | 16 |
 | 5 | Jardin Remis À Neuf | 19 |
@@ -167,8 +162,6 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=entretien-jardin` ·
 | Remplissez le formulaire en 2 minutes pour obtenir votre prix. On vous rappelle sous 24 h. | 90 |
 | Entreprise assurée partout en Artois. Déchets verts ramassés et évacués, jardin net. | 84 |
 | Appelez-nous ou laissez votre demande : devis et déplacement gratuits, sans engagement. | 87 |
-
-Mots-clés :
 
 | Mot-clé | Correspondance | Recherches/mois (3 zones) | Enchère |
 |---|---|---|---|
@@ -205,8 +198,8 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=cloture-portail` · 
 
 | # | Titre | Caractères |
 |---|---|---|
-| 1 | Clôture {LOCATION(City):Lens} 📌 épinglé position 1 | 12 |
-| 2 | Pose De Portail {LOCATION(City):Lens} 📌 épinglé position 1 | 20 |
+| 1 | Clôture {LOCATION(City):Lens} 📌 position 1 | 12 |
+| 2 | Pose De Portail {LOCATION(City):Lens} 📌 position 1 | 20 |
 | 3 | Grillage Rigide Ou Souple | 25 |
 | 4 | Portail Coulissant | 18 |
 | 5 | Brise-Vue Occultant | 19 |
@@ -228,8 +221,6 @@ Page d'arrivée : `https://allopaysagisteartois.fr/?travaux=cloture-portail` · 
 | Entreprise assurée partout en Artois. Ancienne clôture démontée et évacuée. | 75 |
 | Appelez-nous ou laissez votre demande : devis et déplacement gratuits, sans engagement. | 87 |
 
-Mots-clés :
-
 | Mot-clé | Correspondance | Recherches/mois (3 zones) | Enchère |
 |---|---|---|---|
 | pose cloture | Expression | 16.0 | 0.97 € |
@@ -248,8 +239,8 @@ Mots-clés :
 | brise vue pose | Expression | 2.6 | 0.97 € |
 | installateur brise vue | Expression | 2.6 | 0.97 € |
 
-## Mots à exclure
-203 exclusions (chaque mot accentué aussi sans accent).
+## Mots exclus
+207 exclusions.
 
 | Mot | Correspondance |
 |---|---|
@@ -274,8 +265,8 @@ Mots-clés :
 | diy | Large |
 | soi-meme | Large |
 | soi-même | Large |
-| idee | Large |
 | idée | Large |
+| idee | Large |
 | idees | Large |
 | idées | Large |
 | photo | Large |
@@ -315,19 +306,19 @@ Mots-clés :
 | sap | Large |
 | piscine | Large |
 | balcon | Large |
-| véranda | Large |
 | veranda | Large |
+| véranda | Large |
 | appartement | Large |
 | synthetique | Large |
 | synthétique | Large |
 | pvc | Large |
-| résine | Large |
 | resine | Large |
+| résine | Large |
 | bambou | Large |
 | bonsai | Large |
 | palmier | Large |
-| jardiniere | Large |
 | jardinière | Large |
+| jardiniere | Large |
 | jardinières | Large |
 | jardinieres | Large |
 | lampe | Large |
@@ -348,6 +339,10 @@ Mots-clés :
 | notice | Large |
 | gravier | Large |
 | cailloux | Large |
+| beton desactive | Expression |
+| béton désactivé | Expression |
+| beton cire | Expression |
+| béton ciré | Expression |
 | que faire | Expression |
 | faire soi meme | Expression |
 | pas japonais | Expression |
@@ -365,14 +360,14 @@ Mots-clés :
 | arrosage des lauriers roses | Exact |
 | arrosage kalanchoe | Exact |
 | bois composite | Exact |
-| calathea entretien | Exact |
 | calathéa entretien | Exact |
+| calathea entretien | Exact |
 | cloture extérieur | Exact |
 | cloture exterieur | Exact |
 | cloture rigide avec soubassement | Exact |
 | cloture sur muret | Exact |
-| clôture aluminium sur muret | Exact |
 | cloture aluminium sur muret | Exact |
+| clôture aluminium sur muret | Exact |
 | clôture pvc sur muret | Exact |
 | cloture pvc sur muret | Exact |
 | dallage sur plot | Exact |
@@ -383,10 +378,10 @@ Mots-clés :
 | dalle terrasse sur plot | Exact |
 | dalle terrasse sur sable | Exact |
 | eclairage exterieur solaire | Exact |
-| eclairage exterieur | Exact |
 | eclairage extérieur | Exact |
-| eclairage exterieur led | Exact |
+| eclairage exterieur | Exact |
 | eclairage extérieur led | Exact |
+| eclairage exterieur led | Exact |
 | eclairage jardin | Exact |
 | eclairage jardin solaire | Exact |
 | entretien ficus | Exact |
@@ -414,16 +409,16 @@ Mots-clés :
 | luminaire exterieur terrasse | Exact |
 | luminaire jardin | Exact |
 | luminaire jardin solaire | Exact |
-| luminaire solaire extérieur | Exact |
 | luminaire solaire exterieur | Exact |
+| luminaire solaire extérieur | Exact |
 | luminaire terrasse | Exact |
 | lumiere exterieur terrasse | Exact |
 | lumière extérieur terrasse | Exact |
 | pachira entretien | Exact |
 | pavé carrossable | Exact |
 | pave carrossable | Exact |
-| pave cour | Exact |
 | pavé cour | Exact |
+| pave cour | Exact |
 | pelouse en rouleau naturel | Exact |
 | piliers pour portail | Exact |
 | place cloture | Exact |
@@ -436,28 +431,28 @@ Mots-clés :
 | plot terrasse bois | Exact |
 | plot terrasse reglable | Exact |
 | plots beton terrasse | Exact |
-| plots beton pour poteaux | Exact |
 | plots béton pour poteaux | Exact |
+| plots beton pour poteaux | Exact |
 | portail avidsen | Exact |
-| pot fleur exterieur | Exact |
 | pot fleur extérieur | Exact |
+| pot fleur exterieur | Exact |
 | poteau grillage souple | Exact |
 | rouleau gazon naturel | Exact |
 | terrasse bois composite | Exact |
 | terrasse composite | Exact |
 | terrasse composite sur plot | Exact |
 | terrasse en bois exotique | Exact |
-| terrasse en gazon synthétique | Exact |
 | terrasse en gazon synthetique | Exact |
+| terrasse en gazon synthétique | Exact |
 | tondre le dimanche | Exact |
-| eclairage exterieur jardin | Exact |
 | éclairage extérieur jardin | Exact |
-| eclairage exterieur solaire puissant | Exact |
+| eclairage exterieur jardin | Exact |
 | éclairage extérieur solaire puissant | Exact |
+| eclairage exterieur solaire puissant | Exact |
 | éclairage extérieur terrasse | Exact |
 | eclairage exterieur terrasse | Exact |
 
-## Ajustements d'enchère par commune
+## Ajustements par commune
 | Commune | Ajustement | Pourquoi | Fiche |
 |---|---|---|---|
 | Arras | −20 % | ville mixte (33 % de maisons) | Arras |

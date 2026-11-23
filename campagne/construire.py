@@ -18,9 +18,9 @@ GROUPES = {
  "Terrasse, allées & murets": ("terrasse-allee", [
    ("amenagement terrasse","P"),("amenagement terrasse exterieur","P"),("aménagement terrasse jardin","P"),("aménagement terrasse devant maison","P"),
    ("pose terrasse bois","P"),("pose terrasse composite","P"),("pose terrasse sur plot","P"),("pose dalle sur plot","P"),("devis terrasse en bois","P"),
-   ("artisan terrasse","P"),("terrasse en béton prix","P"),
+   ("artisan terrasse","P"),
    ("allée carrossable","P"),("allée de jardin","P"),("pose de pavé pour passage voiture","P"),("aménagement allée entrée maison","P"),
-   ("aménagement cour extérieur","P"),("amenagement cour","P"),("allée en beton","P"),("béton désactivé prix m2","P"),("allée goudron prix au m2","P"),
+   ("aménagement cour extérieur","P"),("amenagement cour","P"),("allée goudron prix au m2","P"),
    ("mur de soutènement","P"),("enrochement","P"),("muret jardin","P"),("talus aménagement","P"),("aménagement talus moderne","P")]),
  "Entretien de jardin": ("entretien-jardin", [
    ("jardinier autour de moi","P"),("jardinier paysagiste","P"),("entretien espace vert","P"),("entretien jardin","E"),("entretien jardin","P"),

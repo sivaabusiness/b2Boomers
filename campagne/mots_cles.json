@@ -452,16 +452,6 @@
  {
   "groupe": "Terrasse, allées & murets",
   "url": "https://allopaysagisteartois.fr/?travaux=terrasse-allee",
-  "mot": "terrasse en béton prix",
-  "corr": "Expression",
-  "vol": 11.3,
-  "haut": "0,46 € – 1,04 €",
-  "cpc": 1.03,
-  "service_fiche": "Terrasse (bois, composite, dallage)"
- },
- {
-  "groupe": "Terrasse, allées & murets",
-  "url": "https://allopaysagisteartois.fr/?travaux=terrasse-allee",
   "mot": "allée carrossable",
   "corr": "Expression",
   "vol": 14.0,
@@ -516,26 +506,6 @@
   "corr": "Expression",
   "vol": 4.0,
   "haut": "0,45 € – 2,27 €",
-  "cpc": 1.12,
-  "service_fiche": "Allée / cour / pavage / enrobé"
- },
- {
-  "groupe": "Terrasse, allées & murets",
-  "url": "https://allopaysagisteartois.fr/?travaux=terrasse-allee",
-  "mot": "allée en beton",
-  "corr": "Expression",
-  "vol": 4.7,
-  "haut": "0,44 € – 2,23 €",
-  "cpc": 1.12,
-  "service_fiche": "Allée / cour / pavage / enrobé"
- },
- {
-  "groupe": "Terrasse, allées & murets",
-  "url": "https://allopaysagisteartois.fr/?travaux=terrasse-allee",
-  "mot": "béton désactivé prix m2",
-  "corr": "Expression",
-  "vol": 36.0,
-  "haut": "0,34 € – 1,49 €",
   "cpc": 1.12,
   "service_fiche": "Allée / cour / pavage / enrobé"
  },

@@ -9,7 +9,7 @@ LARGE = ["emploi","emplois","salaire","formation","stage","alternance","recrutem
  "synthétique","pvc","résine","bambou","bonsai","palmier","jardinière","jardinières","lampe","lampes","éclairage","luminaire","solaire",
  "motorisation","moteur","tondeuse","robot","lambourde","lambourdes","lame","lames","kit","notice","gravier","cailloux"]
 # 2) locutions en "Expression"
-EXPR = ["que faire","faire soi meme","pas japonais","facile à faire","sans entretien","tondre le dimanche","daniel moquet","bois composite"]
+EXPR = ["béton désactivé","béton ciré","que faire","faire soi meme","pas japonais","facile à faire","sans entretien","tondre le dimanche","daniel moquet","bois composite"]
 # 3) les requêtes produit/curiosité de la fiche, en "Exact" (bloque la requête exacte sans bloquer nos mots-clés)
 EXACT = sorted(d["negatifs"].keys())
 neg = [(m,"Large") for m in LARGE] + [(m,"Expression") for m in EXPR] + [(m,"Exact") for m in EXACT]
