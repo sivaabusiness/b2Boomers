@@ -12,3 +12,6 @@ node_modules/
 # Caches Python
 __pycache__/
 *.pyc
+
+# Journaux d enchères (identifiants du compte)
+campagne/journal_encheres_*.json
