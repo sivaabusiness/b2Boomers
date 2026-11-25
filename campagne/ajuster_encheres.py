@@ -32,7 +32,7 @@ def main():
     m = ap.add_mutually_exclusive_group(required=True)
     m.add_argument("--dry", action="store_true")
     m.add_argument("--apply", action="store_true")
-    ap.add_argument("--pct", type=float, required=True, help="ex. 30 pour +30 %, -20 pour -20 %")
+    ap.add_argument("--pct", type=float, required=True, help="ex. 30 pour +30 %%, -20 pour -20 %%")
     ap.add_argument("--env", default=os.path.join(PACK, "env.local.txt"))
     a = ap.parse_args()
     if a.pct > PLAFOND_PCT:
