@@ -1026,9 +1026,13 @@ CSS_SERVICE = """
 .sv-hero .phrase{font-size:20px;font-weight:600;margin:18px 0 6px}
 .sv-hero .sous{color:rgba(255,255,255,.85);max-width:620px;margin:0 0 24px}
 .sv-hero .act{display:flex;flex-wrap:wrap;gap:12px}
-.sv-intro{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:start}
+.sv-intro{max-width:820px}
+.sv-hero-g{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:56px;align-items:center}
+.sv-hero .carte-devis{color:var(--texte);position:static}
+.sv-hero .carte-devis h3{color:var(--sauge-n)}
+.sv-hero-g h1{font-size:clamp(32px,3.8vw,52px)}
 .sv-intro p{margin:0 0 16px}
-.carte-devis{position:sticky;top:100px;background:#fff;border-radius:var(--r);padding:26px;box-shadow:var(--ombre)}
+.carte-devis{background:#fff;border-radius:var(--r);padding:26px;box-shadow:var(--ombre)}
 .carte-devis h3{font-size:24px;color:var(--sauge-n);letter-spacing:-.02em}
 .carte-devis p{color:var(--gris);margin:8px 0 18px;font-size:16px}
 .carte-devis .btn{width:100%}
@@ -1062,7 +1066,8 @@ CSS_SERVICE = """
  .sv-hero::before{background:linear-gradient(to bottom,rgba(34,42,36,.15) 0,rgba(34,42,36,.85) 150px,var(--sauge-f) 230px)}
  .sv-hero h1{font-size:29px}.sv-hero .phrase{font-size:17px}.sv-hero .act .btn{width:100%}
  .sv-intro,.sv-inclus{grid-template-columns:1fr;gap:24px}
- .carte-devis{position:static;order:-1}
+ .sv-hero-g{grid-template-columns:1fr;gap:28px}
+ .carte-devis{position:static}
  .sv-var{grid-template-columns:1fr;gap:16px;margin-top:20px}
  .sv-autres ul{grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
  .regles .regle{display:block}
@@ -1130,22 +1135,14 @@ def page_service(q):
 <nav class="ariane wrap" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> › <a href="index.html#prestations">Prestations</a> › <span>{q['nom']}</span></nav>
 <main>
 <section class="sv-hero" style="background-image:url('photos/{q['photo']}.webp');background-position:{focus}">
-  <div class="wrap">
+  <div class="wrap sv-hero-g">
+  <div>
     <p class="kicker">{q['cat']}</p>
     <h1>{q['h1']}</h1>
     <p class="phrase">On vous rappelle : devis et déplacement gratuits sous 24 h.</p>
     <p class="sous">{q['accroche']}</p>
-    <div class="act"><a class="btn" href="{devis_href}">Recevoir mon devis gratuit</a>{tel("btn btn-blanc", TEL_IC + "Appeler le " + TEL_AFF)}</div>
+    <div class="act">{tel("btn btn-blanc", TEL_IC + "Appeler le " + TEL_AFF)}</div>
   </div>
-</section>
-
-<section class="s">
-  <div class="wrap sv-intro">
-    <div>
-      <p class="kicker">Ce que nous faisons</p>
-      <h2 class="t">{q['nom']} : notre façon de travailler</h2>
-      <div style="margin-top:22px">{par}</div>
-    </div>
     <aside class="carte-devis">
       <h3>Votre devis gratuit</h3>
       <p>Votre projet dans le Pas-de-Calais : on vous rappelle sous 24 h pour en parler.</p>
@@ -1163,6 +1160,16 @@ def page_service(q):
 </form>
       {tel("tel", "ou appelez le " + TEL_AFF)}
     </aside>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap sv-intro">
+    <div>
+      <p class="kicker">Ce que nous faisons</p>
+      <h2 class="t">{q['nom']} : notre façon de travailler</h2>
+      <div style="margin-top:22px">{par}</div>
+    </div>
   </div>
 </section>
 

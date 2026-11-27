@@ -379,9 +379,13 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
 .sv-hero .phrase{font-size:20px;font-weight:600;margin:18px 0 6px}
 .sv-hero .sous{color:rgba(255,255,255,.85);max-width:620px;margin:0 0 24px}
 .sv-hero .act{display:flex;flex-wrap:wrap;gap:12px}
-.sv-intro{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:start}
+.sv-intro{max-width:820px}
+.sv-hero-g{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:56px;align-items:center}
+.sv-hero .carte-devis{color:var(--texte);position:static}
+.sv-hero .carte-devis h3{color:var(--sauge-n)}
+.sv-hero-g h1{font-size:clamp(32px,3.8vw,52px)}
 .sv-intro p{margin:0 0 16px}
-.carte-devis{position:sticky;top:100px;background:#fff;border-radius:var(--r);padding:26px;box-shadow:var(--ombre)}
+.carte-devis{background:#fff;border-radius:var(--r);padding:26px;box-shadow:var(--ombre)}
 .carte-devis h3{font-size:24px;color:var(--sauge-n);letter-spacing:-.02em}
 .carte-devis p{color:var(--gris);margin:8px 0 18px;font-size:16px}
 .carte-devis .btn{width:100%}
@@ -415,7 +419,8 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .sv-hero::before{background:linear-gradient(to bottom,rgba(34,42,36,.15) 0,rgba(34,42,36,.85) 150px,var(--sauge-f) 230px)}
  .sv-hero h1{font-size:29px}.sv-hero .phrase{font-size:17px}.sv-hero .act .btn{width:100%}
  .sv-intro,.sv-inclus{grid-template-columns:1fr;gap:24px}
- .carte-devis{position:static;order:-1}
+ .sv-hero-g{grid-template-columns:1fr;gap:28px}
+ .carte-devis{position:static}
  .sv-var{grid-template-columns:1fr;gap:16px;margin-top:20px}
  .sv-autres ul{grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
  .regles .regle{display:block}
@@ -437,21 +442,14 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
 <nav class="ariane wrap" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> › <a href="index.html#prestations">Prestations</a> › <span>Gazon et engazonnement</span></nav>
 <main>
 <section class="sv-hero" style="--bgm:url('photos/w/gazon-rouleau-600.webp');background-image:url('photos/gazon-rouleau.webp');background-position:center">
-  <div class="wrap">
+  <div class="wrap sv-hero-g">
+  <div>
     <p class="kicker">Aménagement</p>
     <h1>Gazon et engazonnement à Lens, Béthune et Arras</h1>
     <p class="phrase">On vous rappelle : devis et déplacement gratuits sous 24 h.</p>
     <p class="sous">Semis ou gazon en rouleau : une pelouse dense et régulière, sur un sol bien préparé.</p>
-    <div class="act"><a class="btn" href="#devis">Recevoir mon devis gratuit</a><a class="btn btn-blanc" href="tel:+33756951325"><svg class="i-tel" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Appeler le 07 56 95 13 25</a></div>
+    <div class="act"><a class="btn btn-blanc" href="tel:+33756951325"><svg class="i-tel" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Appeler le 07 56 95 13 25</a></div>
   </div>
-</section>
-<section class="s">
-  <div class="wrap sv-intro">
-    <div>
-      <p class="kicker">Ce que nous faisons</p>
-      <h2 class="t">Gazon et engazonnement : notre façon de travailler</h2>
-      <div style="margin-top:22px"><p>Une belle pelouse dépend surtout du travail du sol. On retire les cailloux et les mauvaises herbes, on décompacte, on apporte de la terre végétale si besoin, puis on nivelle soigneusement pour éviter les creux où l'eau stagne.</p><p>Deux solutions : le semis, plus économique, qui demande quelques semaines avant de profiter de la pelouse ; ou le gazon en rouleau, posé en une journée, qui donne un résultat vert tout de suite. On vous conseille selon la saison et l'usage.</p><p>On peut aussi rénover une pelouse fatiguée : scarification, regarnissage des zones clairsemées et conseils d'arrosage et de tonte pour qu'elle reste belle.</p></div>
-    </div>
     <aside class="carte-devis">
       <h3>Votre devis gratuit</h3>
       <p>Votre projet dans le Pas-de-Calais : on vous rappelle sous 24 h pour en parler.</p>
@@ -497,6 +495,15 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
 </form>
       <a class="tel" href="tel:+33756951325">ou appelez le 07 56 95 13 25</a>
     </aside>
+  </div>
+</section>
+<section class="s">
+  <div class="wrap sv-intro">
+    <div>
+      <p class="kicker">Ce que nous faisons</p>
+      <h2 class="t">Gazon et engazonnement : notre façon de travailler</h2>
+      <div style="margin-top:22px"><p>Une belle pelouse dépend surtout du travail du sol. On retire les cailloux et les mauvaises herbes, on décompacte, on apporte de la terre végétale si besoin, puis on nivelle soigneusement pour éviter les creux où l'eau stagne.</p><p>Deux solutions : le semis, plus économique, qui demande quelques semaines avant de profiter de la pelouse ; ou le gazon en rouleau, posé en une journée, qui donne un résultat vert tout de suite. On vous conseille selon la saison et l'usage.</p><p>On peut aussi rénover une pelouse fatiguée : scarification, regarnissage des zones clairsemées et conseils d'arrosage et de tonte pour qu'elle reste belle.</p></div>
+    </div>
   </div>
 </section>
 <section class="s sable">
