@@ -475,7 +475,11 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .paire img{object-position:center}
  .barre{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,230,.7);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);border-top:1px solid rgba(255,255,255,.55);box-shadow:0 -6px 20px rgba(0,0,0,.08)}
  @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.barre{background:rgba(244,239,230,.96)}}
- .barre .btn{width:100%}
+ .barre{display:flex!important;gap:10px;align-items:stretch}
+ .barre .btn{flex:1;min-width:0;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center}
+ @media(max-width:380px){.barre .btn{font-size:16px;padding-left:12px;padding-right:12px}.barre .btn-appel{padding-left:14px;padding-right:14px}}
+ .barre .btn-appel{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding-left:18px;padding-right:18px;background:#fff;color:var(--sauge-n);border:1.5px solid var(--sauge);box-shadow:none}
+ .barre .btn-appel:hover{background:#F2F6F1}
 }
 """
 
@@ -1299,6 +1303,7 @@ FOND_MOBILE = ("<style>@media(max-width:820px){.bandeau,.sv-hero{background-imag
                "}</style>")
 TEL_JS = "<script>document.querySelectorAll('input[name=tel]').forEach(function(i){i.addEventListener('input',function(){if(i.selectionStart!==i.value.length)return;var v=i.value,d=v.replace(/\\D/g,''),f;if(/^\\s*\\+/.test(v)){if(d.indexOf('33')!==0)return;var r=d.slice(2).replace(/^0/,'');f='+33'+(r?' '+r.charAt(0):'')+(r.length>1?' '+r.slice(1,9).replace(/(\\d{2})(?=\\d)/g,'$1 '):'');}else if(d.charAt(0)==='0'){f=d.slice(0,10).replace(/(\\d{2})(?=\\d)/g,'$1 ');}else if(d){f=d.charAt(0)+(d.length>1?' '+d.slice(1,9).replace(/(\\d{2})(?=\\d)/g,'$1 '):'');}else return;if(f!==v)i.value=f;});});document.addEventListener('submit',function(e){var i=e.target.querySelector&&e.target.querySelector('input[name=tel]');if(i){var v=i.value,d=v.replace(/\\D/g,''),r=null;if(/^\\s*\\+/.test(v)){if(d.indexOf('33')===0)r=d.slice(2).replace(/^0/,'');}else if(d.length===10&&d.charAt(0)==='0')r=d.slice(1);else if(d.length===9&&d.charAt(0)!=='0')r=d;if(r&&r.length===9)i.value='+33 '+r.charAt(0)+' '+r.slice(1).replace(/(\\d{2})(?=\\d)/g,'$1 ');}},true);</script>"
 def optim(h):
+    h = h.replace('<div class="barre" data-barre><a class="btn"', '<div class="barre" data-barre>' + tel("btn btn-appel", TEL_IC + "Appeler") + '<a class="btn"')
     if 'name="tel"' in h:
         h = h.replace("</body>", TEL_JS + "\n</body>", 1)
     h = h.replace(">Débroussaillage, évacuation</button>", ">Débrous&shy;saillage, évacuation</button>")
