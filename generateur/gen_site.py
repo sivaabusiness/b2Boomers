@@ -723,7 +723,7 @@ def accueil():
     <input id="r-nom" type="text" name="nom" autocomplete="given-name" required></div>
   <div class="champ"><label for="r-tel">Votre téléphone</label>
     <input id="r-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
-      placeholder="6 12 34 56 78" pattern="[\\s.\\-\\(\\)]*(?:\\+[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{7,14}}|0?[\\s.\\-\\(\\)]*[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{8}})[\\s.\\-\\(\\)]*" required><small class="aide-tel">Il manque des chiffres, par exemple 6 12 34 56 78</small></div>
+      placeholder="06 12 34 56 78" pattern="[\\s.\\-\\(\\)]*(?:\\+[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{7,14}}|0?[\\s.\\-\\(\\)]*[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{8}})[\\s.\\-\\(\\)]*" required><small class="aide-tel">Il manque des chiffres, par exemple 06 12 34 56 78</small></div>
   <input type="text" name="site_web" tabindex="-1" autocomplete="off"
     style="position:absolute;left:-6000px">
   <button type="submit">Être rappelé →</button>
@@ -855,8 +855,8 @@ def etape2(exemple, visible=False, choisi=""):
     <input id="f-nom" type="text" name="nom" autocomplete="name" required>
     <label for="f-tel">Votre téléphone</label>
     <input id="f-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
-      placeholder="6 12 34 56 78" pattern="[\\s.\\-\\(\\)]*(?:\\+[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{7,14}}|0?[\\s.\\-\\(\\)]*[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{8}})[\\s.\\-\\(\\)]*" required>
-    <small class="aide-tel">Il manque des chiffres, par exemple 6 12 34 56 78</small>
+      placeholder="06 12 34 56 78" pattern="[\\s.\\-\\(\\)]*(?:\\+[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{7,14}}|0?[\\s.\\-\\(\\)]*[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{8}})[\\s.\\-\\(\\)]*" required>
+    <small class="aide-tel">Il manque des chiffres, par exemple 06 12 34 56 78</small>
     <label for="f-commune">Votre commune</label>
     <input id="f-commune" type="text" name="commune" placeholder="ex. Liévin, Béthune, Arras…" required>
     <label for="f-desc">Un mot sur le chantier et vos délais <small>(facultatif)</small></label>
