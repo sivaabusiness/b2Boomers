@@ -106,11 +106,22 @@ ICONES = {
 ICCSS = '[data-ic="jardin"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 21v-8%22/%3E%3Cpath d=%22M12 13c0-4 3-7 7-7 0 4-3 7-7 7z%22/%3E%3Cpath d=%22M12 15c0-3-2-5-6-5 0 3 2 5 6 5z%22/%3E%3C/svg%3E")}[data-ic="haie"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 22v-6%22/%3E%3Cpath d=%22M12 3c-3.3 0-6 2.6-6 6 0 3.6 2.7 7 6 7s6-3.4 6-7c0-3.4-2.7-6-6-6z%22/%3E%3C/svg%3E")}[data-ic="gazon"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 20h18%22/%3E%3Cpath d=%22M6 20l1-6%22/%3E%3Cpath d=%22M10 20l-1-8%22/%3E%3Cpath d=%22M14 20l1-7%22/%3E%3Cpath d=%22M18 20l-1-5%22/%3E%3C/svg%3E")}[data-ic="eau"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z%22/%3E%3C/svg%3E")}[data-ic="terrasse"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 8h18%22/%3E%3Cpath d=%22M3 12h18%22/%3E%3Cpath d=%22M3 16h18%22/%3E%3Cpath d=%22M6 8v11%22/%3E%3Cpath d=%22M18 8v11%22/%3E%3C/svg%3E")}[data-ic="dalles"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Crect x=%224%22 y=%224%22 width=%2216%22 height=%2216%22 rx=%221%22/%3E%3Cpath d=%22M4 12h16%22/%3E%3Cpath d=%22M12 4v16%22/%3E%3C/svg%3E")}[data-ic="allee"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M8 21l2-18%22/%3E%3Cpath d=%22M16 21l-2-18%22/%3E%3Cpath d=%22M11 7h2%22/%3E%3Cpath d=%22M10.6 12h2.8%22/%3E%3Cpath d=%22M10 17h4%22/%3E%3C/svg%3E")}[data-ic="muret"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Crect x=%223%22 y=%227%22 width=%2218%22 height=%2212%22 rx=%221%22/%3E%3Cpath d=%22M3 13h18%22/%3E%3Cpath d=%22M9 7v6%22/%3E%3Cpath d=%22M15 13v6%22/%3E%3C/svg%3E")}[data-ic="taille"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%226%22 cy=%227%22 r=%223%22/%3E%3Ccircle cx=%226%22 cy=%2217%22 r=%223%22/%3E%3Cpath d=%22M8.5 8.5L20 19%22/%3E%3Cpath d=%22M8.5 15.5L20 5%22/%3E%3C/svg%3E")}[data-ic="tonte"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M4 20h16%22/%3E%3Cpath d=%22M7 20v-8%22/%3E%3Cpath d=%22M12 20V9%22/%3E%3Cpath d=%22M17 20v-6%22/%3E%3C/svg%3E")}[data-ic="remise"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 19C5 10 10 5 19 5c0 9-5 14-14 14z%22/%3E%3Cpath d=%22M5 19l7-7%22/%3E%3C/svg%3E")}[data-ic="debroussaillage"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 7h14%22/%3E%3Cpath d=%22M9 7V4h6v3%22/%3E%3Cpath d=%22M7 7l1 13h8l1-13%22/%3E%3C/svg%3E")}[data-ic="cloture"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 21V6l2-2 2 2v15%22/%3E%3Cpath d=%22M15 21V6l2-2 2 2v15%22/%3E%3Cpath d=%22M3 10h18%22/%3E%3Cpath d=%22M3 16h18%22/%3E%3C/svg%3E")}[data-ic="portail"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M4 21V4%22/%3E%3Cpath d=%22M20 21V4%22/%3E%3Cpath d=%22M4 8h16%22/%3E%3Cpath d=%22M4 18h16%22/%3E%3Cpath d=%22M9 8v10%22/%3E%3Cpath d=%22M15 8v10%22/%3E%3C/svg%3E")}[data-ic="reparation"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.4-.6-.6-2.4z%22/%3E%3C/svg%3E")}[data-ic="urgent"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 3l10 18H2z%22/%3E%3Cpath d=%22M12 10v5%22/%3E%3Cpath d=%22M12 18v.5%22/%3E%3C/svg%3E")}[data-ic="autre"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%2212%22 cy=%2212%22 r=%229%22/%3E%3Cpath d=%22M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7%22/%3E%3Cpath d=%22M12 17.5v.5%22/%3E%3C/svg%3E")}'
 CSS_BASE = FONT_FACE + """
 
-.btn{transition:background .2s,transform .2s,box-shadow .2s}
+.prog{height:6px;border-radius:6px;background:#E7E2D6;overflow:hidden;margin:0 0 12px}
+.prog i{display:block;height:100%;width:50%;border-radius:6px;background:linear-gradient(90deg,var(--sauge),var(--brique))}
+[data-etape="2"] .prog i{width:100%}
+.local{margin:-2px 0 12px;font-size:15px;color:var(--gris)}
+.resume{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;background:#F2F6F1;border:1.5px solid #CFE0D2;border-radius:14px;padding:12px 14px;margin:0 0 6px;font-family:Inter,sans-serif!important;font-size:17px!important;letter-spacing:0!important}
+.resume-lab{flex-basis:100%;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--sauge)}
+.resume b{flex:1;min-width:0;color:var(--sauge-n)}
+.resume [data-retour]{flex:none;padding:7px 14px;border-radius:10px;border:1.5px solid var(--sauge);background:#fff;color:var(--sauge-n);font:600 15px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:background .3s ease,color .3s ease}
+.resume [data-retour]:hover{background:var(--sauge);color:#fff}
+.form-ok::after{content:"La suite\\A 1. On vous rappelle pour préciser votre projet.\\A 2. On fixe la visite, au jour qui vous arrange.\\A 3. Vous recevez un devis écrit et gratuit, et vous décidez.";display:block;white-space:pre-line;margin-top:18px;padding-top:14px;border-top:1px solid #CFE0D2;font-size:15.5px;line-height:1.7;color:var(--sauge-f)}
+
+.btn{transition:background .3s ease,transform .3s cubic-bezier(.22,.61,.36,1),box-shadow .3s ease}
 @media(hover:hover){.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -12px rgba(135,59,37,.7)}}
 .btn:active{transform:scale(.98)}
 .i-tel{flex:none}
-.choix a,.choix button{transition:border-color .2s,box-shadow .2s,transform .2s,background .2s}
+.choix a,.choix button{transition:border-color .35s cubic-bezier(.22,.61,.36,1),box-shadow .35s cubic-bezier(.22,.61,.36,1),transform .35s cubic-bezier(.22,.61,.36,1),background .35s ease}
 @media(hover:hover){.choix a:hover,.choix button:hover{transform:translateY(-2px);border-color:var(--sauge);background:#FBFAF6}}
 .choix a:active,.choix button:active{transform:scale(.98);border-color:var(--brique);box-shadow:0 0 0 2px var(--brique)}
 .choix a:focus-visible,.choix button:focus-visible,.btn:focus-visible{outline:3px solid var(--brique);outline-offset:2px}
@@ -164,7 +175,9 @@ CSS_ACCUEIL = """
 .pc{}
 
 .mo{display:none}
-.carte-s,.sv-var article,.regle{transition:transform .25s,box-shadow .25s}
+.carte-s,.sv-var article,.regle{transition:transform .5s cubic-bezier(.22,.61,.36,1),box-shadow .5s cubic-bezier(.22,.61,.36,1)}
+.carte-s .img img,.sv-var img{transition:transform .8s cubic-bezier(.22,.61,.36,1)}
+@media(hover:hover){.carte-s:hover .img img,.sv-var article:hover img{transform:scale(1.04)}}
 @media(hover:hover){.carte-s:hover,.sv-var article:hover,.regle:hover{transform:translateY(-4px);box-shadow:0 28px 60px -24px rgba(34,42,36,.4)}}
 .final-act{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .final .btn-blanc{font-size:18px;min-height:62px}
@@ -646,7 +659,7 @@ def accueil():
       </div>
       <ul class="garanties pc">
         <li>Devis écrit et détaillé</li><li>Déplacement gratuit</li>
-        <li>Végétaux adaptés à votre sol</li><li>Matériaux choisis avec vous</li>
+        <li>Végétaux adaptés à votre sol</li><li>Matériel adapté à chaque chantier</li>
         <li>Déchets verts évacués</li><li>Chantier rendu propre</li>
       </ul>
     </div>
@@ -802,12 +815,13 @@ def mini():
     return """<footer class="mini">Travaux réalisés par des professionnels assurés. Photos d'illustration.<br>
 <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a></footer>"""
 
-def etape2(exemple):
-    return f"""  <div data-etape="2" hidden>
+def etape2(exemple, visible=False, choisi=""):
+    return f"""  <div data-etape="2"{"" if visible else " hidden"}>
+    <div class="prog" aria-hidden="true"><i></i></div>
     <p class="pas">Étape 2 sur 2 · c'est presque fini</p>
-    <p class="question">Votre demande : <b data-choisi></b> ·
-      <button type="button" data-retour>changer</button></p>
-    <input type="hidden" name="service">
+    <p class="question resume"><span class="resume-lab">Votre projet</span> <b data-choisi>{choisi}</b>
+      <button type="button" data-retour>Modifier</button></p>
+    <input type="hidden" name="service" value="{choisi}">
     <label for="f-nom">Votre nom</label>
     <input id="f-nom" type="text" name="nom" autocomplete="name" required>
     <label for="f-tel">Votre téléphone</label>
@@ -815,7 +829,7 @@ def etape2(exemple):
       placeholder="06 12 34 56 78" pattern="[\\s.\\-\\(\\)]*(?:\\+[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{7,14}}|0[\\s.\\-\\(\\)]*[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{8}})[\\s.\\-\\(\\)]*" required>
     <small class="aide-tel">Il manque des chiffres : 10 chiffres, par exemple 06 12 34 56 78</small>
     <label for="f-commune">Votre commune</label>
-    <input id="f-commune" type="text" name="commune" required>
+    <input id="f-commune" type="text" name="commune" placeholder="ex. Liévin, Béthune, Arras…" required>
     <label for="f-desc">Un mot sur le chantier et vos délais <small>(facultatif)</small></label>
     <textarea id="f-desc" name="description"
       placeholder="{exemple}"></textarea>
@@ -843,7 +857,9 @@ def tunnel(s):
 <div class="carte-form">
 <form id="devis" data-moteur="devis" data-tel="{TEL_LIEN}" novalidate>
   <div data-etape="1">
+    <div class="prog" aria-hidden="true"><i></i></div>
     <p class="pas">Étape 1 sur 2</p>
+    <p class="local">Votre projet dans le Pas-de-Calais : Lens, Béthune, Arras et alentours.</p>
     <p class="question">{s['question']}</p>
     <div class="choix">
 {rep}
@@ -878,7 +894,9 @@ def devis():
 <div class="carte-form">
 <form id="devis" data-moteur="devis" data-tel="{TEL_LIEN}" novalidate>
   <div data-etape="1">
+    <div class="prog" aria-hidden="true"><i></i></div>
     <p class="pas">Étape 1 sur 2</p>
+    <p class="local">Votre projet dans le Pas-de-Calais : Lens, Béthune, Arras et alentours.</p>
     <p class="question">Quels travaux ?</p>
     <div class="choix">
 {liens}
@@ -985,6 +1003,16 @@ CSS_SERVICE = """
 .carte-devis h3{font-size:24px;color:var(--sauge-n);letter-spacing:-.02em}
 .carte-devis p{color:var(--gris);margin:8px 0 18px;font-size:16px}
 .carte-devis .btn{width:100%}
+.carte-devis form label{display:block;font-weight:600;font-size:17px;margin:14px 0 6px}
+.carte-devis label small{font-weight:400;color:var(--gris)}
+.carte-devis textarea{min-height:90px;resize:vertical}
+.carte-devis .pas{margin:0 0 6px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brique)}
+.carte-devis .question{font-size:20px}
+.carte-devis button[type=submit]{width:100%;min-height:58px;margin-top:18px;border:0;border-radius:12px;background:var(--brique);color:#fff;font:700 18px Inter,sans-serif;cursor:pointer;transition:background .3s ease}
+.carte-devis button[type=submit]:hover{background:var(--brique-f)}
+.carte-devis .choix{grid-template-columns:1fr}
+.carte-devis .question{color:var(--texte)}
+.form-ok::after{font-weight:500}
 .carte-devis .tel{display:block;text-align:center;margin-top:12px;font-weight:700;color:var(--sauge-n);text-decoration:none}
 .sv-var{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
 .sv-var article{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--ombre);display:flex;flex-direction:column}
@@ -1005,7 +1033,7 @@ CSS_SERVICE = """
  .sv-hero::before{background:linear-gradient(to bottom,rgba(34,42,36,.15) 0,rgba(34,42,36,.85) 150px,var(--sauge-f) 230px)}
  .sv-hero h1{font-size:29px}.sv-hero .phrase{font-size:17px}.sv-hero .act .btn{width:100%}
  .sv-intro,.sv-inclus{grid-template-columns:1fr;gap:24px}
- .carte-devis{position:static}
+ .carte-devis{position:static;order:-1}
  .sv-var{grid-template-columns:1fr;gap:16px;margin-top:20px}
  .sv-autres ul{grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
  .regles .regle{display:block}
@@ -1044,7 +1072,12 @@ def pied_site(devis_href):
 
 def page_service(q):
     url = f"{BASE}/{q['slug']}.html"
-    devis_href = f"devis-{q['tunnel']}.html"
+    devis_href = "#devis"
+    sv = {x["slug"]: x for x in SERVICES}[q["tunnel"]]
+    rep_sv = "\n".join(f'      <button type="button" data-service="{sv["nom"]} — {r}" data-ic="{i}">{r}</button>' for i, r in sv["reponses"])
+    if sv.get("urgent"):
+        rep_sv += f'\n      <button type="button" class="urgent" data-service="URGENT — {sv["nom"]} — {sv["urgent"][1]}" data-ic="urgent">{sv["urgent"][0]}</button>'
+    rep_sv += f'\n      <button type="button" data-service="{sv["nom"]}" data-ic="autre">{sv.get("autre", "Autre / je ne sais pas")}</button>'
     focus = q.get("focus", "center")
     par = "".join(f"<p>{x}</p>" for x in q["intro"])
     var = "".join(f"""<article><img src="photos/{ph}.webp" alt="{t}" width="800" height="600" loading="lazy"{' style="object-position:' + focus + '"' if ph == q['photo'] and q.get('focus') else ''}>
@@ -1086,10 +1119,20 @@ def page_service(q):
     </div>
     <aside class="carte-devis">
       <h3>Votre devis gratuit</h3>
-      <p>Décrivez votre projet en deux clics : on vous rappelle sous 24 h pour en parler.</p>
-      <a class="btn" href="{devis_href}">Recevoir mon devis gratuit</a>
-      {tel("tel", "ou appelez le " + TEL_AFF)}
+      <p>Votre projet dans le Pas-de-Calais : on vous rappelle sous 24 h pour en parler.</p>
+<form id="devis" data-moteur="devis" data-tel="{TEL_LIEN}" data-service="{q['nom']}" novalidate>
+  <div data-etape="1" hidden>
+    <div class="prog" aria-hidden="true"><i></i></div>
+    <p class="pas">Étape 1 sur 2</p>
+    <p class="question">{sv['question']}</p>
+    <div class="choix">
+{rep_sv}
+    </div>
+  </div>
+{etape2(sv['exemple'], visible=True, choisi=q['nom'])}
 {CONFIANCE}
+</form>
+      {tel("tel", "ou appelez le " + TEL_AFF)}
     </aside>
   </div>
 </section>

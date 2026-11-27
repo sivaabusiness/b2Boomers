@@ -12,11 +12,21 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin.woff2) format('woff2')}@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700 800;font-display:swap;src:url(/fonts/bricolage-grotesque-latin.woff2) format('woff2')}
-.btn{transition:background .2s,transform .2s,box-shadow .2s}
+.prog{height:6px;border-radius:6px;background:#E7E2D6;overflow:hidden;margin:0 0 12px}
+.prog i{display:block;height:100%;width:50%;border-radius:6px;background:linear-gradient(90deg,var(--sauge),var(--brique))}
+[data-etape="2"] .prog i{width:100%}
+.local{margin:-2px 0 12px;font-size:15px;color:var(--gris)}
+.resume{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;background:#F2F6F1;border:1.5px solid #CFE0D2;border-radius:14px;padding:12px 14px;margin:0 0 6px;font-family:Inter,sans-serif!important;font-size:17px!important;letter-spacing:0!important}
+.resume-lab{flex-basis:100%;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--sauge)}
+.resume b{flex:1;min-width:0;color:var(--sauge-n)}
+.resume [data-retour]{flex:none;padding:7px 14px;border-radius:10px;border:1.5px solid var(--sauge);background:#fff;color:var(--sauge-n);font:600 15px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:background .3s ease,color .3s ease}
+.resume [data-retour]:hover{background:var(--sauge);color:#fff}
+.form-ok::after{content:"La suite\A 1. On vous rappelle pour préciser votre projet.\A 2. On fixe la visite, au jour qui vous arrange.\A 3. Vous recevez un devis écrit et gratuit, et vous décidez.";display:block;white-space:pre-line;margin-top:18px;padding-top:14px;border-top:1px solid #CFE0D2;font-size:15.5px;line-height:1.7;color:var(--sauge-f)}
+.btn{transition:background .3s ease,transform .3s cubic-bezier(.22,.61,.36,1),box-shadow .3s ease}
 @media(hover:hover){.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -12px rgba(135,59,37,.7)}}
 .btn:active{transform:scale(.98)}
 .i-tel{flex:none}
-.choix a,.choix button{transition:border-color .2s,box-shadow .2s,transform .2s,background .2s}
+.choix a,.choix button{transition:border-color .35s cubic-bezier(.22,.61,.36,1),box-shadow .35s cubic-bezier(.22,.61,.36,1),transform .35s cubic-bezier(.22,.61,.36,1),background .35s ease}
 @media(hover:hover){.choix a:hover,.choix button:hover{transform:translateY(-2px);border-color:var(--sauge);background:#FBFAF6}}
 .choix a:active,.choix button:active{transform:scale(.98);border-color:var(--brique);box-shadow:0 0 0 2px var(--brique)}
 .choix a:focus-visible,.choix button:focus-visible,.btn:focus-visible{outline:3px solid var(--brique);outline-offset:2px}
@@ -111,7 +121,9 @@ form button[type=submit]:hover{background:var(--brique-f)}
 <div class="carte-form">
 <form id="devis" data-moteur="devis" data-tel="+33756951325" novalidate>
   <div data-etape="1">
+    <div class="prog" aria-hidden="true"><i></i></div>
     <p class="pas">Étape 1 sur 2</p>
+    <p class="local">Votre projet dans le Pas-de-Calais : Lens, Béthune, Arras et alentours.</p>
     <p class="question">Votre projet ?</p>
     <div class="choix">
       <button type="button" data-service="Aménagement de jardin — Créer ou refaire tout le jardin" data-ic="jardin">Créer ou refaire tout le jardin</button>
@@ -122,10 +134,11 @@ form button[type=submit]:hover{background:var(--brique-f)}
     </div>
   </div>
   <div data-etape="2" hidden>
+    <div class="prog" aria-hidden="true"><i></i></div>
     <p class="pas">Étape 2 sur 2 · c'est presque fini</p>
-    <p class="question">Votre demande : <b data-choisi></b> ·
-      <button type="button" data-retour>changer</button></p>
-    <input type="hidden" name="service">
+    <p class="question resume"><span class="resume-lab">Votre projet</span> <b data-choisi></b>
+      <button type="button" data-retour>Modifier</button></p>
+    <input type="hidden" name="service" value="">
     <label for="f-nom">Votre nom</label>
     <input id="f-nom" type="text" name="nom" autocomplete="name" required>
     <label for="f-tel">Votre téléphone</label>
@@ -133,7 +146,7 @@ form button[type=submit]:hover{background:var(--brique-f)}
       placeholder="06 12 34 56 78" pattern="[\s.\-\(\)]*(?:\+[1-9](?:[\s.\-\(\)]*[0-9]){7,14}|0[\s.\-\(\)]*[1-9](?:[\s.\-\(\)]*[0-9]){8})[\s.\-\(\)]*" required>
     <small class="aide-tel">Il manque des chiffres : 10 chiffres, par exemple 06 12 34 56 78</small>
     <label for="f-commune">Votre commune</label>
-    <input id="f-commune" type="text" name="commune" required>
+    <input id="f-commune" type="text" name="commune" placeholder="ex. Liévin, Béthune, Arras…" required>
     <label for="f-desc">Un mot sur le chantier et vos délais <small>(facultatif)</small></label>
     <textarea id="f-desc" name="description"
       placeholder="ex. jardin de 300 m² derrière la maison, pelouse et haie à créer, idéalement au printemps…"></textarea>
