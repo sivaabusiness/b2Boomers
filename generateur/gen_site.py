@@ -151,8 +151,8 @@ CSS_BASE = FONT_FACE + """
 .choix button.urgent{border-color:#E3B9A8;background:#FBF1EC;color:#6E2E1B}
 .choix button.urgent::before{background:var(--brique)}
 input[name=tel]:not(:placeholder-shown):valid{border-color:#3F8F55;padding-right:46px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233F8F55' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E") right 14px center/20px no-repeat}
-input[name=tel]:not(:placeholder-shown):not(:focus):invalid{border-color:#C9822B}
-.aide-tel{display:none;font-size:14px;color:#8A4F0E;margin-top:6px;line-height:1.4}
+input[name=tel]:not(:placeholder-shown):not(:focus):invalid{border-color:#C0392B;padding-right:46px;background:#FDF2F0 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C0392B' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E") no-repeat right 14px center/20px;box-shadow:0 0 0 3px rgba(192,57,43,.12)}
+.aide-tel{display:none;font-size:14px;font-weight:600;color:#B3261E;margin-top:6px;line-height:1.4}
 input[name=tel]:not(:placeholder-shown):not(:focus):invalid + .aide-tel{display:block}
 .form-ok{background:#EEF5EF;color:var(--sauge-n);border:1.5px solid #BFD8C5;border-radius:16px;padding:24px 22px;font-size:17px;line-height:1.6;box-shadow:0 14px 34px -22px rgba(34,42,36,.45);animation:okv .35s ease both}
 .form-ok b:first-child{display:block;font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:23px;letter-spacing:-.02em;line-height:1.2;margin-bottom:2px}
@@ -1271,7 +1271,10 @@ def _preload(m):
 FOND_MOBILE = ("<style>@media(max-width:820px){.bandeau,.sv-hero{background-image:var(--bgm)!important}"
                ".hero{background-image:url('photos/w/action-amenagement-jardin-600.webp')}"
                "}</style>")
+TEL_JS = "<script>document.querySelectorAll('input[name=tel]').forEach(function(i){i.addEventListener('input',function(){if(i.selectionStart!==i.value.length)return;var v=i.value,d=v.replace(/\\D/g,''),f;if(/^\\s*\\+/.test(v)){if(d.indexOf('33')!==0)return;var r=d.slice(2).replace(/^0/,'');f='+33'+(r?' '+r.charAt(0):'')+(r.length>1?' '+r.slice(1,9).replace(/(\\d{2})(?=\\d)/g,'$1 '):'');}else if(d.charAt(0)==='0'){f=d.slice(0,10).replace(/(\\d{2})(?=\\d)/g,'$1 ');}else return;if(f!==v)i.value=f;});});</script>"
 def optim(h):
+    if 'name="tel"' in h:
+        h = h.replace("</body>", TEL_JS + "\n</body>", 1)
     h = h.replace(">Débroussaillage, évacuation</button>", ">Débrous&shy;saillage, évacuation</button>")
     h = _re.sub(r"<img [^>]*>", _img, h)
     h = _re.sub(r"background-image:url\('photos/([a-z0-9-]+)\.webp'\)", _fond, h)
