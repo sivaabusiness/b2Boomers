@@ -91,7 +91,7 @@ h1,h2,h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;lett
 .mo{display:none}
 .carte-s,.sv-var article,.regle{transition:transform .5s cubic-bezier(.22,.61,.36,1),box-shadow .5s cubic-bezier(.22,.61,.36,1)}
 .carte-s .img img,.sv-var img{transition:transform .8s cubic-bezier(.22,.61,.36,1)}
-@media(hover:hover){.carte-s:hover .img img,.sv-var article:hover img{transform:scale(1.04)}}
+@media(hover:hover){.carte-s:hover .img img,.sv-var article:hover .ph img{transform:scale(1.04)}}
 @media(hover:hover){.carte-s:hover,.sv-var article:hover,.regle:hover{transform:translateY(-4px);box-shadow:0 28px 60px -24px rgba(34,42,36,.4)}}
 .final-act{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .final .btn-blanc{font-size:18px;min-height:62px}
@@ -169,7 +169,9 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .carte-s .lien-plus::after{content:"";position:absolute;inset:0;z-index:1}
 .carte-s .btn{position:relative;z-index:2}
 .carte-s:hover .lien-plus{text-decoration:underline}
-.carte-s .img{position:relative}
+.carte-s .img{position:relative;overflow:hidden;isolation:isolate}
+.carte-s .img img,.sv-var .ph img{display:block;backface-visibility:hidden}
+.sv-var .ph{overflow:hidden;isolation:isolate}
 .carte-s .img img{aspect-ratio:16/10;object-fit:cover;object-position:center 40%;width:100%;background:var(--sauge)}
 .carte-s .img .leg{position:absolute;inset:auto 0 0 0;padding:70px 26px 22px;background:linear-gradient(to top,rgba(34,42,36,.92),rgba(34,42,36,0));color:#fff}
 .carte-s h3{font-size:27px}
@@ -502,9 +504,9 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   <div class="wrap">
     <p class="kicker">Nos réalisations types</p>
     <h2 class="t">Ce qu'on réalise pour vous</h2>
-    <div class="sv-var"><article><img src="photos/action-entretien-jardin.webp" alt="Taille de haies" width="800" height="600" loading="lazy" style="object-position:center 8%" srcset="photos/w/action-entretien-jardin-200.webp 200w, photos/w/action-entretien-jardin-400.webp 400w, photos/w/action-entretien-jardin-600.webp 600w, photos/w/action-entretien-jardin-800.webp 800w, photos/action-entretien-jardin.webp 1050w" sizes="(max-width:820px) 92vw, 380px">
-  <h3>Taille de haies</h3><p>Haies taillées droit sur les côtés et le dessus, déchets ramassés sur bâche.</p><a href="#devis">Demander un devis gratuit →</a></article><article><img src="photos/apres-entretien-jardin.webp" alt="Pelouse et haie impeccables" width="800" height="600" loading="lazy" srcset="photos/w/apres-entretien-jardin-200.webp 200w, photos/w/apres-entretien-jardin-400.webp 400w, photos/w/apres-entretien-jardin-600.webp 600w, photos/w/apres-entretien-jardin-800.webp 800w, photos/apres-entretien-jardin.webp 1030w" sizes="(max-width:820px) 92vw, 380px">
-  <h3>Pelouse et haie impeccables</h3><p>Une tonte régulière et une haie nette : le jardin retrouve tout de suite de l'allure.</p><a href="#devis">Demander un devis gratuit →</a></article><article><img src="photos/avant-entretien-jardin.webp" alt="Remise en état" width="800" height="600" loading="lazy" srcset="photos/w/avant-entretien-jardin-200.webp 200w, photos/w/avant-entretien-jardin-400.webp 400w, photos/w/avant-entretien-jardin-600.webp 600w, photos/w/avant-entretien-jardin-800.webp 800w, photos/avant-entretien-jardin.webp 950w" sizes="(max-width:820px) 92vw, 380px">
+    <div class="sv-var"><article><div class="ph"><img src="photos/action-entretien-jardin.webp" alt="Taille de haies" width="800" height="600" loading="lazy" style="object-position:center 8%" srcset="photos/w/action-entretien-jardin-200.webp 200w, photos/w/action-entretien-jardin-400.webp 400w, photos/w/action-entretien-jardin-600.webp 600w, photos/w/action-entretien-jardin-800.webp 800w, photos/action-entretien-jardin.webp 1050w" sizes="(max-width:820px) 92vw, 380px"></div>
+  <h3>Taille de haies</h3><p>Haies taillées droit sur les côtés et le dessus, déchets ramassés sur bâche.</p><a href="#devis">Demander un devis gratuit →</a></article><article><div class="ph"><img src="photos/apres-entretien-jardin.webp" alt="Pelouse et haie impeccables" width="800" height="600" loading="lazy" srcset="photos/w/apres-entretien-jardin-200.webp 200w, photos/w/apres-entretien-jardin-400.webp 400w, photos/w/apres-entretien-jardin-600.webp 600w, photos/w/apres-entretien-jardin-800.webp 800w, photos/apres-entretien-jardin.webp 1030w" sizes="(max-width:820px) 92vw, 380px"></div>
+  <h3>Pelouse et haie impeccables</h3><p>Une tonte régulière et une haie nette : le jardin retrouve tout de suite de l'allure.</p><a href="#devis">Demander un devis gratuit →</a></article><article><div class="ph"><img src="photos/avant-entretien-jardin.webp" alt="Remise en état" width="800" height="600" loading="lazy" srcset="photos/w/avant-entretien-jardin-200.webp 200w, photos/w/avant-entretien-jardin-400.webp 400w, photos/w/avant-entretien-jardin-600.webp 600w, photos/w/avant-entretien-jardin-800.webp 800w, photos/avant-entretien-jardin.webp 950w" sizes="(max-width:820px) 92vw, 380px"></div>
   <h3>Remise en état</h3><p>Herbe haute, pissenlits, haie qui déborde : on reprend tout en une intervention.</p><a href="#devis">Demander un devis gratuit →</a></article></div>
   </div>
 </section>

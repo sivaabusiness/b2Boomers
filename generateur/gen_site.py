@@ -200,7 +200,7 @@ CSS_ACCUEIL = """
 .mo{display:none}
 .carte-s,.sv-var article,.regle{transition:transform .5s cubic-bezier(.22,.61,.36,1),box-shadow .5s cubic-bezier(.22,.61,.36,1)}
 .carte-s .img img,.sv-var img{transition:transform .8s cubic-bezier(.22,.61,.36,1)}
-@media(hover:hover){.carte-s:hover .img img,.sv-var article:hover img{transform:scale(1.04)}}
+@media(hover:hover){.carte-s:hover .img img,.sv-var article:hover .ph img{transform:scale(1.04)}}
 @media(hover:hover){.carte-s:hover,.sv-var article:hover,.regle:hover{transform:translateY(-4px);box-shadow:0 28px 60px -24px rgba(34,42,36,.4)}}
 .final-act{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
 .final .btn-blanc{font-size:18px;min-height:62px}
@@ -278,7 +278,9 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .carte-s .lien-plus::after{content:"";position:absolute;inset:0;z-index:1}
 .carte-s .btn{position:relative;z-index:2}
 .carte-s:hover .lien-plus{text-decoration:underline}
-.carte-s .img{position:relative}
+.carte-s .img{position:relative;overflow:hidden;isolation:isolate}
+.carte-s .img img,.sv-var .ph img{display:block;backface-visibility:hidden}
+.sv-var .ph{overflow:hidden;isolation:isolate}
 .carte-s .img img{aspect-ratio:16/10;object-fit:cover;object-position:center 40%;width:100%;background:var(--sauge)}
 .carte-s .img .leg{position:absolute;inset:auto 0 0 0;padding:70px 26px 22px;background:linear-gradient(to top,rgba(34,42,36,.92),rgba(34,42,36,0));color:#fff}
 .carte-s h3{font-size:27px}
@@ -1107,7 +1109,7 @@ def page_service(q):
     rep_sv += f'\n      <button type="button" data-service="{sv["nom"]}" data-ic="autre">{sv.get("autre", "Autre / je ne sais pas")}</button>'
     focus = q.get("focus", "center")
     par = "".join(f"<p>{x}</p>" for x in q["intro"])
-    var = "".join(f"""<article><img src="photos/{ph}.webp" alt="{t}" width="800" height="600" loading="lazy"{' style="object-position:' + focus + '"' if ph == q['photo'] and q.get('focus') else ''}>
+    var = "".join(f"""<article><div class="ph"><img src="photos/{ph}.webp" alt="{t}" width="800" height="600" loading="lazy"{' style="object-position:' + focus + '"' if ph == q['photo'] and q.get('focus') else ''}></div>
   <h3>{t}</h3><p>{d}</p><a href="{devis_href}">Demander un devis gratuit →</a></article>""" for ph, t, d in q["variantes"])
     inclus = "".join(f"<li>{x}</li>" for x in q["inclus"])
     conseils = "".join(f'<div class="regle"><h3>{t}</h3><p>{d}</p></div>' for t, d in q["conseils"])
