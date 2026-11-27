@@ -165,7 +165,7 @@ details[open]::details-content{block-size:auto}
 summary::after{transition:transform .25s}
 details[open] summary::after{transform:rotate(180deg)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
-:root{--creme:#F4EFE6;--sable:#E9E1D1;--sauge:#4A5D4F;--sauge-f:#2F3B33;--sauge-n:#222A24;--brique:#A04A30;--brique-f:#873B25;--brique-c:#F3E2D8;--texte:#2B2B2B;--gris:#5F5F58;--filet:#DDD5C5;--blanc:#fff;--ombre:0 18px 50px -18px rgba(34,42,36,.28);--r:18px}
+:root{--creme:#F4EFE6;--sable:#E9E1D1;--sauge:#4A5D4F;--sauge-f:#2F3B33;--sauge-n:#222A24;--brique:#A04A30;--brique-f:#873B25;--brique-c:#F3E2D8;--texte:#2B2B2B;--gris:#4B4B45;--filet:#DDD5C5;--blanc:#fff;--ombre:0 18px 50px -18px rgba(34,42,36,.28);--r:18px}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--creme);color:var(--texte);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
 img{max-width:100%;height:auto;display:block}
@@ -524,6 +524,11 @@ CONFIANCE = """  <div class="confiance">
     <div>Vos coordonnées ne sont jamais revendues</div>
   </div>"""
 
+# Lisibilité sur téléphone (public 50 ans et plus) : textes courants à 17 px, petits textes à 16 px au moins
+CSS_LISIBLE = """@media(max-width:820px){body{font-size:17px}.intro,.sv-zone .zone-txt,.sv-intro p,.sv-var p,.carte-s .leg p{font-size:17px}
+.mo,.local,.confiance,.form-card .confiance,.pied li,.pied p,.pied .tel,.faq details p,.regle p,.carte-s li{font-size:16px}
+.pied li,.pied p{color:rgba(255,255,255,.88)}}"""
+
 def head(title, desc, preload, noindex=False, css="", canon=None, ld=None):
     return f"""<!DOCTYPE html>
 <html lang="fr">
@@ -543,7 +548,7 @@ def head(title, desc, preload, noindex=False, css="", canon=None, ld=None):
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 {FONTS}
-<style>{CSS_BASE}{css}</style>
+<style>{CSS_BASE}{css}{CSS_LISIBLE}</style>
 </head>
 """
 
