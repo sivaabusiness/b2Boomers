@@ -380,7 +380,26 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
 .sv-hero .sous{color:rgba(255,255,255,.85);max-width:620px;margin:0 0 24px}
 .sv-hero .act{display:flex;flex-wrap:wrap;gap:12px}
 .sv-intro{max-width:820px}
-.sv-hero-g{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:56px;align-items:center}
+.sv-hero-g{display:grid;grid-template-columns:minmax(0,1fr) 500px;gap:48px;align-items:center}
+@media(min-width:821px){
+.sv-hero .carte-devis{padding:22px 24px 18px}
+.sv-hero .carte-devis>p,.sv-hero .carte-devis>.tel{display:none}
+.sv-hero .carte-devis h3{margin:0 0 10px;font-size:22px}
+.sv-hero [data-etape="2"]:not([hidden]){display:grid;grid-template-columns:1fr 1fr;column-gap:14px;grid-template-areas:"prog prog" "pas pas" "res res" "ln lt" "in it" ". at" "lc lc" "ic ic" "ld ld" "td td" "sub sub"}
+.sv-hero [data-etape="2"] .prog{grid-area:prog;margin-bottom:8px}
+.sv-hero [data-etape="2"] .pas{grid-area:pas}
+.sv-hero [data-etape="2"] .resume{grid-area:res;padding:8px 12px}
+.sv-hero [for=f-nom]{grid-area:ln}.sv-hero #f-nom{grid-area:in}
+.sv-hero [for=f-tel]{grid-area:lt}.sv-hero #f-tel{grid-area:it}.sv-hero .aide-tel{grid-area:at}
+.sv-hero [for=f-commune]{grid-area:lc}.sv-hero #f-commune{grid-area:ic}
+.sv-hero [for=f-desc]{grid-area:ld}.sv-hero #f-desc{grid-area:td;min-height:64px;height:64px}
+.sv-hero [data-etape="2"] button[type=submit]{grid-area:sub;margin-top:14px;min-height:52px}
+.sv-hero .carte-devis form label{margin:10px 0 5px;font-size:15.5px}
+.sv-hero .carte-devis input{min-height:48px;padding:10px 12px}
+.sv-hero .confiance{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:12px;font-size:13.5px}
+.sv-hero .carte-devis .choix{grid-template-columns:1fr 1fr;gap:10px}
+.sv-hero .carte-devis .question{margin:4px 0 12px}
+}
 .sv-hero .carte-devis{color:var(--texte);position:static}
 .sv-hero .carte-devis h3{color:var(--sauge-n)}
 .sv-hero-g h1{font-size:clamp(32px,3.8vw,52px)}
