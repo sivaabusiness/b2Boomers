@@ -528,7 +528,13 @@ CONFIANCE = """  <div class="confiance">
 # Lisibilité sur téléphone (public 50 ans et plus) : textes courants à 17 px, petits textes à 16 px au moins
 CSS_LISIBLE = """@media(max-width:820px){body{font-size:17px}.intro,.sv-zone .zone-txt,.sv-intro p,.sv-var p,.carte-s .leg p{font-size:17px}
 .mo,.local,.confiance,.form-card .confiance,.pied li,.pied p,.pied .tel,.faq details p,.regle p,.carte-s li{font-size:16px}
-.pied li,.pied p{color:rgba(255,255,255,.88)}}"""
+.pied li,.pied p{color:rgba(255,255,255,.88)}}
+html{scroll-behavior:smooth}
+[id]{scroll-margin-top:96px}
+@media(max-width:820px){[id]{scroll-margin-top:12px}}
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}::view-transition-old(root),::view-transition-new(root){animation:none}}"""
 
 def head(title, desc, preload, noindex=False, css="", canon=None, ld=None):
     return f"""<!DOCTYPE html>
