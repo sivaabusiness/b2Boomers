@@ -764,8 +764,7 @@ def accueil():
   <div class="champ"><label for="r-tel">Votre téléphone</label>
     <input id="r-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
       placeholder="06 12 34 56 78" pattern="[\\s.\\-\\(\\)]*(?:\\+[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{7,14}}|0?[\\s.\\-\\(\\)]*[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{8}})[\\s.\\-\\(\\)]*" required><small class="aide-tel">Il manque des chiffres, par exemple 06 12 34 56 78</small></div>
-  <input type="text" name="site_web" tabindex="-1" autocomplete="off"
-    style="position:absolute;left:-6000px">
+  <div aria-hidden="true" style="position:absolute;left:-6000px"><label>Laisser vide <input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
   <button type="submit">Être rappelé →</button>
 </form>
   </div>
@@ -902,8 +901,7 @@ def etape2(exemple, visible=False, choisi=""):
     <label for="f-desc">Un mot sur le chantier et vos délais <small>(facultatif)</small></label>
     <textarea id="f-desc" name="description"
       placeholder="{exemple}"></textarea>
-    <input type="text" name="site_web" tabindex="-1" autocomplete="off"
-      style="position:absolute;left:-6000px">
+    <div aria-hidden="true" style="position:absolute;left:-6000px"><label>Laisser vide <input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
     <button type="submit">Recevoir mon devis gratuit</button>
   </div>"""
 
@@ -1339,6 +1337,12 @@ FOND_MOBILE = ("<style>@media(max-width:820px){.bandeau,.sv-hero{background-imag
                "}</style>")
 TEL_JS = "<script>document.querySelectorAll('input[name=tel]').forEach(function(i){i.addEventListener('input',function(){if(i.selectionStart!==i.value.length)return;var v=i.value,d=v.replace(/\\D/g,''),f;if(/^\\s*\\+/.test(v)){if(d.indexOf('33')!==0)return;var r=d.slice(2).replace(/^0/,'');f='+33'+(r?' '+r.charAt(0):'')+(r.length>1?' '+r.slice(1,9).replace(/(\\d{2})(?=\\d)/g,'$1 '):'');}else if(d.charAt(0)==='0'){f=d.slice(0,10).replace(/(\\d{2})(?=\\d)/g,'$1 ');}else if(d){f=d.charAt(0)+(d.length>1?' '+d.slice(1,9).replace(/(\\d{2})(?=\\d)/g,'$1 '):'');}else return;if(f!==v)i.value=f;});});document.addEventListener('submit',function(e){var i=e.target.querySelector&&e.target.querySelector('input[name=tel]');if(i){var v=i.value,d=v.replace(/\\D/g,''),r=null;if(/^\\s*\\+/.test(v)){if(d.indexOf('33')===0)r=d.slice(2).replace(/^0/,'');}else if(d.length===10&&d.charAt(0)==='0')r=d.slice(1);else if(d.length===9&&d.charAt(0)!=='0')r=d;if(r&&r.length===9)i.value='+33 '+r.charAt(0)+' '+r.slice(1).replace(/(\\d{2})(?=\\d)/g,'$1 ');}},true);</script>"
 def optim(h):
+    # Navigation agentique (WebMCP) : formulaires décrits pour les assistants IA
+    h = h.replace('data-moteur="rappel"', 'data-moteur="rappel" toolname="demander_rappel" tooldescription="Être rappelé gratuitement par Allô Paysagiste Artois pour un projet de jardin dans le Pas-de-Calais (prénom et téléphone)."')
+    h = h.replace('data-moteur="devis"', 'data-moteur="devis" toolname="demander_devis" tooldescription="Demander un devis gratuit et sans engagement pour des travaux de jardin à Lens, Béthune, Arras et alentours : nom, téléphone, commune et description du chantier."')
+    for nom, d in [("nom", "Nom de la personne"), ("tel", "Numéro de téléphone français, par exemple 06 12 34 56 78"),
+                   ("commune", "Commune où se trouve le chantier"), ("description", "Description du chantier et délais souhaités (facultatif)")]:
+        h = _re.sub(r'(<(?:input|textarea) [^>]*name="' + nom + r'")', r'\1 toolparamdescription="' + d + '"', h)
     h = h.replace('<div class="barre" data-barre><a class="btn"', '<div class="barre" data-barre>' + tel("btn btn-appel", TEL_IC + "Appeler") + '<a class="btn"')
     if 'name="tel"' in h:
         h = h.replace("</body>", TEL_JS + "\n</body>", 1)

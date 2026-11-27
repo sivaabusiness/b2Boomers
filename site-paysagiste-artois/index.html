@@ -564,14 +564,13 @@ html{scroll-behavior:smooth}
 <section class="express" aria-label="Rappel express">
   <div class="wrap">
     <div class="txt"><h2>Pas le temps d'écrire ?</h2><p>Laissez votre numéro : on vous rappelle, gratuitement.</p></div>
-<form class="rappel-express" data-moteur="rappel" data-service="Paysagiste" novalidate>
+<form class="rappel-express" data-moteur="rappel" toolname="demander_rappel" tooldescription="Être rappelé gratuitement par Allô Paysagiste Artois pour un projet de jardin dans le Pas-de-Calais (prénom et téléphone)." data-service="Paysagiste" novalidate>
   <div class="champ"><label for="r-nom">Votre prénom</label>
-    <input id="r-nom" type="text" name="nom" autocomplete="given-name" required></div>
+    <input id="r-nom" type="text" name="nom" toolparamdescription="Nom de la personne" autocomplete="given-name" required></div>
   <div class="champ"><label for="r-tel">Votre téléphone</label>
-    <input id="r-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
+    <input id="r-tel" type="tel" name="tel" toolparamdescription="Numéro de téléphone français, par exemple 06 12 34 56 78" inputmode="tel" autocomplete="tel"
       placeholder="06 12 34 56 78" pattern="[\s.\-\(\)]*(?:\+[1-9](?:[\s.\-\(\)]*[0-9]){7,14}|0?[\s.\-\(\)]*[1-9](?:[\s.\-\(\)]*[0-9]){8})[\s.\-\(\)]*" required><small class="aide-tel">Il manque des chiffres, par exemple 06 12 34 56 78</small></div>
-  <input type="text" name="site_web" tabindex="-1" autocomplete="off"
-    style="position:absolute;left:-6000px">
+  <div aria-hidden="true" style="position:absolute;left:-6000px"><label>Laisser vide <input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
   <button type="submit">Être rappelé →</button>
 </form>
   </div>

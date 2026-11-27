@@ -505,7 +505,7 @@ html{scroll-behavior:smooth}
     <aside class="carte-devis">
       <h3>Votre devis gratuit</h3>
       <p>Votre projet dans le Pas-de-Calais : on vous rappelle sous 24 h pour en parler.</p>
-<form id="devis" data-moteur="devis" data-tel="+33756951325" data-service="Création de jardin" novalidate>
+<form id="devis" data-moteur="devis" toolname="demander_devis" tooldescription="Demander un devis gratuit et sans engagement pour des travaux de jardin à Lens, Béthune, Arras et alentours : nom, téléphone, commune et description du chantier." data-tel="+33756951325" data-service="Création de jardin" novalidate>
   <div data-etape="1" hidden>
     <div class="prog" aria-hidden="true"><i></i></div>
     <p class="pas">Étape 1 sur 2</p>
@@ -525,18 +525,17 @@ html{scroll-behavior:smooth}
       <button type="button" data-retour>Modifier</button></p>
     <input type="hidden" name="service" value="Création de jardin">
     <label for="f-nom">Votre nom</label>
-    <input id="f-nom" type="text" name="nom" autocomplete="name" required>
+    <input id="f-nom" type="text" name="nom" toolparamdescription="Nom de la personne" autocomplete="name" required>
     <label for="f-tel">Votre téléphone</label>
-    <input id="f-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
+    <input id="f-tel" type="tel" name="tel" toolparamdescription="Numéro de téléphone français, par exemple 06 12 34 56 78" inputmode="tel" autocomplete="tel"
       placeholder="06 12 34 56 78" pattern="[\s.\-\(\)]*(?:\+[1-9](?:[\s.\-\(\)]*[0-9]){7,14}|0?[\s.\-\(\)]*[1-9](?:[\s.\-\(\)]*[0-9]){8})[\s.\-\(\)]*" required>
     <small class="aide-tel">Il manque des chiffres, par exemple 06 12 34 56 78</small>
     <label for="f-commune">Votre commune</label>
-    <input id="f-commune" type="text" name="commune" placeholder="ex. Liévin, Béthune, Arras…" required>
+    <input id="f-commune" type="text" name="commune" toolparamdescription="Commune où se trouve le chantier" placeholder="ex. Liévin, Béthune, Arras…" required>
     <label for="f-desc">Un mot sur le chantier et vos délais <small>(facultatif)</small></label>
-    <textarea id="f-desc" name="description"
+    <textarea id="f-desc" name="description" toolparamdescription="Description du chantier et délais souhaités (facultatif)"
       placeholder="ex. jardin de 300 m² derrière la maison, pelouse et haie à créer, idéalement au printemps…"></textarea>
-    <input type="text" name="site_web" tabindex="-1" autocomplete="off"
-      style="position:absolute;left:-6000px">
+    <div aria-hidden="true" style="position:absolute;left:-6000px"><label>Laisser vide <input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
     <button type="submit">Recevoir mon devis gratuit</button>
   </div>
   <div class="confiance">
