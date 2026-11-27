@@ -251,7 +251,10 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .garanties li::before{content:"✓";position:absolute;left:0;color:var(--brique);font-weight:800}
 /* PRESTATIONS */
 .presta{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px}
-.carte-s{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--ombre);display:flex;flex-direction:column}
+.carte-s{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--ombre);display:flex;flex-direction:column;position:relative;cursor:pointer}
+.carte-s .lien-plus::after{content:"";position:absolute;inset:0;z-index:1}
+.carte-s .btn{position:relative;z-index:2}
+.carte-s:hover .lien-plus{text-decoration:underline}
 .carte-s .img{position:relative}
 .carte-s .img img{aspect-ratio:16/10;object-fit:cover;object-position:center 40%;width:100%;background:var(--sauge)}
 .carte-s .img .leg{position:absolute;inset:auto 0 0 0;padding:70px 26px 22px;background:linear-gradient(to top,rgba(34,42,36,.92),rgba(34,42,36,0));color:#fff}
@@ -498,6 +501,7 @@ def head(title, desc, preload, noindex=False, css="", canon=None, ld=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if(/iP(hone|ad|od)/.test(navigator.userAgent))document.querySelector('meta[name=viewport]').content+=',maximum-scale=1'</script>
 <title>{title}</title>
 <meta name="description" content="{desc}">
 {'<meta name="robots" content="noindex">' if noindex else ''}
@@ -796,7 +800,7 @@ def accueil():
       </div>
       <div class="pied-presta"><h4>Prestations</h4><ul>{prest_footer}</ul></div>
       <div class="pc"><h4>Zone</h4><ul><li>Lens, Liévin, Hénin-Beaumont</li><li>Béthune, Bruay-la-Buissière</li><li>Arras, Achicourt, Beaurains</li><li>Carvin, Avion, Lillers</li></ul></div>
-      <div><h4 class="pc">Informations</h4><ul><li class="pc"><a href="devis.html">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
+      <div><h4>Informations</h4><ul><li class="pc"><a href="devis.html">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
     </div>
     <div class="bas"><span>Travaux réalisés par des professionnels assurés. Photos d'illustration.</span><span>© {NOM}</span></div>
   </div>
@@ -1063,7 +1067,7 @@ def pied_site(devis_href):
       </div>
       <div class="pied-presta"><h4>Prestations</h4><ul>{liens_detail()}</ul></div>
       <div class="pc"><h4>Zone</h4><ul><li>Lens, Liévin, Hénin-Beaumont</li><li>Béthune, Bruay-la-Buissière</li><li>Arras, Achicourt, Beaurains</li><li>Carvin, Avion, Lillers</li></ul></div>
-      <div><h4 class="pc">Informations</h4><ul><li class="pc"><a href="{devis_href}">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
+      <div><h4>Informations</h4><ul><li class="pc"><a href="{devis_href}">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
     </div>
     <div class="bas"><span>Travaux réalisés par des professionnels assurés. Photos d'illustration.</span><span>© {NOM}</span></div>
   </div>

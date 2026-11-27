@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if(/iP(hone|ad|od)/.test(navigator.userAgent))document.querySelector('meta[name=viewport]').content+=',maximum-scale=1'</script>
 <title>Pose de terrasse à Lens, Béthune, Arras | Devis gratuit</title>
 <meta name="description" content="Pose de terrasse à Lens, Béthune, Arras : bois, composite, dalles ou pierre, sur une base solide. On vous rappelle sous 24 h, devis gratuit.">
 <script src="/api/suivi" defer></script>
@@ -163,7 +164,10 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .garanties li::before{content:"✓";position:absolute;left:0;color:var(--brique);font-weight:800}
 /* PRESTATIONS */
 .presta{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px}
-.carte-s{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--ombre);display:flex;flex-direction:column}
+.carte-s{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--ombre);display:flex;flex-direction:column;position:relative;cursor:pointer}
+.carte-s .lien-plus::after{content:"";position:absolute;inset:0;z-index:1}
+.carte-s .btn{position:relative;z-index:2}
+.carte-s:hover .lien-plus{text-decoration:underline}
 .carte-s .img{position:relative}
 .carte-s .img img{aspect-ratio:16/10;object-fit:cover;object-position:center 40%;width:100%;background:var(--sauge)}
 .carte-s .img .leg{position:absolute;inset:auto 0 0 0;padding:70px 26px 22px;background:linear-gradient(to top,rgba(34,42,36,.92),rgba(34,42,36,0));color:#fff}
@@ -557,7 +561,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
       </div>
       <div class="pied-presta"><h4>Prestations</h4><ul><li><a href="creation-jardin.html">Création de jardin</a></li><li><a href="terrasses.html">Terrasses</a></li><li><a href="entretien-jardin.html">Entretien de jardin</a></li><li><a href="allees-cours-pavage.html">Allées, cours et pavage</a></li><li><a href="gazon-engazonnement.html">Gazon et engazonnement</a></li><li><a href="murets-enrochement.html">Murets, enrochement et talus</a></li><li><a href="clotures-portails.html">Clôtures et portails</a></li><li><a href="plantations-massifs-haies.html">Plantations, massifs et haies</a></li><li><a href="arrosage-automatique-bassin.html">Arrosage automatique et bassins</a></li></ul></div>
       <div class="pc"><h4>Zone</h4><ul><li>Lens, Liévin, Hénin-Beaumont</li><li>Béthune, Bruay-la-Buissière</li><li>Arras, Achicourt, Beaurains</li><li>Carvin, Avion, Lillers</li></ul></div>
-      <div><h4 class="pc">Informations</h4><ul><li class="pc"><a href="#devis">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
+      <div><h4>Informations</h4><ul><li class="pc"><a href="#devis">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
     </div>
     <div class="bas"><span>Travaux réalisés par des professionnels assurés. Photos d'illustration.</span><span>© Allô Paysagiste Artois</span></div>
   </div>
