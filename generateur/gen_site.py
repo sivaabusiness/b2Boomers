@@ -1299,6 +1299,20 @@ for q in PAGES:
 with open(os.path.join(OUT, "robots.txt"), "w") as f:
     f.write(f"User-agent: *\nDisallow: /demandes\nDisallow: /api/\n\nSitemap: {BASE}/sitemap.xml\n")
 urls = [BASE + "/"] + [f"{BASE}/{q['slug']}.html" for q in PAGES]
+# llms.txt : présentation du site pour les assistants IA (format llmstxt.org)
+with open(os.path.join(OUT, "llms.txt"), "w") as f:
+    f.write(f"# {NOM}\n\n"
+            f"> Paysagiste à Lens, Béthune, Arras et alentours (Pas-de-Calais) : aménagement de jardin, terrasses et allées, "
+            f"entretien de jardin, clôtures et portails. Devis et déplacement gratuits, sans engagement, rappel sous 24 h.\n\n"
+            f"## Demander un devis\n\n"
+            f"- [Formulaire de devis]({BASE}/devis.html): demande en 2 minutes (travaux, nom, téléphone, commune), rappel sous 24 h\n"
+            f"- Téléphone : {TEL_AFF}\n\n"
+            f"## Prestations\n\n"
+            + "".join(f"- [{q['nom']}]({BASE}/{q['slug']}.html): {q['desc']}\n" for q in PAGES)
+            + f"\n## Informations\n\n"
+            f"- [Accueil]({BASE}/): zone d'intervention, avant/après, questions fréquentes\n"
+            f"- [Mentions légales]({BASE}/mentions-legales.html)\n"
+            f"- [Confidentialité]({BASE}/confidentialite.html)\n")
 with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + "".join(f"  <url><loc>{u}</loc><lastmod>2026-11-21</lastmod></url>\n" for u in urls) + "</urlset>\n")
