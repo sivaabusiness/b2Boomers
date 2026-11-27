@@ -213,6 +213,16 @@ header.top .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
 .logo{width:44px;height:44px;border-radius:50%;flex:none;background:#F6F3E9}
 nav.ancres{display:flex;gap:22px;margin-left:auto;font-size:15px;font-weight:500}
 nav.ancres a{text-decoration:none;color:var(--gris)}nav.ancres a:hover{color:var(--texte)}
+nav.ancres .sous{position:relative;display:flex;align-items:center}
+nav.ancres .sous>a{display:inline-flex;align-items:center;gap:6px}
+nav.ancres .fl{width:7px;height:7px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+nav.ancres .sous:hover .fl,nav.ancres .sous:focus-within .fl{transform:translateY(1px) rotate(225deg)}
+nav.ancres .sous::after{content:"";position:absolute;left:-10px;right:-10px;top:100%;height:16px}
+nav.ancres .sous-menu{position:absolute;top:calc(100% + 14px);left:-18px;min-width:260px;padding:8px;background:#fff;border-radius:14px;box-shadow:0 22px 44px -18px rgba(34,42,36,.4);border:1px solid rgba(0,0,0,.05);opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:80}
+nav.ancres .sous:hover .sous-menu,nav.ancres .sous:focus-within .sous-menu{opacity:1;visibility:visible;transform:none}
+nav.ancres .sous-menu a{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:10px;color:var(--texte);font-weight:600;font-size:15px;white-space:nowrap;transition:background .2s}
+nav.ancres .sous-menu a:hover{background:#F2F6F1;color:var(--sauge-n)}
+nav.ancres .sous-menu i{flex:none;width:22px;height:22px;background:var(--sauge);-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat}
 .h-tel{display:flex;flex-direction:column;line-height:1.2;font-size:13px;color:var(--gris)}
 .h-tel a{font-weight:700;font-size:17px;color:var(--sauge-n);text-decoration:none}
 header.top .btn{min-height:48px;padding:0 20px;font-size:16px}
@@ -584,6 +594,10 @@ ENTREPRISE_LD = {"@type": "HomeAndConstructionBusiness", "@id": BASE + "/#entrep
 PAGE_DE = {"amenagement-jardin": "creation-jardin", "terrasse-allee": "terrasses",
            "entretien-jardin": "entretien-jardin", "cloture-portail": "clotures-portails"}
 
+SOUS_MENU = "".join(f'<a href="{p}.html"><i data-ic="{ic}"></i>{n}</a>' for p, ic, n in [
+    ("creation-jardin", "jardin", "Aménagement de jardin"), ("terrasses", "terrasse", "Terrasse et allées"),
+    ("entretien-jardin", "taille", "Entretien de jardin"), ("clotures-portails", "cloture", "Clôture et portail")])
+
 def liens_detail():
     return "".join(f'<li><a href="{q["slug"]}.html">{q["nom"]}</a></li>' for q in PAGES)
 
@@ -643,7 +657,7 @@ def accueil():
 <header class="top">
   <div class="wrap">
     <a class="marque" href="index.html">{LOGO}{NOM}</a>
-    <nav class="ancres" aria-label="Sections"><a href="#avant-apres">Avant / après</a><a href="#prestations">Prestations</a><a href="#zone">Zone</a><a href="#faq">FAQ</a></nav>
+    <nav class="ancres" aria-label="Sections"><a href="#avant-apres">Avant / après</a><div class="sous"><a href="#prestations" aria-haspopup="true">Prestations<span class="fl" aria-hidden="true"></span></a><div class="sous-menu">{SOUS_MENU}</div></div><a href="#zone">Zone</a><a href="#faq">FAQ</a></nav>
     <div class="h-tel">Appelez-nous{tel()}</div>
     <a class="btn" href="devis.html">Devis gratuit</a>
   </div>
@@ -1125,7 +1139,7 @@ def entete_site(devis_href):
     return f"""<header class="top">
   <div class="wrap">
     <a class="marque" href="index.html">{LOGO}{NOM}</a>
-    <nav class="ancres" aria-label="Sections"><a href="index.html#avant-apres">Avant / après</a><a href="index.html#prestations">Prestations</a><a href="index.html#zone">Zone</a><a href="index.html#faq">FAQ</a></nav>
+    <nav class="ancres" aria-label="Sections"><a href="index.html#avant-apres">Avant / après</a><div class="sous"><a href="index.html#prestations" aria-haspopup="true">Prestations<span class="fl" aria-hidden="true"></span></a><div class="sous-menu">{SOUS_MENU}</div></div><a href="index.html#zone">Zone</a><a href="index.html#faq">FAQ</a></nav>
     <div class="h-tel">Appelez-nous{tel()}</div>
     <a class="btn" href="{devis_href}">Devis gratuit</a>
   </div>
