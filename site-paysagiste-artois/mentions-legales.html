@@ -100,7 +100,17 @@ html{scroll-behavior:smooth}
 @media(max-width:820px){[id]{scroll-margin-top:12px}}
 @view-transition{navigation:auto}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}::view-transition-old(root),::view-transition-new(root){animation:none}}</style>
+/* Boutons : couleur fixe, ombre colorée permanente, léger soulèvement au survol (plus de changement de teinte) */
+.btn,form button[type=submit]{transition:transform .15s ease,box-shadow .15s ease;box-shadow:0 8px 18px -10px rgba(110,45,25,.85)}
+.btn-2{box-shadow:0 8px 18px -10px rgba(34,52,40,.85)}
+.btn-blanc,.btn-appel{box-shadow:0 8px 18px -12px rgba(0,0,0,.35)}
+.btn:hover,form button[type=submit]:hover,.carte-devis button[type=submit]:hover{background:var(--brique)}
+.btn-2:hover{background:var(--sauge)}
+.btn-blanc:hover,.barre .btn-appel:hover{background:#fff}
+@media(hover:hover){.btn:hover,form button[type=submit]:hover{transform:translateY(-2px);box-shadow:0 14px 24px -12px rgba(110,45,25,.9)}
+.btn-blanc:hover,.btn-appel:hover{box-shadow:0 14px 24px -12px rgba(0,0,0,.4)}}
+.btn:active,form button[type=submit]:active{transform:translateY(0);box-shadow:0 4px 10px -8px rgba(110,45,25,.9)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,form button[type=submit]{transition:none}::view-transition-old(root),::view-transition-new(root){animation:none}}</style>
 <style>@media(max-width:820px){.bandeau,.sv-hero{background-image:var(--bgm)!important}.hero{background-image:url('photos/w/action-amenagement-jardin-600.webp')}}</style>
 </head>
 <body>
