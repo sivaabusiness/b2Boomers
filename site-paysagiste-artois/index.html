@@ -24,6 +24,31 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin.woff2) format('woff2')}@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700 800;font-display:swap;src:url(/fonts/bricolage-grotesque-latin.woff2) format('woff2')}
+.btn{transition:background .2s,transform .2s,box-shadow .2s}
+@media(hover:hover){.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -12px rgba(135,59,37,.7)}}
+.btn:active{transform:scale(.98)}
+.i-tel{flex:none}
+.choix a,.choix button{transition:border-color .2s,box-shadow .2s,transform .2s,background .2s}
+@media(hover:hover){.choix a:hover,.choix button:hover{transform:translateY(-2px);border-color:var(--sauge);background:#FBFAF6}}
+.choix a:active,.choix button:active{transform:scale(.98);border-color:var(--brique);box-shadow:0 0 0 2px var(--brique)}
+.choix a:focus-visible,.choix button:focus-visible,.btn:focus-visible{outline:3px solid var(--brique);outline-offset:2px}
+.choix button.urgent{border-color:#E3B9A8;background:#FBF1EC;color:#6E2E1B}
+.choix button.urgent::before{background:var(--brique)}
+input[name=tel]:not(:placeholder-shown):valid{border-color:#3F8F55;padding-right:46px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233F8F55' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E") right 14px center/20px no-repeat}
+input[name=tel]:not(:placeholder-shown):not(:focus):invalid{border-color:#C9822B}
+.aide-tel{display:none;font-size:14px;color:#8A4F0E;margin-top:6px;line-height:1.4}
+input[name=tel]:not(:placeholder-shown):not(:focus):invalid + .aide-tel{display:block}
+.form-ok{background:#EEF5EF;color:var(--sauge-n);border:1.5px solid #BFD8C5;border-radius:16px;padding:24px 22px;font-size:17px;line-height:1.6;box-shadow:0 14px 34px -22px rgba(34,42,36,.45);animation:okv .35s ease both}
+.form-ok b:first-child{display:block;font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:23px;letter-spacing:-.02em;line-height:1.2;margin-bottom:2px}
+.form-ok b:first-child + br,.form-ok b:first-child + br + br{display:none}
+.form-ok a{display:inline-flex;align-items:center;min-height:50px;margin-top:6px;padding:0 20px;border-radius:12px;background:var(--brique);color:#fff;text-decoration:none;font-weight:700}
+@keyframes okv{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+:root{interpolate-size:allow-keywords}
+details::details-content{block-size:0;overflow:hidden;transition:block-size .3s ease,content-visibility .3s allow-discrete}
+details[open]::details-content{block-size:auto}
+summary::after{transition:transform .25s}
+details[open] summary::after{transform:rotate(180deg)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 :root{--creme:#F4EFE6;--sable:#E9E1D1;--sauge:#4A5D4F;--sauge-f:#2F3B33;--sauge-n:#222A24;--brique:#A04A30;--brique-f:#873B25;--brique-c:#F3E2D8;--texte:#2B2B2B;--gris:#5F5F58;--filet:#DDD5C5;--blanc:#fff;--ombre:0 18px 50px -18px rgba(34,42,36,.28);--r:18px}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--creme);color:var(--texte);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -38,14 +63,13 @@ h1,h2,h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;lett
 .confiance{display:grid;gap:6px;margin-top:16px;font-size:15px;color:var(--gris)}
 .confiance div{padding-left:26px;position:relative}
 .confiance div::before{content:"✓";position:absolute;left:0;top:0;color:var(--sauge);font-weight:800}
-.form-ok{background:#E6EEE7;color:var(--sauge-f);border-radius:14px;padding:22px;font-size:17px;line-height:1.55}
-.form-ok a{color:var(--brique);font-weight:700}
 .choix{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .choix a,.choix button{display:flex;align-items:center;gap:10px;min-height:60px;padding:8px 12px;border:1.5px solid var(--filet);border-radius:12px;background:#fff;color:var(--texte);font:600 16px/1.25 Inter,sans-serif;text-decoration:none;text-align:left;cursor:pointer;transition:border-color .15s,box-shadow .15s}
 .choix a:hover,.choix button:hover{border-color:var(--sauge);box-shadow:0 6px 18px -10px rgba(34,42,36,.4)}
 .choix img{width:46px;height:46px;border-radius:9px;object-fit:cover;flex:none}
 .choix .tuile.choisie{border-color:var(--brique);box-shadow:0 0 0 2px var(--brique)}
-[data-ic]::before{content:attr(data-ic);font-size:22px;flex:none;width:30px;text-align:center}
+[data-ic]::before{content:"";flex:none;width:26px;height:26px;background:var(--sauge);-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat}
+[data-ic="jardin"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 21v-8%22/%3E%3Cpath d=%22M12 13c0-4 3-7 7-7 0 4-3 7-7 7z%22/%3E%3Cpath d=%22M12 15c0-3-2-5-6-5 0 3 2 5 6 5z%22/%3E%3C/svg%3E")}[data-ic="haie"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 22v-6%22/%3E%3Cpath d=%22M12 3c-3.3 0-6 2.6-6 6 0 3.6 2.7 7 6 7s6-3.4 6-7c0-3.4-2.7-6-6-6z%22/%3E%3C/svg%3E")}[data-ic="gazon"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 20h18%22/%3E%3Cpath d=%22M6 20l1-6%22/%3E%3Cpath d=%22M10 20l-1-8%22/%3E%3Cpath d=%22M14 20l1-7%22/%3E%3Cpath d=%22M18 20l-1-5%22/%3E%3C/svg%3E")}[data-ic="eau"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z%22/%3E%3C/svg%3E")}[data-ic="terrasse"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 8h18%22/%3E%3Cpath d=%22M3 12h18%22/%3E%3Cpath d=%22M3 16h18%22/%3E%3Cpath d=%22M6 8v11%22/%3E%3Cpath d=%22M18 8v11%22/%3E%3C/svg%3E")}[data-ic="dalles"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Crect x=%224%22 y=%224%22 width=%2216%22 height=%2216%22 rx=%221%22/%3E%3Cpath d=%22M4 12h16%22/%3E%3Cpath d=%22M12 4v16%22/%3E%3C/svg%3E")}[data-ic="allee"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M8 21l2-18%22/%3E%3Cpath d=%22M16 21l-2-18%22/%3E%3Cpath d=%22M11 7h2%22/%3E%3Cpath d=%22M10.6 12h2.8%22/%3E%3Cpath d=%22M10 17h4%22/%3E%3C/svg%3E")}[data-ic="muret"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Crect x=%223%22 y=%227%22 width=%2218%22 height=%2212%22 rx=%221%22/%3E%3Cpath d=%22M3 13h18%22/%3E%3Cpath d=%22M9 7v6%22/%3E%3Cpath d=%22M15 13v6%22/%3E%3C/svg%3E")}[data-ic="taille"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%226%22 cy=%227%22 r=%223%22/%3E%3Ccircle cx=%226%22 cy=%2217%22 r=%223%22/%3E%3Cpath d=%22M8.5 8.5L20 19%22/%3E%3Cpath d=%22M8.5 15.5L20 5%22/%3E%3C/svg%3E")}[data-ic="tonte"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M4 20h16%22/%3E%3Cpath d=%22M7 20v-8%22/%3E%3Cpath d=%22M12 20V9%22/%3E%3Cpath d=%22M17 20v-6%22/%3E%3C/svg%3E")}[data-ic="remise"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 19C5 10 10 5 19 5c0 9-5 14-14 14z%22/%3E%3Cpath d=%22M5 19l7-7%22/%3E%3C/svg%3E")}[data-ic="debroussaillage"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 7h14%22/%3E%3Cpath d=%22M9 7V4h6v3%22/%3E%3Cpath d=%22M7 7l1 13h8l1-13%22/%3E%3C/svg%3E")}[data-ic="cloture"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 21V6l2-2 2 2v15%22/%3E%3Cpath d=%22M15 21V6l2-2 2 2v15%22/%3E%3Cpath d=%22M3 10h18%22/%3E%3Cpath d=%22M3 16h18%22/%3E%3C/svg%3E")}[data-ic="portail"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M4 21V4%22/%3E%3Cpath d=%22M20 21V4%22/%3E%3Cpath d=%22M4 8h16%22/%3E%3Cpath d=%22M4 18h16%22/%3E%3Cpath d=%22M9 8v10%22/%3E%3Cpath d=%22M15 8v10%22/%3E%3C/svg%3E")}[data-ic="reparation"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.4-.6-.6-2.4z%22/%3E%3C/svg%3E")}[data-ic="urgent"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 3l10 18H2z%22/%3E%3Cpath d=%22M12 10v5%22/%3E%3Cpath d=%22M12 18v.5%22/%3E%3C/svg%3E")}[data-ic="autre"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%2212%22 cy=%2212%22 r=%229%22/%3E%3Cpath d=%22M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7%22/%3E%3Cpath d=%22M12 17.5v.5%22/%3E%3C/svg%3E")}
 .question{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;font-size:24px;letter-spacing:-.02em;margin:0 0 14px}
 @media(max-width:480px){
  .choix a:has(img){flex-direction:column;align-items:stretch;padding:0;overflow:hidden;gap:0}
@@ -53,6 +77,13 @@ h1,h2,h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;lett
  .choix a:has(img) span{padding:9px 10px;font-size:15px}
 }
 .pc{}
+.mo{display:none}
+.carte-s,.sv-var article,.regle{transition:transform .25s,box-shadow .25s}
+@media(hover:hover){.carte-s:hover,.sv-var article:hover,.regle:hover{transform:translateY(-4px);box-shadow:0 28px 60px -24px rgba(34,42,36,.4)}}
+.final-act{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.final .btn-blanc{font-size:18px;min-height:62px}
+.pres .visu .carte{background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(12px) saturate(1.4);backdrop-filter:blur(12px) saturate(1.4);border:1px solid rgba(255,255,255,.6)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.pres .visu .carte{background:#fff}}
 .saison{display:none}
 header.top{position:sticky;top:0;z-index:50;background:rgba(244,239,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.06)}
 header.top .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
@@ -240,7 +271,13 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .form-card h2{display:none}
  .form-card .question{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;color:var(--texte);letter-spacing:-.02em}
  .form-card .confiance{font-size:14px}
- .intro{font-size:16.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .intro{font-size:16.5px}
+ .mo{display:inline}
+ p.mo{display:block;margin:4px 0 0;font-size:15px;color:var(--gris)}
+ .final-act .btn{width:100%}
+ .pied-presta{margin:18px 0 6px}
+ .pied-presta ul{columns:2;column-gap:16px}
+ .pied-presta li{break-inside:avoid}
  h2.t{font-size:30px}
  .aa{grid-template-columns:1fr;gap:16px;margin-top:24px}
  .badge{font-size:12px;padding:4px 8px;top:7px;left:7px}
@@ -309,7 +346,8 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .pres .visu .grande{aspect-ratio:4/3;object-position:center 45%}
  .methode .photo img{aspect-ratio:4/3;object-position:center 22%}
  .paire img{object-position:center}
- .barre{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,230,.96);box-shadow:0 -6px 20px rgba(0,0,0,.1)}
+ .barre{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,230,.7);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);border-top:1px solid rgba(255,255,255,.55);box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+ @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.barre{background:rgba(244,239,230,.96)}}
  .barre .btn{width:100%}
 }
 </style>
@@ -331,7 +369,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
       <h1><span data-titre-travaux>Paysagiste</span> à Lens, Béthune, Arras et alentours</h1>
       <p class="phrase">On vous rappelle : devis et déplacement gratuits sous 24 h.</p>
       <p class="sous pc">Décrivez vos travaux en deux clics. Sans engagement, et sans démarchage derrière.</p>
-      <a class="btn btn-blanc" href="tel:+33756951325">📞 Appeler le 07 56 95 13 25</a>
+      <a class="btn btn-blanc" href="tel:+33756951325"><svg class="i-tel" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Appeler le 07 56 95 13 25</a>
       <ul class="puces pc"><li>Professionnels assurés</li><li>Devis écrit avant travaux</li><li>Chantier rendu propre</li></ul>
     </div>
 <div class="form-card" id="devis-bloc" data-cacher-barre>
@@ -356,7 +394,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   <div class="wrap">
     <p class="kicker">La preuve en images</p>
     <h2 class="t">Avant, après : la différence se voit tout de suite</h2>
-    <p class="intro">Un aperçu de ce qu'on fait dans les jardins du secteur : création, terrasse, entretien, clôture.</p>
+    <p class="intro"><span class="pc">Un aperçu de ce qu'on fait dans les jardins du secteur : création, terrasse, entretien, clôture.</span><span class="mo">Création, terrasse, entretien, clôture : le résultat en images.</span></p>
     <div class="aa">
 <figure class="paire">
   <div class="photos">
@@ -412,7 +450,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
     <div>
       <p class="kicker">Travail d'artisan</p>
       <h2 class="t">Un jardin bien pensé, posé dans les règles</h2>
-      <p class="intro">Avant de planter ou de poser quoi que ce soit, on regarde votre terrain : la terre, l'eau, le soleil, l'usage que vous voulez en faire.</p>
+      <p class="intro"><span class="pc">Avant de planter ou de poser quoi que ce soit, on regarde votre terrain : la terre, l'eau, le soleil, l'usage que vous voulez en faire.</span><span class="mo">On étudie votre terrain avant de planter ou de poser quoi que ce soit.</span></p>
       <div class="pc" style="margin-top:18px">
         <p>Dans le Pas-de-Calais, les sols sont souvent lourds et gorgés d'eau l'hiver. On prépare donc le terrain en conséquence : décaissement, drainage si besoin, apport de terre végétale, fondations stables pour les terrasses et les allées.</p>
         <p>Pour les haies et les massifs, on choisit des végétaux qui tiennent dans la région : charmille, hêtre, photinia, laurier, troène, arbustes à fleurs. Et on vous explique comment les entretenir.</p>
@@ -430,32 +468,32 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   <div class="wrap">
     <p class="kicker">Nos prestations</p>
     <h2 class="t">De la création à l'entretien, tout votre extérieur</h2>
-    <p class="intro">Quatre métiers, une seule équipe : vous n'avez qu'un interlocuteur du premier appel à la fin du chantier.</p>
+    <p class="intro"><span class="pc">Quatre métiers, une seule équipe à Lens, Béthune, Arras et alentours : un seul interlocuteur, du premier appel à la fin du chantier.</span><span class="mo">Quatre métiers, une seule équipe, un seul interlocuteur.</span></p>
     <div class="presta">
 <article class="carte-s">
   <div class="img"><img src="photos/action-amenagement-jardin.webp" alt="Aménagement de jardin en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-amenagement-jardin-200.webp 200w, photos/w/action-amenagement-jardin-400.webp 400w, photos/w/action-amenagement-jardin-600.webp 600w, photos/w/action-amenagement-jardin-800.webp 800w, photos/action-amenagement-jardin.webp 1000w" sizes="(max-width:820px) 92vw, 580px">
-    <div class="leg"><h3>Aménagement de jardin à Lens, Béthune et Arras</h3><p>Création complète ou nouveau coin de jardin : on dessine, on prépare le sol, on plante.</p></div></div>
+    <div class="leg"><h3>Aménagement de jardin</h3><p>Création complète ou nouveau coin de jardin : on dessine, on prépare le sol, on plante.</p></div></div>
   <ul class="pc"><li>Création de jardin complète : plan, terrassement, apport de terre, plantations</li><li>Massifs et haies : charmille, photinia, laurier, troène, hêtre</li><li>Engazonnement : semis ou gazon en rouleau, sol préparé et nivelé</li><li>Arrosage automatique enterré, programmé selon les saisons</li><li>Bassin, point d'eau et éclairage du jardin</li></ul>
   <a class="btn" href="devis-amenagement-jardin.html">Devis aménagement →</a>
   <a class="lien-plus" href="creation-jardin.html">En savoir plus sur aménagement de jardin</a>
 </article>
 <article class="carte-s">
   <div class="img"><img src="photos/action-terrasse-allee.webp" alt="Terrasse et allées en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-terrasse-allee-200.webp 200w, photos/w/action-terrasse-allee-400.webp 400w, photos/w/action-terrasse-allee-600.webp 600w, photos/w/action-terrasse-allee-800.webp 800w, photos/action-terrasse-allee.webp 1160w" sizes="(max-width:820px) 92vw, 580px">
-    <div class="leg"><h3>Terrasse et allées à Lens, Béthune et Arras</h3><p>Terrasse, allée, cour ou muret : des fondations sérieuses et des finitions nettes.</p></div></div>
+    <div class="leg"><h3>Terrasse et allées</h3><p>Terrasse, allée, cour ou muret : des fondations sérieuses et des finitions nettes.</p></div></div>
   <ul class="pc"><li>Terrasse en bois ou en composite, sur plots ou lambourdes</li><li>Terrasse en dallage, carrelage extérieur ou pierre naturelle</li><li>Allée, cour, entrée de garage : pavés, enrobé, gravier stabilisé</li><li>Bordures, marches et raccords avec la maison</li><li>Murets, enrochement, soutènement de talus</li></ul>
   <a class="btn" href="devis-terrasse-allee.html">Devis terrasse →</a>
   <a class="lien-plus" href="terrasses.html">En savoir plus sur terrasse et allées</a>
 </article>
 <article class="carte-s">
   <div class="img"><img src="photos/action-entretien-jardin.webp" alt="Entretien de jardin en cours, près de Lens" width="1600" height="1000" loading="lazy" style="object-position:center 8%" srcset="photos/w/action-entretien-jardin-200.webp 200w, photos/w/action-entretien-jardin-400.webp 400w, photos/w/action-entretien-jardin-600.webp 600w, photos/w/action-entretien-jardin-800.webp 800w, photos/action-entretien-jardin.webp 1050w" sizes="(max-width:820px) 92vw, 580px">
-    <div class="leg"><h3>Entretien de jardin à Lens, Béthune et Arras</h3><p>Taille, tonte, remise en état : ponctuel ou à l'année, votre jardin reste impeccable.</p></div></div>
+    <div class="leg"><h3>Entretien de jardin</h3><p>Taille, tonte, remise en état : ponctuel ou à l'année, votre jardin reste impeccable.</p></div></div>
   <ul class="pc"><li>Taille de haies et d'arbustes, déchets ramassés</li><li>Tonte et entretien régulier, à la saison ou à l'année</li><li>Remise en état d'un jardin laissé à l'abandon</li><li>Débroussaillage, désherbage des allées et massifs</li><li>Ramassage des feuilles et évacuation des déchets verts</li></ul>
   <a class="btn" href="devis-entretien-jardin.html">Devis entretien →</a>
   <a class="lien-plus" href="entretien-jardin.html">En savoir plus sur entretien de jardin</a>
 </article>
 <article class="carte-s">
   <div class="img"><img src="photos/action-cloture-portail.webp" alt="Clôture et portail en cours, près de Lens" width="1600" height="1000" loading="lazy" srcset="photos/w/action-cloture-portail-200.webp 200w, photos/w/action-cloture-portail-400.webp 400w, photos/w/action-cloture-portail-600.webp 600w, photos/w/action-cloture-portail-800.webp 800w, photos/action-cloture-portail.webp 1184w" sizes="(max-width:820px) 92vw, 580px">
-    <div class="leg"><h3>Clôture et portail à Lens, Béthune et Arras</h3><p>Panneaux, bois, brise-vue ou portail : une clôture droite, solide, bien ancrée.</p></div></div>
+    <div class="leg"><h3>Clôture et portail</h3><p>Panneaux, bois, brise-vue ou portail : une clôture droite, solide, bien ancrée.</p></div></div>
   <ul class="pc"><li>Clôture en panneaux rigides ou grillage, poteaux scellés</li><li>Clôture bois ou composite, brise-vue occultant</li><li>Portail et portillon, pose des piliers</li><li>Remplacement d'une clôture abîmée par le vent</li><li>Clôture doublée d'une haie, pour un jardin à l'abri des regards</li></ul>
   <a class="btn" href="devis-cloture-portail.html">Devis clôture →</a>
   <a class="lien-plus" href="clotures-portails.html">En savoir plus sur clôture et portail</a>
@@ -479,7 +517,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
     <input id="r-nom" type="text" name="nom" autocomplete="given-name" required></div>
   <div class="champ"><label for="r-tel">Votre téléphone</label>
     <input id="r-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
-      placeholder="06 12 34 56 78" required></div>
+      placeholder="06 12 34 56 78" pattern="[\s.\-\(\)]*(?:\+[1-9](?:[\s.\-\(\)]*[0-9]){7,14}|0[\s.\-\(\)]*[1-9](?:[\s.\-\(\)]*[0-9]){8})[\s.\-\(\)]*" required><small class="aide-tel">Il manque des chiffres : 10 chiffres, par exemple 06 12 34 56 78</small></div>
   <input type="text" name="site_web" tabindex="-1" autocomplete="off"
     style="position:absolute;left:-6000px">
   <button type="submit">Être rappelé →</button>
@@ -493,7 +531,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
       <p>Appelez-nous, ou commencez votre message par URGENT : on vous rappelle en priorité.</p>
     </div>
     <div class="act">
-      <a class="btn" href="tel:+33756951325">📞 Appeler maintenant</a>
+      <a class="btn" href="tel:+33756951325"><svg class="i-tel" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Appeler maintenant</a>
       <a class="lien" href="devis.html">ou décrire la situation par écrit →</a>
     </div>
   </div>
@@ -504,7 +542,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
     <div>
       <p class="kicker">Notre méthode</p>
       <h2 class="t">Quatre étapes, sans surprise</h2>
-      <p class="intro">Vous savez à chaque moment ce qui va se passer, et combien ça coûte.</p>
+      <p class="intro"><span class="pc">Vous savez à chaque moment ce qui va se passer, et combien ça coûte.</span><span class="mo">À chaque étape, vous savez ce qui se passe et ce que ça coûte.</span></p>
       <ol class="etapes">
         <li><span class="n">01</span><div><h3>Vous décrivez votre projet</h3><p class="pc">Deux clics sur le site, ou un appel. Quelques lignes suffisent.</p></div></li>
         <li><span class="n">02</span><div><h3>On vous rappelle sous 24 h</h3><p class="pc">On pose les bonnes questions et on fixe une visite chez vous.</p></div></li>
@@ -518,11 +556,11 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   <div class="wrap">
     <p class="kicker">On vous guide</p>
     <h2 class="t">Les règles à connaître, on s'en occupe</h2>
-    <p class="intro">Planter, clôturer, construire une terrasse : quelques règles s'appliquent. On vous les explique avant de commencer.</p>
+    <p class="intro"><span class="pc">Planter, clôturer, construire une terrasse : quelques règles s'appliquent. On vous les explique avant de commencer.</span><span class="mo">Haie, clôture, terrasse : on vérifie les règles avant de commencer.</span></p>
     <div class="regles">
-      <div class="regle"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M6 9l-3 3 3 3"/><path d="M18 9l3 3-3 3"/><path d="M12 4v4M12 16v4"/></svg></span><div><h3>Distances de plantation</h3><p class="pc">Une haie de plus de 2 m de haut se plante à 2 m au moins de la limite du voisin, sinon à 50 cm (Code civil). On en tient compte dès le plan.</p></div></div>
-      <div class="regle"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10 13l2 2 4-4"/></svg></span><div><h3>Autorisations en mairie</h3><p class="pc">Clôture, mur, terrasse surélevée : selon votre commune, une déclaration préalable peut être demandée. On vérifie avec vous.</p></div></div>
-      <div class="regle"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 18H3z"/><path d="M12 9v5M12 17v.5"/></svg></span><div><h3>Sécurité du chantier</h3><p class="pc">Réseaux enterrés repérés avant de creuser, zone de travail balisée, matériel rangé chaque soir.</p></div></div>
+      <div class="regle"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M6 9l-3 3 3 3"/><path d="M18 9l3 3-3 3"/><path d="M12 4v4M12 16v4"/></svg></span><div><h3>Distances de plantation</h3><p class="pc">Une haie de plus de 2 m de haut se plante à 2 m au moins de la limite du voisin, sinon à 50 cm (Code civil). On en tient compte dès le plan.</p><p class="mo">On plante à la bonne distance du voisin.</p></div></div>
+      <div class="regle"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10 13l2 2 4-4"/></svg></span><div><h3>Autorisations en mairie</h3><p class="pc">Clôture, mur, terrasse surélevée : selon votre commune, une déclaration préalable peut être demandée. On vérifie avec vous.</p><p class="mo">On vérifie ce que demande votre commune.</p></div></div>
+      <div class="regle"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 18H3z"/><path d="M12 9v5M12 17v.5"/></svg></span><div><h3>Sécurité du chantier</h3><p class="pc">Réseaux enterrés repérés avant de creuser, zone de travail balisée, matériel rangé chaque soir.</p><p class="mo">Réseaux repérés, chantier balisé.</p></div></div>
     </div>
     <div class="remonte"><span>Une question sur votre projet ?</span><a class="btn" href="devis.html">Recevoir mon devis gratuit →</a></div>
   </div>
@@ -531,7 +569,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
   <div class="wrap">
     <p class="kicker">Zone d'intervention</p>
     <h2 class="t">Lens, Béthune, Arras et tout l'Artois</h2>
-    <p class="zone-txt">On intervient dans le bassin de Lens, autour de Béthune et dans l'Arrageois.</p>
+    <p class="intro"><span class="pc">On intervient dans le bassin de Lens, autour de Béthune et dans l'Arrageois.</span><span class="mo">Bassin de Lens, Béthunois et Arrageois.</span></p>
     <div class="grille">
       <ul class="communes"><li>Lens</li><li>Béthune</li><li>Arras</li><li>Liévin</li><li>Hénin-Beaumont</li><li>Bruay-la-Buissière</li><li>Carvin</li><li>Avion</li><li class="pc">Bully-les-Mines</li><li class="pc">Harnes</li><li class="pc">Nœux-les-Mines</li><li class="pc">Lillers</li><li class="pc">Beuvry</li><li class="pc">Méricourt</li><li class="pc">Achicourt</li><li class="pc">Beaurains</li><li class="pc">Saint-Laurent-Blangy</li><li class="pc">Vimy</li></ul>
       <div class="encart">
@@ -547,28 +585,27 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
     <div class="gauche">
       <p class="kicker">Questions fréquentes</p>
       <h2 class="t">Vos questions, nos réponses</h2>
-      <p class="intro">Une autre question ? Le plus simple, c'est d'en parler de vive voix.</p>
+      <p class="intro"><span class="pc">Une autre question ? Le plus simple, c'est d'en parler de vive voix.</span><span class="mo">Une autre question ? Parlons-en de vive voix.</span></p>
       <a class="btn btn-2" href="devis.html">Être rappelé gratuitement</a>
     </div>
     <div>
-<details><summary>Vais-je être harcelé de coups de fil ?</summary><p>Non. Vous recevez un seul appel : celui de la personne qui fera votre devis. Vos coordonnées ne sont jamais revendues ni partagées.</p></details>
-<details><summary>Le devis est-il vraiment gratuit ?</summary><p>Oui. Le déplacement et le devis sont gratuits et sans engagement. Vous recevez un devis écrit et détaillé, et vous décidez tranquillement.</p></details>
-<details><summary>Sous quel délai pouvez-vous intervenir ?</summary><p>On vous rappelle sous 24 h pour fixer la visite, que vous soyez à Lens, Béthune, Arras ou Liévin. La date des travaux dépend de la saison et de l'ampleur du chantier : elle est fixée avec vous et écrite sur le devis.</p></details>
-<details><summary>Que deviennent les déchets verts et la terre ?</summary><p>On les évacue. Branches, tontes, souches, terre en trop : tout est ramassé et le chantier est rendu propre. C'est précisé sur le devis.</p></details>
-<details><summary>Faut-il une autorisation pour une clôture ou une terrasse ?</summary><p>Ça dépend de votre commune. Une clôture, un mur ou une terrasse surélevée peuvent demander une déclaration préalable en mairie. On regarde avec vous ce que prévoit votre commune avant les travaux.</p></details>
-<details><summary>Quelle est la meilleure période ?</summary><p>Les plantations se font idéalement de l'automne au début du printemps, hors gel. Le gazon se sème au printemps ou en début d'automne. Terrasses, allées et clôtures se font presque toute l'année, hors grosses pluies et gel.</p></details>
-<details><summary>Mon jardin est difficile d'accès, c'est possible ?</summary><p>Le plus souvent, oui : passage étroit, jardin à l'arrière, pas d'accès camion… On regarde tout ça lors de la visite et on adapte le matériel.</p></details>
-<details><summary>Qui réalise les travaux ?</summary><p>Des professionnels du métier, du secteur, assurés. La même équipe vous rappelle, passe voir votre jardin, fait le devis et réalise les travaux.</p></details>
+<details name="faq"><summary>Vais-je être harcelé de coups de fil ?</summary><p>Non. Vous recevez un seul appel : celui de la personne qui fera votre devis. Vos coordonnées ne sont jamais revendues ni partagées.</p></details>
+<details name="faq"><summary>Le devis est-il vraiment gratuit ?</summary><p>Oui. Le déplacement et le devis sont gratuits et sans engagement. Vous recevez un devis écrit et détaillé, et vous décidez tranquillement.</p></details>
+<details name="faq"><summary>Sous quel délai pouvez-vous intervenir ?</summary><p>On vous rappelle sous 24 h pour fixer la visite, que vous soyez à Lens, Béthune, Arras ou Liévin. La date des travaux dépend de la saison et de l'ampleur du chantier : elle est fixée avec vous et écrite sur le devis.</p></details>
+<details name="faq"><summary>Que deviennent les déchets verts et la terre ?</summary><p>On les évacue. Branches, tontes, souches, terre en trop : tout est ramassé et le chantier est rendu propre. C'est précisé sur le devis.</p></details>
+<details name="faq"><summary>Faut-il une autorisation pour une clôture ou une terrasse ?</summary><p>Ça dépend de votre commune. Une clôture, un mur ou une terrasse surélevée peuvent demander une déclaration préalable en mairie. On regarde avec vous ce que prévoit votre commune avant les travaux.</p></details>
+<details name="faq"><summary>Quelle est la meilleure période ?</summary><p>Les plantations se font idéalement de l'automne au début du printemps, hors gel. Le gazon se sème au printemps ou en début d'automne. Terrasses, allées et clôtures se font presque toute l'année, hors grosses pluies et gel.</p></details>
+<details name="faq"><summary>Mon jardin est difficile d'accès, c'est possible ?</summary><p>Le plus souvent, oui : passage étroit, jardin à l'arrière, pas d'accès camion… On regarde tout ça lors de la visite et on adapte le matériel.</p></details>
+<details name="faq"><summary>Qui réalise les travaux ?</summary><p>Des professionnels du métier, du secteur, assurés. La même équipe vous rappelle, passe voir votre jardin, fait le devis et réalise les travaux.</p></details>
     </div>
   </div>
 </section>
 <section class="final">
   <img class="fond" src="photos/equipe.webp" alt="" width="1600" height="1000" loading="lazy" srcset="photos/w/equipe-200.webp 200w, photos/w/equipe-400.webp 400w, photos/w/equipe-600.webp 600w, photos/w/equipe-800.webp 800w, photos/equipe.webp 1184w" sizes="(max-width:820px) 92vw, 580px">
   <div class="wrap">
-    <h2>Votre projet de jardin commence par un appel</h2>
-    <p>Devis et déplacement gratuits, sans engagement.</p>
-    <a class="btn" href="devis.html">Recevoir mon devis gratuit</a>
-    <span class="ou">📞 ou appelez le <a href="tel:+33756951325">07 56 95 13 25</a></span>
+    <h2>Un devis clair, un chantier propre, un seul interlocuteur</h2>
+    <p>Devis et déplacement gratuits, sans engagement. On vous rappelle sous 24 h.</p>
+    <div class="final-act"><a class="btn" href="devis.html">Recevoir mon devis gratuit</a><a class="btn btn-blanc" href="tel:+33756951325"><svg class="i-tel" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Appeler le 07 56 95 13 25</a></div>
   </div>
 </section>
 </main>
@@ -580,7 +617,7 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
         <p class="pc">Création, aménagement et entretien de jardins à Lens, Béthune, Arras et alentours.</p>
         <p class="tel"><a href="tel:+33756951325">07 56 95 13 25</a></p>
       </div>
-      <div class="pc"><h4>Prestations</h4><ul><li><a href="creation-jardin.html">Création de jardin</a></li><li><a href="terrasses.html">Terrasses</a></li><li><a href="entretien-jardin.html">Entretien de jardin</a></li><li><a href="allees-cours-pavage.html">Allées, cours et pavage</a></li><li><a href="gazon-engazonnement.html">Gazon et engazonnement</a></li><li><a href="murets-enrochement.html">Murets, enrochement et talus</a></li><li><a href="clotures-portails.html">Clôtures et portails</a></li><li><a href="plantations-massifs-haies.html">Plantations, massifs et haies</a></li><li><a href="arrosage-automatique-bassin.html">Arrosage automatique et bassins</a></li></ul></div>
+      <div class="pied-presta"><h4>Prestations</h4><ul><li><a href="creation-jardin.html">Création de jardin</a></li><li><a href="terrasses.html">Terrasses</a></li><li><a href="entretien-jardin.html">Entretien de jardin</a></li><li><a href="allees-cours-pavage.html">Allées, cours et pavage</a></li><li><a href="gazon-engazonnement.html">Gazon et engazonnement</a></li><li><a href="murets-enrochement.html">Murets, enrochement et talus</a></li><li><a href="clotures-portails.html">Clôtures et portails</a></li><li><a href="plantations-massifs-haies.html">Plantations, massifs et haies</a></li><li><a href="arrosage-automatique-bassin.html">Arrosage automatique et bassins</a></li></ul></div>
       <div class="pc"><h4>Zone</h4><ul><li>Lens, Liévin, Hénin-Beaumont</li><li>Béthune, Bruay-la-Buissière</li><li>Arras, Achicourt, Beaurains</li><li>Carvin, Avion, Lillers</li></ul></div>
       <div><h4 class="pc">Informations</h4><ul><li class="pc"><a href="devis.html">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
     </div>

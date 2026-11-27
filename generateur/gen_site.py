@@ -21,9 +21,9 @@ SERVICES = [
               "Arrosage automatique enterré, programmé selon les saisons",
               "Bassin, point d'eau et éclairage du jardin"],
          question="Votre projet ?",
-         reponses=[("🌱", "Créer ou refaire tout le jardin"), ("🌳", "Plantations, massifs, haie"),
-                   ("🟩", "Gazon, pelouse"), ("💧", "Arrosage ou bassin")],
-         exemple="ex. jardin de 300 m² derrière la maison, envie d'une pelouse et d'une haie le long du grillage…",
+         reponses=[("jardin", "Créer ou refaire tout le jardin"), ("haie", "Plantations, massifs, haie"),
+                   ("gazon", "Gazon, pelouse"), ("eau", "Arrosage ou bassin")],
+         exemple="ex. jardin de 300 m² derrière la maison, pelouse et haie à créer, idéalement au printemps…",
          avant="terrain nu et boueux, aucune plantation", apres="jardin créé : pelouse, massifs, haie plantée"),
     dict(slug="terrasse-allee", nom="Terrasse et allées", bouton="Terrasse, allée, muret",
          court="Terrasse", benefice="du solide, fait pour durer",
@@ -34,9 +34,9 @@ SERVICES = [
               "Bordures, marches et raccords avec la maison",
               "Murets, enrochement, soutènement de talus"],
          question="Quel chantier ?",
-         reponses=[("🪵", "Terrasse bois ou composite"), ("🧱", "Terrasse dallage ou pierre"),
-                   ("🚗", "Allée, cour, entrée de garage"), ("⛰️", "Muret, enrochement, talus")],
-         exemple="ex. terrasse d'environ 25 m² le long de la maison, accès par le côté…",
+         reponses=[("terrasse", "Terrasse bois ou composite"), ("dalles", "Terrasse dallage ou pierre"),
+                   ("allee", "Allée, cour, entrée de garage"), ("muret", "Muret, enrochement, talus")],
+         exemple="ex. terrasse d'environ 25 m² le long de la maison, accès par le côté, pour cet été…",
          avant="coin de jardin en terre et herbe abîmée", apres="terrasse en dalles posée, propre et de niveau"),
     dict(slug="entretien-jardin", focus="center 8%", nom="Entretien de jardin", bouton="Entretien, taille de haies",
          court="Entretien", benefice="un jardin net toute l'année",
@@ -47,9 +47,10 @@ SERVICES = [
               "Débroussaillage, désherbage des allées et massifs",
               "Ramassage des feuilles et évacuation des déchets verts"],
          question="Quel entretien ?",
-         reponses=[("✂️", "Taille de haies"), ("🌿", "Tonte, entretien régulier"),
-                   ("🍂", "Remise en état d'un jardin négligé"), ("🗑️", "Débroussaillage, évacuation")],
-         exemple="ex. haie de thuyas d'environ 20 m, 2 m de haut, à tailler avant l'hiver…",
+         reponses=[("taille", "Taille de haies"), ("tonte", "Tonte, entretien régulier"),
+                   ("remise", "Remise en état d'un jardin négligé"), ("debroussaillage", "Débroussaillage, évacuation")],
+         urgent=("Urgent : jardin à sécuriser", "haie ou clôture tombée, jardin à sécuriser"),
+         exemple="ex. haie de thuyas d'environ 20 m, 2 m de haut, à tailler avant l'hiver, puis entretien à l'année…",
          avant="haie débordante et pelouse trop haute", apres="haie taillée au cordeau, pelouse tondue"),
     dict(slug="cloture-portail", nom="Clôture et portail", bouton="Clôture, portail",
          court="Clôture", benefice="chez vous, à l'abri des regards",
@@ -60,9 +61,11 @@ SERVICES = [
               "Remplacement d'une clôture abîmée par le vent",
               "Clôture doublée d'une haie, pour un jardin à l'abri des regards"],
          question="Votre besoin ?",
-         reponses=[("🧱", "Clôture (panneaux, grillage, bois)"), ("🚪", "Portail ou portillon"),
-                   ("🔁", "Clôture et portail")],
-         exemple="ex. environ 30 m de clôture côté voisin, ancien grillage à enlever…",
+         reponses=[("cloture", "Clôture neuve"), ("portail", "Portail ou portillon"),
+                   ("reparation", "Remplacer une clôture abîmée")],
+         urgent=("Urgent : dégâts, tempête", "clôture ou portail abîmé (tempête, dégâts)"),
+         autre="Plusieurs travaux / je ne sais pas",
+         exemple="ex. environ 30 m de clôture côté voisin, ancien grillage à enlever, assez pressé…",
          avant="vieux grillage affaissé et rouillé", apres="clôture neuve en panneaux, droite et propre"),
 ]
 
@@ -72,6 +75,8 @@ COMMUNES = ["Lens", "Béthune", "Arras", "Liévin", "Hénin-Beaumont", "Bruay-la
 
 def FOC(s):
     return f' style="object-position:{s["focus"]}"' if s.get('focus') else ''
+
+TEL_IC = '<svg class="i-tel" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>'
 
 def tel(cls="", txt=None):
     c = f' class="{cls}"' if cls else ""
@@ -97,7 +102,35 @@ ICONES = {
     "securite": '<path d="M12 2l9 18H3z"/><path d="M12 9v5M12 17v.5"/>',
 }
 
+# Icônes au trait des choix (masques SVG, couleur = var(--sauge))
+ICCSS = '[data-ic="jardin"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 21v-8%22/%3E%3Cpath d=%22M12 13c0-4 3-7 7-7 0 4-3 7-7 7z%22/%3E%3Cpath d=%22M12 15c0-3-2-5-6-5 0 3 2 5 6 5z%22/%3E%3C/svg%3E")}[data-ic="haie"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 22v-6%22/%3E%3Cpath d=%22M12 3c-3.3 0-6 2.6-6 6 0 3.6 2.7 7 6 7s6-3.4 6-7c0-3.4-2.7-6-6-6z%22/%3E%3C/svg%3E")}[data-ic="gazon"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 20h18%22/%3E%3Cpath d=%22M6 20l1-6%22/%3E%3Cpath d=%22M10 20l-1-8%22/%3E%3Cpath d=%22M14 20l1-7%22/%3E%3Cpath d=%22M18 20l-1-5%22/%3E%3C/svg%3E")}[data-ic="eau"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z%22/%3E%3C/svg%3E")}[data-ic="terrasse"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 8h18%22/%3E%3Cpath d=%22M3 12h18%22/%3E%3Cpath d=%22M3 16h18%22/%3E%3Cpath d=%22M6 8v11%22/%3E%3Cpath d=%22M18 8v11%22/%3E%3C/svg%3E")}[data-ic="dalles"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Crect x=%224%22 y=%224%22 width=%2216%22 height=%2216%22 rx=%221%22/%3E%3Cpath d=%22M4 12h16%22/%3E%3Cpath d=%22M12 4v16%22/%3E%3C/svg%3E")}[data-ic="allee"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M8 21l2-18%22/%3E%3Cpath d=%22M16 21l-2-18%22/%3E%3Cpath d=%22M11 7h2%22/%3E%3Cpath d=%22M10.6 12h2.8%22/%3E%3Cpath d=%22M10 17h4%22/%3E%3C/svg%3E")}[data-ic="muret"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Crect x=%223%22 y=%227%22 width=%2218%22 height=%2212%22 rx=%221%22/%3E%3Cpath d=%22M3 13h18%22/%3E%3Cpath d=%22M9 7v6%22/%3E%3Cpath d=%22M15 13v6%22/%3E%3C/svg%3E")}[data-ic="taille"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%226%22 cy=%227%22 r=%223%22/%3E%3Ccircle cx=%226%22 cy=%2217%22 r=%223%22/%3E%3Cpath d=%22M8.5 8.5L20 19%22/%3E%3Cpath d=%22M8.5 15.5L20 5%22/%3E%3C/svg%3E")}[data-ic="tonte"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M4 20h16%22/%3E%3Cpath d=%22M7 20v-8%22/%3E%3Cpath d=%22M12 20V9%22/%3E%3Cpath d=%22M17 20v-6%22/%3E%3C/svg%3E")}[data-ic="remise"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 19C5 10 10 5 19 5c0 9-5 14-14 14z%22/%3E%3Cpath d=%22M5 19l7-7%22/%3E%3C/svg%3E")}[data-ic="debroussaillage"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 7h14%22/%3E%3Cpath d=%22M9 7V4h6v3%22/%3E%3Cpath d=%22M7 7l1 13h8l1-13%22/%3E%3C/svg%3E")}[data-ic="cloture"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M5 21V6l2-2 2 2v15%22/%3E%3Cpath d=%22M15 21V6l2-2 2 2v15%22/%3E%3Cpath d=%22M3 10h18%22/%3E%3Cpath d=%22M3 16h18%22/%3E%3C/svg%3E")}[data-ic="portail"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M4 21V4%22/%3E%3Cpath d=%22M20 21V4%22/%3E%3Cpath d=%22M4 8h16%22/%3E%3Cpath d=%22M4 18h16%22/%3E%3Cpath d=%22M9 8v10%22/%3E%3Cpath d=%22M15 8v10%22/%3E%3C/svg%3E")}[data-ic="reparation"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.4-.6-.6-2.4z%22/%3E%3C/svg%3E")}[data-ic="urgent"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 3l10 18H2z%22/%3E%3Cpath d=%22M12 10v5%22/%3E%3Cpath d=%22M12 18v.5%22/%3E%3C/svg%3E")}[data-ic="autre"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22black%22 stroke-width=%221.8%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22%3E%3Ccircle cx=%2212%22 cy=%2212%22 r=%229%22/%3E%3Cpath d=%22M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7%22/%3E%3Cpath d=%22M12 17.5v.5%22/%3E%3C/svg%3E")}'
 CSS_BASE = FONT_FACE + """
+
+.btn{transition:background .2s,transform .2s,box-shadow .2s}
+@media(hover:hover){.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -12px rgba(135,59,37,.7)}}
+.btn:active{transform:scale(.98)}
+.i-tel{flex:none}
+.choix a,.choix button{transition:border-color .2s,box-shadow .2s,transform .2s,background .2s}
+@media(hover:hover){.choix a:hover,.choix button:hover{transform:translateY(-2px);border-color:var(--sauge);background:#FBFAF6}}
+.choix a:active,.choix button:active{transform:scale(.98);border-color:var(--brique);box-shadow:0 0 0 2px var(--brique)}
+.choix a:focus-visible,.choix button:focus-visible,.btn:focus-visible{outline:3px solid var(--brique);outline-offset:2px}
+.choix button.urgent{border-color:#E3B9A8;background:#FBF1EC;color:#6E2E1B}
+.choix button.urgent::before{background:var(--brique)}
+input[name=tel]:not(:placeholder-shown):valid{border-color:#3F8F55;padding-right:46px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233F8F55' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E") right 14px center/20px no-repeat}
+input[name=tel]:not(:placeholder-shown):not(:focus):invalid{border-color:#C9822B}
+.aide-tel{display:none;font-size:14px;color:#8A4F0E;margin-top:6px;line-height:1.4}
+input[name=tel]:not(:placeholder-shown):not(:focus):invalid + .aide-tel{display:block}
+.form-ok{background:#EEF5EF;color:var(--sauge-n);border:1.5px solid #BFD8C5;border-radius:16px;padding:24px 22px;font-size:17px;line-height:1.6;box-shadow:0 14px 34px -22px rgba(34,42,36,.45);animation:okv .35s ease both}
+.form-ok b:first-child{display:block;font-family:"Bricolage Grotesque",Inter,sans-serif;font-size:23px;letter-spacing:-.02em;line-height:1.2;margin-bottom:2px}
+.form-ok b:first-child + br,.form-ok b:first-child + br + br{display:none}
+.form-ok a{display:inline-flex;align-items:center;min-height:50px;margin-top:6px;padding:0 20px;border-radius:12px;background:var(--brique);color:#fff;text-decoration:none;font-weight:700}
+@keyframes okv{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+:root{interpolate-size:allow-keywords}
+details::details-content{block-size:0;overflow:hidden;transition:block-size .3s ease,content-visibility .3s allow-discrete}
+details[open]::details-content{block-size:auto}
+summary::after{transition:transform .25s}
+details[open] summary::after{transform:rotate(180deg)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 :root{--creme:#F4EFE6;--sable:#E9E1D1;--sauge:#4A5D4F;--sauge-f:#2F3B33;--sauge-n:#222A24;--brique:#A04A30;--brique-f:#873B25;--brique-c:#F3E2D8;--texte:#2B2B2B;--gris:#5F5F58;--filet:#DDD5C5;--blanc:#fff;--ombre:0 18px 50px -18px rgba(34,42,36,.28);--r:18px}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--creme);color:var(--texte);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -112,14 +145,13 @@ h1,h2,h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;lett
 .confiance{display:grid;gap:6px;margin-top:16px;font-size:15px;color:var(--gris)}
 .confiance div{padding-left:26px;position:relative}
 .confiance div::before{content:"✓";position:absolute;left:0;top:0;color:var(--sauge);font-weight:800}
-.form-ok{background:#E6EEE7;color:var(--sauge-f);border-radius:14px;padding:22px;font-size:17px;line-height:1.55}
-.form-ok a{color:var(--brique);font-weight:700}
 .choix{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .choix a,.choix button{display:flex;align-items:center;gap:10px;min-height:60px;padding:8px 12px;border:1.5px solid var(--filet);border-radius:12px;background:#fff;color:var(--texte);font:600 16px/1.25 Inter,sans-serif;text-decoration:none;text-align:left;cursor:pointer;transition:border-color .15s,box-shadow .15s}
 .choix a:hover,.choix button:hover{border-color:var(--sauge);box-shadow:0 6px 18px -10px rgba(34,42,36,.4)}
 .choix img{width:46px;height:46px;border-radius:9px;object-fit:cover;flex:none}
 .choix .tuile.choisie{border-color:var(--brique);box-shadow:0 0 0 2px var(--brique)}
-[data-ic]::before{content:attr(data-ic);font-size:22px;flex:none;width:30px;text-align:center}
+[data-ic]::before{content:"";flex:none;width:26px;height:26px;background:var(--sauge);-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat}
+"""+ICCSS+"""
 .question{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;font-size:24px;letter-spacing:-.02em;margin:0 0 14px}
 @media(max-width:480px){
  .choix a:has(img){flex-direction:column;align-items:stretch;padding:0;overflow:hidden;gap:0}
@@ -130,6 +162,14 @@ h1,h2,h3{font-family:"Bricolage Grotesque",Inter,sans-serif;font-weight:800;lett
 
 CSS_ACCUEIL = """
 .pc{}
+
+.mo{display:none}
+.carte-s,.sv-var article,.regle{transition:transform .25s,box-shadow .25s}
+@media(hover:hover){.carte-s:hover,.sv-var article:hover,.regle:hover{transform:translateY(-4px);box-shadow:0 28px 60px -24px rgba(34,42,36,.4)}}
+.final-act{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.final .btn-blanc{font-size:18px;min-height:62px}
+.pres .visu .carte{background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(12px) saturate(1.4);backdrop-filter:blur(12px) saturate(1.4);border:1px solid rgba(255,255,255,.6)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.pres .visu .carte{background:#fff}}
 .saison{display:none}
 header.top{position:sticky;top:0;z-index:50;background:rgba(244,239,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.06)}
 header.top .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
@@ -317,7 +357,13 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .form-card h2{display:none}
  .form-card .question{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;color:var(--texte);letter-spacing:-.02em}
  .form-card .confiance{font-size:14px}
- .intro{font-size:16.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .intro{font-size:16.5px}
+ .mo{display:inline}
+ p.mo{display:block;margin:4px 0 0;font-size:15px;color:var(--gris)}
+ .final-act .btn{width:100%}
+ .pied-presta{margin:18px 0 6px}
+ .pied-presta ul{columns:2;column-gap:16px}
+ .pied-presta li{break-inside:avoid}
  h2.t{font-size:30px}
  .aa{grid-template-columns:1fr;gap:16px;margin-top:24px}
  .badge{font-size:12px;padding:4px 8px;top:7px;left:7px}
@@ -386,7 +432,8 @@ footer.pied .tel a{color:#fff;font-weight:700;font-size:19px;text-decoration:non
  .pres .visu .grande{aspect-ratio:4/3;object-position:center 45%}
  .methode .photo img{aspect-ratio:4/3;object-position:center 22%}
  .paire img{object-position:center}
- .barre{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,230,.96);box-shadow:0 -6px 20px rgba(0,0,0,.1)}
+ .barre{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(244,239,230,.7);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);border-top:1px solid rgba(255,255,255,.55);box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+ @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.barre{background:rgba(244,239,230,.96)}}
  .barre .btn{width:100%}
 }
 """
@@ -492,7 +539,7 @@ def accueil():
     paires = "\n".join(paire(s, cls="pc" if i == 3 else "") for i, s in enumerate(SERVICES))
     cartes = "\n".join(f"""<article class="carte-s">
   <div class="img"><img src="photos/action-{s['slug']}.webp" alt="{s['nom']} en cours, près de Lens" width="1600" height="1000" loading="lazy"{FOC(s)}>
-    <div class="leg"><h3>{s['nom']} à Lens, Béthune et Arras</h3><p>{s['intro']}</p></div></div>
+    <div class="leg"><h3>{s['nom']}</h3><p>{s['intro']}</p></div></div>
   <ul class="pc">{''.join(f'<li>{c}</li>' for c in s['cas'])}</ul>
   <a class="btn" href="devis-{s['slug']}.html">Devis {s['court'].lower()} →</a>
   <a class="lien-plus" href="{PAGE_DE[s['slug']]}.html">En savoir plus sur {s['nom'].lower()}</a>
@@ -516,7 +563,7 @@ def accueil():
         ("Qui réalise les travaux ?",
          "Des professionnels du métier, du secteur, assurés. La même équipe vous rappelle, passe voir votre jardin, fait le devis et réalise les travaux."),
     ]
-    faq_html = "\n".join(f"<details><summary>{q}</summary><p>{r}</p></details>" for q, r in faq)
+    faq_html = "\n".join(f"<details name=\"faq\"><summary>{q}</summary><p>{r}</p></details>" for q, r in faq)
     prest_footer = liens_detail()
 
     return head("Paysagiste Lens, Béthune, Arras | Allô Paysagiste Artois",
@@ -541,7 +588,7 @@ def accueil():
       <h1><span data-titre-travaux>Paysagiste</span> à {VILLES} et alentours</h1>
       <p class="phrase">On vous rappelle : devis et déplacement gratuits sous 24 h.</p>
       <p class="sous pc">Décrivez vos travaux en deux clics. Sans engagement, et sans démarchage derrière.</p>
-      {tel("btn btn-blanc", "📞 Appeler le " + TEL_AFF)}
+      {tel("btn btn-blanc", TEL_IC + "Appeler le " + TEL_AFF)}
       <ul class="puces pc"><li>Professionnels assurés</li><li>Devis écrit avant travaux</li><li>Chantier rendu propre</li></ul>
     </div>
 <div class="form-card" id="devis-bloc" data-cacher-barre>
@@ -560,7 +607,7 @@ def accueil():
   <div class="wrap">
     <p class="kicker">La preuve en images</p>
     <h2 class="t">Avant, après : la différence se voit tout de suite</h2>
-    <p class="intro">Un aperçu de ce qu'on fait dans les jardins du secteur : création, terrasse, entretien, clôture.</p>
+    <p class="intro"><span class="pc">Un aperçu de ce qu'on fait dans les jardins du secteur : création, terrasse, entretien, clôture.</span><span class="mo">Création, terrasse, entretien, clôture : le résultat en images.</span></p>
     <div class="aa">
 {paires}
     </div>
@@ -591,7 +638,7 @@ def accueil():
     <div>
       <p class="kicker">Travail d'artisan</p>
       <h2 class="t">Un jardin bien pensé, posé dans les règles</h2>
-      <p class="intro">Avant de planter ou de poser quoi que ce soit, on regarde votre terrain : la terre, l'eau, le soleil, l'usage que vous voulez en faire.</p>
+      <p class="intro"><span class="pc">Avant de planter ou de poser quoi que ce soit, on regarde votre terrain : la terre, l'eau, le soleil, l'usage que vous voulez en faire.</span><span class="mo">On étudie votre terrain avant de planter ou de poser quoi que ce soit.</span></p>
       <div class="pc" style="margin-top:18px">
         <p>Dans le Pas-de-Calais, les sols sont souvent lourds et gorgés d'eau l'hiver. On prépare donc le terrain en conséquence : décaissement, drainage si besoin, apport de terre végétale, fondations stables pour les terrasses et les allées.</p>
         <p>Pour les haies et les massifs, on choisit des végétaux qui tiennent dans la région : charmille, hêtre, photinia, laurier, troène, arbustes à fleurs. Et on vous explique comment les entretenir.</p>
@@ -610,7 +657,7 @@ def accueil():
   <div class="wrap">
     <p class="kicker">Nos prestations</p>
     <h2 class="t">De la création à l'entretien, tout votre extérieur</h2>
-    <p class="intro">Quatre métiers, une seule équipe : vous n'avez qu'un interlocuteur du premier appel à la fin du chantier.</p>
+    <p class="intro"><span class="pc">Quatre métiers, une seule équipe à Lens, Béthune, Arras et alentours : un seul interlocuteur, du premier appel à la fin du chantier.</span><span class="mo">Quatre métiers, une seule équipe, un seul interlocuteur.</span></p>
     <div class="presta">
 {cartes}
     </div>
@@ -634,7 +681,7 @@ def accueil():
     <input id="r-nom" type="text" name="nom" autocomplete="given-name" required></div>
   <div class="champ"><label for="r-tel">Votre téléphone</label>
     <input id="r-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
-      placeholder="06 12 34 56 78" required></div>
+      placeholder="06 12 34 56 78" pattern="[\\s.\\-\\(\\)]*(?:\\+[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{7,14}}|0[\\s.\\-\\(\\)]*[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{8}})[\\s.\\-\\(\\)]*" required><small class="aide-tel">Il manque des chiffres : 10 chiffres, par exemple 06 12 34 56 78</small></div>
   <input type="text" name="site_web" tabindex="-1" autocomplete="off"
     style="position:absolute;left:-6000px">
   <button type="submit">Être rappelé →</button>
@@ -649,7 +696,7 @@ def accueil():
       <p>Appelez-nous, ou commencez votre message par URGENT : on vous rappelle en priorité.</p>
     </div>
     <div class="act">
-      {tel("btn", "📞 Appeler maintenant")}
+      {tel("btn", TEL_IC + "Appeler maintenant")}
       <a class="lien" href="devis.html">ou décrire la situation par écrit →</a>
     </div>
   </div>
@@ -661,7 +708,7 @@ def accueil():
     <div>
       <p class="kicker">Notre méthode</p>
       <h2 class="t">Quatre étapes, sans surprise</h2>
-      <p class="intro">Vous savez à chaque moment ce qui va se passer, et combien ça coûte.</p>
+      <p class="intro"><span class="pc">Vous savez à chaque moment ce qui va se passer, et combien ça coûte.</span><span class="mo">À chaque étape, vous savez ce qui se passe et ce que ça coûte.</span></p>
       <ol class="etapes">
         <li><span class="n">01</span><div><h3>Vous décrivez votre projet</h3><p class="pc">Deux clics sur le site, ou un appel. Quelques lignes suffisent.</p></div></li>
         <li><span class="n">02</span><div><h3>On vous rappelle sous 24 h</h3><p class="pc">On pose les bonnes questions et on fixe une visite chez vous.</p></div></li>
@@ -676,11 +723,11 @@ def accueil():
   <div class="wrap">
     <p class="kicker">On vous guide</p>
     <h2 class="t">Les règles à connaître, on s'en occupe</h2>
-    <p class="intro">Planter, clôturer, construire une terrasse : quelques règles s'appliquent. On vous les explique avant de commencer.</p>
+    <p class="intro"><span class="pc">Planter, clôturer, construire une terrasse : quelques règles s'appliquent. On vous les explique avant de commencer.</span><span class="mo">Haie, clôture, terrasse : on vérifie les règles avant de commencer.</span></p>
     <div class="regles">
-      <div class="regle">{ic(ICONES['distance'])}<div><h3>Distances de plantation</h3><p class="pc">Une haie de plus de 2 m de haut se plante à 2 m au moins de la limite du voisin, sinon à 50 cm (Code civil). On en tient compte dès le plan.</p></div></div>
-      <div class="regle">{ic(ICONES['autorisation'])}<div><h3>Autorisations en mairie</h3><p class="pc">Clôture, mur, terrasse surélevée : selon votre commune, une déclaration préalable peut être demandée. On vérifie avec vous.</p></div></div>
-      <div class="regle">{ic(ICONES['securite'])}<div><h3>Sécurité du chantier</h3><p class="pc">Réseaux enterrés repérés avant de creuser, zone de travail balisée, matériel rangé chaque soir.</p></div></div>
+      <div class="regle">{ic(ICONES['distance'])}<div><h3>Distances de plantation</h3><p class="pc">Une haie de plus de 2 m de haut se plante à 2 m au moins de la limite du voisin, sinon à 50 cm (Code civil). On en tient compte dès le plan.</p><p class="mo">On plante à la bonne distance du voisin.</p></div></div>
+      <div class="regle">{ic(ICONES['autorisation'])}<div><h3>Autorisations en mairie</h3><p class="pc">Clôture, mur, terrasse surélevée : selon votre commune, une déclaration préalable peut être demandée. On vérifie avec vous.</p><p class="mo">On vérifie ce que demande votre commune.</p></div></div>
+      <div class="regle">{ic(ICONES['securite'])}<div><h3>Sécurité du chantier</h3><p class="pc">Réseaux enterrés repérés avant de creuser, zone de travail balisée, matériel rangé chaque soir.</p><p class="mo">Réseaux repérés, chantier balisé.</p></div></div>
     </div>
     <div class="remonte"><span>Une question sur votre projet ?</span><a class="btn" href="devis.html">Recevoir mon devis gratuit →</a></div>
   </div>
@@ -690,7 +737,7 @@ def accueil():
   <div class="wrap">
     <p class="kicker">Zone d'intervention</p>
     <h2 class="t">Lens, Béthune, Arras et tout l'Artois</h2>
-    <p class="zone-txt">On intervient dans le bassin de Lens, autour de Béthune et dans l'Arrageois.</p>
+    <p class="intro"><span class="pc">On intervient dans le bassin de Lens, autour de Béthune et dans l'Arrageois.</span><span class="mo">Bassin de Lens, Béthunois et Arrageois.</span></p>
     <div class="grille">
       <ul class="communes">{communes}</ul>
       <div class="encart">
@@ -707,7 +754,7 @@ def accueil():
     <div class="gauche">
       <p class="kicker">Questions fréquentes</p>
       <h2 class="t">Vos questions, nos réponses</h2>
-      <p class="intro">Une autre question ? Le plus simple, c'est d'en parler de vive voix.</p>
+      <p class="intro"><span class="pc">Une autre question ? Le plus simple, c'est d'en parler de vive voix.</span><span class="mo">Une autre question ? Parlons-en de vive voix.</span></p>
       <a class="btn btn-2" href="devis.html">Être rappelé gratuitement</a>
     </div>
     <div>
@@ -719,10 +766,9 @@ def accueil():
 <section class="final">
   <img class="fond" src="photos/equipe.webp" alt="" width="1600" height="1000" loading="lazy">
   <div class="wrap">
-    <h2>Votre projet de jardin commence par un appel</h2>
-    <p>Devis et déplacement gratuits, sans engagement.</p>
-    <a class="btn" href="devis.html">Recevoir mon devis gratuit</a>
-    <span class="ou">📞 ou appelez le {tel()}</span>
+    <h2>Un devis clair, un chantier propre, un seul interlocuteur</h2>
+    <p>Devis et déplacement gratuits, sans engagement. On vous rappelle sous 24 h.</p>
+    <div class="final-act"><a class="btn" href="devis.html">Recevoir mon devis gratuit</a>{tel("btn btn-blanc", TEL_IC + "Appeler le " + TEL_AFF)}</div>
   </div>
 </section>
 </main>
@@ -735,7 +781,7 @@ def accueil():
         <p class="pc">Création, aménagement et entretien de jardins à Lens, Béthune, Arras et alentours.</p>
         <p class="tel">{tel()}</p>
       </div>
-      <div class="pc"><h4>Prestations</h4><ul>{prest_footer}</ul></div>
+      <div class="pied-presta"><h4>Prestations</h4><ul>{prest_footer}</ul></div>
       <div class="pc"><h4>Zone</h4><ul><li>Lens, Liévin, Hénin-Beaumont</li><li>Béthune, Bruay-la-Buissière</li><li>Arras, Achicourt, Beaurains</li><li>Carvin, Avion, Lillers</li></ul></div>
       <div><h4 class="pc">Informations</h4><ul><li class="pc"><a href="devis.html">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
     </div>
@@ -766,10 +812,11 @@ def etape2(exemple):
     <input id="f-nom" type="text" name="nom" autocomplete="name" required>
     <label for="f-tel">Votre téléphone</label>
     <input id="f-tel" type="tel" name="tel" inputmode="tel" autocomplete="tel"
-      placeholder="06 12 34 56 78" required>
+      placeholder="06 12 34 56 78" pattern="[\\s.\\-\\(\\)]*(?:\\+[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{7,14}}|0[\\s.\\-\\(\\)]*[1-9](?:[\\s.\\-\\(\\)]*[0-9]){{8}})[\\s.\\-\\(\\)]*" required>
+    <small class="aide-tel">Il manque des chiffres : 10 chiffres, par exemple 06 12 34 56 78</small>
     <label for="f-commune">Votre commune</label>
     <input id="f-commune" type="text" name="commune" required>
-    <label for="f-desc">Un mot sur le chantier <small>(facultatif)</small></label>
+    <label for="f-desc">Un mot sur le chantier et vos délais <small>(facultatif)</small></label>
     <textarea id="f-desc" name="description"
       placeholder="{exemple}"></textarea>
     <input type="text" name="site_web" tabindex="-1" autocomplete="off"
@@ -780,6 +827,8 @@ def etape2(exemple):
 def tunnel(s):
     photo = f"photos/action-{s['slug']}.webp"
     rep = "\n".join(f'      <button type="button" data-service="{s["nom"]} — {r}" data-ic="{i}">{r}</button>' for i, r in s["reponses"])
+    if s.get("urgent"):
+        rep += f'\n      <button type="button" class="urgent" data-service="URGENT — {s["nom"]} — {s["urgent"][1]}" data-ic="urgent">{s["urgent"][0]}</button>'
     return head(f"{s['nom']} en Artois : devis gratuit sous 24 h | {NOM}",
                 f"{s['nom']} à {VILLES} : décrivez votre projet en 2 étapes, on vous rappelle sous 24 h. Devis et déplacement gratuits.",
                 photo, noindex=True, css=CSS_TUNNEL) + f"""<body>
@@ -798,7 +847,7 @@ def tunnel(s):
     <p class="question">{s['question']}</p>
     <div class="choix">
 {rep}
-      <button type="button" data-service="{s['nom']}" data-ic="?">Autre / je ne sais pas</button>
+      <button type="button" data-service="{s['nom']}" data-ic="autre">{s.get('autre', 'Autre / je ne sais pas')}</button>
     </div>
   </div>
 {etape2(s['exemple'])}
@@ -833,10 +882,10 @@ def devis():
     <p class="question">Quels travaux ?</p>
     <div class="choix">
 {liens}
-      <button type="button" data-service="Autre" data-ic="?">Autre / je ne sais pas</button>
+      <button type="button" data-service="Autre" data-ic="autre">Autre / je ne sais pas</button>
     </div>
   </div>
-{etape2("ex. jardin d'environ 200 m², envie d'une terrasse et d'une haie…")}
+{etape2("ex. jardin d'environ 200 m², terrasse et haie à faire, pour le printemps…")}
 {CONFIANCE}
 </form>
 </div>
@@ -984,7 +1033,7 @@ def pied_site(devis_href):
         <p class="pc">Création, aménagement et entretien de jardins à Lens, Béthune, Arras et alentours.</p>
         <p class="tel">{tel()}</p>
       </div>
-      <div class="pc"><h4>Prestations</h4><ul>{liens_detail()}</ul></div>
+      <div class="pied-presta"><h4>Prestations</h4><ul>{liens_detail()}</ul></div>
       <div class="pc"><h4>Zone</h4><ul><li>Lens, Liévin, Hénin-Beaumont</li><li>Béthune, Bruay-la-Buissière</li><li>Arras, Achicourt, Beaurains</li><li>Carvin, Avion, Lillers</li></ul></div>
       <div><h4 class="pc">Informations</h4><ul><li class="pc"><a href="{devis_href}">Devis gratuit</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li></ul></div>
     </div>
@@ -1002,7 +1051,7 @@ def page_service(q):
   <h3>{t}</h3><p>{d}</p><a href="{devis_href}">Demander un devis gratuit →</a></article>""" for ph, t, d in q["variantes"])
     inclus = "".join(f"<li>{x}</li>" for x in q["inclus"])
     conseils = "".join(f'<div class="regle"><h3>{t}</h3><p>{d}</p></div>' for t, d in q["conseils"])
-    faq = "\n".join(f"<details><summary>{a}</summary><p>{b}</p></details>" for a, b in q["faq"])
+    faq = "\n".join(f"<details name=\"faq\"><summary>{a}</summary><p>{b}</p></details>" for a, b in q["faq"])
     par_slug = {x["slug"]: x for x in PAGES}
     autres = "".join(f'<li><a href="{l}.html">{par_slug[l]["nom"]}</a></li>' for l in q["liens"])
     ld = {"@context": "https://schema.org", "@graph": [
@@ -1024,7 +1073,7 @@ def page_service(q):
     <h1>{q['h1']}</h1>
     <p class="phrase">On vous rappelle : devis et déplacement gratuits sous 24 h.</p>
     <p class="sous">{q['accroche']}</p>
-    <div class="act"><a class="btn" href="{devis_href}">Recevoir mon devis gratuit</a>{tel("btn btn-blanc", "📞 Appeler le " + TEL_AFF)}</div>
+    <div class="act"><a class="btn" href="{devis_href}">Recevoir mon devis gratuit</a>{tel("btn btn-blanc", TEL_IC + "Appeler le " + TEL_AFF)}</div>
   </div>
 </section>
 
@@ -1039,7 +1088,7 @@ def page_service(q):
       <h3>Votre devis gratuit</h3>
       <p>Décrivez votre projet en deux clics : on vous rappelle sous 24 h pour en parler.</p>
       <a class="btn" href="{devis_href}">Recevoir mon devis gratuit</a>
-      {tel("tel", "📞 ou appelez le " + TEL_AFF)}
+      {tel("tel", "ou appelez le " + TEL_AFF)}
 {CONFIANCE}
     </aside>
   </div>
@@ -1095,8 +1144,7 @@ def page_service(q):
   <div class="wrap">
     <h2>Parlons de votre projet</h2>
     <p>Devis et déplacement gratuits, sans engagement.</p>
-    <a class="btn" href="{devis_href}">Recevoir mon devis gratuit</a>
-    <span class="ou">📞 ou appelez le {tel()}</span>
+    <div class="final-act"><a class="btn" href="{devis_href}">Recevoir mon devis gratuit</a>{tel("btn btn-blanc", TEL_IC + "Appeler le " + TEL_AFF)}</div>
   </div>
 </section>
 </main>
