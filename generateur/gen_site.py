@@ -296,7 +296,8 @@ h2.t{font-size:clamp(30px,3.9vw,48px);color:var(--sauge-n);max-width:760px}
 .detail a{display:block;padding:10px 0;border-bottom:1px solid var(--filet);font-weight:600;text-decoration:none;color:var(--texte)}
 .detail a::after{content:' →';color:var(--brique)}
 /* BANDE PHOTO */
-.bande{position:relative;min-height:440px;display:flex;align-items:flex-end;background:var(--sauge-f);color:#fff;overflow:hidden}
+.bande .fond{object-position:center 28%}
+.bande{position:relative;min-height:clamp(440px,36vw,600px);display:flex;align-items:flex-end;background:var(--sauge-f);color:#fff;overflow:hidden}
 .fond{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .bande::before,.final::before{z-index:1}
 .bande .wrap,.final .wrap{z-index:2}
