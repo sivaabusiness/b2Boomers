@@ -76,9 +76,11 @@ def main():
 
     print("\n== 1b. DERNIERS CHANGEMENTS (14 jours)")
     debut = (datetime.date.today() - datetime.timedelta(days=13)).isoformat()
+    fin = (datetime.date.today() + datetime.timedelta(days=1)).isoformat()
     ch = q("SELECT change_event.change_date_time, change_event.change_resource_type, "
            "change_event.resource_change_operation, change_event.changed_fields, change_event.client_type "
            f"FROM change_event WHERE change_event.change_date_time >= '{debut}' "
+           f"AND change_event.change_date_time <= '{fin}' "
            "ORDER BY change_event.change_date_time DESC LIMIT 40")
     resume = collections.Counter()
     for r in ch:
